@@ -1,0 +1,7 @@
+Delete main.cpp.swp
+vim users will thank you.
+
+Consider using cstdio vs iostream.
+This is may be a religion point -- but I've always tended to find printf / sprintf / fprintf far easier to read and write than the associated iostream approach.
+The main time iostream shines is when you need to make _generic_ code work -- ie, you're leveraging an overloaded iostream shift operator. Outside of that, I think it really just makes code more challenging to understand without much value.
+This is, to a certain extent, a personal preference -- but one I've heard echoed many, many times.
