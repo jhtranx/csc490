@@ -1,4 +1,9 @@
 /* ZJW simple C++ code to write out a PPM file representing an ellipse(s) */
+// Emily Truong and Justin Tran
+// The changes we made from the alum's suggestion were:
+// 	1. Made eval const because we don't expect eval to modify underlying objects.
+// 	2. Changed "radi1" to "radii1" for readability.
+// 	3. Modified eval for readability.
 
 #include <iostream>
 #include <fstream>
@@ -75,16 +80,18 @@ int main(int argc, char *argv[]) {
 	// create all the equations for a simple asci face
 	// layer values larger is closer - ie on top
 	vector<shared_ptr<ellipse>> theEllipses;
-	theEllipses.push_back(make_shared<ellipse>(150, 180, 60, 80, 2, niceC[1]));	
-	theEllipses.push_back(make_shared<ellipse>(130, 140, 10, 23, 3, niceC[2]));
-	theEllipses.push_back(make_shared<ellipse>(130, 145, 4, 4, 4, color(128)));
-	theEllipses.push_back(make_shared<ellipse>(160, 140, 10, 23, 3, niceC[2]));
-	theEllipses.push_back(make_shared<ellipse>(160, 145,4, 4, 4, color(128)));
-	theEllipses.push_back(make_shared<ellipse>(150, 210, 40, 20, 3, color(0)));
+	theEllipses.push_back(make_shared<ellipse>(vec2(150, 180), 60, 80, niceC[1], 2));	
+	theEllipses.push_back(make_shared<ellipse>(vec2(130, 140), 10, 23, niceC[2], 3));
+	theEllipses.push_back(make_shared<ellipse>(vec2(130, 145), 4, 4, color(128), 4));
+	theEllipses.push_back(make_shared<ellipse>(vec2(160, 140), 10, 23, niceC[2], 3));
+	theEllipses.push_back(make_shared<ellipse>(vec2(160, 145), 4, 4, color(128), 4));
+	theEllipses.push_back(make_shared<ellipse>(vec2(150, 210), 40, 20, color(0), 3));
 
 	//collection of rectangles (empty in base)
 	vector<shared_ptr<rect>> theRects;
 	theRects.push_back(make_shared<rect>(vec2(100, 100), vec2(300, 300), color(255, 255, 0)));
+	theRects.push_back(make_shared<rect>(vec2(50, 50), vec2(100, 100), color(255, 255, 0)));
+	theRects.push_back(make_shared<rect>(vec2(300, 300), vec2(400, 400), color(255, 255, 0)));
 
 	if (argc < 4) {
 		cerr << "Error format: a.out sizeX sizeY outfileName" << endl;
