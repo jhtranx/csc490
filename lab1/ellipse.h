@@ -4,7 +4,7 @@
 /* simple data representation of an implicit ellipse */
 class ellipse {
   public:
-	ellipse(double cX, double cY, double r1, double r2, color C) :  
+   ellipse(double cX, double cY, double r1, double r2, color C) :  
 		centerX(cX), centerY(cY), radi1(r1), radi2(r2), inC(C) {}
 	ellipse(vec2 inC, double r1, double r2, color C) : 
 		centerX(inC.x()), centerY(inC.y()), radi1(r1), radi2(r2), inC(C), depth(0) {}

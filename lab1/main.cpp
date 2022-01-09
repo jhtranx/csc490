@@ -16,7 +16,7 @@ using namespace std;
   interior points write a differnt color then exterior points */
 
 void writeOut(ostream& out, ppmR& theWriter, 
-				vector<shared_ptr<ellipse>> IEs, vector<shared_ptr<Rect>> Rs) {
+				vector<shared_ptr<ellipse>> IEs, vector<shared_ptr<rect>> Rs) {
 
 	float res;
 	color inC;
@@ -39,16 +39,15 @@ void writeOut(ostream& out, ppmR& theWriter,
 					curDepth = eq->getDepth();
 				}
 			}
-			/*
+			
 			//uncomment this section when you've written rect.h
 			for (auto rect: Rs) {
-				if (rect->evalIn(x, y) && rect->getDepth() > curDepth){
+				if (rect->eval(x, y) && rect->getDepth() > curDepth){
 					inC = rect->getInC();
 					inTrue = true;
 					curDepth = rect->getDepth();
 				}
 			}
-			*/
 			if (inTrue) {			
 				theWriter.writePixel(out, x, y, inC);
 			}
@@ -84,7 +83,8 @@ int main(int argc, char *argv[]) {
 	theEllipses.push_back(make_shared<ellipse>(150, 210, 40, 20, 3, color(0)));
 
 	//collection of rectangles (empty in base)
-	vector<shared_ptr<Rect>> theRects;
+	vector<shared_ptr<rect>> theRects;
+	theRects.push_back(make_shared<rect>(vec2(100, 100), vec2(300, 300), color(255, 255, 0)));
 
 	if (argc < 4) {
 		cerr << "Error format: a.out sizeX sizeY outfileName" << endl;
