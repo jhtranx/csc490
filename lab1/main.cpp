@@ -13,6 +13,8 @@
 #include "color.h"
 #include "rect.h"
 #include "ellipse.h"
+#include <map>
+
 
 using namespace std;
 
@@ -70,28 +72,39 @@ int main(int argc, char *argv[]) {
 	ofstream outFile;
 	int sizeX, sizeY;
 
-	vector<color> niceC;
-	niceC.push_back(color(91, 49, 245));
-	niceC.push_back(color(91, 212,199));
-	niceC.push_back(color(182, 235, 113));
-	niceC.push_back(color(212, 169,91));
-	niceC.push_back(color(247, 106, 120));
+	// vector<color> niceC;
+	// niceC.push_back(color(91, 49, 245));
+	// niceC.push_back(color(91, 212,199));
+	// niceC.push_back(color(182, 235, 113));
+	// niceC.push_back(color(212, 169,91));
+	// niceC.push_back(color(247, 106, 120));
+
+	map<string, color> colorMap;
+	colorMap["purple"] = color(91, 49, 245);
+	colorMap["aqua"] = color(91, 212,199);
+	colorMap["green"] = color(182, 235, 113);
+	colorMap["orange"] = color(212, 169,91);
+	colorMap["pink"] = color(247, 106, 120);
+	colorMap["white"] = color(255, 255, 255);
+	colorMap["black"] = color(0, 0, 0);
+	colorMap["yellow"] = color(255, 255, 0);
+
 
 	// create all the equations for a simple asci face
 	// layer values larger is closer - ie on top
 	vector<shared_ptr<ellipse>> theEllipses;
-	theEllipses.push_back(make_shared<ellipse>(vec2(150, 180), 60, 80, niceC[1], 2));	
-	theEllipses.push_back(make_shared<ellipse>(vec2(130, 140), 10, 23, niceC[2], 3));
-	theEllipses.push_back(make_shared<ellipse>(vec2(130, 145), 4, 4, color(128), 4));
-	theEllipses.push_back(make_shared<ellipse>(vec2(160, 140), 10, 23, niceC[2], 3));
-	theEllipses.push_back(make_shared<ellipse>(vec2(160, 145), 4, 4, color(128), 4));
-	theEllipses.push_back(make_shared<ellipse>(vec2(150, 210), 40, 20, color(0), 3));
+	theEllipses.push_back(make_shared<ellipse>(vec2(150, 180), 60, 80, colorMap["orange"], 2));	
+	theEllipses.push_back(make_shared<ellipse>(vec2(130, 140), 10, 23, colorMap["aqua"], 3));
+	theEllipses.push_back(make_shared<ellipse>(vec2(130, 145), 4, 4, colorMap["white"], 4));
+	theEllipses.push_back(make_shared<ellipse>(vec2(160, 140), 10, 23, colorMap["purple"], 3));
+	theEllipses.push_back(make_shared<ellipse>(vec2(160, 145), 4, 4, colorMap["black"], 4));
+	theEllipses.push_back(make_shared<ellipse>(vec2(150, 210), 40, 20, colorMap["yellow"], 3));
 
 	//collection of rectangles (empty in base)
 	vector<shared_ptr<rect>> theRects;
-	theRects.push_back(make_shared<rect>(vec2(100, 100), vec2(300, 300), color(255, 255, 0)));
-	theRects.push_back(make_shared<rect>(vec2(50, 50), vec2(100, 100), color(255, 255, 0)));
-	theRects.push_back(make_shared<rect>(vec2(300, 300), vec2(400, 400), color(255, 255, 0)));
+	theRects.push_back(make_shared<rect>(vec2(100, 100), vec2(300, 300), colorMap["yellow"]));
+	theRects.push_back(make_shared<rect>(vec2(50, 50), vec2(100, 100), colorMap["yellow"]));
+	theRects.push_back(make_shared<rect>(vec2(300, 300), vec2(400, 400), colorMap["yellow"]));
 
 	if (argc < 4) {
 		cerr << "Error format: a.out sizeX sizeY outfileName" << endl;
