@@ -47,7 +47,7 @@ void consumeColumnNames(std::ifstream &myFile) {
 
 /* Read one line from a CSV file for county demographic data specifically
    TODO: add fields here - think about type */
-shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
+shared_ptr<demogState> readCSVLineDemog(std::string theLine) {
     std::stringstream ss(theLine);
     
     string name = getField(ss);
@@ -61,7 +61,47 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
     double popUnder5 = stod(getField(ss)); 
     double popUnder18 = stod(getField(ss));  
     double popOver65 = stod(getField(ss));
-    
+
+    //skip race and ethnicities for now...
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    //after race and ethnicities
+
+    int veterans = stoi(getField(ss));
+    double foreignBorn = stod(getField(ss));
+    getField(ss);
+    double homeOwn = stod(getField(ss));
+    getField(ss);
+    getField(ss);
+    double personPerHouse = stod(getField(ss));
+    getField(ss);
+    getField(ss);
+    double highSchool = stod(getField(ss));
+    double bachelorsDeg = stod(getField(ss));
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    int medIncome = stoi(getField(ss));
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+    getField(ss);
+
     //TODO when you grab more data modify below loop to make sure you grab 
     //the right field
 
@@ -70,8 +110,9 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
         getField(ss);
 
     //TODO change to constructor for the data we want to aggregate
-    return make_shared<demogData>(name, state, popOver65, popUnder18,
-            popUnder5, totalPop2020);
+    // return make_shared<demogData>(name, state, popOver65, popUnder18,
+    //         popUnder5, totalPop2020);
+    return demogState(name, state, totalPop2020, "na", "na", medIncome, homeOwn, personPerHouse, veterans, highSchool, bachelorsDeg, foreignBorn);
 }
 
 
