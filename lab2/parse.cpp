@@ -47,7 +47,7 @@ void consumeColumnNames(std::ifstream &myFile) {
 
 /* Read one line from a CSV file for county demographic data specifically
    TODO: add fields here - think about type */
-shared_ptr<demogState> readCSVLineDemog(std::string theLine) {
+shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
     std::stringstream ss(theLine);
     
     string name = getField(ss);
@@ -112,7 +112,7 @@ shared_ptr<demogState> readCSVLineDemog(std::string theLine) {
     //TODO change to constructor for the data we want to aggregate
     // return make_shared<demogData>(name, state, popOver65, popUnder18,
     //         popUnder5, totalPop2020);
-    return demogState(name, state, totalPop2020, "na", "na", medIncome, homeOwn, personPerHouse, veterans, highSchool, bachelorsDeg, foreignBorn);
+    return make_shared<demogData>(name, state, popOver65, popUnder18, popUnder5, totalPop2020, "na", "na", medIncome, homeOwn, personPerHouse, veterans, highSchool, bachelorsDeg, foreignBorn);
 }
 
 
