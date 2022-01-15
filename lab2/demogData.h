@@ -3,6 +3,7 @@
 
 #include <string>
 #include<iostream>
+#include "raceAndEthnicity.h"
 
 using namespace std;
 
@@ -13,13 +14,12 @@ using namespace std;
 class demogData {
   public:
     demogData(string inN, string inS, double in65, double in18,
-        double in5, int totPop20, double f, string r, 
-        string eth, float mi, int hu, double ho, 
+        double in5, int totPop20, double f, raceAndEthnicity re, 
+        float mi, int hu, double ho, 
         double pph, int vets, double hsg, double bd, 
         double fb) :
             county(inN), state(inS), popOver65(in65), popUnder18(in18),
-            popUnder5(in5), totalPopulation2020(totPop20), female(f), race(r),
-            ethnicity(eth), medIncome(mi), housingUnits(hu), homeOwn(ho), 
+            popUnder5(in5), totalPopulation2020(totPop20), female(f), raceEth(re), medIncome(mi), housingUnits(hu), homeOwn(ho), 
             personPerHouse(pph), veterans(vets), highSchoolGrad(hsg), bachelorsDeg(bd), 
             foreignBorn(fb) {}
 
@@ -28,8 +28,9 @@ class demogData {
     string getState() const {return state;}
     int getPopulation() const {return totalPopulation2020;}
     double getFemale() const {return female;}
-    string getRace() const {return race;}
-    string getEthnicity() const {return ethnicity;}
+    // string getRace() const {return race;}
+    // string getEthnicity() const {return ethnicity;}
+    raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
     float getMedIncome() const {return medIncome;}
     int getHousingUnits() const {return housingUnits;}
     double getHomeOwn() const {return homeOwn;}
@@ -49,8 +50,7 @@ private:
     const double popUnder5;
     const int totalPopulation2020;
     const double female;
-    string race;
-    string ethnicity;
+    raceAndEthnicity raceEth;
     int medIncome;
     int housingUnits;
     double homeOwn; //check if right

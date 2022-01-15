@@ -63,15 +63,16 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
     double popOver65 = stod(getField(ss));
     double female = stod(getField(ss));
 
-    //skip race and ethnicities for now...
-    getField(ss);
-    getField(ss);
-    getField(ss);
-    getField(ss);
-    getField(ss);
-    getField(ss);
-    getField(ss);
-    getField(ss);
+    //race and ethnicities
+    double inWhite = stod(getField(ss));
+    double inBlack = stod(getField(ss));
+    double inIndAl = stod(getField(ss));
+    double inAsian = stod(getField(ss));
+    double inHyn = stod(getField(ss));
+    double inTwoOrMore = stod(getField(ss));
+    double inHispLat = stod(getField(ss));
+    double inWhiteNotHispLat = stod(getField(ss));
+
     //after race and ethnicities
 
     int veterans = stoi(getField(ss));
@@ -112,10 +113,13 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
     //TODO change to constructor for the data we want to aggregate
     // return make_shared<demogData>(name, state, popOver65, popUnder18,
     //         popUnder5, totalPop2020);
+    raceAndEthnicity re = raceAndEthnicity(inWhite, inBlack, inIndAl, inAsian,
+        inHyn, inTwoOrMore, inHispLat, inWhiteNotHispLat);
+
     return make_shared<demogData>(
         county, state, popOver65, popUnder18, 
-        popUnder5, totalPop2020, female, "na", 
-        "na", medIncome, housingUnits, homeOwn, 
+        popUnder5, totalPop2020, female, re, 
+        medIncome, housingUnits, homeOwn, 
         personPerHouse, veterans, highSchool, bachelorsDeg, 
         foreignBorn);
 }
