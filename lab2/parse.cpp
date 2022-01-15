@@ -50,7 +50,7 @@ void consumeColumnNames(std::ifstream &myFile) {
 shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
     std::stringstream ss(theLine);
     
-    string name = getField(ss);
+    string county = getField(ss);
     string state = getField(ss);
     //skip population change
     getField(ss);
@@ -61,9 +61,9 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
     double popUnder5 = stod(getField(ss)); 
     double popUnder18 = stod(getField(ss));  
     double popOver65 = stod(getField(ss));
+    double female = stod(getField(ss));
 
     //skip race and ethnicities for now...
-    getField(ss);
     getField(ss);
     getField(ss);
     getField(ss);
@@ -76,7 +76,7 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
 
     int veterans = stoi(getField(ss));
     double foreignBorn = stod(getField(ss));
-    getField(ss);
+    int housingUnits = stod(getField(ss));
     double homeOwn = stod(getField(ss));
     getField(ss);
     getField(ss);
@@ -112,7 +112,12 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
     //TODO change to constructor for the data we want to aggregate
     // return make_shared<demogData>(name, state, popOver65, popUnder18,
     //         popUnder5, totalPop2020);
-    return make_shared<demogData>(name, state, popOver65, popUnder18, popUnder5, totalPop2020, "na", "na", medIncome, homeOwn, personPerHouse, veterans, highSchool, bachelorsDeg, foreignBorn);
+    return make_shared<demogData>(
+        county, state, popOver65, popUnder18, 
+        popUnder5, totalPop2020, female, "na", 
+        "na", medIncome, housingUnits, homeOwn, 
+        personPerHouse, veterans, highSchool, bachelorsDeg, 
+        foreignBorn);
 }
 
 

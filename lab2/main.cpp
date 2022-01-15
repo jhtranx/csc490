@@ -17,11 +17,10 @@ int main() {
             "county_demographics.csv", DEMOG);
 
      //debug print out - uncomment if you want to double check your data
-    /*
+
     for (const auto &obj : theData) {
         std::cout << *obj << std::endl;
     }
-    */
 
     theAnswers.createStateData(theData);
 
