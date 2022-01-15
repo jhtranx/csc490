@@ -1,13 +1,32 @@
 #include "demogData.h"
 #include <cmath>
 #include <sstream>
+#include "raceAndEthnicity.h"
 
 /* print county demographic data */
 /* fill in any other data to make printing easy  */
 std::ostream& operator<<(std::ostream &out, const demogData &DD) {
     out << "County Demographics Info: " << DD.getCounty() << ", " << DD.state;
     out << "\nTotal population: " << DD.totalPopulation2020;
-   
+
+    out << "\nRacial Demographics Info: \n\% American Indian and Alaska Native percent: " << DD.getRaceAndEthnicity().getAmIndianAlNative();
+    out <<  " count: " << round((DD.getRaceAndEthnicity().getAmIndianAlNative() / 100) * DD.totalPopulation2020);
+    out << "\n\% Asian American percent: " << DD.getRaceAndEthnicity().getAsianAlone();
+    out <<  " count: " << round((DD.getRaceAndEthnicity().getAsianAlone() / 100) * DD.totalPopulation2020);
+    out << "\n\% Black/African American percent: " << DD.getRaceAndEthnicity().getBlackAlone();
+    out <<  " count: " << round((DD.getRaceAndEthnicity().getBlackAlone() / 100) * DD.totalPopulation2020); 
+    out << "\n\% Hispanic or Latinx percent: " << DD.getRaceAndEthnicity().getHispLat();
+    out <<  " count: " << round((DD.getRaceAndEthnicity().getHispLat() / 100) * DD.totalPopulation2020);
+    out << "\n\% Native Hawaiian and Other Pacific Islander: " << DD.getRaceAndEthnicity().getHawaiianPacIsland();
+    out <<  " count: " << round((DD.getRaceAndEthnicity().getHawaiianPacIsland() / 100) * DD.totalPopulation2020);
+    out << "\n\% Two or More Races percent: " << DD.getRaceAndEthnicity().getTwoOrMore();
+    out <<  " count: " << round((DD.getRaceAndEthnicity().getTwoOrMore() / 100) * DD.totalPopulation2020);
+    out << "\n\% White (inclusive) percent: " << DD.getRaceAndEthnicity().getWhiteAlone();
+    out <<  " count: " << round((DD.getRaceAndEthnicity().getWhiteAlone() / 100) * DD.totalPopulation2020); 
+    out << "\n\% White (nonHispanic) percent: " << DD.getRaceAndEthnicity().getWhiteNotHispLat();
+    out <<  " count: " << round((DD.getRaceAndEthnicity().getWhiteNotHispLat() / 100) * DD.totalPopulation2020);
+    out << "\ntotal Racial Demographic Count: " <<  DD.totalPopulation2020;
+
     out << "\n--Population Age info: \n(\% under 5): " << DD.popUnder5;
     out <<  " and total: " << round((DD.popUnder5 / 100) * DD.totalPopulation2020);
     out << "\n(\% under 18): " << DD.popUnder18;

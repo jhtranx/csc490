@@ -28,8 +28,6 @@ class demogData {
     string getState() const {return state;}
     int getPopulation() const {return totalPopulation2020;}
     double getFemale() const {return female;}
-    // string getRace() const {return race;}
-    // string getEthnicity() const {return ethnicity;}
     raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
     float getMedIncome() const {return medIncome;}
     int getHousingUnits() const {return housingUnits;}
