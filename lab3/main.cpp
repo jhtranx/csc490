@@ -63,21 +63,37 @@ void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int
     colorMap[9] = color(235, 91, 101); //warm  
 
     int approxSize = sqrt(theNumbers.size());
-    int offSetX = round(sizeX / approxSize);
-    int offSetY = round(sizeY / approxSize);
+    int offSetX = round(sizeX / (double)approxSize);
+    int offSetY = round(sizeY / (double)approxSize);
 
     double topVal = round(*max_element(theNumbers.begin(), theNumbers.end()));
     cout << "topVal: " << topVal << endl;
 
     double mag = 0;
-    int i;
-    int j;
+    int i = 0;
+    int j = 0;
     for (auto entry : theNumbers) {
-        cout << "wow: " << entry / topVal << endl;
+        // cout << "wow: " << entry / topVal << endl;
         mag = round((colorMap.size() - 1) * (entry / topVal));
-        cout << "color: " << mag << endl;
+        // cout << "color: " << mag << endl;
+
+        // cout << "vec2X: " << 0 + i * offSetX << endl;
+        // cout << "vec2Y: " << sizeY - j * offSetY << endl;
+        // //j * (offSetY - sizeY)
+        // cout << "sizeY: " << sizeY<< endl;
+        // cout << "j: " << j << endl;
+        // cout << "i: " << i << endl;
+        // cout << "offSetY: " << offSetY << endl;
+
+        // cout << "offX: " << offSetX << endl;
+        // cout << "offY: " << offSetY << endl;
+
         theRects.push_back(Rect(vec2(0 + i * offSetX, sizeY - j * offSetY), 
                                 offSetX, offSetY, 5, colorMap[mag]));
+        // theRects.push_back(Rect(vec2(j * offSetX, i * offSetY), 
+        //                         offSetX, offSetY, 5, colorMap[mag]));
+
+        
         i++;
         if (i > approxSize) {
             i = 0;
@@ -93,7 +109,7 @@ int main(int argc, char *argv[]) {
 
     //read in a csv file and create a vector of objects representing each counties data
     std::vector<shared_ptr<demogData>> theData = read_csv(
-            "county_demographics.csv", DEMOG);
+            "county_demographics2014.csv", DEMOG);
 
     std::vector<float> foreignBorn;
     std::vector<float> hsAndUp;
@@ -105,8 +121,8 @@ int main(int argc, char *argv[]) {
         std::cout << *obj << std::endl;
 
         foreignBorn.push_back(obj->getForeignBorn());
-        hsAndUp.push_back(round((obj->getHighSchoolGrad() / 100) * obj->getPopulation()));
-        baAndUp.push_back(round((obj->getBachelorsDeg() / 100) * obj->getPopulation()));
+        hsAndUp.push_back(obj->getHighSchoolGrad());
+        baAndUp.push_back(obj->getBachelorsDeg());
     }
 
     int maxFb = 0;
