@@ -11,6 +11,49 @@
 
 using namespace std;
 
+void writeOut(ostream& out, ppmR& theWriter, 
+				vector<shared_ptr<ellipse>> IEs, vector<shared_ptr<rect>> Rs) {
+
+	float res;
+	color inC;
+	color background(12, 34, 56);
+	bool inTrue = false;
+	double curDepth = -1.0;
+
+	//for every point in the 2D space
+	for (int y=0; y < theWriter.height; y++) {
+		for (int x =0; x < theWriter.width; x++) {
+
+			inTrue = false;
+			curDepth = -1;
+			//iterate through all possible equations (note 'front' determined by order in vector)
+			for (auto eq : IEs) {
+				res = eq->eval(x, y);
+				if (res < 0 && eq->getDepth() > curDepth) {
+					inC = eq->getInC();
+					inTrue = true;
+					curDepth = eq->getDepth();
+				}
+			}
+			
+			//uncomment this section when you've written rect.h
+			for (auto rect: Rs) {
+				if (rect->eval(x, y) && rect->getDepth() > curDepth){
+					inC = rect->getInC();
+					inTrue = true;
+					curDepth = rect->getDepth();
+				}
+			}
+			if (inTrue) {			
+				theWriter.writePixel(out, x, y, inC);
+			}
+			else
+				theWriter.writePixel(out, x, y, background);
+		}
+		theWriter.writeNewLine(out);
+	}
+}
+
 void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int sizeY) {
     //cool to warm color map 
     std::array<color, 10> colorMap; 
