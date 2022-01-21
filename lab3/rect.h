@@ -4,7 +4,7 @@
 #include "vec2.h"
 
 /* simple data representation of a rectangle */
-class rect {
+class Rect {
   public:
    rect(vec2 tL, vec2 bR, color C) :
       topLeft(tL), botRight(bR), inC(C), depth(0) {};
