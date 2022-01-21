@@ -5,6 +5,7 @@
 #include "demogData.h"
 #include "parse.h"
 #include "dataAQ.h"
+#include "color.h"
 
 using namespace std;
 
@@ -27,7 +28,7 @@ int main() {
 
     //read in a csv file and create a vector of objects representing each counties data
     std::vector<shared_ptr<demogData>> theData = read_csv(
-            "county_demographics.csv", DEMOG);
+            "county_demographics2014.csv", DEMOG);
 
     std::vector<int> foreignBorn;
     std::vector<int> hsAndUp;
@@ -38,20 +39,33 @@ int main() {
     for (const auto &obj : theData) {
         std::cout << *obj << std::endl;
 
-        foreignBorn.push_back(obj->getForeignBorn());
-        hsAndUp.push_back(obj->getHighSchoolGrad());
-        baAndUp.push_back(obj->getBachelorsDeg());
+        foreignBorn.push_back(round((obj->getForeignBorn() / 100) * obj->getPopulation()));
+        hsAndUp.push_back(round((obj->getHighSchoolGrad() / 100) * obj->getPopulation()));
+        baAndUp.push_back(round((obj->getBachelorsDeg() / 100) * obj->getPopulation()));
     }
 
     int maxFb = 0;
     int maxHs = 0;
     int maxBa = 0;
-    for (int i : foreignBorn) {
-        if (i > maxFb)
-            maxFb = i;
+
+    for (int i = 0; i < foreignBorn.size(); i++) {
+        if (foreignBorn.at(i) > maxFb)
+            maxFb = foreignBorn.at(i);
+        if (hsAndUp.at(i) > maxHs)
+            maxHs = hsAndUp.at(i);
+        if (baAndUp.at(i) > maxBa)
+            maxBa = baAndUp.at(i);
     }
 
-    cout << maxFb;
+    for (int y = 0; y < 50; y++) {
+        for (int x = 0; x < 50; x++) {
+            
+        }
+    }
+
+    cout << "MaxFb" << maxFb << endl;
+    cout << "MaxHs" << maxHs << endl;
+    cout << "MaxBa" << maxBa << endl;
 
     theAnswers.createStateData(theData);
 
