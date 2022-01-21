@@ -3,16 +3,20 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include <memory>
 #include "demogData.h"
 #include "parse.h"
 #include "dataAQ.h"
 #include "color.h"
 #include "rect.h"
+#include "ppmR.h"
+#include <array>
+
 
 using namespace std;
 
 void writeOut(ostream& out, ppmR& theWriter, 
-				vector<shared_ptr<ellipse>> IEs, vector<shared_ptr<rect>> Rs) {
+			    vector<Rect> Rs) {
 
 	float res;
 	color inC;
@@ -26,22 +30,12 @@ void writeOut(ostream& out, ppmR& theWriter,
 
 			inTrue = false;
 			curDepth = -1;
-			//iterate through all possible equations (note 'front' determined by order in vector)
-			for (auto eq : IEs) {
-				res = eq->eval(x, y);
-				if (res < 0 && eq->getDepth() > curDepth) {
-					inC = eq->getInC();
-					inTrue = true;
-					curDepth = eq->getDepth();
-				}
-			}
 			
-			//uncomment this section when you've written rect.h
 			for (auto rect: Rs) {
-				if (rect->eval(x, y) && rect->getDepth() > curDepth){
-					inC = rect->getInC();
+				if (rect.eval(x, y) && rect.getDepth() > curDepth){
+					inC = rect.getInC();
 					inTrue = true;
-					curDepth = rect->getDepth();
+					curDepth = rect.getDepth();
 				}
 			}
 			if (inTrue) {			
@@ -56,7 +50,7 @@ void writeOut(ostream& out, ppmR& theWriter,
 
 void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int sizeY) {
     //cool to warm color map 
-    std::array<color, 10> colorMap; 
+    array<color, 10> colorMap; 
     colorMap[0] = color(91, 80, 235); //cool 
     colorMap[1] = color(95, 166, 245); 
     colorMap[2] = color(99, 223, 220); 
@@ -73,12 +67,15 @@ void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int
     int offSetY = round(sizeY / approxSize);
 
     double topVal = round(*max_element(theNumbers.begin(), theNumbers.end()));
+    cout << "topVal: " << topVal << endl;
 
     double mag = 0;
     int i;
     int j;
     for (auto entry : theNumbers) {
+        cout << "wow: " << entry / topVal << endl;
         mag = round((colorMap.size() - 1) * (entry / topVal));
+        cout << "color: " << mag << endl;
         theRects.push_back(Rect(vec2(0 + i * offSetX, sizeY - j * offSetY), 
                                 offSetX, offSetY, 5, colorMap[mag]));
         i++;
@@ -89,23 +86,25 @@ void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int
     }
 }
 
-int main() {
+int main(int argc, char *argv[]) {
 
-    int sizeX, sizeY;
+    ofstream outFile;
+	int sizeX, sizeY;
+
     //read in a csv file and create a vector of objects representing each counties data
     std::vector<shared_ptr<demogData>> theData = read_csv(
-            "county_demographics2014.csv", DEMOG);
+            "county_demographics.csv", DEMOG);
 
-    std::vector<int> foreignBorn;
-    std::vector<int> hsAndUp;
-    std::vector<int> baAndUp;
+    std::vector<float> foreignBorn;
+    std::vector<float> hsAndUp;
+    std::vector<float> baAndUp;
 
      //debug print out - uncomment if you want to double check your data
 
     for (const auto &obj : theData) {
         std::cout << *obj << std::endl;
 
-        foreignBorn.push_back(round((obj->getForeignBorn() / 100) * obj->getPopulation()));
+        foreignBorn.push_back(obj->getForeignBorn());
         hsAndUp.push_back(round((obj->getHighSchoolGrad() / 100) * obj->getPopulation()));
         baAndUp.push_back(round((obj->getBachelorsDeg() / 100) * obj->getPopulation()));
     }
@@ -127,6 +126,8 @@ int main() {
     cout << "MaxHs" << maxHs << endl;
     cout << "MaxBa" << maxBa << endl;
 
+    
+
 
     if (argc < 4) {
 		cerr << "Error format: a.out sizeX sizeY outfileName" << endl;
@@ -135,10 +136,14 @@ int main() {
 		sizeY = stoi(argv[2]);
 		ppmR theWriter(sizeX, sizeY);
 		outFile.open(argv[3]);
+
+        vector<Rect> theRects;
+        createGrid(foreignBorn, theRects, sizeX, sizeY);
+
 		if (outFile) {
 			cout << "writing an image of size: " << sizeX << " " << sizeY << " to: " << argv[3] << endl;
 			theWriter.writeHeader(outFile);
-			writeOut(outFile, theWriter, theEllipses, theRects);
+			writeOut(outFile, theWriter, theRects);
 		} else {
 			cout << "Error cannot open outfile" << endl;
 			exit(0);
@@ -148,4 +153,6 @@ int main() {
 
     return 0;
 }
+
+
 

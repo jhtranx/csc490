@@ -6,8 +6,8 @@
 /* simple data representation of a rectangle */
 class Rect {
   public:
-   Rect(vec2 tL, vec2 bR, color C) :
-      topLeft(tL), botRight(bR), inC(C), depth(0) {};
+   // Rect(vec2 tL, vec2 bR, color C) :
+   //    topLeft(tL), botRight(bR), inC(C), depth(0) {};
 
    Rect(vec2 tL, int x, int y, int d, color C) :
       topLeft(tL), botRight(vec2(tL.x() + x, tL.y() + y)), depth(d), inC(C) {};
