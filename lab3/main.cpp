@@ -48,8 +48,7 @@ void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int
 
 int main() {
 
-    
-
+    int sizeX, sizeY;
     //read in a csv file and create a vector of objects representing each counties data
     std::vector<shared_ptr<demogData>> theData = read_csv(
             "county_demographics2014.csv", DEMOG);
@@ -84,6 +83,25 @@ int main() {
     cout << "MaxFb" << maxFb << endl;
     cout << "MaxHs" << maxHs << endl;
     cout << "MaxBa" << maxBa << endl;
+
+
+    if (argc < 4) {
+		cerr << "Error format: a.out sizeX sizeY outfileName" << endl;
+	} else {
+		sizeX = stoi(argv[1]);
+		sizeY = stoi(argv[2]);
+		ppmR theWriter(sizeX, sizeY);
+		outFile.open(argv[3]);
+		if (outFile) {
+			cout << "writing an image of size: " << sizeX << " " << sizeY << " to: " << argv[3] << endl;
+			theWriter.writeHeader(outFile);
+			writeOut(outFile, theWriter, theEllipses, theRects);
+		} else {
+			cout << "Error cannot open outfile" << endl;
+			exit(0);
+		}
+	}
+
 
     return 0;
 }
