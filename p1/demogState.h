@@ -5,7 +5,9 @@
 #include <string>
 #include <iostream>
 #include "demogState.h"
+#include "raceAndEthnicity.h"
 
+using namespace std;
 /*
   class to represent state data - fairly redundent at this point but will use
   inheritence later - FILL IN
