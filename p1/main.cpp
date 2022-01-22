@@ -2,6 +2,8 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <map>
+#include <cmath>
 #include "demogData.h"
 #include "parse.h"
 #include "dataAQ.h"
@@ -21,13 +23,31 @@ int main() {
     map <string, demogState> stateMap;
 
     for (const auto &obj : theData) {
-        string stateStr = obj.getState();
-        demogState stateData = stateMap.find(stateStr)
+        string stateStr = obj->getState();
 
-        if (stateData != stateMap.end()) {
-            
+        if (stateMap.find(stateStr) != stateMap.end()) {
+            stateMap.at(stateStr).updatePopulation(obj->getPopulation());
+            stateMap.at(stateStr).updateFemale(
+                round((obj->getFemale() / 100) * obj->getPopulation()));
+            stateMap.at(stateStr).updateMedIncome(obj->getMedIncome());
+            stateMap.at(stateStr).updateHousingUnits(obj->getHousingUnits());
+            stateMap.at(stateStr).updateHomeOwn(
+                round((obj->getHomeOwn() / 100) * obj->getPopulation()));
+            stateMap.at(stateStr).updatePersonPerHouse(
+                round((obj->getPersonPerHouse() / 100) * obj->getHousingUnits()));
+            stateMap.at(stateStr).updateVeterans(obj->getVeterans());
+            stateMap.at(stateStr).updateHighSchoolGrad(
+                round((obj->getHighSchoolGrad() / 100) * obj->getPopulation()));
+            stateMap.at(stateStr).updateBachelorsDeg(
+                round((obj->getBachelorsDeg() / 100) * obj->getPopulation()));
+            stateMap.at(stateStr).updateForeignBorn(
+                round((obj->getForeignBorn() / 100) * obj->getPopulation()));
         }
-        else
+        else {
+            string state = obj->getState();
+            
+            demogState newState = demogState()
+        }
 
         std::cout << *obj << std::endl;
 

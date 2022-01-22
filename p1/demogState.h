@@ -46,16 +46,16 @@ class demogState {
 
     //functions to update demogState when aggregating counties
     void updatePopulation(int increase)  {totalPopulation2020 += increase;}
-    void updateFemale(double increase)  {female += increase;}
+    void updateFemale(int increase)  {female += increase;}
     // void updateRaceAndEthnicity()  {return raceEth;}
     void updateMedIncome(int increase)  {medIncome += increase;}
     void updateHousingUnits(int increase)  {housingUnits += increase;}
-    void updateHomeOwn(double increase)  {homeOwn += increase;}
-    void updatePersonPerHouse(double increase)  {personPerHouse += increase;}
+    void updateHomeOwn(int increase)  {homeOwn += increase;}
+    void updatePersonPerHouse(int increase)  {personPerHouse += increase;}
     void updateVeterans(int increase)  {veterans += increase;}
-    void updateHighSchoolGrad(double increase)  {highSchoolGrad += increase;}
-    void updateBachelorsDeg(double increase)  {bachelorsDeg += increase;}
-    void updateForeignBorn(double increase)  {foreignBorn += increase;}
+    void updateHighSchoolGrad(int increase)  {highSchoolGrad += increase;}
+    void updateBachelorsDeg(int increase)  {bachelorsDeg += increase;}
+    void updateForeignBorn(int increase)  {foreignBorn += increase;}
 
 private:
     string state;
