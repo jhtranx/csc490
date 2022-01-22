@@ -4,7 +4,7 @@
 #include <memory>
 #include <string>
 #include <iostream>
-#include "demogData.h"
+#include "demogState.h"
 
 /*
   class to represent state data - fairly redundent at this point but will use
@@ -42,18 +42,30 @@ class demogState {
 
   //  friend std::ostream& operator<<(std::ostream &out, const demogData &DD);
 
+    //functions to update demogState when aggregating counties
+    void updatePopulation(int increase)  {totalPopulation2020 += increase;}
+    void updateFemale(double increase)  {female += increase;}
+    // void updateRaceAndEthnicity()  {return raceEth;}
+    void updateMedIncome(int increase)  {medIncome += increase;}
+    void updateHousingUnits(int increase)  {housingUnits += increase;}
+    void updateHomeOwn(double increase)  {homeOwn += increase;}
+    void updatePersonPerHouse(double increase)  {personPerHouse += increase;}
+    void updateVeterans(int increase)  {veterans += increase;}
+    void updateHighSchoolGrad(double increase)  {highSchoolGrad += increase;}
+    void updateBachelorsDeg(double increase)  {bachelorsDeg += increase;}
+    void updateForeignBorn(double increase)  {foreignBorn += increase;}
+
 private:
-    // const string county;
-    const string state;
-    const double popOver65;
-    const double popUnder18;
-    const double popUnder5;
-    const int totalPopulation2020;
-    const double female;
+    string state;
+    double popOver65;
+    double popUnder18;
+    double popUnder5;
+    int totalPopulation2020;
+    double female;
     raceAndEthnicity raceEth;
     int medIncome;
     int housingUnits;
-    double homeOwn; //check if right
+    double homeOwn;
     double personPerHouse;
     int veterans;
     double highSchoolGrad;

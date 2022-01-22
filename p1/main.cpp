@@ -18,8 +18,22 @@ int main() {
 
      //debug print out - uncomment if you want to double check your data
 
+    map <string, demogState> stateMap;
+
     for (const auto &obj : theData) {
+        string stateStr = obj.getState();
+        demogState stateData = stateMap.find(stateStr)
+
+        if (stateData != stateMap.end()) {
+            
+        }
+        else
+
         std::cout << *obj << std::endl;
+
+        
+        
+
     }
 
     theAnswers.createStateData(theData);
