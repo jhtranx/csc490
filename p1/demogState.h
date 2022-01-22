@@ -18,12 +18,12 @@ class demogState {
    //FILL IN
     public:
     demogState(string inS, int in65, int in18,
-        int in5, int totPop20, int f, raceAndEthnicity re, 
+        int in5, int totPop20, int f,
         int mi, int hu, int ho, 
         int pph, int vets, int hsg, int bd, 
         int fb) :
             state(inS), popOver65(in65), popUnder18(in18),
-            popUnder5(in5), totalPopulation2020(totPop20), female(f), raceEth(re), medIncome(mi), housingUnits(hu), homeOwn(ho), 
+            popUnder5(in5), totalPopulation2020(totPop20), female(f), medIncome(mi), housingUnits(hu), homeOwn(ho), 
             personPerHouse(pph), veterans(vets), highSchoolGrad(hsg), bachelorsDeg(bd), 
             foreignBorn(fb) {}
 
@@ -35,7 +35,7 @@ class demogState {
     int getPopUnder5() const {return popUnder5;}
     int getPopulation() const {return totalPopulation2020;}
     int getFemale() const {return female;}
-    raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
+    // raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
     int getMedIncome() const {return medIncome;}
     int getHousingUnits() const {return housingUnits;}
     int getHomeOwn() const {return homeOwn;}
@@ -70,7 +70,7 @@ private:
     int popUnder5;
     int totalPopulation2020;
     int female;
-    raceAndEthnicity raceEth;
+    // raceAndEthnicity raceEth;
     int medIncome;
     int housingUnits;
     int homeOwn;
