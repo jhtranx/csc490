@@ -30,6 +30,9 @@ class demogState {
     // Getter
     // string getCounty() const {return county;}
     string getState() const {return state;}
+    int getPopOver65() const {return popOver65;}
+    int getPopUnder18() const {return popUnder18;}
+    int getPopUnder5() const {return popUnder5;}
     int getPopulation() const {return totalPopulation2020;}
     int getFemale() const {return female;}
     raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
@@ -46,6 +49,9 @@ class demogState {
 
     //functions to update demogState when aggregating counties
     void updatePopulation(int increase)  {totalPopulation2020 += increase;}
+    void updatePopOver65(int increase)  {popOver65 += increase;}
+    void updatePopUnder18(int increase)  {popUnder18 += increase;}
+    void updatePopUnder5(int increase)  {popUnder5 += increase;}
     void updateFemale(int increase)  {female += increase;}
     // void updateRaceAndEthnicity()  {return raceEth;}
     void updateMedIncome(int increase)  {medIncome += increase;}

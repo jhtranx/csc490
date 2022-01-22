@@ -26,6 +26,9 @@ class demogData {
     // Getter
     string getCounty() const {return county;}
     string getState() const {return state;}
+    double getPopOver65() const {return popOver65;}
+    double getPopUnder18() const {return popUnder18;}
+    double getPopUnder5() const {return popUnder5;}
     int getPopulation() const {return totalPopulation2020;}
     double getFemale() const {return female;}
     raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
