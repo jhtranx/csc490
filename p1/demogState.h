@@ -17,11 +17,11 @@ class demogState {
     friend std::ostream& operator<<(std::ostream &out, const demogState &SD);
    //FILL IN
     public:
-    demogState(string inS, double in65, double in18,
-        double in5, int totPop20, double f, raceAndEthnicity re, 
-        float mi, int hu, double ho, 
-        double pph, int vets, double hsg, double bd, 
-        double fb) :
+    demogState(string inS, int in65, int in18,
+        int in5, int totPop20, int f, raceAndEthnicity re, 
+        int mi, int hu, int ho, 
+        int pph, int vets, int hsg, int bd, 
+        int fb) :
             state(inS), popOver65(in65), popUnder18(in18),
             popUnder5(in5), totalPopulation2020(totPop20), female(f), raceEth(re), medIncome(mi), housingUnits(hu), homeOwn(ho), 
             personPerHouse(pph), veterans(vets), highSchoolGrad(hsg), bachelorsDeg(bd), 
@@ -31,16 +31,16 @@ class demogState {
     // string getCounty() const {return county;}
     string getState() const {return state;}
     int getPopulation() const {return totalPopulation2020;}
-    double getFemale() const {return female;}
+    int getFemale() const {return female;}
     raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
-    float getMedIncome() const {return medIncome;}
+    int getMedIncome() const {return medIncome;}
     int getHousingUnits() const {return housingUnits;}
-    double getHomeOwn() const {return homeOwn;}
-    double getPersonPerHouse() const {return personPerHouse ;}
+    int getHomeOwn() const {return homeOwn;}
+    int getPersonPerHouse() const {return personPerHouse ;}
     int getVeterans() const {return veterans;}
-    double getHighSchoolGrad() const {return highSchoolGrad;}
-    double getBachelorsDeg() const {return bachelorsDeg;}
-    double getForeignBorn() const {return foreignBorn;}
+    int getHighSchoolGrad() const {return highSchoolGrad;}
+    int getBachelorsDeg() const {return bachelorsDeg;}
+    int getForeignBorn() const {return foreignBorn;}
 
   //  friend std::ostream& operator<<(std::ostream &out, const demogData &DD);
 
@@ -59,20 +59,20 @@ class demogState {
 
 private:
     string state;
-    double popOver65;
-    double popUnder18;
-    double popUnder5;
+    int popOver65;
+    int popUnder18;
+    int popUnder5;
     int totalPopulation2020;
-    double female;
+    int female;
     raceAndEthnicity raceEth;
     int medIncome;
     int housingUnits;
-    double homeOwn;
-    double personPerHouse;
+    int homeOwn;
+    int personPerHouse;
     int veterans;
-    double highSchoolGrad;
-    double bachelorsDeg;
-    double foreignBorn;
+    int highSchoolGrad;
+    int bachelorsDeg;
+    int foreignBorn;
         
 
 };
