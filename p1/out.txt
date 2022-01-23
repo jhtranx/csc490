@@ -91148,6 +91148,9 @@ total Racial Demographic Count: 7201
 MAPSIZE: 51
 AK TOT POP: 736732
 State Under 5: UT
+TOT COUNTIES IN AK: 29
+TOT COUNTIES IN CA: 58
+
 *** the state that needs the most pre-schools**
 Name of state: UT
 Did you read the lab instructions?

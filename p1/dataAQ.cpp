@@ -32,6 +32,7 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
       int fb = round((obj->getForeignBorn() / 100) * obj->getPopulation());
 
       if (stateMap.find(stateStr) != stateMap.end()) {
+         stateMap.at(stateStr).updateTotCounties(); //updated totCounties
          stateMap.at(stateStr).updatePopOver65(in65);
          stateMap.at(stateStr).updatePopUnder18(in18);
          stateMap.at(stateStr).updatePopUnder5(in5);
@@ -47,7 +48,7 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
          stateMap.at(stateStr).updateForeignBorn(fb);
       }
       else {
-         demogState newState = demogState(stateStr, in65, in18, in5, 
+         demogState newState = demogState(stateStr, 1, in65, in18, in5, 
                                           totPop20, f, mi, hu, ho, 
                                           pph, v, hsg, bd, fb);
          stateMap.insert(pair<string, demogState>(stateStr, newState));

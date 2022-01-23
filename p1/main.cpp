@@ -24,6 +24,9 @@ int main() {
    cout << "MAPSIZE: " << theAnswers.getMap().size() << endl;
    cout << "AK TOT POP: " << theAnswers.getMap().at("AK").getPopulation() << endl; 
    cout << "State Under 5: " << theAnswers.youngestPop() << endl; 
+   cout << "TOT COUNTIES IN AK: " << theAnswers.getMap().at("AK").getTotCounties() << endl;
+   cout << "TOT COUNTIES IN CA: " << theAnswers.getMap().at("CA").getTotCounties() << endl;
+   cout << endl;
 
    //one example of how to print required - ADD OTHERS
    cout << "*** the state that needs the most pre-schools**" << endl;
