@@ -32,6 +32,17 @@ class dataAQ {
       //return the name of the state with the largest population below the poverty line
       string belowPoverty(); 
 
+      //New Queries
+
+      //return the name of the state with the lowest medium income
+      string lowestMedInc();
+      //return the name of the state with the largest percentage of the population who are foreign born
+      string mostForBorn();
+      //return the name of the state with the largest number of people per household
+      string mostPerPerHouse();
+      //return the name of the state with the largest percentage of veterans
+      string mostVeterans();
+
       //getter given a state name return a pointer to demogState data
       shared_ptr<demogState> getStateData(string stateName) { /*fix this*/  return nullptr; }
       

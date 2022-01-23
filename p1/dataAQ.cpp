@@ -152,3 +152,16 @@ string dataAQ::belowPoverty() {
    }
    return maxState; 
 } 
+
+//return the name of the state with the lowest medium income
+string dataAQ::lowestMedInc() {
+   
+}
+//return the name of the state with the largest percentage of the population who are foreign born
+string dataAQ::mostForBorn();
+
+//return the name of the state with the largest number of people per household
+string dataAQ::mostPerPerHouse();
+
+//return the name of the state with the largest percentage of veterans
+string dataAQ::mostVeterans();
