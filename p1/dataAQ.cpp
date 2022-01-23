@@ -137,6 +137,7 @@ string dataAQ::collegeGrads() {
    return maxState; 
 }
 
+//FIX!
 //return the name of the state with the largest population below the poverty line
 string dataAQ::belowPoverty() {
    double maxPop = 0;
@@ -153,15 +154,55 @@ string dataAQ::belowPoverty() {
    return maxState; 
 } 
 
+//New Queries
 //return the name of the state with the lowest medium income
 string dataAQ::lowestMedInc() {
-   
+   double minMedInc = (stateMap.at("CA")).getMedIncome();
+   string minState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currMedInc = currState.getMedIncome();
+      if (currMedInc < minMedInc) {
+         minMedInc = currMedInc;
+         minState = statePair.first;   
+      }     
+   }
+   return minState; 
 }
 //return the name of the state with the largest percentage of the population who are foreign born
-string dataAQ::mostForBorn();
+string dataAQ::mostForBorn() {
+   double maxPop = 0;
+   string maxState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currForBorn = currState.getForeignBorn() / (double)currState.getPopulation();
+      if (currForBorn > maxPop) {
+         maxPop = currForBorn;
+         maxState = statePair.first;   
+      }     
+   }
+   return maxState; 
+}
 
 //return the name of the state with the largest number of people per household
-string dataAQ::mostPerPerHouse();
+string dataAQ::mostPerPerHouse() {
+   return "FIX ME";
+}
 
 //return the name of the state with the largest percentage of veterans
-string dataAQ::mostVeterans();
+string dataAQ::mostVeterans() {
+   double maxPop = 0;
+   string maxState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currVets = currState.getVeterans() / (double)currState.getPopulation();
+      if (currVets > maxPop) {
+         maxPop = currVets;
+         maxState = statePair.first;   
+      }     
+   }
+   return maxState; 
+}

@@ -91152,7 +91152,17 @@ State Under 5: UT
 Name of state: UT
 Did you read the lab instructions?
 *** the state that needs the most high schools**
+Name of state: UT
+Did you read the lab instructions?
 *** the state that needs the most vaccines**
+Name of state: FL
+Did you read the lab instructions?
 *** the state that needs the most help with education**
+Name of state: 
+Did you read the lab instructions?
 *** the state with most college grads**
+Name of state: DC
+Did you read the lab instructions?
 *** the state with largest percent of the population below the poverty line**
+Name of state: WY
+Did you read the lab instructions?

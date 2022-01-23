@@ -16,6 +16,7 @@ class demogState {
    public:
       friend std::ostream& operator<<(std::ostream &out, const demogState &SD);
 
+      //need to add a field for # of counties in state
       demogState(string inS, int in65, int in18,
          int in5, int totPop20, int f,
          int mi, int hu, int ho, 
@@ -51,10 +52,10 @@ class demogState {
       void updatePopUnder5(int increase)  {popUnder5 += increase;}
       void updateFemale(int increase)  {female += increase;}
       // void updateRaceAndEthnicity()  {return raceEth;}
-      void updateMedIncome(int increase)  {medIncome += increase;}
+      void updateMedIncome(int increase)  {medIncome += increase;} //FIX (need to divide by county number to find avg of state)
       void updateHousingUnits(int increase)  {housingUnits += increase;}
       void updateHomeOwn(int increase)  {homeOwn += increase;}
-      void updatePersonPerHouse(int increase)  {personPerHouse += increase;}
+      void updatePersonPerHouse(int increase)  {personPerHouse += increase;} //FIX?
       void updateVeterans(int increase)  {veterans += increase;}
       void updateHighSchoolGrad(int increase)  {highSchoolGrad += increase;}
       void updateBachelorsDeg(int increase)  {bachelorsDeg += increase;}
