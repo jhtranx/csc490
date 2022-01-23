@@ -10,17 +10,17 @@ int main() {
 
 	dataAQ theAnswers;
 
-    //read in a csv file and create a vector of objects representing each counties data
-    std::vector<shared_ptr<demogData>> theData = read_csv(
-            "county_demographics.csv", DEMOG);
+   //read in a csv file and create a vector of objects representing each counties data
+   std::vector<shared_ptr<demogData>> theData = 
+   read_csv("county_demographics.csv", DEMOG);
 
-    theAnswers.createStateData(theData);
+   theAnswers.createStateData(theData);
 
-    string youngestPop = theAnswers.youngestPop();
-  	ASSERT_EQUALS("UT",youngestPop);
+   string youngestPop = theAnswers.youngestPop();
+   ASSERT_EQUALS("UT",youngestPop);
 
-  	string bachelors = theAnswers.collegeGrads();
-  	ASSERT_EQUALS("DC",bachelors);
+   string bachelors = theAnswers.collegeGrads();
+   ASSERT_EQUALS("DC",bachelors);
 
   return 0;
 }

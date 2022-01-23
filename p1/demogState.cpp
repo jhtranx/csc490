@@ -10,5 +10,4 @@
 /* print state data - as aggregate of all the county data */
 std::ostream& operator<<(std::ostream &out, const demogState&SD) {
     
-
 }
