@@ -38,6 +38,8 @@ class dataAQ {
       //must implement output per aggregate data
       friend std::ostream& operator<<(std::ostream &out, const dataAQ &allStateData);
 
+      map <string, demogState> getMap() const {return stateMap;}
+
    //core data private for dataAQ
    private:
       //Decide how to aggregate the data into a map ADD here
