@@ -17,39 +17,69 @@ int main() {
 
    //read in a csv file and create a vector of objects representing each counties data
    std::vector<shared_ptr<demogData>> theData = read_csv(
-         "county_demographics.csv", DEMOG);
+         "county_demographics2014.csv", DEMOG);
 
    //debug print out - uncomment if you want to double check your data
    theAnswers.createStateData(theData);
    cout << "MAPSIZE: " << theAnswers.getMap().size() << endl;
    cout << "AK TOT POP: " << theAnswers.getMap().at("AK").getPopulation() << endl; 
+   cout << "State Under 5: " << theAnswers.youngestPop() << endl; 
 
    //one example of how to print required - ADD OTHERS
    cout << "*** the state that needs the most pre-schools**" << endl;
-   string needPK = theAnswers.youngestPop();
-   cout << "Name of state: " << needPK << endl;
-   if (theAnswers.getStateData(needPK) != nullptr){
-      cout << *(theAnswers.getStateData(needPK)) << endl;
+   string query = theAnswers.youngestPop();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
    } else{
       cout << "Did you read the lab instructions?" << endl;
    }
 
    //NOW fill in these too
    cout << "*** the state that needs the most high schools**" << endl;
-   //FILL IN 
+   query = theAnswers.teenPop();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
+   } else{
+      cout << "Did you read the lab instructions?" << endl;
+   } 
 
    cout << "*** the state that needs the most vaccines**" << endl;
-   //FILL IN 
+   query = theAnswers.wisePop();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
+   } else{
+      cout << "Did you read the lab instructions?" << endl;
+   }
 
    cout << "*** the state that needs the most help with education**" << endl;
-   //FILL IN 
+   query = theAnswers.underServeHS();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
+   } else{
+      cout << "Did you read the lab instructions?" << endl;
+   }
 
    cout << "*** the state with most college grads**" << endl;
-   //FILL IN 
+   query = theAnswers.collegeGrads();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
+   } else{
+      cout << "Did you read the lab instructions?" << endl;
+   }
 
    cout << "*** the state with largest percent of the population below the poverty line**" << endl;
-   //FILL IN
-
+   query = theAnswers.belowPoverty();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
+   } else{
+      cout << "Did you read the lab instructions?" << endl;
+   }
    return 0;
 }
 

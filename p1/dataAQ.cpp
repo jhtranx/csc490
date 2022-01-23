@@ -4,6 +4,7 @@
 #include <algorithm>
 #include "dataAQ.h"
 #include "demogData.h"
+#include "demogState.h"
 
 
 dataAQ::dataAQ() {}
@@ -57,36 +58,97 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
 
 //return the name of the state with the largest population under age 5
 string dataAQ::youngestPop() {
-  //FILL in
-  return "fix me"; 
+   double maxPop = 0;
+   string maxState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currUnder5 = currState.getPopUnder5() / (double)currState.getPopulation();
+      if (currUnder5 > maxPop) {
+         maxPop = currUnder5;
+         maxState = statePair.first;   
+      }     
+   }
+   return maxState; 
 } 
 
 //return the name of the state with the largest population under age 18
 string dataAQ::teenPop()  {
-  //FILL in
-  return "fix me"; 
+  double maxPop = 0;
+   string maxState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currUnder18 = currState.getPopUnder18() / (double)currState.getPopulation();
+      if (currUnder18 > maxPop) {
+         maxPop = currUnder18;
+         maxState = statePair.first;   
+      }     
+   }
+   return maxState; 
 }
 
 //return the name of the state with the largest population over age 65
 string dataAQ::wisePop()  {
-  //FILL in
-  return "fix me"; 
+   double maxPop = 0;
+      string maxState;
+
+      for (auto& statePair: stateMap) {
+         demogState currState = statePair.second;
+         double currOver65 = currState.getPopOver65() / (double)currState.getPopulation();
+         if (currOver65 > maxPop) {
+            maxPop = currOver65;
+            maxState = statePair.first;   
+         }     
+      }
+      return maxState; 
 }
 
 //return the name of the state with the largest population who did not receive high school diploma
 string dataAQ::underServeHS() {
-  //FILL in
-  return "fix me"; 
+   double minPop = (stateMap.at("CA")).getHighSchoolGrad() / 
+                     (double)(stateMap.at("CA")).getPopulation();
+   string maxState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currHs = currState.getHighSchoolGrad() / (double)currState.getPopulation();
+      if (currHs < minPop) {
+         minPop = currHs;
+         maxState = statePair.first;   
+      }     
+   }
+   return maxState; 
 } 
 
 //return the name of the state with the largest population who did receive bachelors degree and up
 string dataAQ::collegeGrads() {
-  //FILL in
-  return "fix me"; 
+   double maxPop = 0;
+   string maxState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currCollege = currState.getBachelorsDeg() / (double)currState.getPopulation();
+      if (currCollege > maxPop) {
+         maxPop = currCollege;
+         maxState = statePair.first;   
+      }     
+   }
+   return maxState; 
 }
 
 //return the name of the state with the largest population below the poverty line
 string dataAQ::belowPoverty() {
-  //FILL in
-  return "fix me"; 
+   double maxPop = 0;
+   string maxState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currHs = currState.getHighSchoolGrad() / (double)currState.getPopulation();
+      if (currHs > maxPop) {
+         maxPop = currHs;
+         maxState = statePair.first;   
+      }     
+   }
+   return maxState; 
 } 
