@@ -80,6 +80,46 @@ int main() {
    } else{
       cout << "Did you read the lab instructions?" << endl;
    }
+
+   //New Queries
+   cout << "*** the state with lowest medium income**" << endl;
+   query = theAnswers.lowestMedInc();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
+   } else{
+      cout << "Did you read the lab instructions?" << endl;
+   }
+   return 0;
+
+   cout << "*** the state with largest percentage of the population who are foreign born**" << endl;
+   query = theAnswers.mostForBorn();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
+   } else{
+      cout << "Did you read the lab instructions?" << endl;
+   }
+   return 0;
+
+   cout << "*** the state with largest number of people per household**" << endl;
+   query = theAnswers.mostPerPerHouse();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
+   } else{
+      cout << "Did you read the lab instructions?" << endl;
+   }
+   return 0;
+
+   cout << "*** the state with largest percentage of veterans**" << endl;
+   query = theAnswers.mostVeterans();
+   cout << "Name of state: " << query << endl;
+   if (theAnswers.getStateData(query) != nullptr){
+      cout << *(theAnswers.getStateData(query)) << endl;
+   } else{
+      cout << "Did you read the lab instructions?" << endl;
+   }
    return 0;
 }
 

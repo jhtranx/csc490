@@ -155,6 +155,8 @@ string dataAQ::belowPoverty() {
 } 
 
 //New Queries
+
+//FIX!
 //return the name of the state with the lowest medium income
 string dataAQ::lowestMedInc() {
    double minMedInc = (stateMap.at("CA")).getMedIncome();
@@ -170,6 +172,7 @@ string dataAQ::lowestMedInc() {
    }
    return minState; 
 }
+
 //return the name of the state with the largest percentage of the population who are foreign born
 string dataAQ::mostForBorn() {
    double maxPop = 0;
@@ -186,6 +189,7 @@ string dataAQ::mostForBorn() {
    return maxState; 
 }
 
+//FIX!
 //return the name of the state with the largest number of people per household
 string dataAQ::mostPerPerHouse() {
    return "FIX ME";
