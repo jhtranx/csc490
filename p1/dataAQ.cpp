@@ -25,7 +25,7 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
       int mi = obj->getMedIncome();
       int hu = obj->getHousingUnits();
       int ho = round((obj->getHomeOwn() / 100) * obj->getPopulation());
-      int pph = round((obj->getPersonPerHouse() / 100) * obj->getHousingUnits());
+      double pph = obj->getPersonPerHouse();
       int v = obj->getVeterans();
       int hsg = round((obj->getHighSchoolGrad() / 100) * obj->getPopulation());
       int bd = round((obj->getBachelorsDeg() / 100) * obj->getPopulation());
@@ -107,9 +107,9 @@ string dataAQ::wisePop()  {
 
 //return the name of the state with the largest population who did not receive high school diploma
 string dataAQ::underServeHS() {
-   double minPop = (stateMap.at("CA")).getHighSchoolGrad() / 
-                     (double)(stateMap.at("CA")).getPopulation();
-   string maxState;
+   double minPop = (stateMap.at("UT")).getHighSchoolGrad() / 
+                     (double)(stateMap.at("UT")).getPopulation();
+   string maxState = "UT";
 
    for (auto& statePair: stateMap) {
       demogState currState = statePair.second;

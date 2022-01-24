@@ -44,7 +44,9 @@ class dataAQ {
       string mostVeterans();
 
       //getter given a state name return a pointer to demogState data
-      shared_ptr<demogState> getStateData(string stateName) { /*fix this*/  return nullptr; }
+      shared_ptr<demogState> getStateData(string stateName) {
+         return make_shared<demogState>(stateMap.at(stateName));
+      }
       
       //must implement output per aggregate data
       friend std::ostream& operator<<(std::ostream &out, const dataAQ &allStateData);

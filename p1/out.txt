@@ -91150,27 +91150,35 @@ AK TOT POP: 736732
 STATE UNDER 5: UT
 TOT COUNTIES IN AK: 29
 TOT COUNTIES IN CA: 58
-AK MED INCOME: 62559 EXPECTED: 62611.34483
-CA MED INCOME: 55825 EXPECTED: 55558.01724
+AK MED INCOME: 62611 EXPECTED: 62611.34483
+CA MED INCOME: 55558 EXPECTED: 55558.01724
+AK PPH: 2.79621 EXPECTED: 2.796
 
 *** the state that needs the most pre-schools**
 Name of state: UT
-Did you read the lab instructions?
+State Info: UT
+
 *** the state that needs the most high schools**
 Name of state: UT
-Did you read the lab instructions?
+State Info: UT
+
 *** the state that needs the most vaccines**
 Name of state: FL
-Did you read the lab instructions?
+State Info: FL
+
 *** the state that needs the most help with education**
-Name of state: 
-Did you read the lab instructions?
+Name of state: CA
+State Info: CA
+
 *** the state with most college grads**
 Name of state: DC
-Did you read the lab instructions?
+State Info: DC
+
 *** the state with largest percent of the population below the poverty line**
 Name of state: WY
-Did you read the lab instructions?
+State Info: WY
+
 *** the state with lowest medium income**
 Name of state: MS
-Did you read the lab instructions?
+State Info: MS
+

@@ -20,7 +20,7 @@ class demogState {
       demogState(string inS, int tc, int in65, int in18,
          int in5, int totPop20, int f,
          int mi, int hu, int ho, 
-         int pph, int vets, int hsg, int bd, 
+         double pph, int vets, int hsg, int bd, 
          int fb) :
                state(inS), totCounties(tc), popOver65(in65), popUnder18(in18),
                popUnder5(in5), totalPopulation2020(totPop20), female(f), medIncome(mi), housingUnits(hu), homeOwn(ho), 
@@ -40,7 +40,7 @@ class demogState {
       int getMedIncome() const {return medIncome;}
       int getHousingUnits() const {return housingUnits;}
       int getHomeOwn() const {return homeOwn;}
-      int getPersonPerHouse() const {return personPerHouse ;}
+      double getPersonPerHouse() const {return personPerHouse ;}
       int getVeterans() const {return veterans;}
       int getHighSchoolGrad() const {return highSchoolGrad;}
       int getBachelorsDeg() const {return bachelorsDeg;}
@@ -55,18 +55,27 @@ class demogState {
       void updateFemale(int increase)  {female += increase;}
       // void updateRaceAndEthnicity()  {return raceEth;}
 
-      //FIX (need to divide by county number to find avg of state)
-      // averageNew = averageOld + (valueNew−averageOld)/sizeNew
-      void updateMedIncome(int increase)  {
-         double currMedIncome = medIncome;
-         double currTotCounties = totCounties;
+      void updateMedIncome(double increase)  {
+         double oldMediumIncome = (double) medIncome;
+         double oldTotalCounties = (double) totCounties - 1;
+         double newTotalCounties = (double) totCounties;
          
-         double newMedIncome = currMedIncome + ((increase - currMedIncome)/(currTotCounties + 1));
+         double oldTotalMediumIncome = oldMediumIncome * oldTotalCounties;
+         double newMedIncome = (increase + oldTotalMediumIncome) / newTotalCounties;
          medIncome = newMedIncome;
       } 
       void updateHousingUnits(int increase)  {housingUnits += increase;}
       void updateHomeOwn(int increase)  {homeOwn += increase;}
-      void updatePersonPerHouse(int increase)  {personPerHouse += increase;} //FIX?
+
+      void updatePersonPerHouse(double increase)  {
+         double oldTotalCounties = (double) totCounties - 1;
+         double newTotalCounties = (double) totCounties;
+         double oldTotalPersonPerHouse = personPerHouse * oldTotalCounties;
+
+         double newPersonPerHouse = (increase + oldTotalPersonPerHouse) / newTotalCounties;
+         personPerHouse = newPersonPerHouse;
+      } 
+
       void updateVeterans(int increase)  {veterans += increase;}
       void updateHighSchoolGrad(int increase)  {highSchoolGrad += increase;}
       void updateBachelorsDeg(int increase)  {bachelorsDeg += increase;}
@@ -81,10 +90,10 @@ class demogState {
       int totalPopulation2020;
       int female;
       // raceAndEthnicity raceEth;
-      int medIncome;
+      double medIncome;
       int housingUnits;
       int homeOwn;
-      int personPerHouse;
+      double personPerHouse;
       int veterans;
       int highSchoolGrad;
       int bachelorsDeg;
