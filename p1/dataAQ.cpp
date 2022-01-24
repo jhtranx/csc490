@@ -157,7 +157,6 @@ string dataAQ::belowPoverty() {
 
 //New Queries
 
-//FIX!
 //return the name of the state with the lowest medium income
 string dataAQ::lowestMedInc() {
    double minMedInc = (stateMap.at("CA")).getMedIncome();

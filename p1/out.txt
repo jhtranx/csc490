@@ -91171,6 +91171,6 @@ Did you read the lab instructions?
 *** the state with largest percent of the population below the poverty line**
 Name of state: WY
 Did you read the lab instructions?
-*** the state with lowest medium income**
-Name of state: MS
+*** the state with largest percentage of the population who are foreign born**
+Name of state: CA
 Did you read the lab instructions?
