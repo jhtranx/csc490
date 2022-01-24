@@ -16,7 +16,6 @@ class demogState {
    public:
       friend std::ostream& operator<<(std::ostream &out, const demogState &SD);
 
-      //need to add a field for # of counties in state
       demogState(string inS, int tc, int in65, int in18,
          int in5, int totPop20, int f,
          int mi, int hu, int ho, 
@@ -28,9 +27,8 @@ class demogState {
                foreignBorn(fb) {}
 
       // Getter
-      // string getCounty() const {return county;}
       string getState() const {return state;}
-      int getTotCounties() const {return totCounties;} //count of total counties
+      int getTotCounties() const {return totCounties;}
       int getPopOver65() const {return popOver65;}
       int getPopUnder18() const {return popUnder18;}
       int getPopUnder5() const {return popUnder5;}

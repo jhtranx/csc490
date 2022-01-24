@@ -14,8 +14,6 @@ std::ostream& operator<<(std::ostream &out, const demogState&SD) {
    out << "Number of Counties: " << SD.getTotCounties() << endl;
    out << "Population info:" << endl;
    out << "(% over 65): " << (double)SD.getPopOver65()/SD.getPopulation() * 100;
-   //SD.getPopOver65()/SD.getPopulation()
-   //and total: SD.getPopOver65()
    out <<  " and total: " << SD.getPopOver65() << endl;
    out << "(% under 18): " << (double)SD.getPopUnder18()/SD.getPopulation() * 100;
    out <<  " and total: " << SD.getPopUnder18() << endl;
