@@ -54,7 +54,14 @@ class demogState {
       void updatePopUnder5(int increase)  {popUnder5 += increase;}
       void updateFemale(int increase)  {female += increase;}
       // void updateRaceAndEthnicity()  {return raceEth;}
-      void updateMedIncome(int increase)  {medIncome += increase;} //FIX (need to divide by county number to find avg of state)
+
+      //FIX (need to divide by county number to find avg of state)
+      // averageNew = averageOld + (valueNew−averageOld)/sizeNew
+      void updateMedIncome(int increase)  {
+         double newMedIncome;
+         newMedIncome = medIncome + ((increase - medIncome)/(totCounties + 1));
+         medIncome = newMedIncome;
+      } 
       void updateHousingUnits(int increase)  {housingUnits += increase;}
       void updateHomeOwn(int increase)  {homeOwn += increase;}
       void updatePersonPerHouse(int increase)  {personPerHouse += increase;} //FIX?
