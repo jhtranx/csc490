@@ -96,7 +96,6 @@ int main() {
    } else{
       cout << "Did you read the lab instructions?" << endl;
    }
-   return 0;
 
    cout << "*** the state with highest medium income**" << endl;
    query = theAnswers.highestMedInc();
@@ -106,7 +105,6 @@ int main() {
    } else{
       cout << "Did you read the lab instructions?" << endl;
    }
-   return 0;
 
    cout << "*** the state with largest percentage of the population who are foreign born**" << endl;
    query = theAnswers.mostForBorn();
@@ -116,8 +114,7 @@ int main() {
    } else{
       cout << "Did you read the lab instructions?" << endl;
    }
-   return 0;
-
+   
    cout << "*** the state with largest number of people per household**" << endl;
    query = theAnswers.mostPerPerHouse();
    cout << "Name of state: " << query << endl;
@@ -126,7 +123,6 @@ int main() {
    } else{
       cout << "Did you read the lab instructions?" << endl;
    }
-   return 0;
 
    cout << "*** the state with largest percentage of veterans**" << endl;
    query = theAnswers.mostVeterans();

@@ -91280,3 +91280,87 @@ County housing/economy info:
 (medIncome): 34599
 Total population: 2994079
 
+*** the state with highest medium income**
+Name of state: NJ
+State Info: NJ
+Number of Counties: 21
+Population info:
+(% over 65): 14.6954 and total: 1313503
+(% under 18): 22.5208 and total: 2012950
+(% under 5): 5.95369 and total: 532151
+(% female): 51.204 and total: 4576706
+(% foreign born): 21.2841 and total: 1902414
+(% veterans): 4.89644 and total: 437652
+Education info:
+(% Bachelor or more): 35.758 and total: 3196117
+(% high school or more): 88.0608 and total: 7871031
+County housing/economy info:
+(avg. persons per house): 2.68619 and total: 9.64769e+06
+(% home ownership): 65.3895 and total: 5844628
+(number housing units): 3591588
+(medIncome): 72386
+Total population: 8938175
+
+*** the state with largest percentage of the population who are foreign born**
+Name of state: CA
+State Info: CA
+Number of Counties: 58
+Population info:
+(% over 65): 12.8677 and total: 4993000
+(% under 18): 23.5916 and total: 9154119
+(% under 5): 6.50098 and total: 2522542
+(% female): 50.3308 and total: 19529604
+(% foreign born): 27.0421 and total: 10492996
+(% veterans): 4.87994 and total: 1893539
+Education info:
+(% Bachelor or more): 30.3233 and total: 11766193
+(% high school or more): 81.0523 and total: 31450306
+County housing/economy info:
+(avg. persons per house): 2.76086 and total: 3.83781e+07
+(% home ownership): 55.3797 and total: 21488693
+(number housing units): 13900766
+(medIncome): 55558
+Total population: 38802500
+
+*** the state with largest number of people per household**
+Name of state: WY
+State Info: WY
+Number of Counties: 23
+Population info:
+(% over 65): 13.971 and total: 81612
+(% under 18): 23.6702 and total: 138270
+(% under 5): 6.52466 and total: 38114
+(% female): 48.989 and total: 286171
+(% foreign born): 3.25788 and total: 19031
+(% veterans): 8.70525 and total: 50852
+Education info:
+(% Bachelor or more): 24.8505 and total: 145165
+(% high school or more): 92.371 and total: 539588
+County housing/economy info:
+(avg. persons per house): 2.47174 and total: 662975
+(% home ownership): 70.1755 and total: 409932
+(number housing units): 268222
+(medIncome): 55930
+Total population: 584153
+
+*** the state with largest percentage of veterans**
+Name of state: AK
+State Info: AK
+Number of Counties: 29
+Population info:
+(% over 65): 9.43912 and total: 69541
+(% under 18): 25.3156 and total: 186508
+(% under 5): 7.44599 and total: 54857
+(% female): 47.4232 and total: 349382
+(% foreign born): 6.98721 and total: 51477
+(% veterans): 9.6377 and total: 71004
+Education info:
+(% Bachelor or more): 27.2907 and total: 201059
+(% high school or more): 91.5079 and total: 674168
+County housing/economy info:
+(avg. persons per house): 2.79621 and total: 862862
+(% home ownership): 63.6886 and total: 469214
+(number housing units): 308583
+(medIncome): 62611
+Total population: 736732
+
