@@ -26,8 +26,8 @@ int main() {
    cout << "STATE UNDER 5: " << theAnswers.youngestPop() << endl; 
    cout << "TOT COUNTIES IN AK: " << theAnswers.getMap().at("AK").getTotCounties() << endl;
    cout << "TOT COUNTIES IN CA: " << theAnswers.getMap().at("CA").getTotCounties() << endl;
-   cout << "AK MED INCOME: " << theAnswers.getMap().at("AK").getMedIncome() << endl;
-   cout << "CA MED INCOME: " << theAnswers.getMap().at("CA").getMedIncome() << endl;
+   cout << "AK MED INCOME: " << theAnswers.getMap().at("AK").getMedIncome() << " EXPECTED: 62611.34483" << endl;
+   cout << "CA MED INCOME: " << theAnswers.getMap().at("CA").getMedIncome() << " EXPECTED: 55558.01724" << endl;
    cout << endl;
 
    //one example of how to print required - ADD OTHERS

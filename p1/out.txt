@@ -91150,8 +91150,8 @@ AK TOT POP: 736732
 STATE UNDER 5: UT
 TOT COUNTIES IN AK: 29
 TOT COUNTIES IN CA: 58
-AK MED INCOME: 62559
-CA MED INCOME: 55825
+AK MED INCOME: 62559 EXPECTED: 62611.34483
+CA MED INCOME: 55825 EXPECTED: 55558.01724
 
 *** the state that needs the most pre-schools**
 Name of state: UT
@@ -91171,6 +91171,6 @@ Did you read the lab instructions?
 *** the state with largest percent of the population below the poverty line**
 Name of state: WY
 Did you read the lab instructions?
-*** the state with largest percentage of the population who are foreign born**
-Name of state: CA
+*** the state with lowest medium income**
+Name of state: MS
 Did you read the lab instructions?
