@@ -58,8 +58,10 @@ class demogState {
       //FIX (need to divide by county number to find avg of state)
       // averageNew = averageOld + (valueNew−averageOld)/sizeNew
       void updateMedIncome(int increase)  {
-         double newMedIncome;
-         newMedIncome = medIncome + ((increase - medIncome)/(totCounties + 1));
+         double currMedIncome = medIncome;
+         double currTotCounties = totCounties;
+         
+         double newMedIncome = currMedIncome + ((increase - currMedIncome)/(currTotCounties + 1));
          medIncome = newMedIncome;
       } 
       void updateHousingUnits(int increase)  {housingUnits += increase;}

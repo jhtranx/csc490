@@ -91147,9 +91147,11 @@ total Racial Demographic Count: 7201
 
 MAPSIZE: 51
 AK TOT POP: 736732
-State Under 5: UT
+STATE UNDER 5: UT
 TOT COUNTIES IN AK: 29
 TOT COUNTIES IN CA: 58
+AK MED INCOME: 62559
+CA MED INCOME: 55825
 
 *** the state that needs the most pre-schools**
 Name of state: UT
@@ -91170,5 +91172,5 @@ Did you read the lab instructions?
 Name of state: WY
 Did you read the lab instructions?
 *** the state with lowest medium income**
-Name of state: DC
+Name of state: MS
 Did you read the lab instructions?
