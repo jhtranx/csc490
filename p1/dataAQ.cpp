@@ -140,20 +140,20 @@ string dataAQ::collegeGrads() {
 
 //FIX!
 //return the name of the state with the largest population below the poverty line
-string dataAQ::belowPoverty() {
-   double maxPop = 0;
-   string maxState;
+// string dataAQ::belowPoverty() {
+//    double maxPop = 0;
+//    string maxState;
 
-   for (auto& statePair: stateMap) {
-      demogState currState = statePair.second;
-      double currHs = currState.getHighSchoolGrad() / (double)currState.getPopulation();
-      if (currHs > maxPop) {
-         maxPop = currHs;
-         maxState = statePair.first;   
-      }     
-   }
-   return maxState; 
-} 
+//    for (auto& statePair: stateMap) {
+//       demogState currState = statePair.second;
+//       double currHs = currState.getHighSchoolGrad() / (double)currState.getPopulation();
+//       if (currHs > maxPop) {
+//          maxPop = currHs;
+//          maxState = statePair.first;   
+//       }     
+//    }
+//    return maxState; 
+// } 
 
 //New Queries
 
@@ -171,6 +171,22 @@ string dataAQ::lowestMedInc() {
       }     
    }
    return minState; 
+}
+
+//return the name of the state with the highest medium income
+string dataAQ::highestMedInc() {
+   double maxMedInc = (stateMap.at("AK")).getMedIncome();
+   string maxState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currMedInc = currState.getMedIncome();
+      if (currMedInc > maxMedInc) {
+         maxMedInc = currMedInc;
+         maxState = statePair.first;   
+      }     
+   }
+   return maxState; 
 }
 
 //return the name of the state with the largest percentage of the population who are foreign born
@@ -192,7 +208,18 @@ string dataAQ::mostForBorn() {
 //FIX!
 //return the name of the state with the largest number of people per household
 string dataAQ::mostPerPerHouse() {
-   return "FIX ME";
+   double maxPop = 0;
+   string maxState;
+
+   for (auto& statePair: stateMap) {
+      demogState currState = statePair.second;
+      double currPPH = currState.getPersonPerHouse() / (double)currState.getPopulation();
+      if (currPPH > maxPop) {
+         maxPop = currPPH;
+         maxState = statePair.first;   
+      }     
+   }
+   return maxState; 
 }
 
 //return the name of the state with the largest percentage of veterans

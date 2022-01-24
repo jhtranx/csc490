@@ -36,6 +36,8 @@ class dataAQ {
 
       //return the name of the state with the lowest medium income
       string lowestMedInc();
+      //return the name of the state with the highest medium income
+      string highestMedInc();
       //return the name of the state with the largest percentage of the population who are foreign born
       string mostForBorn();
       //return the name of the state with the largest number of people per household

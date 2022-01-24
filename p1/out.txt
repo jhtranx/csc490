@@ -91157,28 +91157,126 @@ AK PPH: 2.79621 EXPECTED: 2.796
 *** the state that needs the most pre-schools**
 Name of state: UT
 State Info: UT
+Number of Counties: 29
+Population info:
+(% over 65): 10.0291 and total: 295146
+(% under 18): 30.7122 and total: 903830
+(% under 5): 8.57582 and total: 252378
+(% female): 49.6999 and total: 1462619
+(% foreign born): 8.23259 and total: 242277
+(% veterans): 4.88535 and total: 143771
+Education info:
+(% Bachelor or more): 30.5442 and total: 898886
+(% high school or more): 91.0126 and total: 2678412
+County housing/economy info:
+(avg. persons per house): 2.99103 and total: 3.05844e+06
+(% home ownership): 70.1157 and total: 2063435
+(number housing units): 1022537
+(medIncome): 53591
+Total population: 2942902
 
 *** the state that needs the most high schools**
 Name of state: UT
 State Info: UT
+Number of Counties: 29
+Population info:
+(% over 65): 10.0291 and total: 295146
+(% under 18): 30.7122 and total: 903830
+(% under 5): 8.57582 and total: 252378
+(% female): 49.6999 and total: 1462619
+(% foreign born): 8.23259 and total: 242277
+(% veterans): 4.88535 and total: 143771
+Education info:
+(% Bachelor or more): 30.5442 and total: 898886
+(% high school or more): 91.0126 and total: 2678412
+County housing/economy info:
+(avg. persons per house): 2.99103 and total: 3.05844e+06
+(% home ownership): 70.1157 and total: 2063435
+(number housing units): 1022537
+(medIncome): 53591
+Total population: 2942902
 
 *** the state that needs the most vaccines**
 Name of state: FL
 State Info: FL
+Number of Counties: 67
+Population info:
+(% over 65): 19.0533 and total: 3790325
+(% under 18): 20.376 and total: 4053452
+(% under 5): 5.44229 and total: 1082651
+(% female): 51.1161 and total: 10168672
+(% foreign born): 19.437 and total: 3866660
+(% veterans): 7.88912 and total: 1569406
+Education info:
+(% Bachelor or more): 26.5428 and total: 5280243
+(% high school or more): 86.0927 and total: 17126678
+County housing/economy info:
+(avg. persons per house): 2.59881 and total: 2.37641e+07
+(% home ownership): 66.7566 and total: 13280088
+(number housing units): 9144250
+(medIncome): 43715
+Total population: 19893297
 
 *** the state that needs the most help with education**
 Name of state: CA
 State Info: CA
+Number of Counties: 58
+Population info:
+(% over 65): 12.8677 and total: 4993000
+(% under 18): 23.5916 and total: 9154119
+(% under 5): 6.50098 and total: 2522542
+(% female): 50.3308 and total: 19529604
+(% foreign born): 27.0421 and total: 10492996
+(% veterans): 4.87994 and total: 1893539
+Education info:
+(% Bachelor or more): 30.3233 and total: 11766193
+(% high school or more): 81.0523 and total: 31450306
+County housing/economy info:
+(avg. persons per house): 2.76086 and total: 3.83781e+07
+(% home ownership): 55.3797 and total: 21488693
+(number housing units): 13900766
+(medIncome): 55558
+Total population: 38802500
 
 *** the state with most college grads**
 Name of state: DC
 State Info: DC
-
-*** the state with largest percent of the population below the poverty line**
-Name of state: WY
-State Info: WY
+Number of Counties: 1
+Population info:
+(% over 65): 11.3 and total: 74455
+(% under 18): 17.5 and total: 115306
+(% under 5): 6.49999 and total: 42828
+(% female): 52.6 and total: 346578
+(% foreign born): 13.8 and total: 90927
+(% veterans): 4.63201 and total: 30520
+Education info:
+(% Bachelor or more): 52.4 and total: 345260
+(% high school or more): 88.3999 and total: 582461
+County housing/economy info:
+(avg. persons per house): 2.2 and total: 673583
+(% home ownership): 42.1 and total: 277394
+(number housing units): 306174
+(medIncome): 65830
+Total population: 658893
 
 *** the state with lowest medium income**
 Name of state: MS
 State Info: MS
+Number of Counties: 82
+Population info:
+(% over 65): 14.3069 and total: 428361
+(% under 18): 24.4174 and total: 731075
+(% under 5): 6.47802 and total: 193957
+(% female): 51.4179 and total: 1539493
+(% foreign born): 2.26076 and total: 67689
+(% veterans): 6.70483 and total: 200748
+Education info:
+(% Bachelor or more): 20.4317 and total: 611741
+(% high school or more): 81.6157 and total: 2443639
+County housing/economy info:
+(avg. persons per house): 2.64183 and total: 3.42043e+06
+(% home ownership): 69.3573 and total: 2076612
+(number housing units): 1294721
+(medIncome): 34599
+Total population: 2994079
 

@@ -78,18 +78,28 @@ int main() {
       cout << "Did you read the lab instructions?" << endl;
    }
 
-   cout << "*** the state with largest percent of the population below the poverty line**" << endl;
-   query = theAnswers.belowPoverty();
+   // cout << "*** the state with largest percent of the population below the poverty line**" << endl;
+   // query = theAnswers.belowPoverty();
+   // cout << "Name of state: " << query << endl;
+   // if (theAnswers.getStateData(query) != nullptr){
+   //    cout << *(theAnswers.getStateData(query)) << endl;
+   // } else{
+   //    cout << "Did you read the lab instructions?" << endl;
+   // }
+
+   //New Queries
+   cout << "*** the state with lowest medium income**" << endl;
+   query = theAnswers.lowestMedInc();
    cout << "Name of state: " << query << endl;
    if (theAnswers.getStateData(query) != nullptr){
       cout << *(theAnswers.getStateData(query)) << endl;
    } else{
       cout << "Did you read the lab instructions?" << endl;
    }
+   return 0;
 
-   //New Queries
-   cout << "*** the state with lowest medium income**" << endl;
-   query = theAnswers.lowestMedInc();
+   cout << "*** the state with highest medium income**" << endl;
+   query = theAnswers.highestMedInc();
    cout << "Name of state: " << query << endl;
    if (theAnswers.getStateData(query) != nullptr){
       cout << *(theAnswers.getStateData(query)) << endl;
