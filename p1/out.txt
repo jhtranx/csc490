@@ -91145,15 +91145,6 @@ total Racial Demographic Count: 7201
 (% Bachelor or more): 17.2 and total: 1239
 (% high school or more): 90.2 and total: 6495
 
-MAPSIZE: 51
-AK TOT POP: 736732
-STATE UNDER 5: UT
-TOT COUNTIES IN AK: 29
-TOT COUNTIES IN CA: 58
-AK MED INCOME: 62611 EXPECTED: 62611.34483
-CA MED INCOME: 55558 EXPECTED: 55558.01724
-AK PPH: 2.79621 EXPECTED: 2.796
-
 *** the state that needs the most pre-schools**
 Name of state: UT
 State Info: UT

@@ -138,23 +138,6 @@ string dataAQ::collegeGrads() {
    return maxState; 
 }
 
-//FIX!
-//return the name of the state with the largest population below the poverty line
-// string dataAQ::belowPoverty() {
-//    double maxPop = 0;
-//    string maxState;
-
-//    for (auto& statePair: stateMap) {
-//       demogState currState = statePair.second;
-//       double currHs = currState.getHighSchoolGrad() / (double)currState.getPopulation();
-//       if (currHs > maxPop) {
-//          maxPop = currHs;
-//          maxState = statePair.first;   
-//       }     
-//    }
-//    return maxState; 
-// } 
-
 //New Queries
 
 //return the name of the state with the lowest medium income
@@ -205,7 +188,6 @@ string dataAQ::mostForBorn() {
    return maxState; 
 }
 
-//FIX!
 //return the name of the state with the largest number of people per household
 string dataAQ::mostPerPerHouse() {
    double maxPop = 0;

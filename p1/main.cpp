@@ -21,15 +21,6 @@ int main() {
 
    //debug print out - uncomment if you want to double check your data
    theAnswers.createStateData(theData);
-   cout << "MAPSIZE: " << theAnswers.getMap().size() << endl;
-   cout << "AK TOT POP: " << theAnswers.getMap().at("AK").getPopulation() << endl; 
-   cout << "STATE UNDER 5: " << theAnswers.youngestPop() << endl; 
-   cout << "TOT COUNTIES IN AK: " << theAnswers.getMap().at("AK").getTotCounties() << endl;
-   cout << "TOT COUNTIES IN CA: " << theAnswers.getMap().at("CA").getTotCounties() << endl;
-   cout << "AK MED INCOME: " << theAnswers.getMap().at("AK").getMedIncome() << " EXPECTED: 62611.34483" << endl;
-   cout << "CA MED INCOME: " << theAnswers.getMap().at("CA").getMedIncome() << " EXPECTED: 55558.01724" << endl;
-   cout << "AK PPH: " << theAnswers.getMap().at("AK").getPersonPerHouse() << " EXPECTED: 2.796" << endl;
-   cout << endl;
 
    //one example of how to print required - ADD OTHERS
    cout << "*** the state that needs the most pre-schools**" << endl;
@@ -77,15 +68,6 @@ int main() {
    } else{
       cout << "Did you read the lab instructions?" << endl;
    }
-
-   // cout << "*** the state with largest percent of the population below the poverty line**" << endl;
-   // query = theAnswers.belowPoverty();
-   // cout << "Name of state: " << query << endl;
-   // if (theAnswers.getStateData(query) != nullptr){
-   //    cout << *(theAnswers.getStateData(query)) << endl;
-   // } else{
-   //    cout << "Did you read the lab instructions?" << endl;
-   // }
 
    //New Queries
    cout << "*** the state with lowest medium income**" << endl;
