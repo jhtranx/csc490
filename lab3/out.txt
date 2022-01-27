@@ -91149,4 +91149,4 @@ MaxFb56
 MaxHs99
 MaxBa74
 topVal: 57
-writing an image of size: 400 400 to: out.ppm
+writing an image of size: 400 400 to: outFb.ppm

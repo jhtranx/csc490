@@ -3,11 +3,12 @@
 #include <vector>
 #include "vec2.h"
 #include "color.h"
+#include "shape.h"
 
 /* simple data representation of a convex polygon - defined by a list of vertices */
-class Polygon {
+class Polygon : public shape {
   public:
-	Polygon(std::vector<vec2> inVerts, double d, color C) : theVerts(inVerts), inC(C), depth(d) {
+	Polygon(std::vector<vec2> inVerts, double d, color C) : theVerts(inVerts), shape{C, d} {
 		if (this->concave()) {
 			std::cerr << "Not convex will not draw as expected" << std::endl;
 		}
@@ -15,9 +16,6 @@ class Polygon {
 
 	bool eval(double x, double y);
 	void addVert(vec2 inV) { theVerts.push_back(inV); }
-	color getInC() const {return inC; }
-	double getDepth() const {return depth; }
-	void setDepth(double inD) {depth = inD; }
 
 	bool concave();
 
@@ -29,8 +27,6 @@ class Polygon {
 
   private:
 	std::vector<vec2> theVerts; //keep the vertices local to polygon
-	color inC;
-	double depth;
 };
 
 #endif
