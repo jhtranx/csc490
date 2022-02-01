@@ -17,9 +17,11 @@ class ellipse : public shape {
 	ellipse(double cX, double cY, double r1, double r2, double d, color C) : shape{C, d},
 		center(cX, cY), radii(r1, r2) {}
 
-	double eval(double x, double y) {
-		return ( ((center.x()-x)*(center.x()-x))/(radii.x()*radii.x()) + 
-				((center.y()-y)*(center.y()-y))/(radii.y()*radii.y()) - 1.0f);
+	bool eval(double x, double y) override {
+		if ((((center.x()-x)*(center.x()-x))/(radii.x()*radii.x()) + 
+				((center.y()-y)*(center.y()-y))/(radii.y()*radii.y()) - 1.0f) < 0)
+			return true;
+		return false;
 	}
 	//note lifted getters
 

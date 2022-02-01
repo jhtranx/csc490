@@ -18,8 +18,7 @@ using namespace std;
 /*write out PPM data, using the defined implicit equation 
   interior points write a differnt color then exterior points */
 void writeOut(ostream& out, ppmR& theWriter, 
-				vector<shared_ptr<shape>> IEs, vector<shared_ptr<Rect>> Rs,
-				vector<shared_ptr<Polygon>> Ps) {
+				vector<shared_ptr<shape>> Shapes) {
 
 	float res;
 	color inC;
@@ -34,31 +33,13 @@ void writeOut(ostream& out, ppmR& theWriter,
 
 			inTrue = false;
 			curDepth = -1;
-			//iterate through all possible equations
-			for (shared_ptr<shape> eq : IEs) {
-				shared_ptr<ellipse> ellip = std::static_pointer_cast<ellipse>(eq);
-				res = ellip->eval(x, y);
-				if (res < 0 && eq->getDepth() > curDepth) {
-					inC = eq->getInC();
-					inTrue = true;
-					curDepth = eq->getDepth();
-				}
-			}
-			/* compare my ret.h with yours */
-			for (auto rect: Rs) {
-				if (rect->evalIn(x, y) && rect->getDepth() > curDepth){
-					inC = rect->getInC();
-					inTrue = true;
-					curDepth = rect->getDepth();
-				}
-			}
 
-			//loop through any polygons
-			for (auto poly: Ps) {
-				if (poly->eval(x, y) && poly->getDepth() > curDepth){
-					inC = poly->getInC();
+			/* compare my ret.h with yours */
+			for (auto shape: Shapes) {
+				if (shape->eval(x, y) && shape->getDepth() > curDepth){
+					inC = shape->getInC();
 					inTrue = true;
-					curDepth = poly->getDepth();
+					curDepth = shape->getDepth();
 				}
 			}
 			
@@ -73,7 +54,7 @@ void writeOut(ostream& out, ppmR& theWriter,
 }
 
 /* make slightly random triangle takes offfSet to help spread */
-void createTriangle(vector<shared_ptr<Polygon>>& thePolygons, vec2 offSet) {
+void createTriangle(vector<shared_ptr<shape>>& shapes, vec2 offSet) {
 
 	//create a vector of vertices for the triangle 
 	//vertices specified counter clockwise!
@@ -82,7 +63,7 @@ void createTriangle(vector<shared_ptr<Polygon>>& thePolygons, vec2 offSet) {
 	triVerts.push_back(vec2(offSet.x() + 50+nicerRand(-10, 10), offSet.y()+10+nicerRand(-20, 10)));
 	triVerts.push_back(vec2(offSet.x() + 100+nicerRand(-10, 10), offSet.y()+50+nicerRand(-10, 20)));
 
-	thePolygons.push_back(make_shared<Polygon>(triVerts, nicerRand(4,10), color(nicerRand(0, 25), nicerRand(0, 55), nicerRand(0, 255) ) ) );
+	shapes.push_back(make_shared<Polygon>(triVerts, nicerRand(4,10), color(nicerRand(0, 25), nicerRand(0, 55), nicerRand(0, 255) ) ) );
 
 }
 
@@ -104,27 +85,20 @@ int main(int argc, char *argv[]) {
 	outFile.open(argv[3]);
 
 	// layer values larger is closer - ie on top
-	vector<shared_ptr<shape>> theEllipses;
+	vector<shared_ptr<shape>> Shapes;
 	color ellipseColor = color(61, 101, 110);
-	theEllipses.push_back(make_shared<ellipse>(50, 100, 11*6, 11*5, 11, ellipseColor));	
-
-	//collection of rectangles
-	vector<shared_ptr<Rect>> theRects;
-	theRects.push_back(make_shared<Rect>(vec2(200, 200), 60, 60, color(120), 14));
-
-	//the convex polygons
-	vector<shared_ptr<Polygon>> thePolygons;
+	Shapes.push_back(make_shared<ellipse>(50, 100, 11*6, 11*5, 11, ellipseColor));	
+	Shapes.push_back(make_shared<Rect>(vec2(200, 200), 60, 60, color(120), 14));
 
 	//make a nice matrix of triangles (rows of blue mountains)
 	for (int x=0; x < 4; x++)
 		for (int y=0; y < 4; y++)
-		createTriangle(thePolygons, vec2(x*(sizeX/4.0), y*(sizeY/4.0)));
-
+		createTriangle(Shapes, vec2(x*(sizeX/4.0), y*(sizeY/4.0)));
 
 	if (outFile) {
 		cout << "writing an image of size: " << sizeX << " " << sizeY << " to: " << argv[3] << endl;
 		theWriter.writeHeader(outFile);
-		writeOut(outFile, theWriter, theEllipses, theRects, thePolygons);
+		writeOut(outFile, theWriter, Shapes);
 	} else {
 		cout << "Error cannot open outfile" << endl;
 		exit(0);

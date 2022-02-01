@@ -14,7 +14,7 @@ class Rect : public shape {
 	Rect(vec2(left), double width, double height, color C, double deep) : shape{C, deep},
 		upperL(left), lowerR(left.x()+width,left.y()+height) {}
 
-	bool evalIn(double x, double y) {
+	bool eval(double x, double y) override {
 		if ((x >= upperL.x() && x <= lowerR.x()) && (y >= upperL.y() && y <= lowerR.y())) {
 			return true;
 		}

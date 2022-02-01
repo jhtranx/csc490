@@ -10,6 +10,12 @@ class shape {
 	color getInC() const {return inC; }
 	double getDepth() const {return depth; }
 
+	void setDepth(double inD) {depth = inD;}
+	void setColor(color col) {inC = col;}
+
+	virtual bool eval(double x, double y) = 0;
+
+
   protected:
 	color inC;
 	double depth;
