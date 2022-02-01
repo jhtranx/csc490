@@ -91160,7 +91160,7 @@ Education info:
 (% Bachelor or more): 30.5442 and total: 898886
 (% high school or more): 91.0126 and total: 2678412
 County housing/economy info:
-(avg. persons per house): 2.99103 and total: 3.05844e+06
+(avg. persons per house): 3.10988 and total: 3.17996e+06
 (% home ownership): 70.1157 and total: 2063435
 (number housing units): 1022537
 (medIncome): 53591
@@ -91181,7 +91181,7 @@ Education info:
 (% Bachelor or more): 30.5442 and total: 898886
 (% high school or more): 91.0126 and total: 2678412
 County housing/economy info:
-(avg. persons per house): 2.99103 and total: 3.05844e+06
+(avg. persons per house): 3.10988 and total: 3.17996e+06
 (% home ownership): 70.1157 and total: 2063435
 (number housing units): 1022537
 (medIncome): 53591
@@ -91202,7 +91202,7 @@ Education info:
 (% Bachelor or more): 26.5428 and total: 5280243
 (% high school or more): 86.0927 and total: 17126678
 County housing/economy info:
-(avg. persons per house): 2.59881 and total: 2.37641e+07
+(avg. persons per house): 2.60425 and total: 2.38139e+07
 (% home ownership): 66.7566 and total: 13280088
 (number housing units): 9144250
 (medIncome): 43715
@@ -91223,7 +91223,7 @@ Education info:
 (% Bachelor or more): 30.3233 and total: 11766193
 (% high school or more): 81.0523 and total: 31450306
 County housing/economy info:
-(avg. persons per house): 2.76086 and total: 3.83781e+07
+(avg. persons per house): 2.93634 and total: 4.08174e+07
 (% home ownership): 55.3797 and total: 21488693
 (number housing units): 13900766
 (medIncome): 55558
@@ -91265,7 +91265,7 @@ Education info:
 (% Bachelor or more): 20.4317 and total: 611741
 (% high school or more): 81.6157 and total: 2443639
 County housing/economy info:
-(avg. persons per house): 2.64183 and total: 3.42043e+06
+(avg. persons per house): 2.65051 and total: 3.43167e+06
 (% home ownership): 69.3573 and total: 2076612
 (number housing units): 1294721
 (medIncome): 34599
@@ -91286,7 +91286,7 @@ Education info:
 (% Bachelor or more): 35.758 and total: 3196117
 (% high school or more): 88.0608 and total: 7871031
 County housing/economy info:
-(avg. persons per house): 2.68619 and total: 9.64769e+06
+(avg. persons per house): 2.70453 and total: 9.71356e+06
 (% home ownership): 65.3895 and total: 5844628
 (number housing units): 3591588
 (medIncome): 72386
@@ -91307,7 +91307,7 @@ Education info:
 (% Bachelor or more): 30.3233 and total: 11766193
 (% high school or more): 81.0523 and total: 31450306
 County housing/economy info:
-(avg. persons per house): 2.76086 and total: 3.83781e+07
+(avg. persons per house): 2.93634 and total: 4.08174e+07
 (% home ownership): 55.3797 and total: 21488693
 (number housing units): 13900766
 (medIncome): 55558
@@ -91328,7 +91328,7 @@ Education info:
 (% Bachelor or more): 24.8505 and total: 145165
 (% high school or more): 92.371 and total: 539588
 County housing/economy info:
-(avg. persons per house): 2.47174 and total: 662975
+(avg. persons per house): 2.50358 and total: 671516
 (% home ownership): 70.1755 and total: 409932
 (number housing units): 268222
 (medIncome): 55930
@@ -91349,7 +91349,7 @@ Education info:
 (% Bachelor or more): 27.2907 and total: 201059
 (% high school or more): 91.5079 and total: 674168
 County housing/economy info:
-(avg. persons per house): 2.79621 and total: 862862
+(avg. persons per house): 2.76118 and total: 852054
 (% home ownership): 63.6886 and total: 469214
 (number housing units): 308583
 (medIncome): 62611

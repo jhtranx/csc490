@@ -65,12 +65,12 @@ class demogState {
       void updateHousingUnits(int increase)  {housingUnits += increase;}
       void updateHomeOwn(int increase)  {homeOwn += increase;}
 
-      void updatePersonPerHouse(double increase)  {
-         double oldTotalCounties = (double) totCounties - 1;
-         double newTotalCounties = (double) totCounties;
-         double oldTotalPersonPerHouse = personPerHouse * oldTotalCounties;
+      void updatePersonPerHouse(double incPph, int incHu)  {
+         double oldPphTot = (double) personPerHouse * housingUnits;
+         double newPphTot = incPph * incHu;
+         double newHu = incHu + housingUnits;
 
-         double newPersonPerHouse = (increase + oldTotalPersonPerHouse) / newTotalCounties;
+         double newPersonPerHouse = (oldPphTot + newPphTot) / newHu;
          personPerHouse = newPersonPerHouse;
       } 
 

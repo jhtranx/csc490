@@ -39,9 +39,9 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
          stateMap.at(stateStr).updatePopulation(totPop20);
          stateMap.at(stateStr).updateFemale(f);
          stateMap.at(stateStr).updateMedIncome(mi);
-         stateMap.at(stateStr).updateHousingUnits(hu);
          stateMap.at(stateStr).updateHomeOwn(ho);
-         stateMap.at(stateStr).updatePersonPerHouse(pph);
+         stateMap.at(stateStr).updatePersonPerHouse(pph, hu);
+         stateMap.at(stateStr).updateHousingUnits(hu);
          stateMap.at(stateStr).updateVeterans(v);
          stateMap.at(stateStr).updateHighSchoolGrad(hsg);
          stateMap.at(stateStr).updateBachelorsDeg(bd);
