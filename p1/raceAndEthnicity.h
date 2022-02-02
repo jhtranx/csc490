@@ -16,6 +16,9 @@ class raceAndEthnicity {
          double inHyn, double inTwoOrMore, double inHispLat, double inWhiteNotHispLat) :
             whiteAlone(inWhite), blackAlone(inBlack), amIndianAlNative(inIndAl), asianAlone(inAsian),
             hawaiianPacIsland(inHyn), twoOrMore(inTwoOrMore), hispLat(inHispLat), whiteNotHispLat(inWhiteNotHispLat) {}
+      raceAndEthnicity() :
+            whiteAlone(0), blackAlone(0), amIndianAlNative(0), asianAlone(0),
+            hawaiianPacIsland(0), twoOrMore(0), hispLat(0), whiteNotHispLat(0) {}
 
       // Getter
       double getWhiteAlone() const {return whiteAlone;}
