@@ -9,8 +9,8 @@ using namespace std;
 class psCombo {
 public:
     psCombo(string inState) : 
-            state(inS), mentalIllnessCt(0), unarmedCt(0), 
-            armedToyCt(0), bodyCamCt(0), caseCt(0), raceEth(raceEthnicity()){}
+            state(inState), mentalIllnessCt(0), unarmedCt(0), 
+            armedToyCt(0), bodyCamCt(0), caseCt(0) {}
     
     int getNumMentalI() ;//total count “TRUE”
     int getUnArmedCount(); //total count blank, ‘unarmed’
@@ -28,7 +28,8 @@ protected:
     int armedToyCt;
     int bodyCamCt;
     int caseCt;
-    raceEthnicity raceEth;
+    // raceEthnicity raceEth;
+    // raceEth(raceEthnicity()
 };
 
 #endif

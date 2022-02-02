@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <cmath>
 
+#include <typeinfo>
+
 /* helper to strip out quotes from a string */
 string stripQuotes(std::string temp) {
     temp.erase(
@@ -111,10 +113,36 @@ shared_ptr<psData> readCSVLinePolice(std::string theLine) {
     //skip 2
     getFieldNQ(ss);
     getFieldNQ(ss);
-   //fill in
+    //fill in
+    string armed = getFieldNQ(ss);
+    getFieldNQ(ss);
+    getFieldNQ(ss);
+    string raceEth = getFieldNQ(ss);
+    string city = getFieldNQ(ss);
+    string state = getFieldNQ(ss);
+
+    bool signsOfMentalIllness;
+    string somiSomiStr = getFieldNQ(ss);
+    transform(somiSomiStr.begin(), somiSomiStr.end(), somiSomiStr.begin(), :: tolower);
+    istringstream(somiSomiStr) >> boolalpha >> signsOfMentalIllness;
+
+    getFieldNQ(ss);
+    getFieldNQ(ss);
+
+    bool bodyCam;
+    string bodyCamStr = getFieldNQ(ss);
+    transform(bodyCamStr.begin(), bodyCamStr.end(), bodyCamStr.begin(), :: tolower);
+    istringstream(bodyCamStr) >> boolalpha >> bodyCam;
+
+    getFieldNQ(ss);
+    getFieldNQ(ss);
+    getFieldNQ(ss);
+
+    cout << bodyCam << endl;
 
     /* TO DO fix */
-    return make_shared<psData>("null");
+    return make_shared<psData>(state, name, city, raceEth, 
+        signsOfMentalIllness, armed, bodyCam);
 }
 
 //read from a CSV file (for a given data type) return a vector of the data

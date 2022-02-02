@@ -14,7 +14,7 @@ using namespace std;
 class psData {
    public:
 
-   psData(string inState, string inName, string inCity, raceEthnicity inRaceEth, 
+   psData(string inState, string inName, string inCity, string inRaceEth, 
          bool inSignsOfMentalIllness, string inArmed, bool inBodyCam) : 
          state(inState), name(inName), city(inCity), raceEth(inRaceEth),
          signsOfMentalIllness(inSignsOfMentalIllness), armed(inArmed), bodyCam(inBodyCam) {}
