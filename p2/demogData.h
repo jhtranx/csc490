@@ -19,7 +19,7 @@ class demogData {
          double pph, int vets, double hsg, double bd, 
          double fb) :
                county(inN), state(inS), popOver65(in65), popUnder18(in18),
-               popUnder5(in5), totalPopulation2020(totPop20), female(f), raceEth(re), medIncome(mi), housingUnits(hu), homeOwn(ho), 
+               popUnder5(in5), totalPopulation2020(totPop20), female(f), raceEth(re), medIncome(mi), numHouseholds(hu), homeOwn(ho), 
                personPerHouse(pph), veterans(vets), highSchoolGrad(hsg), bachelorsDeg(bd), 
                foreignBorn(fb) {}
 
@@ -33,7 +33,7 @@ class demogData {
       double getFemale() const {return female;}
       raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
       float getMedIncome() const {return medIncome;}
-      int getHousingUnits() const {return housingUnits;}
+      int getNumHouseholds() const {return numHouseholds;}
       double getHomeOwn() const {return homeOwn;}
       double getPersonPerHouse() const {return personPerHouse ;}
       int getVeterans() const {return veterans;}
@@ -53,7 +53,7 @@ class demogData {
       const double female;
       raceAndEthnicity raceEth;
       int medIncome;
-      int housingUnits;
+      int numHouseholds;
       double homeOwn; //check if right
       double personPerHouse;
       int veterans;

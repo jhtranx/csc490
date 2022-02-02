@@ -20,11 +20,11 @@ class demogState {
          int in5, int totPop20, int f,
          int mi, int hu, int ho, 
          double pph, int vets, int hsg, int bd, 
-         int fb) :
+         int fb, raceAndEthnicity re) :
                state(inS), totCounties(tc), popOver65(in65), popUnder18(in18),
-               popUnder5(in5), totalPopulation2020(totPop20), female(f), medIncome(mi), housingUnits(hu), homeOwn(ho), 
+               popUnder5(in5), totalPopulation2020(totPop20), female(f), medIncome(mi), numHousehold(hu), homeOwn(ho), 
                personPerHouse(pph), veterans(vets), highSchoolGrad(hsg), bachelorsDeg(bd), 
-               foreignBorn(fb) {}
+               foreignBorn(fb), raceEth(re) {}
 
       // Getter
       string getState() const {return state;}
@@ -34,9 +34,9 @@ class demogState {
       int getPopUnder5() const {return popUnder5;}
       int getPopulation() const {return totalPopulation2020;}
       int getFemale() const {return female;}
-      // raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
+      raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
       int getMedIncome() const {return medIncome;}
-      int getHousingUnits() const {return housingUnits;}
+      int getNumHousehold() const {return numHousehold;}
       int getHomeOwn() const {return homeOwn;}
       double getPersonPerHouse() const {return personPerHouse ;}
       int getVeterans() const {return veterans;}
@@ -46,12 +46,61 @@ class demogState {
 
       //functions to update demogState when aggregating counties
       void updateTotCounties()  {totCounties += 1;}
+      void updateRaceAndEthnicity() {}
+      void updateWhite(int whiteCt, int incPop) {
+         int oldWhiteTot = raceEth.getWhiteAlone() * totalPopulation2020;
+         double newWhitePerc = 
+            (double) (whiteCt + oldWhiteTot) / (double) (totalPopulation2020 + incPop);
+         raceEth.setWhiteAlone(newWhitePerc);
+      }
+      void updateBlack (int blackCt, int incPop) {
+         int oldBlackTot = raceEth.getBlackAlone() * totalPopulation2020;
+         double newBlackPerc = 
+            (double) (blackCt + oldBlackTot) / (double) (totalPopulation2020 + incPop);
+         raceEth.setBlackAlone(newBlackPerc);
+      }
+      void updateIndAl (int indAlCt, int incPop) {
+         int oldIndAlTot = raceEth.getAmIndianAlNative() * totalPopulation2020;
+         double newIndAlPerc = 
+            (double) (indAlCt + oldIndAlTot) / (double) (totalPopulation2020 + incPop);
+         raceEth.setAmIndianAlNative(newIndAlPerc);
+      }
+      void updateAsian (int asianCt, int incPop) {
+         int oldAsianTot = raceEth.getAsianAlone() * totalPopulation2020;
+         double newAsianPerc = 
+            (double) (asianCt + oldAsianTot) / (double) (totalPopulation2020 + incPop);
+         raceEth.setAsianAlone(newAsianPerc);
+      }
+      void updateHyn (int hynCt, int incPop) {
+         int oldHynTot = raceEth.getHawaiianPacIsland() * totalPopulation2020;
+         double newHynPerc = 
+            (double) (hynCt + oldHynTot) / (double) (totalPopulation2020 + incPop);
+         raceEth.setHawaiianPacIsland(newHynPerc);
+      }
+      void updateTwoOrMore (int twoOrMoreCt, int incPop) {
+         int oldTwoOrMoreTot = raceEth.getTwoOrMore() * totalPopulation2020;
+         double newTwoOrMorePerc = 
+            (double) (twoOrMoreCt + oldTwoOrMoreTot) / (double) (totalPopulation2020 + incPop);
+         raceEth.setTwoOrMore(newTwoOrMorePerc);
+      }
+      void updateHispLat (int hispLatCt, int incPop) {
+         int oldHispLatTot = raceEth.getHispLat() * totalPopulation2020;
+         double newHispLatPerc = 
+            (double) (hispLatCt + oldHispLatTot) / (double) (totalPopulation2020 + incPop);
+         raceEth.setHispLat(newHispLatPerc);
+      }
+      void updateWhiteNotHisLat (int whiteNotHispLatCt, int incPop) {
+         int oldWhiteNotHispLatTot = raceEth.getWhiteNotHispLat() * totalPopulation2020;
+         double newWhiteNotHispLatPerc = 
+            (double) (whiteNotHispLatCt + oldWhiteNotHispLatTot) / (double) (totalPopulation2020 + incPop);
+         raceEth.setWhiteNotHispLat(newWhiteNotHispLatPerc);
+      }
+
       void updatePopulation(int increase)  {totalPopulation2020 += increase;}
       void updatePopOver65(int increase)  {popOver65 += increase;}
       void updatePopUnder18(int increase)  {popUnder18 += increase;}
       void updatePopUnder5(int increase)  {popUnder5 += increase;}
       void updateFemale(int increase)  {female += increase;}
-      // void updateRaceAndEthnicity()  {return raceEth;}
 
       void updateMedIncome(double increase)  {
          double oldMediumIncome = (double) medIncome;
@@ -62,13 +111,13 @@ class demogState {
          double newMedIncome = (increase + oldTotalMediumIncome) / newTotalCounties;
          medIncome = newMedIncome;
       } 
-      void updateHousingUnits(int increase)  {housingUnits += increase;}
+      void updateNumHousehold(int increase)  {numHousehold += increase;}
       void updateHomeOwn(int increase)  {homeOwn += increase;}
 
       void updatePersonPerHouse(double incPph, int incHu)  {
-         double oldPphTot = (double) personPerHouse * housingUnits;
+         double oldPphTot = (double) personPerHouse * numHousehold;
          double newPphTot = incPph * incHu;
-         double newHu = incHu + housingUnits;
+         double newHu = incHu + numHousehold;
 
          double newPersonPerHouse = (oldPphTot + newPphTot) / newHu;
          personPerHouse = newPersonPerHouse;
@@ -87,9 +136,9 @@ class demogState {
       int popUnder5;
       int totalPopulation2020;
       int female;
-      // raceAndEthnicity raceEth;
+      raceAndEthnicity raceEth;
       double medIncome;
-      int housingUnits;
+      int numHousehold;
       int homeOwn;
       double personPerHouse;
       int veterans;

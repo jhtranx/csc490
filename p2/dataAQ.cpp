@@ -33,20 +33,30 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
    for (const auto &obj : theData) {
       string stateStr = obj->getState();
 
-      int in65 = round((obj->getPopOver65() / 100) * obj->getPopulation());
-      int in18 = round((obj->getPopUnder18() / 100) * obj->getPopulation());
-      int in5 = round((obj->getPopUnder5() / 100) * obj->getPopulation());
       int totPop20 = obj->getPopulation();
-
-      int f = round((obj->getFemale() / 100) * obj->getPopulation());
+      int in65 = round(obj->getPopOver65() * totPop20);
+      int in18 = round(obj->getPopUnder18() * totPop20);
+      int in5 = round(obj->getPopUnder5() * totPop20);
+      
+      int f = round(obj->getFemale() * totPop20);
       int mi = obj->getMedIncome();
-      int hu = obj->getHousingUnits();
-      int ho = round((obj->getHomeOwn() / 100) * obj->getPopulation());
+      int hu = obj->getNumHouseholds();
+      int ho = round(obj->getHomeOwn() * totPop20);
       double pph = obj->getPersonPerHouse();
       int v = obj->getVeterans();
-      int hsg = round((obj->getHighSchoolGrad() / 100) * obj->getPopulation());
-      int bd = round((obj->getBachelorsDeg() / 100) * obj->getPopulation());
-      int fb = round((obj->getForeignBorn() / 100) * obj->getPopulation());
+      int hsg = round(obj->getHighSchoolGrad() * totPop20);
+      int bd = round(obj->getBachelorsDeg() * totPop20);
+      int fb = round(obj->getForeignBorn() * totPop20);
+
+      raceAndEthnicity re = obj->getRaceAndEthnicity();
+      int whiteCt = re.getWhiteAlone() * totPop20;
+      int blackCt = re.getBlackAlone() * totPop20;
+      int inIndAlCt = re.getAmIndianAlNative() * totPop20;
+      int asianCt = re.getAsianAlone() * totPop20;
+      int hynCt = re.getHawaiianPacIsland() * totPop20;
+      int twoOrMoreCt = re.getAsianAlone() * totPop20;
+      int hispLatCt = re.getHispLat() * totPop20;
+      int whiteNotHispLatCt = re.getWhiteNotHispLat() * totPop20;
 
       if (stateMap.find(stateStr) != stateMap.end()) {
          stateMap[stateStr]->updateTotCounties(); //updated totCounties
@@ -58,16 +68,26 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
          stateMap[stateStr]->updateMedIncome(mi);
          stateMap[stateStr]->updateHomeOwn(ho);
          stateMap[stateStr]->updatePersonPerHouse(pph, hu);
-         stateMap[stateStr]->updateHousingUnits(hu);
+         stateMap[stateStr]->updateNumHousehold(hu);
          stateMap[stateStr]->updateVeterans(v);
          stateMap[stateStr]->updateHighSchoolGrad(hsg);
          stateMap[stateStr]->updateBachelorsDeg(bd);
          stateMap[stateStr]->updateForeignBorn(fb);
+
+         stateMap[stateStr]->updateWhite(whiteCt, totPop20);
+         stateMap[stateStr]->updateBlack(blackCt, totPop20);
+         stateMap[stateStr]->updateIndAl(inIndAlCt, totPop20);
+         stateMap[stateStr]->updateAsian(asianCt, totPop20);
+         stateMap[stateStr]->updateHyn(hynCt, totPop20);
+         stateMap[stateStr]->updateTwoOrMore(twoOrMoreCt, totPop20);
+         stateMap[stateStr]->updateHispLat(hispLatCt, totPop20);
+         stateMap[stateStr]->updateWhiteNotHisLat(whiteNotHispLatCt, totPop20);
       }
       else {
-         shared_ptr<demogState> newState = make_shared<demogState>(stateStr, 1, in65, in18, in5, 
+         shared_ptr<demogState> newState = make_shared<demogState>(
+                                          stateStr, 1, in65, in18, in5, 
                                           totPop20, f, mi, hu, ho, 
-                                          pph, v, hsg, bd, fb);
+                                          pph, v, hsg, bd, fb, re);
          auto result = stateMap.insert(pair<string, shared_ptr<demogState>>(stateStr, newState));
       }
       std::cout << *obj << std::endl;

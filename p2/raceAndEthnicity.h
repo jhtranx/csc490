@@ -13,34 +13,43 @@ using namespace std;
 class raceAndEthnicity {
    public:
       raceAndEthnicity(double inWhite, double inBlack, double inIndAl, double inAsian,
-         double inHyn, double inTwoOrMore, double inHispLat, double inWhiteNotHispLat) :
+         double inHyn, double woOrMore, double inHispLat, double inWhiteNotHispLat) :
             whiteAlone(inWhite), blackAlone(inBlack), amIndianAlNative(inIndAl), asianAlone(inAsian),
-            hawaiianPacIsland(inHyn), twoOrMore(inTwoOrMore), hispLat(inHispLat), whiteNotHispLat(inWhiteNotHispLat) {}
+            hawaiianPacIsland(inHyn), twoOrMore(woOrMore), hispLat(inHispLat), whiteNotHispLat(inWhiteNotHispLat) {}
       raceAndEthnicity() :
             whiteAlone(0), blackAlone(0), amIndianAlNative(0), asianAlone(0),
             hawaiianPacIsland(0), twoOrMore(0), hispLat(0), whiteNotHispLat(0) {}
 
       // Getter
-      double getWhiteAlone() const {return whiteAlone;}
-      double getBlackAlone() const {return blackAlone;}
-      double getAmIndianAlNative() const {return amIndianAlNative;}
-      double getAsianAlone() const {return asianAlone;}
-      double getHawaiianPacIsland() const {return hawaiianPacIsland;}
-      double getTwoOrMore() const {return twoOrMore;}
-      double getHispLat() const {return hispLat;}
-      double getWhiteNotHispLat() const {return whiteNotHispLat;}
+      double getWhiteAlone() {return whiteAlone;}
+      double getBlackAlone() {return blackAlone;}
+      double getAmIndianAlNative() {return amIndianAlNative;}
+      double getAsianAlone() {return asianAlone;}
+      double getHawaiianPacIsland() {return hawaiianPacIsland;}
+      double getTwoOrMore() {return twoOrMore;}
+      double getHispLat() {return hispLat;}
+      double getWhiteNotHispLat() {return whiteNotHispLat;}
+
+      void setWhiteAlone(double newVal)  {whiteAlone = newVal;}
+      void setBlackAlone(double newVal)  {blackAlone = newVal;}
+      void setAmIndianAlNative(double newVal)  {amIndianAlNative = newVal;}
+      void setAsianAlone(double newVal)  {asianAlone = newVal;}
+      void setHawaiianPacIsland(double newVal)  {hawaiianPacIsland = newVal;}
+      void setTwoOrMore(double newVal)  {twoOrMore = newVal;}
+      void setHispLat(double newVal)  {hispLat = newVal;}
+      void setWhiteNotHispLat(double newVal)  {whiteNotHispLat = newVal;}
       
-   friend std::ostream& operator<<(std::ostream &out, const raceAndEthnicity &DD);
+   friend std::ostream& operator<<(std::ostream &out,  raceAndEthnicity &DD);
    
    private:
-      const double whiteAlone;
-      const double blackAlone;
-      const double amIndianAlNative;
-      const double asianAlone;
-      const double hawaiianPacIsland;
-      const double twoOrMore;
-      const double hispLat;
-      const double whiteNotHispLat;
+      double whiteAlone;
+      double blackAlone;
+      double amIndianAlNative;
+      double asianAlone;
+      double hawaiianPacIsland;
+      double twoOrMore;
+      double hispLat;
+      double whiteNotHispLat;
       
 };
 #endif

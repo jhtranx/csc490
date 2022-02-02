@@ -56,97 +56,43 @@ void consumeColumnNames(std::ifstream &myFile) {
 /* Read one line from a CSV file for county demographic data specifically */
 shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
    std::stringstream ss(theLine);
-   
-   string county = getField(ss);
-   string state = getField(ss);
-   //skip population change
-   getField(ss);
-   int totalPop2020 = stoi(getField(ss));
-
-   //skip population 2010
-   getField(ss);
-   double popUnder5 = stod(getField(ss)); 
-   double popUnder18 = stod(getField(ss));  
-   double popOver65 = stod(getField(ss));
-   double female = stod(getField(ss));
-
-   //race and ethnicities
-   double inWhite = stod(getField(ss));
-   double inBlack = stod(getField(ss));
-   double inIndAl = stod(getField(ss));
-   double inAsian = stod(getField(ss));
-   double inHyn = stod(getField(ss));
-   double inTwoOrMore = stod(getField(ss));
-   double inHispLat = stod(getField(ss));
-   double inWhiteNotHispLat = stod(getField(ss));
-
-   //after race and ethnicities
-
-   int veterans = stoi(getField(ss));
-   double foreignBorn = stod(getField(ss));
-   int housingUnits = stod(getField(ss));
-   double homeOwn = stod(getField(ss));
-   getField(ss);
-   getField(ss);
-   double personPerHouse = stod(getField(ss));
-   getField(ss);
-   getField(ss);
-   double highSchool = stod(getField(ss));
-   double bachelorsDeg = stod(getField(ss));
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   int medIncome = stoi(getField(ss));
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   getField(ss);
-   getField(ss);
-    // std::stringstream ss(theLine);
     
-    // string name = getField(ss);
-    // string state = getField(ss);
-    // double popOver65 = stod(getField(ss))/100.0;
-    // double popUnder18 = stod(getField(ss))/100.0;
-    // double popUnder5 = stod(getField(ss))/100.0; 
-    // double bachelorDegreeUp = stod(getField(ss))/100.0;
-    // double highSchoolUp = stod(getField(ss))/100.0;
-    // //skip 1
-    // getField(ss);
-    // //store initial data as percent (then convert to count)
-    // double FirstNation= stod(getField(ss))/100.0;
-    // double Asian= stod(getField(ss))/100.0;
-    // double Black= stod(getField(ss))/100.0;
-    // double Latinx= stod(getField(ss))/100.0;
-    // double HIPacificIsle= stod(getField(ss))/100.0;
-    // double MultiRace= stod(getField(ss))/100.0;
-    // double White= stod(getField(ss))/100.0;
-    // double WhiteNH = stod(getField(ss))/100.0;
-    // float homeOwnRate = stod(getField(ss))/100.0;
-    // int numHouseHold = stoi(getField(ss));
-    // //skip 2
-    // getField(ss);
-    // getField(ss);
-    // float avgPerPerHouse = stod(getField(ss));
-    // //turn into mathematical percent
-    // //FIX THIS?
-    // long int houseIncome = stoi(getField(ss));
-    // //skip 1
-    // getField(ss);
-    // double foreignBorn= stod(getField(ss))/100.0;
-    // //skip 5
-    // for (int i=0; i < 5; i++)
-    //     getField(ss);
-    // double popFemale = stod(getField(ss))/100.0;
-    // int veterans = stoi(getField(ss));
-    // int totalPop2020 = stoi(getField(ss));
+    string name = getField(ss);
+    string state = getField(ss);
+    double popOver65 = stod(getField(ss))/100.0;
+    double popUnder18 = stod(getField(ss))/100.0;
+    double popUnder5 = stod(getField(ss))/100.0; 
+    double bachelorDegreeUp = stod(getField(ss))/100.0;
+    double highSchoolUp = stod(getField(ss))/100.0;
+    //skip 1
+    getField(ss);
+    //store initial data as percent (then convert to count)
+    double FirstNation= stod(getField(ss))/100.0;
+    double Asian= stod(getField(ss))/100.0;
+    double Black= stod(getField(ss))/100.0;
+    double Latinx= stod(getField(ss))/100.0;
+    double HIPacificIsle= stod(getField(ss))/100.0;
+    double MultiRace= stod(getField(ss))/100.0;
+    double White= stod(getField(ss))/100.0;
+    double WhiteNH = stod(getField(ss))/100.0;
+    float homeOwnRate = stod(getField(ss))/100.0;
+    int numHouseHold = stoi(getField(ss));
+    //skip 2
+    getField(ss);
+    getField(ss);
+    float avgPerPerHouse = stod(getField(ss));
+    //turn into mathematical percent
+    //FIX THIS?
+    long int houseIncome = stoi(getField(ss));
+    //skip 1
+    getField(ss);
+    double foreignBorn= stod(getField(ss))/100.0;
+    //skip 5
+    for (int i=0; i < 5; i++)
+        getField(ss);
+    double popFemale = stod(getField(ss))/100.0;
+    int veterans = stoi(getField(ss));
+    int totalPop2020 = stoi(getField(ss));
 
     //community racial mix created with counts not percents
     /*TO DO construct your type for race/ethnicity info */
@@ -157,15 +103,15 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
 
     for (int i=0; i < 33; i++)
       getField(ss);
-      
-    raceAndEthnicity re = raceAndEthnicity(inWhite, inBlack, inIndAl, inAsian,
-      inHyn, inTwoOrMore, inHispLat, inWhiteNotHispLat);
+
+    raceAndEthnicity re = raceAndEthnicity(White, Black, FirstNation, Asian,
+      HIPacificIsle, MultiRace, Latinx, WhiteNH);
 
     return make_shared<demogData>(
-      county, state, popOver65, popUnder18, 
-      popUnder5, totalPop2020, female, re, 
-      medIncome, housingUnits, homeOwn, 
-      personPerHouse, veterans, highSchool, bachelorsDeg, 
+      name, state, popOver65, popUnder18, 
+      popUnder5, totalPop2020, popFemale, re, 
+      houseIncome, numHouseHold, homeOwnRate, 
+      avgPerPerHouse, veterans, highSchoolUp, bachelorDegreeUp, 
       foreignBorn);
 }
 

@@ -6,7 +6,7 @@
 #include <iomanip>
 #include <cmath>
 
-//add member functions here
+//aSD member functions here
 
 /* print state data - as aggregate of all the county data */
 std::ostream& operator<<(std::ostream &out, const demogState&SD) {
@@ -32,11 +32,30 @@ std::ostream& operator<<(std::ostream &out, const demogState&SD) {
    out <<  " and total: " << SD.getHighSchoolGrad() << endl;
    out << "County housing/economy info:" << endl;
    out << "(avg. persons per house): " << SD.getPersonPerHouse();
-   out <<  " and total: " << SD.getPersonPerHouse()*SD.getHousingUnits() << endl;
+   out <<  " and total: " << SD.getPersonPerHouse()*SD.getNumHousehold() << endl;
    out << "(% home ownership): " << (double)SD.getHomeOwn()/SD.getPopulation() * 100;
    out <<  " and total: " << SD.getHomeOwn() << endl;
-   out << "(number housing units): " << SD.getHousingUnits() << endl;
+   out << "(number housing units): " << SD.getNumHousehold() << endl;
    out << "(medIncome): " << SD.getMedIncome() << endl;
    out << "Total population: " << SD.getPopulation() << endl;
+   
+   out << "\nRacial Demographics Info: \n\% American Indian and Alaska Native percent: " << SD.getRaceAndEthnicity().getAmIndianAlNative();
+   out <<  " count: " << round((SD.getRaceAndEthnicity().getAmIndianAlNative()) * SD.totalPopulation2020);
+   out << "\n\% Asian American percent: " << SD.getRaceAndEthnicity().getAsianAlone();
+   out <<  " count: " << round((SD.getRaceAndEthnicity().getAsianAlone()) * SD.totalPopulation2020);
+   out << "\n\% Black/African American percent: " << SD.getRaceAndEthnicity().getBlackAlone();
+   out <<  " count: " << round((SD.getRaceAndEthnicity().getBlackAlone()) * SD.totalPopulation2020); 
+   out << "\n\% Hispanic or Latinx percent: " << SD.getRaceAndEthnicity().getHispLat();
+   out <<  " count: " << round((SD.getRaceAndEthnicity().getHispLat()) * SD.totalPopulation2020);
+   out << "\n\% Native Hawaiian and Other Pacific Islander: " << SD.getRaceAndEthnicity().getHawaiianPacIsland();
+   out <<  " count: " << round((SD.getRaceAndEthnicity().getHawaiianPacIsland()) * SD.totalPopulation2020);
+   out << "\n\% Two or More Races percent: " << SD.getRaceAndEthnicity().getTwoOrMore();
+   out <<  " count: " << round((SD.getRaceAndEthnicity().getTwoOrMore()) * SD.totalPopulation2020);
+   out << "\n\% White (inclusive) percent: " << SD.getRaceAndEthnicity().getWhiteAlone();
+   out <<  " count: " << round((SD.getRaceAndEthnicity().getWhiteAlone()) * SD.totalPopulation2020); 
+   out << "\n\% White (nonHispanic) percent: " << SD.getRaceAndEthnicity().getWhiteNotHispLat();
+   out <<  " count: " << round((SD.getRaceAndEthnicity().getWhiteNotHispLat()) * SD.totalPopulation2020);
+   out << "\ntotal Racial Demographic Count: " <<  SD.totalPopulation2020;
+
    return out; 
 }
