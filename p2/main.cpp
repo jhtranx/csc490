@@ -14,7 +14,7 @@ int main() {
 
     //read in a csv file and create a vector of objects representing each counties data
     std::vector<shared_ptr<demogData>> theData = read_csv(
-            "county_demographics.csv", DEMOG);
+            "county_demographics2014.csv", DEMOG);
 
 
     std::vector<shared_ptr<psData>> thePoliceData = read_csvPolice(
