@@ -14,7 +14,7 @@ void dataAQ::createStatePoliceData(std::vector<shared_ptr<psData>> theData){
    for (const auto &obj : theData) {
       string stateStr = obj->getState();
 
-      if (allStatePoliceData.find(stateStr) != allStatePoliceData.end()) { 
+      if (allStatePoliceData.find(stateStr) == allStatePoliceData.end()) { 
          shared_ptr<psCombo> newCombo = make_shared<psCombo>(stateStr);
          auto result = allStatePoliceData.insert(pair<string, shared_ptr<psCombo>>(stateStr, newCombo));
       }
