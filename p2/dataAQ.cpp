@@ -11,7 +11,38 @@
 dataAQ::dataAQ() {}
 
 void dataAQ::createStatePoliceData(std::vector<shared_ptr<psData>> theData){
-//FILL in
+   for (const auto &obj : theData) {
+      string stateStr = obj->getState();
+
+      if (allStatePoliceData.find(stateStr) != allStatePoliceData.end()) { 
+         shared_ptr<psCombo> newCombo = make_shared<psCombo>(stateStr);
+         auto result = allStatePoliceData.insert(pair<string, shared_ptr<psCombo>>(stateStr, newCombo));
+      }
+
+      if (obj->hasSignsOfMentalIllness())
+         allStatePoliceData[stateStr]->incNumMentalIllness();
+      if ((obj->getArmed() == "") || (obj->getArmed() == "unarmed"))
+         allStatePoliceData[stateStr]->incUnArmedCount();
+      if (obj->getArmed() == "toy weapon")
+         allStatePoliceData[stateStr]->incArmedToy();
+      if (obj->hasBodyCam())
+         allStatePoliceData[stateStr]->incNumBodyCam();
+      allStatePoliceData[stateStr]->incNumberOfCases();
+      if (obj->getRaceEthnicity() == "W") 
+         allStatePoliceData[stateStr]->getRaceEthnicity().incWhiteAlone();
+      else if (obj->getRaceEthnicity() == "B")
+         allStatePoliceData[stateStr]->getRaceEthnicity().incBlackAlone();
+      else if (obj->getRaceEthnicity() == "A")
+         allStatePoliceData[stateStr]->getRaceEthnicity().incAsianAlone();
+      else if (obj->getRaceEthnicity() == "N")
+         allStatePoliceData[stateStr]->getRaceEthnicity().incAmIndianAlNative();
+      else if (obj->getRaceEthnicity() == "H")
+         allStatePoliceData[stateStr]->getRaceEthnicity().incHispLat();
+      else if (obj->getRaceEthnicity() == "O")
+         allStatePoliceData[stateStr]->getRaceEthnicity().incOther();
+      else if (obj->getRaceEthnicity() == "N")
+         allStatePoliceData[stateStr]->getRaceEthnicity().incUnknown();
+   }
 }
 
 //sort and report the top ten states in terms of number of police shootings 

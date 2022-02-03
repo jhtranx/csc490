@@ -1,6849 +1,6849 @@
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-1
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-1
-0
-0
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-1
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-1
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-1
-1
-1
-0
-0
-1
-0
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-1
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-1
-1
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-1
-0
-1
-0
-1
-0
-0
-0
-1
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-1
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-1
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-1
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-1
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-1
-0
-0
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-1
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-0
-1
-1
-1
-0
-0
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-1
-1
-1
-1
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-1
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-1
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-1
-1
-0
-0
-0
-1
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-1
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-1
-0
-1
-1
-0
-0
-0
-1
-1
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-1
-0
-0
-1
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-1
-1
-1
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-1
-1
-1
-1
-0
-0
-0
-0
-1
-0
-1
-1
-0
-1
-0
-0
-1
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-1
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-1
-1
-0
-1
-0
-0
-1
-0
-1
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-1
-0
-1
-0
-0
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-1
-1
-0
-1
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-1
-0
-0
-1
-0
-0
-1
-1
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-1
-0
-0
-1
-1
-0
-0
-0
-1
-1
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-1
-0
-0
-1
-1
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-1
-1
-0
-1
-1
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-1
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-1
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: nail gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: shovel
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hammer
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: toy weapon
+ARMED: 
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hatchet
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: toy weapon
+ARMED: 
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: sword
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: box cutter
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: sword
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: machete
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: unarmed
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: hammer
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: metal object
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: sword
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: 
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: sword
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: knife
+ARMED: unarmed
+ARMED: screwdriver
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: lawn mower blade
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: box cutter
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: flagpole
+ARMED: guns and explosives
+ARMED: 
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: cordless drill
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: unarmed
+ARMED: crossbow
+ARMED: gun
+ARMED: BB gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: metal pole
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: sword
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: box cutter
+ARMED: gun
+ARMED: gun
+ARMED: metal pipe
+ARMED: sword
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: metal hand tool
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: screwdriver
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: knife
+ARMED: blunt object
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: toy weapon
+ARMED: hammer
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: metal stick
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: metal pipe
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: hatchet
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: sharp object
+ARMED: toy weapon
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: toy weapon
+ARMED: meat cleaver
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: box cutter
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: carjack
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: chain
+ARMED: box cutter
+ARMED: contractor's level
+ARMED: box cutter
+ARMED: undetermined
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: guns and explosives
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: metal pipe
+ARMED: toy weapon
+ARMED: metal pipe
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: metal pipe
+ARMED: gun
+ARMED: gun
+ARMED: guns and explosives
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: railroad spikes
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: stapler
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: screwdriver
+ARMED: unarmed
+ARMED: gun
+ARMED: box cutter
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: blunt object
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: knife
+ARMED: beer bottle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: toy weapon
+ARMED: machete
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: 
+ARMED: crossbow
+ARMED: unknown weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: toy weapon
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: binoculars
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: hammer
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: undetermined
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: bean-bag gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: hammer
+ARMED: toy weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: Taser
+ARMED: 
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: baseball bat and fireplace poker
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: metal stick
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: straight edge razor
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun and knife
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: knife
+ARMED: unknown weapon
+ARMED: gun
+ARMED: ax
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: knife
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: brick
+ARMED: unarmed
+ARMED: baseball bat
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: undetermined
+ARMED: toy weapon
+ARMED: knife
+ARMED: unknown weapon
+ARMED: knife
+ARMED: undetermined
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: hand torch
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: chain saw
+ARMED: toy weapon
+ARMED: 
+ARMED: toy weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: garden tool
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: scissors
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: 
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: ax
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: undetermined
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: toy weapon
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: 
+ARMED: unarmed
+ARMED: gun
+ARMED: pole
+ARMED: gun
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: undetermined
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: 
+ARMED: toy weapon
+ARMED: toy weapon
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: Taser
+ARMED: 
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: hammer
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: pick-axe
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun and knife
+ARMED: gun
+ARMED: gun
+ARMED: meat cleaver
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: scissors
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: flashlight
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: shovel
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: Taser
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: ax
+ARMED: ax
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: knife
+ARMED: hatchet
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: baseball bat
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: 
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: Taser
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: shot
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: baton
+ARMED: baseball bat
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: spear
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: 
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: chair
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: baseball bat
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: pitchfork
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: undetermined
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hatchet
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: screwdriver
+ARMED: ax
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: hatchet and gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: rock
+ARMED: Taser
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: crossbow
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: hammer
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: metal pole
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: piece of wood
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: scissors
+ARMED: knife
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: shot and Tasered
+ARMED: unarmed
+ARMED: unarmed
+ARMED: chain saw
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: pipe
+ARMED: gun
+ARMED: gun
+ARMED: glass shard
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: sword
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: unknown weapon
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: motorcycle
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: unarmed
+ARMED: hatchet
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: 
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: brick
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: pepper spray
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: 
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: baseball bat
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: metal rake
+ARMED: sword
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: baseball bat
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unknown weapon
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: toy weapon
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun and knife
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: metal pipe
+ARMED: 
+ARMED: hammer
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: baseball bat
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: machete
+ARMED: unarmed
+ARMED: gun
+ARMED: baton
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: blunt object
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: rock
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: crowbar
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: oar
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: machete and gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: tire iron
+ARMED: gun
+ARMED: 
+ARMED: 
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: crossbow
+ARMED: 
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: scissors
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: air conditioner
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: screwdriver
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: pole and knife
+ARMED: gun and knife
+ARMED: gun
+ARMED: gun
+ARMED: metal pipe
+ARMED: unarmed
+ARMED: hatchet
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: metal pipe
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: Taser
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun and knife
+ARMED: beer bottle
+ARMED: knife
+ARMED: 
+ARMED: 
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: piece of wood
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: metal stick
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: baseball bat
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: 
+ARMED: gun
+ARMED: metal object
+ARMED: pipe
+ARMED: unarmed
+ARMED: sharp object
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: baseball bat and bottle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: knife
+ARMED: 
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: 
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: hatchet and gun
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: crossbow
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: ax
+ARMED: gun
+ARMED: rock
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: crossbow
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: fireworks
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: toy weapon
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: pen
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: unarmed
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: screwdriver
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: 
+ARMED: Taser
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: chainsaw
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: undetermined
+ARMED: unarmed
+ARMED: unarmed
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: blunt object
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: ax
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: blunt object
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: knife
+ARMED: sword
+ARMED: toy weapon
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: baseball bat
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: unknown weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: 
+ARMED: knife
+ARMED: chair
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: unknown weapon
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: crowbar
+ARMED: 
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun and knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: pipe
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: 
+ARMED: gun and knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: baton
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun and sword
+ARMED: gun
+ARMED: gun
+ARMED: pipe
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: hammer
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: unarmed
+ARMED: gun
+ARMED: screwdriver
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: machete
+ARMED: gun and car
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: gun
+ARMED: 
+ARMED: pitchfork
+ARMED: gun
+ARMED: gun
+ARMED: gun and car
+ARMED: machete
+ARMED: gun
+ARMED: gun and car
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: vehicle
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: sword
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: Taser
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: unknown weapon
+ARMED: undetermined
+ARMED: vehicle
+ARMED: unknown weapon
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: unknown weapon
+ARMED: gun
+ARMED: shovel
+ARMED: hatchet
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: pipe
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: metal object
+ARMED: undetermined
+ARMED: machete
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: pole and knife
+ARMED: gun
+ARMED: baseball bat
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: unknown weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: pellet gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: 
+ARMED: 
+ARMED: unknown weapon
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: claimed to be armed
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: BB gun
+ARMED: pipe
+ARMED: unarmed
+ARMED: unknown weapon
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: 
+ARMED: 
+ARMED: BB gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun and knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: 
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: toy weapon
+ARMED: knife
+ARMED: sword
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: machete
+ARMED: unknown weapon
+ARMED: unknown weapon
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: unknown weapon
+ARMED: piece of wood
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: pick-axe
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: baseball bat
+ARMED: baton
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: unknown weapon
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: ax
+ARMED: undetermined
+ARMED: gun
+ARMED: 
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: crossbow
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: BB gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: 
+ARMED: unknown weapon
+ARMED: incendiary device
+ARMED: unknown weapon
+ARMED: knife
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun and knife
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: machete
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: metal pipe
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: screwdriver
+ARMED: screwdriver
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: glass shard
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: screwdriver
+ARMED: 
+ARMED: vehicle
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: samurai sword
+ARMED: ax
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: hatchet
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: unarmed
+ARMED: unarmed
+ARMED: vehicle
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: metal pipe
+ARMED: toy weapon
+ARMED: pick-axe
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: 
+ARMED: unarmed
+ARMED: ax
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: glass shard
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: unknown weapon
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun and car
+ARMED: gun
+ARMED: sword
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: knife
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: metal pole
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun and knife
+ARMED: gun
+ARMED: bow and arrow
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: knife
+ARMED: gun
+ARMED: metal object
+ARMED: gun
+ARMED: sword
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: incendiary device
+ARMED: unarmed
+ARMED: knife
+ARMED: unknown weapon
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and car
+ARMED: vehicle
+ARMED: knife
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: vehicle
+ARMED: gun
+ARMED: unknown weapon
+ARMED: box cutter
+ARMED: machete
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: undetermined
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: baseball bat
+ARMED: gun
+ARMED: knife
+ARMED: metal pipe
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: vehicle
+ARMED: chain
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: vehicle
+ARMED: sharp object
+ARMED: crossbow
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: knife
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: undetermined
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun and knife
+ARMED: gun and knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: box cutter
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: box cutter
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun and knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: crossbow
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: machete
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: shot
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: unknown weapon
+ARMED: lawn mower blade
+ARMED: gun
+ARMED: undetermined
+ARMED: unarmed
+ARMED: gun
+ARMED: gun and knife
+ARMED: vehicle and gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: shot
+ARMED: vehicle
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: rock
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: straight edge razor
+ARMED: shot
+ARMED: metal pipe
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: meat cleaver
+ARMED: straight edge razor
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: pole
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: vehicle
+ARMED: knife
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: toy weapon
+ARMED: gun
+ARMED: ax
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: baseball bat
+ARMED: knife
+ARMED: gun
+ARMED: beer bottle
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: hatchet
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: vehicle
+ARMED: gun
+ARMED: unarmed
+ARMED: vehicle
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: ax
+ARMED: vehicle
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: unarmed
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: box cutter
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: machete
+ARMED: gun
+ARMED: vehicle
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: sword
+ARMED: unarmed
+ARMED: undetermined
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: sharp object
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: vehicle
+ARMED: sword
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: BB gun
+ARMED: undetermined
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: wrench
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: walking stick
+ARMED: knife
+ARMED: knife
+ARMED: vehicle
+ARMED: sword
+ARMED: gun
+ARMED: shot
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: rock
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: hammer
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: unarmed
+ARMED: baseball bat
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: shot
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: hammer
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: flashlight
+ARMED: crowbar
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: sharp object
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: shot
+ARMED: gun
+ARMED: knife
+ARMED: barstool
+ARMED: unknown weapon
+ARMED: toy weapon
+ARMED: gun
+ARMED: vehicle
+ARMED: unarmed
+ARMED: vehicle
+ARMED: vehicle
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: unknown weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: sword
+ARMED: sharp object
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: ax
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hammer
+ARMED: screwdriver
+ARMED: knife
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: gun
+ARMED: piece of wood
+ARMED: scissors
+ARMED: gun
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: garden tool
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: scissors
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: ax
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: machete
+ARMED: gun and vehicle
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: sharp object
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: unknown weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: Taser
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: shovel
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun and car
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hammer
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: grenade
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: vehicle
+ARMED: vehicle
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun and knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: piece of wood
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hatchet
+ARMED: vehicle
+ARMED: samurai sword
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: pellet gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: unarmed
+ARMED: gun and car
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: BB gun and vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: wasp spray
+ARMED: air pistol
+ARMED: Airsoft pistol
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: baton
+ARMED: vehicle
+ARMED: vehicle
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: baseball bat
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: straight edge razor
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: baseball bat and knife
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: sharp object
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: scissors
+ARMED: vehicle
+ARMED: gun
+ARMED: chair
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: baseball bat
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: crowbar
+ARMED: hammer
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: ax
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: box cutter
+ARMED: undetermined
+ARMED: sword
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: sharp object
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: BB gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: vehicle and gun
+ARMED: gun
+ARMED: knife
+ARMED: sword
+ARMED: screwdriver
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: vehicle and machete
+ARMED: gun
+ARMED: ice pick
+ARMED: gun
+ARMED: sword
+ARMED: gun
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun and vehicle
+ARMED: vehicle
+ARMED: "car
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: baseball bat
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hatchet
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: knife
+ARMED: gun and car
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: shovel
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: vehicle
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun and knife
+ARMED: gun
+ARMED: undetermined
+ARMED: Taser
+ARMED: gun
+ARMED: unknown weapon
+ARMED: unknown weapon
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: chain
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: vehicle
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hammer
+ARMED: vehicle
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: chair
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: meat cleaver
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle and gun
+ARMED: knife
+ARMED: gun
+ARMED: meat cleaver
+ARMED: gun
+ARMED: machete
+ARMED: knife
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: scissors
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: sharp object
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: undetermined
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: BB gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: unarmed
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: screwdriver
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: tire iron
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: baton
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: pick-axe
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: sword
+ARMED: shovel
+ARMED: gun
+ARMED: gun and car
+ARMED: knife
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: knife
+ARMED: Taser
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: unknown weapon
+ARMED: knife
+ARMED: metal pipe
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun and car
+ARMED: knife
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: machete
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: screwdriver
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and car
+ARMED: vehicle
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: baseball bat
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: sharp object
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: samurai sword
+ARMED: knife
+ARMED: Taser
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: rock
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: hammer
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: unarmed
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: vehicle and gun
+ARMED: sword
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: toy weapon
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hammer
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: metal pipe
+ARMED: pellet gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: Taser
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: tire iron
+ARMED: gun
+ARMED: machete
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: 
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: machete
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: baseball bat
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: sword
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun and knife
+ARMED: gun
+ARMED: bottle
+ARMED: gun
+ARMED: metal pipe
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: pepper spray
+ARMED: machete
+ARMED: gun
+ARMED: gun and machete
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: Airsoft pistol
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: Airsoft pistol
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: shot
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: shovel
+ARMED: BB gun
+ARMED: screwdriver
+ARMED: vehicle
+ARMED: pipe
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun and knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: spear
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: metal pole
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: pole
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: BB gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: rock
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: hatchet
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and machete
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: vehicle
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: BB gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: straight edge razor
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: screwdriver
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hammer
+ARMED: BB gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: glass shard
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: vehicle
+ARMED: unarmed
+ARMED: metal object
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and machete
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: undetermined
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: metal hand tool
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: knife
+ARMED: vehicle
+ARMED: box cutter
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: unarmed
+ARMED: gun
+ARMED: unknown weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: piece of wood
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: hatchet
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: samurai sword
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: microphone
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: piece of wood
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: baseball bat
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: hatchet
+ARMED: sharp object
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife and vehicle
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: tire iron
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: metal pipe
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: crowbar
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: vehicle
+ARMED: undetermined
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and knife
+ARMED: BB gun
+ARMED: gun
+ARMED: gun
+ARMED: meat cleaver
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: undetermined
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: scissors
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: sharp object
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle and gun
+ARMED: gun
+ARMED: vehicle
+ARMED: vehicle and gun
+ARMED: undetermined
+ARMED: toy weapon
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: BB gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle and gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: undetermined
+ARMED: undetermined
+ARMED: gun
+ARMED: undetermined
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: unknown weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: knife
+ARMED: piece of wood
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: BB gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: unarmed
+ARMED: gun
+ARMED: vehicle
+ARMED: vehicle
+ARMED: unknown weapon
+ARMED: gun
+ARMED: vehicle
+ARMED: machete
+ARMED: knife
+ARMED: unknown weapon
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unknown weapon
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: machete
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and car
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun and knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: BB gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: toy weapon
+ARMED: vehicle
+ARMED: undetermined
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: vehicle
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: knife
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: vehicle and gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: toy weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: machete
+ARMED: gun
+ARMED: gun
+ARMED: sharp object
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: unarmed
+ARMED: gun
+ARMED: sword
+ARMED: undetermined
+ARMED: undetermined
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: undetermined
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: Taser
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: toy weapon
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: sharp object
+ARMED: gun
+ARMED: gun
+ARMED: unarmed
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: vehicle
+ARMED: undetermined
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: sword
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: hammer
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: screwdriver
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: Taser
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: piece of wood
+ARMED: knife
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: shovel
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun and vehicle
+ARMED: undetermined
+ARMED: gun and knife
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: unknown weapon
+ARMED: vehicle
+ARMED: knife
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: machete
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: scissors
+ARMED: gun and vehicle
+ARMED: gun
+ARMED: undetermined
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: knife
+ARMED: unknown weapon
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: vehicle
+ARMED: 
+ARMED: knife
+ARMED: vehicle
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: knife
+ARMED: gun
+ARMED: knife
+ARMED: gun and knife
+ARMED: gun
+ARMED: knife
+ARMED: unarmed
+ARMED: unknown weapon
+ARMED: gun
+ARMED: gun
+ARMED: undetermined
+ARMED: gun
+ARMED: vehicle
+ARMED: gun
+ARMED: gun
+ARMED: unknown weapon
+ARMED: knife
+ARMED: metal object
+ARMED: undetermined
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun
+ARMED: gun and knife
+ARMED: glass shard
+ARMED: hammer
 County Demographics Info: Abbeville County, SC
 Total population: 24295
 Racial Demographics Info: 
@@ -24967,7 +24967,7 @@ total Racial Demographic Count: 1165927
 (medium income in $): 99716
 --County education: 
 (% Bachelor or more): 0.424 and total: 494353
-(% high school or more): 0.895 and total: 1.04350e+06
+(% high school or more): 0.895 and total: 1.0435e+06
 
 County Demographics Info: Converse County, WY
 Total population: 13751
@@ -35633,7 +35633,7 @@ total Racial Demographic Count: 1066710
 (% foreign born): 0.131 and total: 139739
 (veterans): 42448
 --County housing/economy info: 
-(avg. persons per house): 2.44 and total: 1.00180e+06
+(avg. persons per house): 2.44 and total: 1.0018e+06
 (% home ownership): 0.516 and total: 550422
 (number housingholds): 410576
 (medium income in $): 69673
@@ -41927,7 +41927,7 @@ total Racial Demographic Count: 4731145
 (veterans): 159618
 --County housing/economy info: 
 (avg. persons per house): 2.87 and total: 4.60741e+06
-(% home ownership): 0.546 and total: 2.58320e+06
+(% home ownership): 0.546 and total: 2.5832e+06
 (number housingholds): 1605368
 (medium income in $): 61705
 --County education: 
@@ -62227,7 +62227,7 @@ total Racial Demographic Count: 2701767
 (veterans): 48104
 --County housing/economy info: 
 (avg. persons per house): 3 and total: 2.65012e+06
-(% home ownership): 0.512 and total: 1.38330e+06
+(% home ownership): 0.512 and total: 1.3833e+06
 (number housingholds): 883372
 (medium income in $): 51347
 --County education: 

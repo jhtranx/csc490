@@ -151,7 +151,7 @@ shared_ptr<psData> readCSVLinePolice(std::string theLine) {
     getFieldNQ(ss);
     getFieldNQ(ss);
 
-    cout << bodyCam << endl;
+    cout << "ARMED: " << armed << endl;
 
     /* TO DO fix */
     return make_shared<psData>(state, name, city, raceEth, 
