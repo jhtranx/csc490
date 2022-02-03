@@ -8,7 +8,7 @@
 #include "parse.h"
 #include "dataAQ.h"
 #include "color.h"
-#include "rect.h"
+#include "ellipse.h"
 #include "ppmR.h"
 #include <array>
 
@@ -16,7 +16,7 @@
 using namespace std;
 
 void writeOut(ostream& out, ppmR& theWriter, 
-			    vector<Rect> Rs) {
+			    vector<ellipse> Es) {
 
 	float res;
 	color inC;
@@ -31,11 +31,11 @@ void writeOut(ostream& out, ppmR& theWriter,
 			inTrue = false;
 			curDepth = -1;
 			
-			for (auto rect: Rs) {
-				if (rect.eval(x, y) && rect.getDepth() > curDepth){
-					inC = rect.getInC();
+			for (auto ellipse: Es) {
+				if (ellipse.eval(x, y) && ellipse.getDepth() > curDepth){
+					inC = ellipse.getInC();
 					inTrue = true;
-					curDepth = rect.getDepth();
+					curDepth = ellipse.getDepth();
 				}
 			}
 			if (inTrue) {			
@@ -48,7 +48,7 @@ void writeOut(ostream& out, ppmR& theWriter,
 	}
 }
 
-void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int sizeY) {
+void createGrid(vector<int> theNumbers, vector<ellipse> &theEllipses, int sizeX, int sizeY) {
     //cool to warm color map 
     array<color, 10> colorMap; 
     colorMap[0] = color(91, 80, 235); //cool 
@@ -79,7 +79,7 @@ void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int
 
         // cout << "vec2X: " << 0 + i * offSetX << endl;
         // cout << "vec2Y: " << sizeY - j * offSetY << endl;
-        // //j * (offSetY - sizeY)
+        // j * (offSetY - sizeY);
         // cout << "sizeY: " << sizeY<< endl;
         // cout << "j: " << j << endl;
         // cout << "i: " << i << endl;
@@ -88,8 +88,8 @@ void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int
         // cout << "offX: " << offSetX << endl;
         // cout << "offY: " << offSetY << endl;
 
-        // theRects.push_back(Rect(vec2(j * offSetX, i * offSetY), 
-        //                         offSetX, offSetY, 5, colorMap[mag]));
+        theEllipses.push_back(ellipse(vec2(j * offSetX, i * offSetY), 
+                                mag * 3, 5, colorMap[mag]));
 
         
         i++;
@@ -105,45 +105,28 @@ int main(int argc, char *argv[]) {
     ofstream outFile;
 	int sizeX, sizeY;
 
-    cout << "HERE "<< endl;
-
     //read in a csv file and create a vector of objects representing each counties data
     std::vector<shared_ptr<psData>> thePoliceData = read_csvPolice(
             "fatal-police-shootings-data.csv", POLICE);
 
-    cout << "HERE "<< endl;
-
     dataAQ theAnswers;
     theAnswers.createStatePoliceData(thePoliceData);
-
-    cout << "HERE "<< endl;
 
     std::vector<int> totCaseCt = {};
     std::vector<int> totAfricanAmericanCt = {};
 
-    cout << "HERE "<< endl;
-
-    totCaseCt = theAnswers.getCaseCtList();
-
-    cout << "HERE "<< endl;
-    
+    totCaseCt = theAnswers.getCaseCtList();    
     totAfricanAmericanCt = theAnswers.getAfricanAmericanCtList();
 
-    cout << "HERE "<< endl;
+    int maxCase = 0;
+    int maxAA = 0;
 
-
-    // int maxFb = 0;
-    // int maxHs = 0;
-    // int maxBa = 0;
-
-    // for (int i = 0; i < foreignBorn.size(); i++) {
-    //     if (foreignBorn.at(i) > maxFb)
-    //         maxFb = foreignBorn.at(i);
-    //     if (hsAndUp.at(i) > maxHs)
-    //         maxHs = hsAndUp.at(i);
-    //     if (baAndUp.at(i) > maxBa)
-    //         maxBa = baAndUp.at(i);
-    // }
+    for (int i = 0; i < totCaseCt.size(); i++) {
+        if (totCaseCt.at(i) > maxCase)
+            maxCase = totCaseCt.at(i);
+        if (totAfricanAmericanCt.at(i) > maxAA)
+            maxAA = totAfricanAmericanCt.at(i);
+    }
 
     // cout << "MaxFb" << maxFb << endl;
     // cout << "MaxHs" << maxHs << endl;
@@ -160,13 +143,13 @@ int main(int argc, char *argv[]) {
 		ppmR theWriter(sizeX, sizeY);
 		outFile.open(argv[3]);
 
-        vector<Rect> theRects;
-        // createGrid(foreignBorn, theRects, sizeX, sizeY);
+        vector<ellipse> theEllispes;
+        createGrid(totCaseCt, theEllispes, sizeX, sizeY);
 
 		if (outFile) {
 			cout << "writing an image of size: " << sizeX << " " << sizeY << " to: " << argv[3] << endl;
 			theWriter.writeHeader(outFile);
-			writeOut(outFile, theWriter, theRects);
+			writeOut(outFile, theWriter, theEllispes);
 		} else {
 			cout << "Error cannot open outfile" << endl;
 			exit(0);
