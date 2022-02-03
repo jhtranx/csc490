@@ -97878,31 +97878,31 @@ total Racial Demographic Count: 2413
 *** the state that needs the most pre-schools**
 Name of state: UT
 State Info: UT
-Number of Counties: 29
+Number of Counties: 20
 Population info:
-(% over 65): 11.3786 and total: 372265
-(% under 18): 29.0466 and total: 950292
-(% under 5): 7.7389 and total: 253187
-(% female): 49.6417 and total: 1624085
-(% foreign born): 8.42318 and total: 275574
-(% veterans): 3.68158 and total: 120447
+(% over 65): 6.0241 and total: 5
+(% under 18): 4.81928 and total: 4
+(% under 5): 31.3253 and total: 26
+(% female): 612.048 and total: 508
+(% foreign born): 612.048 and total: 508
+(% veterans): 1.20482 and total: 1
 Education info:
-(% Bachelor or more): 34.3751 and total: 1124621
-(% high school or more): 92.4179 and total: 3023558
+(% Bachelor or more): 1.4501e+09 and total: 1203584160
+(% high school or more): 1.20482 and total: 1
 County housing/economy info:
-(avg. persons per house): 3.11978 and total: 3.049e+06
-(% home ownership): 70.1075 and total: 2293648
-(number housing units): 977313
-(medIncome): 63059
-Total population: 3271616
+(avg. persons per house): 6.95132e-310 and total: 7.28118e-302
+(% home ownership): 3.23444e+08 and total: 268458195
+(number housing units): 104745368
+(medIncome): 0
+Total population: 83
 
 Racial Demographics Info: 
-% American Indian and Alaska Native percent: 0.0161431 count: 52814
-% Asian American percent: 0.0223921 count: 73258
-% Black/African American percent: 0.012573 count: 41134
-% Hispanic or Latinx percent: 0.133231 count: 435881
-% Native Hawaiian and Other Pacific Islander: 0.00875394 count: 28640
-% Two or More Races percent: 0.0231111 count: 75611
-% White (inclusive) percent: 0.914741 count: 2.99268e+06
-% White (nonHispanic) percent: 0.797254 count: 2.60831e+06
-total Racial Demographic Count: 3271616
+% American Indian and Alaska Native percent: 0 count: 0
+% Asian American percent: 1 count: 83
+% Black/African American percent: 7 count: 581
+% Hispanic or Latinx percent: 12 count: 996
+% Native Hawaiian and Other Pacific Islander: 2 count: 166
+% Two or More Races percent: 0 count: 0
+% White (inclusive) percent: 48 count: 3984
+% White (nonHispanic) percent: 0 count: 0
+total Racial Demographic Count: 83

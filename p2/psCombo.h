@@ -26,6 +26,15 @@ public:
     string getRegion() {return state;} //return state for p2
     raceAndEthnicity getRaceEthnicity() {return raceEth;}
 
+    void incRaceEth(string race) {
+        if (race == "W") {raceEth.incWhiteAlone();}
+        else if (race == "B") {raceEth.incBlackAlone();}
+        else if (race == "A") {raceEth.incAsianAlone();}
+        else if (race == "N") {raceEth.incHawaiianPacIsland();}
+        else if (race == "H") {raceEth.incHispLat();}
+        else if (race == "O") {raceEth.incOther();}
+        else if (race == "None") {raceEth.incUnknown();}
+    }
     void incNumMentalIllness() {mentalIllnessCt += 1;}//total count “TRUE”
     void incUnArmedCount() {unarmedCt += 1;} //total count blank, ‘unarmed’
     void incArmedToy() {armedToyCt += 1;}  //total count ’toy weapon’
@@ -34,7 +43,7 @@ public:
 
     friend std::ostream& operator<<(std::ostream &out, const psCombo& PD);
 
-protected:
+private:
     const string state;
     int mentalIllnessCt;
     int unarmedCt;

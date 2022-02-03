@@ -29,19 +29,19 @@ void dataAQ::createStatePoliceData(std::vector<shared_ptr<psData>> theData){
          allStatePoliceData[stateStr]->incNumBodyCam();
       allStatePoliceData[stateStr]->incNumberOfCases();
       if (obj->getRaceEthnicity() == "W") 
-         allStatePoliceData[stateStr]->getRaceEthnicity().incWhiteAlone();
+         allStatePoliceData[stateStr]->incRaceEth("W");
       else if (obj->getRaceEthnicity() == "B")
-         allStatePoliceData[stateStr]->getRaceEthnicity().incBlackAlone();
+         allStatePoliceData[stateStr]->incRaceEth("B");
       else if (obj->getRaceEthnicity() == "A")
-         allStatePoliceData[stateStr]->getRaceEthnicity().incAsianAlone();
+         allStatePoliceData[stateStr]->incRaceEth("A");
       else if (obj->getRaceEthnicity() == "N")
-         allStatePoliceData[stateStr]->getRaceEthnicity().incAmIndianAlNative();
+         allStatePoliceData[stateStr]->incRaceEth("N");
       else if (obj->getRaceEthnicity() == "H")
-         allStatePoliceData[stateStr]->getRaceEthnicity().incHispLat();
+         allStatePoliceData[stateStr]->incRaceEth("H");
       else if (obj->getRaceEthnicity() == "O")
-         allStatePoliceData[stateStr]->getRaceEthnicity().incOther();
-      else if (obj->getRaceEthnicity() == "N")
-         allStatePoliceData[stateStr]->getRaceEthnicity().incUnknown();
+         allStatePoliceData[stateStr]->incRaceEth("O");
+      else if (obj->getRaceEthnicity() == "None")
+         allStatePoliceData[stateStr]->incRaceEth("None");
    }
 }
 
@@ -286,4 +286,31 @@ string dataAQ::mostVeterans() {
       }     
    }
    return maxState; 
+}
+
+vector<int> dataAQ::getAfricanAmericanCtList() {
+   vector<int> retList = {};
+   for (auto& policePair : allStatePoliceData) {
+      shared_ptr<psCombo> currState = policePair.second;
+      retList.push_back(currState->getRaceEthnicity().getBlackAlone());
+      if (currState->getRaceEthnicity().getBlackAlone() > 0) {
+         cout << "morethan1" << endl;
+      }
+   }
+   cout << "index 0 List 1: " << retList[0] << endl;
+   return retList;
+}
+
+vector<int> dataAQ::getCaseCtList() {
+   vector<int> retList = {};
+   cout << "HERE "<< endl;
+   for (auto& policePair : allStatePoliceData) {
+      shared_ptr<psCombo> currState = policePair.second;
+      retList.push_back(currState->getNumberOfCases());
+      
+   }
+   cout << "HERE "<< endl;
+   cout << "index 0 List 2: " << retList.at(0) << endl;
+   cout << "HERE "<< endl;
+   return retList;
 }
