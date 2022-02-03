@@ -88,8 +88,6 @@ void createGrid(vector<float> theNumbers, vector<Rect> &theRects, int sizeX, int
         // cout << "offX: " << offSetX << endl;
         // cout << "offY: " << offSetY << endl;
 
-        theRects.push_back(Rect(vec2(0 + i * offSetX, sizeY - j * offSetY), 
-                                offSetX, offSetY, 5, colorMap[mag]));
         // theRects.push_back(Rect(vec2(j * offSetX, i * offSetY), 
         //                         offSetX, offSetY, 5, colorMap[mag]));
 
@@ -107,29 +105,32 @@ int main(int argc, char *argv[]) {
     ofstream outFile;
 	int sizeX, sizeY;
 
+    cout << "HERE "<< endl;
+
     //read in a csv file and create a vector of objects representing each counties data
     std::vector<shared_ptr<psData>> thePoliceData = read_csvPolice(
             "fatal-police-shootings-data.csv", POLICE);
 
-    dataAQ theAnswers = createStateData(thePoliceData);
+    cout << "HERE "<< endl;
 
+    dataAQ theAnswers;
+    theAnswers.createStatePoliceData(thePoliceData);
 
+    cout << "HERE "<< endl;
 
-    // [](){theAnswers.getStatePoliceData > theAnswers.getStateData;}
+    std::vector<int> totCaseCt = {};
+    std::vector<int> totAfricanAmericanCt = {};
 
-    std::vector<int> totCaseCt;
-    std::vector<int> totAfricanAmericanCt;
+    cout << "HERE "<< endl;
 
-     //debug print out - uncomment if you want to double check your data
+    totCaseCt = theAnswers.getCaseCtList();
 
-    for (const auto &obj : theAnswers.getStatePoliceData()) {
-        // std::cout << *obj << std::endl;
-        std::cout << *obj.first << std::endl;
+    cout << "HERE "<< endl;
+    
+    totAfricanAmericanCt = theAnswers.getAfricanAmericanCtList();
 
-        // foreignBorn.push_back(obj->getForeignBorn());
-        // hsAndUp.push_back(obj->getHighSchoolGrad());
-        // baAndUp.push_back(obj->getBachelorsDeg());
-    }
+    cout << "HERE "<< endl;
+
 
     // int maxFb = 0;
     // int maxHs = 0;

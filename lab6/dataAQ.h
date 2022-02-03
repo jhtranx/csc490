@@ -52,6 +52,9 @@ class dataAQ {
       void reportTopTenStatesPS();
       void reportBottomTenStatesHomeOwn();
 
+      vector<int> getAfricanAmericanCtList();
+      vector<int> getCaseCtList();
+
       shared_ptr<demogState> getStateData(string stateName) { return stateMap[stateName]; }
       shared_ptr<psCombo> getStatePoliceData(string stateName) { return allStatePoliceData[stateName]; }
       
@@ -59,8 +62,9 @@ class dataAQ {
 
    //this quarter restriction
    private:
+      std::map<string, shared_ptr<psCombo>> allStatePoliceData;    
       std::map<string, shared_ptr<demogState>> stateMap;
-      std::map<string, shared_ptr<psCombo>> allStatePoliceData;
+      
 
 };
 #endif
