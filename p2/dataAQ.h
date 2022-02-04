@@ -53,7 +53,7 @@ class dataAQ {
       void reportBottomTenStatesHomeOwn();
 
       vector<int> getAfricanAmericanCtList();
-      vector<int> getCaseCtList();
+      vector<vector> getCaseCtList();
 
       shared_ptr<demogState> getStateData(string stateName) { return stateMap[stateName]; }
       shared_ptr<psCombo> getStatePoliceData(string stateName) { return allStatePoliceData[stateName]; }

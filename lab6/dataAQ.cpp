@@ -292,25 +292,19 @@ vector<int> dataAQ::getAfricanAmericanCtList() {
    vector<int> retList = {};
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
-      retList.push_back(currState->getRaceEthnicity().getBlackAlone());
-      if (currState->getRaceEthnicity().getBlackAlone() > 0) {
-         cout << "morethan1" << endl;
-      }
+      cout << "STATE: " << currState->getRegion() << " AA CT: " << currState->getRaceEthnicity().getBlackAlone() << endl;
+      retList.push_back((currState->getRaceEthnicity().getBlackAlone()/currState->getNumberOfCases())*100);
    }
-   cout << "index 0 List 1: " << retList[0] << endl;
    return retList;
 }
 
 vector<int> dataAQ::getCaseCtList() {
    vector<int> retList = {};
-   cout << "HERE "<< endl;
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
+      cout << "STATE: " << currState->getRegion() << " CASE CT: " << currState->getNumberOfCases() << endl;
       retList.push_back(currState->getNumberOfCases());
       
    }
-   cout << "HERE "<< endl;
-   cout << "index 0 List 2: " << retList.at(0) << endl;
-   cout << "HERE "<< endl;
    return retList;
 }

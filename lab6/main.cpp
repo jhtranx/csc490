@@ -20,7 +20,7 @@ void writeOut(ostream& out, ppmR& theWriter,
 
 	float res;
 	color inC;
-	color background(12, 34, 56);
+	color background(0, 0, 0);
 	bool inTrue = false;
 	double curDepth = -1.0;
 
@@ -62,38 +62,38 @@ void createGrid(vector<int> theNumbers, vector<ellipse> &theEllipses, int sizeX,
     colorMap[8] = color(245, 134, 91); 
     colorMap[9] = color(235, 91, 101); //warm  
 
-    int approxSize = sqrt(theNumbers.size());
+    cout << "SIZE: " << theNumbers.size() << endl;
+    int approxSize = sqrt(theNumbers.size()) + 1;
     int offSetX = round(sizeX / (double)approxSize);
     int offSetY = round(sizeY / (double)approxSize);
 
     double topVal = round(*max_element(theNumbers.begin(), theNumbers.end()));
-    cout << "topVal: " << topVal << endl;
 
     double mag = 0;
     int i = 0;
     int j = 0;
     for (auto entry : theNumbers) {
-        // cout << "wow: " << entry / topVal << endl;
+        cout << "wow: " << entry / topVal << endl;
         mag = round((colorMap.size() - 1) * (entry / topVal));
-        // cout << "color: " << mag << endl;
+        cout << "color: " << mag << endl;
 
-        // cout << "vec2X: " << 0 + i * offSetX << endl;
-        // cout << "vec2Y: " << sizeY - j * offSetY << endl;
-        // j * (offSetY - sizeY);
-        // cout << "sizeY: " << sizeY<< endl;
-        // cout << "j: " << j << endl;
-        // cout << "i: " << i << endl;
-        // cout << "offSetY: " << offSetY << endl;
+        cout << "vec2X: " << 0 + i * offSetX << endl;
+        cout << "vec2Y: " << sizeY - j * offSetY << endl;
+        j * (offSetY - sizeY);
+        cout << "sizeY: " << sizeY<< endl;
+        cout << "j: " << j << endl;
+        cout << "i: " << i << endl;
+        cout << "offSetY: " << offSetY << endl;
 
-        // cout << "offX: " << offSetX << endl;
-        // cout << "offY: " << offSetY << endl;
+        cout << "offX: " << offSetX << endl;
+        cout << "offY: " << offSetY << endl;
 
-        theEllipses.push_back(ellipse(vec2(j * offSetX, i * offSetY), 
-                                mag * 3, 5, colorMap[mag]));
+        theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
+                                mag*3, 5, colorMap[mag]));
 
         
         i++;
-        if (i > approxSize) {
+        if (i > approxSize-1) {
             i = 0;
             j++;
         }
@@ -107,7 +107,7 @@ int main(int argc, char *argv[]) {
 
     //read in a csv file and create a vector of objects representing each counties data
     std::vector<shared_ptr<psData>> thePoliceData = read_csvPolice(
-            "fatal-police-shootings-data.csv", POLICE);
+            "fatal-police-shootings-data-Q.csv", POLICE);
 
     dataAQ theAnswers;
     theAnswers.createStatePoliceData(thePoliceData);
@@ -128,13 +128,6 @@ int main(int argc, char *argv[]) {
             maxAA = totAfricanAmericanCt.at(i);
     }
 
-    // cout << "MaxFb" << maxFb << endl;
-    // cout << "MaxHs" << maxHs << endl;
-    // cout << "MaxBa" << maxBa << endl;
-
-    
-
-
     if (argc < 4) {
 		cerr << "Error format: a.out sizeX sizeY outfileName" << endl;
 	} else {
@@ -145,6 +138,7 @@ int main(int argc, char *argv[]) {
 
         vector<ellipse> theEllispes;
         createGrid(totCaseCt, theEllispes, sizeX, sizeY);
+        createGrid(totAfricanAmericanCt, theEllispes, sizeX, sizeY);
 
 		if (outFile) {
 			cout << "writing an image of size: " << sizeX << " " << sizeY << " to: " << argv[3] << endl;

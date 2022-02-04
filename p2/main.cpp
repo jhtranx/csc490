@@ -18,7 +18,7 @@ int main() {
 
 
     std::vector<shared_ptr<psData>> thePoliceData = read_csvPolice(
-            "fatal-police-shootings-data.csv", POLICE);
+            "fatal-police-shootings-data-Q.csv", POLICE);
 
      //debug print out if needed left for your use in testing
     /*

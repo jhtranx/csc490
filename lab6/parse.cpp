@@ -121,37 +121,35 @@ shared_ptr<psData> readCSVLinePolice(std::string theLine) {
     std::stringstream ss(theLine);
     
     //TO DO read in the fields - use getFieldNQ as no quotes!!
-    getFieldNQ(ss); //ignore id
-    string name = getFieldNQ(ss);
+    getField(ss); //ignore id
+    string name = getField(ss);
     //skip 2
-    getFieldNQ(ss);
-    getFieldNQ(ss);
+    getField(ss);
+    getField(ss);
     //fill in
-    string armed = getFieldNQ(ss);
-    getFieldNQ(ss);
-    getFieldNQ(ss);
-    string raceEth = getFieldNQ(ss);
-    string city = getFieldNQ(ss);
-    string state = getFieldNQ(ss);
+    string armed = getField(ss);
+    getField(ss);
+    getField(ss);
+    string raceEth = getField(ss);
+    string city = getField(ss);
+    string state = getField(ss);
 
     bool signsOfMentalIllness;
-    string somiSomiStr = getFieldNQ(ss);
+    string somiSomiStr = getField(ss);
     transform(somiSomiStr.begin(), somiSomiStr.end(), somiSomiStr.begin(), :: tolower);
     istringstream(somiSomiStr) >> boolalpha >> signsOfMentalIllness;
 
-    getFieldNQ(ss);
-    getFieldNQ(ss);
+    getField(ss);
+    getField(ss);
 
     bool bodyCam;
-    string bodyCamStr = getFieldNQ(ss);
+    string bodyCamStr = getField(ss);
     transform(bodyCamStr.begin(), bodyCamStr.end(), bodyCamStr.begin(), :: tolower);
     istringstream(bodyCamStr) >> boolalpha >> bodyCam;
 
-    getFieldNQ(ss);
-    getFieldNQ(ss);
-    getFieldNQ(ss);
-
-    cout << bodyCam << endl;
+    getField(ss);
+    getField(ss);
+    getField(ss);
 
     /* TO DO fix */
     return make_shared<psData>(state, name, city, raceEth, 

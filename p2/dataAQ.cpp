@@ -45,9 +45,16 @@ void dataAQ::createStatePoliceData(std::vector<shared_ptr<psData>> theData){
    }
 }
 
+void dataAQ::sort(allStatePoliceData.begin(), allStatePoliceData.end(), [](const MyStruct& lhs, const MyStruct& rhs) {
+      return lhs.key < rhs.key;
+});
+   for (int i = 0; i < 10; i++) {
+      cout << it -> data << endl;
+   }
+
 //sort and report the top ten states in terms of number of police shootings 
 void dataAQ::reportTopTenStatesPS(){
-//FILL in
+   
 }
 
 void dataAQ::reportBottomTenStatesHomeOwn(){
@@ -293,24 +300,15 @@ vector<int> dataAQ::getAfricanAmericanCtList() {
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
       retList.push_back(currState->getRaceEthnicity().getBlackAlone());
-      if (currState->getRaceEthnicity().getBlackAlone() > 0) {
-         cout << "morethan1" << endl;
-      }
    }
-   cout << "index 0 List 1: " << retList[0] << endl;
    return retList;
 }
 
 vector<int> dataAQ::getCaseCtList() {
    vector<int> retList = {};
-   cout << "HERE "<< endl;
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
-      retList.push_back(currState->getNumberOfCases());
-      
+      retList.push_back(currState->getNumberOfCases()); 
    }
-   cout << "HERE "<< endl;
-   cout << "index 0 List 2: " << retList.at(0) << endl;
-   cout << "HERE "<< endl;
    return retList;
 }
