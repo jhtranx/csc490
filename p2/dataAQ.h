@@ -49,11 +49,14 @@ class dataAQ {
       string mostVeterans();
 
       //sort and report the top ten states in terms of number of police shootings 
+      bool cmpCaseCt(pair<string, shared_ptr<psCombo>> lhs, 
+         pair<string, shared_ptr<psCombo>> rhs);
+      
       void reportTopTenStatesPS();
       void reportBottomTenStatesHomeOwn();
 
       vector<int> getAfricanAmericanCtList();
-      vector<vector> getCaseCtList();
+      vector<int> getCaseCtList();
 
       shared_ptr<demogState> getStateData(string stateName) { return stateMap[stateName]; }
       shared_ptr<psCombo> getStatePoliceData(string stateName) { return allStatePoliceData[stateName]; }

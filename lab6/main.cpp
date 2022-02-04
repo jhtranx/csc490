@@ -73,20 +73,20 @@ void createGrid(vector<int> theNumbers, vector<ellipse> &theEllipses, int sizeX,
     int i = 0;
     int j = 0;
     for (auto entry : theNumbers) {
-        cout << "wow: " << entry / topVal << endl;
-        mag = round((colorMap.size() - 1) * (entry / topVal));
-        cout << "color: " << mag << endl;
+        // cout << "wow: " << entry / topVal << endl;
+        // mag = round((colorMap.size() - 1) * (entry / topVal));
+        // cout << "color: " << mag << endl;
 
-        cout << "vec2X: " << 0 + i * offSetX << endl;
-        cout << "vec2Y: " << sizeY - j * offSetY << endl;
+        // cout << "vec2X: " << 0 + i * offSetX << endl;
+        // cout << "vec2Y: " << sizeY - j * offSetY << endl;
         j * (offSetY - sizeY);
-        cout << "sizeY: " << sizeY<< endl;
-        cout << "j: " << j << endl;
-        cout << "i: " << i << endl;
-        cout << "offSetY: " << offSetY << endl;
+        // cout << "sizeY: " << sizeY<< endl;
+        // cout << "j: " << j << endl;
+        // cout << "i: " << i << endl;
+        // cout << "offSetY: " << offSetY << endl;
 
-        cout << "offX: " << offSetX << endl;
-        cout << "offY: " << offSetY << endl;
+        // cout << "offX: " << offSetX << endl;
+        // cout << "offY: " << offSetY << endl;
 
         theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
                                 mag*3, 5, colorMap[mag]));

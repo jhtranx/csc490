@@ -6,6 +6,7 @@
 #include <iostream>
 #include <algorithm>
 #include <cmath>
+#include <vector>
 
 
 dataAQ::dataAQ() {}
@@ -45,20 +46,33 @@ void dataAQ::createStatePoliceData(std::vector<shared_ptr<psData>> theData){
    }
 }
 
-void dataAQ::sort(allStatePoliceData.begin(), allStatePoliceData.end(), [](const MyStruct& lhs, const MyStruct& rhs) {
-      return lhs.key < rhs.key;
-});
-   for (int i = 0; i < 10; i++) {
-      cout << it -> data << endl;
-   }
-
-//sort and report the top ten states in terms of number of police shootings 
-void dataAQ::reportTopTenStatesPS(){
-   
+bool dataAQ::cmpCaseCt(pair<string, shared_ptr<psCombo>> lhs, pair<string, shared_ptr<psCombo>> rhs) {
+   return lhs.second->getNumberOfCases() < rhs.second->getNumberOfCases();
 }
 
-void dataAQ::reportBottomTenStatesHomeOwn(){
-//FILL in
+//sort and report the top ten states in terms of number of police shootings 
+void dataAQ::reportTopTenStatesPS() {
+   
+   map<int, string, greater<int>> mapCopy;
+   // vector<pair<string, shared_ptr<psCombo>>> mapVector;
+   // mapCopy.insert(allStatePoliceData.begin(), allStatePoliceData.end());
+   for (const auto &obj : allStatePoliceData) {
+      mapCopy.insert(pair<int, string>(obj.second->getNumberOfCases(), obj.first));
+   }
+
+   for (const auto &obj : mapCopy) {
+      cout << "CURR STATE: " << obj.second << " CASE CT: " << obj.first << endl;
+   }
+   // sort(mapVector.begin(), mapVector.end(), &cmpCaseCt);
+}
+
+void dataAQ::reportBottomTenStatesHomeOwn() {
+
+   map<string, shared_ptr<psCombo>> mapCopy;
+   mapCopy.insert(allStatePoliceData.begin(), allStatePoliceData.end());
+
+   for (const auto &obj : mapCopy) {
+   }
 }
 
 /* aggregate data */
