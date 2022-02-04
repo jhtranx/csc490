@@ -52,17 +52,11 @@ bool dataAQ::cmpCaseCt(pair<string, shared_ptr<psCombo>> lhs, pair<string, share
 
 //sort and report the top ten states in terms of number of police shootings 
 void dataAQ::reportTopTenStatesPS() {
-   
-   map<int, string, greater<int>> mapCopy;
-   // vector<pair<string, shared_ptr<psCombo>>> mapVector;
-   // mapCopy.insert(allStatePoliceData.begin(), allStatePoliceData.end());
-   for (const auto &obj : allStatePoliceData) {
-      mapCopy.insert(pair<int, string>(obj.second->getNumberOfCases(), obj.first));
-   }
 
-   for (const auto &obj : mapCopy) {
-      cout << "CURR STATE: " << obj.second << " CASE CT: " << obj.first << endl;
-   }
+   map<string, shared_ptr<psCombo>> mapCopy;
+   // vector<pair<string, shared_ptr<psCombo>>> mapVector;
+   mapCopy.insert(allStatePoliceData.begin(), allStatePoliceData.end());
+
    // sort(mapVector.begin(), mapVector.end(), &cmpCaseCt);
 }
 
