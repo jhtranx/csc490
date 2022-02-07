@@ -134,8 +134,8 @@ int main(int argc, char *argv[]) {
     std::vector<double> numArr2 = {};
     std::vector<int> totWALonePerc = {};
     
-    numArr1 = theAnswers.getAACasesList(); 
-    numArr2 = theAnswers.getAfrAmerPercentList();   
+    numArr1 = theAnswers.getWCasesList(); 
+    numArr2 = theAnswers.getWhiteAlonePercentList();   
 
     if (argc < 4) {
 		cerr << "Error format: a.out sizeX sizeY outfileName" << endl;
