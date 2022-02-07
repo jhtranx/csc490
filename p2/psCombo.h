@@ -18,22 +18,22 @@ public:
             armedToyCt(0), bodyCamCt(0), caseCt(0), raceEth(raceAndEthnicity()) {}
     
     
-    int getNumMentalI() {return mentalIllnessCt;} //total count “TRUE”
-    int getUnArmedCount() {return unarmedCt;} //total count blank, ‘unarmed’
-    int getArmedToy() {return armedToyCt;}  //total count ’toy weapon’
-    int getNumBodyCam() {return bodyCamCt;} //total count “TRUE”
-    int getNumberOfCases() {return caseCt;}//total number for a region
-    string getRegion() {return state;} //return state for p2
-    raceAndEthnicity getRaceEthnicity() {return raceEth;}
+    int getNumMentalI() const {return mentalIllnessCt;} //total count “TRUE”
+    int getUnArmedCount() const {return unarmedCt;} //total count blank, ‘unarmed’
+    int getArmedToy() const {return armedToyCt;}  //total count ’toy weapon’
+    int getNumBodyCam() const {return bodyCamCt;} //total count “TRUE”
+    int getNumberOfCases() const {return caseCt;}//total number for a region
+    string getRegion() const {return state;} //return state for p2
+    raceAndEthnicity getRaceEthnicity() const {return raceEth;}
 
     void incRaceEth(string race) {
-        if (race == "W") {raceEth.incWhiteAlone();}
+        cout << "RACE: " << race << endl;
+        if (race == "W") {raceEth.incWhiteAlone();raceEth.incWhiteNotHispLat();}
         else if (race == "B") {raceEth.incBlackAlone();}
         else if (race == "A") {raceEth.incAsianAlone();}
-        else if (race == "N") {raceEth.incHawaiianPacIsland();}
+        else if (race == "N") {raceEth.incAmIndianAlNative();}
         else if (race == "H") {raceEth.incHispLat();}
-        else if (race == "O") {raceEth.incOther();}
-        else if (race == "None") {raceEth.incUnknown();}
+        else raceEth.incUnspecified();
     }
     void incNumMentalIllness() {mentalIllnessCt += 1;}//total count “TRUE”
     void incUnArmedCount() {unarmedCt += 1;} //total count blank, ‘unarmed’

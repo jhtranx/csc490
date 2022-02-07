@@ -48,10 +48,8 @@ class dataAQ {
       //return the name of the state with the largest percentage of veterans
       string mostVeterans();
 
+      void printPSReportInfo(pair<string, shared_ptr<psCombo>>);
       //sort and report the top ten states in terms of number of police shootings 
-      bool cmpCaseCt(pair<string, shared_ptr<psCombo>> lhs, 
-         pair<string, shared_ptr<psCombo>> rhs);
-      
       void reportTopTenStatesPS();
       void reportBottomTenStatesHomeOwn();
 

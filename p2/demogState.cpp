@@ -38,8 +38,7 @@ std::ostream& operator<<(std::ostream &out, const demogState&SD) {
    out << "(number housing units): " << SD.getNumHousehold() << endl;
    out << "(medIncome): " << SD.getMedIncome() << endl;
    out << "Total population: " << SD.getPopulation() << endl;
-   
-   out << "\nRacial Demographics Info: \n\% American Indian and Alaska Native percent: " << SD.getRaceAndEthnicity().getAmIndianAlNative();
+   out << "Racial Demographics Info: \n\% American Indian and Alaska Native percent: " << SD.getRaceAndEthnicity().getAmIndianAlNative();
    out <<  " count: " << round((SD.getRaceAndEthnicity().getAmIndianAlNative()) * SD.totalPopulation2020);
    out << "\n\% Asian American percent: " << SD.getRaceAndEthnicity().getAsianAlone();
    out <<  " count: " << round((SD.getRaceAndEthnicity().getAsianAlone()) * SD.totalPopulation2020);
@@ -55,7 +54,7 @@ std::ostream& operator<<(std::ostream &out, const demogState&SD) {
    out <<  " count: " << round((SD.getRaceAndEthnicity().getWhiteAlone()) * SD.totalPopulation2020); 
    out << "\n\% White (nonHispanic) percent: " << SD.getRaceAndEthnicity().getWhiteNotHispLat();
    out <<  " count: " << round((SD.getRaceAndEthnicity().getWhiteNotHispLat()) * SD.totalPopulation2020);
-   out << "\ntotal Racial Demographic Count: " <<  SD.totalPopulation2020;
+   out << "\ntotal Racial Demographic Count: " <<  SD.totalPopulation2020 << endl;
 
    return out; 
 }

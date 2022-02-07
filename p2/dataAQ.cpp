@@ -7,7 +7,7 @@
 #include <algorithm>
 #include <cmath>
 #include <vector>
-
+#include <list>
 
 dataAQ::dataAQ() {}
 
@@ -46,26 +46,65 @@ void dataAQ::createStatePoliceData(std::vector<shared_ptr<psData>> theData){
    }
 }
 
-bool dataAQ::cmpCaseCt(pair<string, shared_ptr<psCombo>> lhs, pair<string, shared_ptr<psCombo>> rhs) {
-   return lhs.second->getNumberOfCases() < rhs.second->getNumberOfCases();
+void dataAQ::printPSReportInfo(pair<string, shared_ptr<psCombo>> currState) {
+   shared_ptr<demogState> SD = getStateData(currState.first);
+   cout << currState.first << endl;
+   cout << "Total population: " << SD->getPopulation();
+   cout << " Percentage home ownership: " << 
+      (double)SD->getHomeOwn()/SD->getPopulation() * 100 << "%" << endl;
+   cout << "Police shooting incidents: " << currState.second->getNumberOfCases();
+   cout << " Percent of population: " << 
+      currState.second->getNumberOfCases()/(double)SD->getPopulation() * 100 << "%" << endl;
 }
-
 //sort and report the top ten states in terms of number of police shootings 
 void dataAQ::reportTopTenStatesPS() {
 
-   map<string, shared_ptr<psCombo>> mapCopy;
-   // vector<pair<string, shared_ptr<psCombo>>> mapVector;
-   mapCopy.insert(allStatePoliceData.begin(), allStatePoliceData.end());
+   vector<pair<string, shared_ptr<psCombo>>> mapVector;
 
-   // sort(mapVector.begin(), mapVector.end(), &cmpCaseCt);
+   for (const auto &obj : allStatePoliceData) {
+      mapVector.push_back(pair<string, shared_ptr<psCombo>>(obj.first, obj.second));
+   }
+
+   sort(mapVector.begin(), mapVector.end(), [](pair<string, shared_ptr<psCombo>> lhs, 
+      pair<string, shared_ptr<psCombo>> rhs) {
+         return lhs.second->getNumberOfCases() > rhs.second->getNumberOfCases(); 
+   });
+
+   for (int i = 0; i < 10; i++) {printPSReportInfo(mapVector.at(i));}
+
+   cout << "\n**Full listings for top 3 police shootings & the associated census data:" << endl;
+   for (int j = 0; j < 3; j++) {
+      if (getStatePoliceData(mapVector.at(j).first) != nullptr) {
+		   cout << *(getStatePoliceData(mapVector.at(j).first)) << endl;
+         cout << "**US census data: ";
+         cout << *(getStateData(mapVector.at(j).first)) << endl;
+      }
+   }
 }
 
 void dataAQ::reportBottomTenStatesHomeOwn() {
 
-   map<string, shared_ptr<psCombo>> mapCopy;
-   mapCopy.insert(allStatePoliceData.begin(), allStatePoliceData.end());
+   vector<pair<string, shared_ptr<demogState>>> mapVector;
 
-   for (const auto &obj : mapCopy) {
+   for (const auto &obj : stateMap) {
+      mapVector.push_back(pair<string, shared_ptr<demogState>>(obj.first, obj.second));
+   }
+
+   sort(mapVector.begin(), mapVector.end(), [](pair<string, shared_ptr<demogState>> lhs, pair<string, shared_ptr<demogState>> rhs) {
+      return (lhs.second->getHomeOwn()/(double)lhs.second->getPopulation()) < (rhs.second->getHomeOwn()/(double)rhs.second->getPopulation()); 
+   });
+
+   for (int i = 0; i < 10; i++) {
+      printPSReportInfo(pair<string, shared_ptr<demogState>>(mapVector.at(i), getStatePoliceData(mapVector.at(i).first)));
+   }
+
+   cout << "\n**Full listings for bottom 3 home own rates & the associated census data:" << endl;
+   for (int j = 0; j < 3; j++) {
+      if (getStatePoliceData(mapVector.at(j).first) != nullptr) {
+		   cout << *(getStatePoliceData(mapVector.at(j).first)) << endl;
+         cout << "**US census data: ";
+         cout << *(getStateData(mapVector.at(j).first)) << endl;
+      }
    }
 }
 
