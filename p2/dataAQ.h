@@ -55,6 +55,7 @@ class dataAQ {
 
       vector<int> getAfricanAmericanCtList();
       vector<int> getCaseCtList();
+      vector<int> getDemogWhiteList();
 
       shared_ptr<demogState> getStateData(string stateName) { return stateMap[stateName]; }
       shared_ptr<psCombo> getStatePoliceData(string stateName) { return allStatePoliceData[stateName]; }

@@ -50,7 +50,9 @@ void writeOut(ostream& out, ppmR& theWriter,
 }
 
 
-void createGrid(vector<int> theNumbers, vector<ellipse> &theEllipses, int sizeX, int sizeY) {
+void createGrid(vector<int> numArr1, vector<int> numArr2, 
+                vector<ellipse> &theEllipses,
+                int sizeX, int sizeY) {
     //cool to warm color map 
     array<color, 10> colorMap; 
     colorMap[0] = color(91, 80, 235); //cool 
@@ -64,34 +66,70 @@ void createGrid(vector<int> theNumbers, vector<ellipse> &theEllipses, int sizeX,
     colorMap[8] = color(245, 134, 91); 
     colorMap[9] = color(235, 91, 101); //warm  
 
-    cout << "SIZE: " << theNumbers.size() << endl;
-    int approxSize = sqrt(theNumbers.size()) + 1;
+    cout << "SIZE: " << numArr1.size() << endl;
+    int approxSize = sqrt(numArr1.size()) + 1;
     int offSetX = round(sizeX / (double)approxSize);
     int offSetY = round(sizeY / (double)approxSize);
 
-    double topVal = round(*max_element(theNumbers.begin(), theNumbers.end()));
+    double topVal1 = round(*max_element(numArr1.begin(), numArr1.end()));
+    double topVal2 = round(*max_element(numArr2.begin(), numArr2.end()));
 
-    double mag = 0;
+    double mag1 = 0;
+    double mag2 = 0;
     int i = 0;
     int j = 0;
-    for (auto entry : theNumbers) {
-        // cout << "wow: " << entry / topVal << endl;
-        mag = round((colorMap.size() - 1) * (entry / topVal));
-        // cout << "color: " << mag << endl;
 
-        // cout << "vec2X: " << 0 + i * offSetX << endl;
-        // cout << "vec2Y: " << sizeY - j * offSetY << endl;
-        j * (offSetY - sizeY);
-        // cout << "sizeY: " << sizeY<< endl;
-        // cout << "j: " << j << endl;
-        // cout << "i: " << i << endl;
-        // cout << "offSetY: " << offSetY << endl;
+    for (int w = 0; w < numArr1.size(); w++) {
+        
 
-        // cout << "offX: " << offSetX << endl;
-        // cout << "offY: " << offSetY << endl;
+        color cool = color(91, 80, 235); //num1 
+        color warm = color(235, 91, 101); // num2  
+        color back = color(0, 0, 0); // num2  
 
-        theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
-                                mag*3, 5, colorMap[mag]));
+        mag1 = ((double)numArr1[w] / topVal1);
+        mag2 = ((double)numArr2[w] / topVal2);
+
+        double rad1;
+        double rad2;
+
+        if (mag1 > mag2) {
+            rad1 = mag1;
+            rad2 = (mag2 / mag1) * mag1;
+            
+        } else {
+            rad1 = (mag1 / mag2) * mag2;
+            rad2 = mag2;
+        }
+        
+
+        if (rad1 > rad2) {
+            cout << "r1 > r2" <<endl;
+    
+            theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
+                                rad1*20, 5, cool));
+
+			theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
+                                rad2*20, 6, back));
+
+        }
+        else {
+            cout << "r2 > r1" <<endl;
+            
+
+            theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
+                                rad2*20, 5, warm));
+
+            theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
+                                rad1*20, 6, back));
+        }
+        cout << "numArr1: " << numArr1[i] << endl;
+        cout << "numArr2: " << numArr2[i] << endl;
+
+        cout << "mag1: " << mag1 << endl;
+        cout << "mag2: " << mag2 << endl;
+
+        cout << "r1: " << rad1 << endl;
+        cout << "r2: " << rad2 << endl;
 
         
         i++;
@@ -117,16 +155,19 @@ int main(int argc, char *argv[]) {
 			"fatal-police-shootings-data-Q.csv", POLICE);
 
 	dataAQ theAnswers;
+	theAnswers.createStateData(theData);
+	theAnswers.createStatePoliceData(thePoliceData);
 
 	//debug print out if needed left for your use in testing
-	/*
+	cout << "XXX" <<endl;
 	int i = 0;
-	for (const auto &obj : thePoliceData) {
+	for (const auto &obj : theData) {
 		std::cout << *obj << std::endl;
 		i++;
 		if (i > 15)
 			break;
 	}
+	/*
 
 	i = 0;
 	for (const auto &obj : theData) {
@@ -139,8 +180,7 @@ int main(int argc, char *argv[]) {
 	//one example of how to print required - ADD OTHERS
 	
 	
-	theAnswers.createStateData(theData);
-	theAnswers.createStatePoliceData(thePoliceData);
+	
 
 	std::vector<int> totCaseCt = {};
 	std::vector<int> totAfricanAmericanCt = {};
@@ -189,8 +229,7 @@ int main(int argc, char *argv[]) {
 		outFile.open(argv[3]);
 
         vector<ellipse> theEllispes;
-        createGrid(totCaseCt, theEllispes, sizeX, sizeY);
-        createGrid(totAfricanAmericanCt, theEllispes, sizeX, sizeY);
+        createGrid(totCaseCt, totAfricanAmericanCt, theEllispes, sizeX, sizeY);
 
 		if (outFile) {
 			cout << "writing an image of size: " << sizeX << " " << sizeY << " to: " << argv[3] << endl;

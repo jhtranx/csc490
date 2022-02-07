@@ -48,7 +48,7 @@ void writeOut(ostream& out, ppmR& theWriter,
 	}
 }
 
-void createGrid(vector<int> numArr1, vector<int> numArr2, 
+void createGrid(vector<double> numArr1, vector<double> numArr2, 
                 vector<ellipse> &theEllipses,
                 int sizeX, int sizeY) {
     //cool to warm color map 
@@ -69,8 +69,12 @@ void createGrid(vector<int> numArr1, vector<int> numArr2,
     int offSetX = round(sizeX / (double)approxSize);
     int offSetY = round(sizeY / (double)approxSize);
 
-    double topVal1 = round(*max_element(numArr1.begin(), numArr1.end()));
-    double topVal2 = round(*max_element(numArr2.begin(), numArr2.end()));
+    double topVal1 = (*max_element(numArr1.begin(), numArr1.end()));
+    double topVal2 = (*max_element(numArr2.begin(), numArr2.end()));
+
+    cout << "topVAL1: " << topVal1 << endl;
+    cout << "topVAL2: " << topVal2 << endl;
+
 
     double mag1 = 0;
     double mag2 = 0;
@@ -84,20 +88,14 @@ void createGrid(vector<int> numArr1, vector<int> numArr2,
         color warm = color(235, 91, 101); // num2  
         color back = color(0, 0, 0); // num2  
 
-        mag1 = ((double)numArr1[w] / topVal1);
-        mag2 = ((double)numArr2[w] / topVal2);
+        // mag1 = ((double)numArr1[w] / topVal1);
+        // mag2 = ((double)numArr2[w] / topVal2);
 
         double rad1;
         double rad2;
 
-        if (mag1 > mag2) {
-            rad1 = mag1;
-            rad2 = (mag2 / mag1) * mag1;
-            
-        } else {
-            rad1 = (mag1 / mag2) * mag2;
-            rad2 = mag2;
-        }
+        rad1 = (double)numArr1[w] * (1.0 / (topVal1));
+        rad2 = (double)numArr2[w] * (1.0 / (topVal2));
         
 
         if (rad1 > rad2) {
@@ -120,8 +118,8 @@ void createGrid(vector<int> numArr1, vector<int> numArr2,
             theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
                                 rad1*20, 6, back));
         }
-        cout << "numArr1: " << numArr1[i] << endl;
-        cout << "numArr2: " << numArr2[i] << endl;
+        cout << "numArr1: " << numArr1[w] << endl;
+        cout << "numArr2: " << numArr2[w] << endl;
 
         cout << "mag1: " << mag1 << endl;
         cout << "mag2: " << mag2 << endl;
@@ -146,25 +144,32 @@ int main(int argc, char *argv[]) {
     //read in a csv file and create a vector of objects representing each counties data
     std::vector<shared_ptr<psData>> thePoliceData = read_csvPolice(
             "fatal-police-shootings-data-Q.csv", POLICE);
+    std::vector<shared_ptr<demogData>> theStateData = read_csv(
+			"county_demographics.csv", DEMOG);
 
     dataAQ theAnswers;
+    theAnswers.createStateData(theStateData);
     theAnswers.createStatePoliceData(thePoliceData);
+    
+    cout << "XXX" << endl;
+    int i = 0;
+	for (const auto &obj : theStateData) {
+		std::cout << *obj << std::endl;
+		i++;
+		if (i > 15)
+			break;
+	}
 
-    std::vector<int> totCaseCt = {};
-    std::vector<int> totAfricanAmericanCt = {};
+    std::vector<double> numArr1 = {};
+    std::vector<double> numArr2 = {};
+    std::vector<int> totWALonePerc = {};
+    
+    numArr1 = theAnswers.getLCasesList(); 
+    numArr2 = theAnswers.getLatinPercentList();   
+    
 
-    totCaseCt = theAnswers.getCaseCtList();    
-    totAfricanAmericanCt = theAnswers.getAfricanAmericanCtList();
-
-    int maxCase = 0;
-    int maxAA = 0;
-
-    for (int i = 0; i < totCaseCt.size(); i++) {
-        if (totCaseCt.at(i) > maxCase)
-            maxCase = totCaseCt.at(i);
-        if (totAfricanAmericanCt.at(i) > maxAA)
-            maxAA = totAfricanAmericanCt.at(i);
-    }
+    // totCaseCt = theAnswers.getCaseCtList();    
+    // totAfricanAmericanCt = theAnswers.getAACasesList();
 
     if (argc < 4) {
 		cerr << "Error format: a.out sizeX sizeY outfileName" << endl;
@@ -175,7 +180,7 @@ int main(int argc, char *argv[]) {
 		outFile.open(argv[3]);
 
         vector<ellipse> theEllispes;
-        createGrid(totCaseCt, totAfricanAmericanCt, theEllispes, sizeX, sizeY);
+        createGrid(numArr1, numArr2, theEllispes, sizeX, sizeY);
 
 		if (outFile) {
 			cout << "writing an image of size: " << sizeX << " " << sizeY << " to: " << argv[3] << endl;

@@ -52,8 +52,19 @@ class dataAQ {
       void reportTopTenStatesPS();
       void reportBottomTenStatesHomeOwn();
 
-      vector<int> getAfricanAmericanCtList();
-      vector<int> getCaseCtList();
+      vector<double> getAACasesList();
+      vector<double> getNACasesList();
+      vector<double> getACasesList();
+      vector<double> getWCasesList();
+      vector<double> getLCasesList();
+      vector<double> getCaseCtList();
+
+      vector<double> getWhiteAlonePercentList();
+      vector<double> getNativePercentList();
+      vector<double> getAsianPercentList();
+      vector<double> getLatinPercentList();
+      vector<double> getAfrAmerPercentList();
+
 
       shared_ptr<demogState> getStateData(string stateName) { return stateMap[stateName]; }
       shared_ptr<psCombo> getStatePoliceData(string stateName) { return allStatePoliceData[stateName]; }

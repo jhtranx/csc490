@@ -96887,6 +96887,827 @@ RACE: W
 RACE: W
 RACE: W
 RACE: W
+XXX
+County Demographics Info: Abbeville County, SC
+Total population: 24295
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.003 count: 73
+% Asian American percent: 0.004 count: 97
+% Black/African American percent: 0.276 count: 6705
+% Hispanic or Latinx percent: 0.016 count: 389
+% Native Hawaiian and Other Pacific Islander: 0 count: 0
+% Two or More Races percent: 0.014 count: 340
+% White (inclusive) percent: 0.702 count: 17055
+% White (nonHispanic) percent: 0.689 count: 16739
+total Racial Demographic Count: 24295
+--Population Age info: 
+(% under 5): 0.047 and total: 1142
+(% under 18): 0.198 and total: 4810
+(% over 65): 0.224 and total: 5442
+--Population other demographics: 
+(% female): 0.516 and total: 12536
+(% foreign born): 0.018 and total: 437
+(veterans): 1559
+--County housing/economy info: 
+(avg. persons per house): 2.46 and total: 23764
+(% home ownership): 0.75 and total: 18221
+(number housingholds): 9660
+(medium income in $): 38741
+--County education: 
+(% Bachelor or more): 0.156 and total: 3790
+(% high school or more): 0.817 and total: 19849
+
+County Demographics Info: Acadia Parish, LA
+Total population: 57576
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.004 count: 230
+% Asian American percent: 0.003 count: 173
+% Black/African American percent: 0.18 count: 10364
+% Hispanic or Latinx percent: 0.028 count: 1612
+% Native Hawaiian and Other Pacific Islander: 0 count: 0
+% Two or More Races percent: 0.016 count: 921
+% White (inclusive) percent: 0.797 count: 45888
+% White (nonHispanic) percent: 0.773 count: 44506
+total Racial Demographic Count: 57576
+--Population Age info: 
+(% under 5): 0.069 and total: 3973
+(% under 18): 0.258 and total: 14855
+(% over 65): 0.158 and total: 9097
+--Population other demographics: 
+(% female): 0.511 and total: 29421
+(% foreign born): 0.013 and total: 748
+(veterans): 2690
+--County housing/economy info: 
+(avg. persons per house): 2.76 and total: 61371
+(% home ownership): 0.711 and total: 40937
+(number housingholds): 22236
+(medium income in $): 43396
+--County education: 
+(% Bachelor or more): 0.133 and total: 7658
+(% high school or more): 0.79 and total: 45485
+
+County Demographics Info: Accomack County, VA
+Total population: 33413
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.007 count: 234
+% Asian American percent: 0.008 count: 267
+% Black/African American percent: 0.288 count: 9623
+% Hispanic or Latinx percent: 0.091 count: 3041
+% Native Hawaiian and Other Pacific Islander: 0.002 count: 67
+% Two or More Races percent: 0.017 count: 568
+% White (inclusive) percent: 0.678 count: 22654
+% White (nonHispanic) percent: 0.599 count: 20014
+total Racial Demographic Count: 33413
+--Population Age info: 
+(% under 5): 0.056 and total: 1871
+(% under 18): 0.207 and total: 6916
+(% over 65): 0.246 and total: 8220
+--Population other demographics: 
+(% female): 0.513 and total: 17141
+(% foreign born): 0.077 and total: 2573
+(veterans): 2606
+--County housing/economy info: 
+(avg. persons per house): 2.35 and total: 31579
+(% home ownership): 0.668 and total: 22320
+(number housingholds): 13438
+(medium income in $): 46073
+--County education: 
+(% Bachelor or more): 0.195 and total: 6516
+(% high school or more): 0.815 and total: 27232
+
+County Demographics Info: Ada County, ID
+Total population: 494967
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.008 count: 3960
+% Asian American percent: 0.027 count: 13364
+% Black/African American percent: 0.014 count: 6930
+% Hispanic or Latinx percent: 0.085 count: 42072
+% Native Hawaiian and Other Pacific Islander: 0.002 count: 990
+% Two or More Races percent: 0.03 count: 14849
+% White (inclusive) percent: 0.919 count: 454875
+% White (nonHispanic) percent: 0.843 count: 417257
+total Racial Demographic Count: 494967
+--Population Age info: 
+(% under 5): 0.056 and total: 27718
+(% under 18): 0.232 and total: 114832
+(% over 65): 0.149 and total: 73750
+--Population other demographics: 
+(% female): 0.499 and total: 246989
+(% foreign born): 0.058 and total: 28708
+(veterans): 29924
+--County housing/economy info: 
+(avg. persons per house): 2.58 and total: 447251
+(% home ownership): 0.693 and total: 343012
+(number housingholds): 173353
+(medium income in $): 66293
+--County education: 
+(% Bachelor or more): 0.385 and total: 190562
+(% high school or more): 0.952 and total: 471209
+
+County Demographics Info: Adair County, IA
+Total population: 7496
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.003 count: 22
+% Asian American percent: 0.005 count: 37
+% Black/African American percent: 0.006 count: 45
+% Hispanic or Latinx percent: 0.025 count: 187
+% Native Hawaiian and Other Pacific Islander: 0 count: 0
+% Two or More Races percent: 0.012 count: 90
+% White (inclusive) percent: 0.974 count: 7301
+% White (nonHispanic) percent: 0.951 count: 7129
+total Racial Demographic Count: 7496
+--Population Age info: 
+(% under 5): 0.056 and total: 420
+(% under 18): 0.218 and total: 1634
+(% over 65): 0.23 and total: 1724
+--Population other demographics: 
+(% female): 0.502 and total: 3763
+(% foreign born): 0.016 and total: 120
+(veterans): 492
+--County housing/economy info: 
+(avg. persons per house): 2.17 and total: 6944
+(% home ownership): 0.743 and total: 5570
+(number housingholds): 3200
+(medium income in $): 53363
+--County education: 
+(% Bachelor or more): 0.185 and total: 1387
+(% high school or more): 0.942 and total: 7061
+
+County Demographics Info: Adair County, KY
+Total population: 18903
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.003 count: 57
+% Asian American percent: 0.004 count: 76
+% Black/African American percent: 0.029 count: 548
+% Hispanic or Latinx percent: 0.022 count: 416
+% Native Hawaiian and Other Pacific Islander: 0.001 count: 19
+% Two or More Races percent: 0.015 count: 284
+% White (inclusive) percent: 0.948 count: 17920
+% White (nonHispanic) percent: 0.93 count: 17580
+total Racial Demographic Count: 18903
+--Population Age info: 
+(% under 5): 0.052 and total: 983
+(% under 18): 0.199 and total: 3762
+(% over 65): 0.192 and total: 3629
+--Population other demographics: 
+(% female): 0.502 and total: 9489
+(% foreign born): 0.016 and total: 302
+(veterans): 1104
+--County housing/economy info: 
+(avg. persons per house): 2.56 and total: 17861
+(% home ownership): 0.761 and total: 14385
+(number housingholds): 6977
+(medium income in $): 38021
+--County education: 
+(% Bachelor or more): 0.157 and total: 2968
+(% high school or more): 0.796 and total: 15047
+
+County Demographics Info: Adair County, MO
+Total population: 25314
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.004 count: 101
+% Asian American percent: 0.026 count: 658
+% Black/African American percent: 0.034 count: 861
+% Hispanic or Latinx percent: 0.026 count: 658
+% Native Hawaiian and Other Pacific Islander: 0.001 count: 25
+% Two or More Races percent: 0.02 count: 506
+% White (inclusive) percent: 0.915 count: 23162
+% White (nonHispanic) percent: 0.894 count: 22631
+total Racial Demographic Count: 25314
+--Population Age info: 
+(% under 5): 0.052 and total: 1316
+(% under 18): 0.179 and total: 4531
+(% over 65): 0.151 and total: 3822
+--Population other demographics: 
+(% female): 0.52 and total: 13163
+(% foreign born): 0.041 and total: 1038
+(veterans): 1176
+--County housing/economy info: 
+(avg. persons per house): 2.45 and total: 22682
+(% home ownership): 0.601 and total: 15214
+(number housingholds): 9258
+(medium income in $): 41929
+--County education: 
+(% Bachelor or more): 0.31 and total: 7847
+(% high school or more): 0.901 and total: 22808
+
+County Demographics Info: Adair County, OK
+Total population: 19495
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.461 count: 8987
+% Asian American percent: 0.008 count: 156
+% Black/African American percent: 0.006 count: 117
+% Hispanic or Latinx percent: 0.071 count: 1384
+% Native Hawaiian and Other Pacific Islander: 0.001 count: 19
+% Two or More Races percent: 0.103 count: 2008
+% White (inclusive) percent: 0.421 count: 8207
+% White (nonHispanic) percent: 0.394 count: 7681
+total Racial Demographic Count: 19495
+--Population Age info: 
+(% under 5): 0.074 and total: 1443
+(% under 18): 0.27 and total: 5264
+(% over 65): 0.158 and total: 3080
+--Population other demographics: 
+(% female): 0.5 and total: 9748
+(% foreign born): 0.018 and total: 351
+(veterans): 1268
+--County housing/economy info: 
+(avg. persons per house): 2.86 and total: 22116
+(% home ownership): 0.693 and total: 13510
+(number housingholds): 7733
+(medium income in $): 34695
+--County education: 
+(% Bachelor or more): 0.116 and total: 2261
+(% high school or more): 0.808 and total: 15752
+
+County Demographics Info: Adams County, CO
+Total population: 519572
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.023 count: 11950
+% Asian American percent: 0.045 count: 23381
+% Black/African American percent: 0.04 count: 20783
+% Hispanic or Latinx percent: 0.408 count: 211985
+% Native Hawaiian and Other Pacific Islander: 0.002 count: 1039
+% Two or More Races percent: 0.032 count: 16626
+% White (inclusive) percent: 0.857 count: 445273
+% White (nonHispanic) percent: 0.49 count: 254590
+total Racial Demographic Count: 519572
+--Population Age info: 
+(% under 5): 0.069 and total: 35850
+(% under 18): 0.261 and total: 135608
+(% over 65): 0.107 and total: 55594
+--Population other demographics: 
+(% female): 0.494 and total: 256669
+(% foreign born): 0.153 and total: 79495
+(veterans): 26796
+--County housing/economy info: 
+(avg. persons per house): 3 and total: 499350
+(% home ownership): 0.662 and total: 343957
+(number housingholds): 166450
+(medium income in $): 71202
+--County education: 
+(% Bachelor or more): 0.243 and total: 126256
+(% high school or more): 0.838 and total: 435401
+
+County Demographics Info: Adams County, IA
+Total population: 3704
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.005 count: 19
+% Asian American percent: 0.007 count: 26
+% Black/African American percent: 0.005 count: 19
+% Hispanic or Latinx percent: 0.014 count: 52
+% Native Hawaiian and Other Pacific Islander: 0 count: 0
+% Two or More Races percent: 0.008 count: 30
+% White (inclusive) percent: 0.974 count: 3608
+% White (nonHispanic) percent: 0.961 count: 3560
+total Racial Demographic Count: 3704
+--Population Age info: 
+(% under 5): 0.053 and total: 196
+(% under 18): 0.209 and total: 774
+(% over 65): 0.237 and total: 878
+--Population other demographics: 
+(% female): 0.501 and total: 1856
+(% foreign born): 0.006 and total: 22
+(veterans): 272
+--County housing/economy info: 
+(avg. persons per house): 2.21 and total: 3532
+(% home ownership): 0.817 and total: 3026
+(number housingholds): 1598
+(medium income in $): 49255
+--County education: 
+(% Bachelor or more): 0.156 and total: 578
+(% high school or more): 0.938 and total: 3474
+
+County Demographics Info: Adams County, ID
+Total population: 4379
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.014 count: 61
+% Asian American percent: 0.009 count: 39
+% Black/African American percent: 0.004 count: 18
+% Hispanic or Latinx percent: 0.036 count: 158
+% Native Hawaiian and Other Pacific Islander: 0.004 count: 18
+% Two or More Races percent: 0.026 count: 114
+% White (inclusive) percent: 0.943 count: 4129
+% White (nonHispanic) percent: 0.916 count: 4011
+total Racial Demographic Count: 4379
+--Population Age info: 
+(% under 5): 0.039 and total: 171
+(% under 18): 0.173 and total: 758
+(% over 65): 0.299 and total: 1309
+--Population other demographics: 
+(% female): 0.486 and total: 2128
+(% foreign born): 0.012 and total: 53
+(veterans): 531
+--County housing/economy info: 
+(avg. persons per house): 2.29 and total: 4024
+(% home ownership): 0.803 and total: 3516
+(number housingholds): 1757
+(medium income in $): 48856
+--County education: 
+(% Bachelor or more): 0.212 and total: 928
+(% high school or more): 0.902 and total: 3950
+
+County Demographics Info: Adams County, IL
+Total population: 65737
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.003 count: 197
+% Asian American percent: 0.009 count: 592
+% Black/African American percent: 0.039 count: 2564
+% Hispanic or Latinx percent: 0.018 count: 1183
+% Native Hawaiian and Other Pacific Islander: 0 count: 0
+% Two or More Races percent: 0.021 count: 1380
+% White (inclusive) percent: 0.928 count: 61004
+% White (nonHispanic) percent: 0.914 count: 60084
+total Racial Demographic Count: 65737
+--Population Age info: 
+(% under 5): 0.063 and total: 4141
+(% under 18): 0.226 and total: 14857
+(% over 65): 0.207 and total: 13608
+--Population other demographics: 
+(% female): 0.507 and total: 33329
+(% foreign born): 0.014 and total: 920
+(veterans): 4516
+--County housing/economy info: 
+(avg. persons per house): 2.38 and total: 64527
+(% home ownership): 0.718 and total: 47199
+(number housingholds): 27112
+(medium income in $): 52993
+--County education: 
+(% Bachelor or more): 0.25 and total: 16434
+(% high school or more): 0.925 and total: 60807
+
+County Demographics Info: Adams County, IN
+Total population: 35809
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.003 count: 107
+% Asian American percent: 0.004 count: 143
+% Black/African American percent: 0.006 count: 215
+% Hispanic or Latinx percent: 0.045 count: 1611
+% Native Hawaiian and Other Pacific Islander: 0 count: 0
+% Two or More Races percent: 0.009 count: 322
+% White (inclusive) percent: 0.978 count: 35021
+% White (nonHispanic) percent: 0.936 count: 33517
+total Racial Demographic Count: 35809
+--Population Age info: 
+(% under 5): 0.093 and total: 3330
+(% under 18): 0.314 and total: 11244
+(% over 65): 0.159 and total: 5694
+--Population other demographics: 
+(% female): 0.5 and total: 17905
+(% foreign born): 0.009 and total: 322
+(veterans): 1430
+--County housing/economy info: 
+(avg. persons per house): 2.79 and total: 34822
+(% home ownership): 0.771 and total: 27609
+(number housingholds): 12481
+(medium income in $): 52504
+--County education: 
+(% Bachelor or more): 0.155 and total: 5550
+(% high school or more): 0.847 and total: 30330
+
+County Demographics Info: Adams County, MS
+Total population: 29538
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.005 count: 148
+% Asian American percent: 0.006 count: 177
+% Black/African American percent: 0.534 count: 15773
+% Hispanic or Latinx percent: 0.101 count: 2983
+% Native Hawaiian and Other Pacific Islander: 0 count: 0
+% Two or More Races percent: 0.01 count: 295
+% White (inclusive) percent: 0.444 count: 13115
+% White (nonHispanic) percent: 0.355 count: 10486
+total Racial Demographic Count: 29538
+--Population Age info: 
+(% under 5): 0.057 and total: 1684
+(% under 18): 0.199 and total: 5878
+(% over 65): 0.196 and total: 5789
+--Population other demographics: 
+(% female): 0.48 and total: 14178
+(% foreign born): 0.08 and total: 2363
+(veterans): 1486
+--County housing/economy info: 
+(avg. persons per house): 2.56 and total: 28767
+(% home ownership): 0.624 and total: 18432
+(number housingholds): 11237
+(medium income in $): 29936
+--County education: 
+(% Bachelor or more): 0.174 and total: 5140
+(% high school or more): 0.779 and total: 23010
+
+County Demographics Info: Adams County, ND
+Total population: 2200
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.007 count: 15
+% Asian American percent: 0.028 count: 62
+% Black/African American percent: 0.009 count: 20
+% Hispanic or Latinx percent: 0.016 count: 35
+% Native Hawaiian and Other Pacific Islander: 0 count: 0
+% Two or More Races percent: 0.018 count: 40
+% White (inclusive) percent: 0.937 count: 2061
+% White (nonHispanic) percent: 0.922 count: 2028
+total Racial Demographic Count: 2200
+--Population Age info: 
+(% under 5): 0.053 and total: 117
+(% under 18): 0.193 and total: 425
+(% over 65): 0.285 and total: 627
+--Population other demographics: 
+(% female): 0.505 and total: 1111
+(% foreign born): 0.019 and total: 42
+(veterans): 136
+--County housing/economy info: 
+(avg. persons per house): 2.16 and total: 2236
+(% home ownership): 0.735 and total: 1617
+(number housingholds): 1035
+(medium income in $): 56681
+--County education: 
+(% Bachelor or more): 0.256 and total: 563
+(% high school or more): 0.945 and total: 2079
+
+County Demographics Info: Adams County, NE
+Total population: 31205
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.013 count: 406
+% Asian American percent: 0.013 count: 406
+% Black/African American percent: 0.013 count: 406
+% Hispanic or Latinx percent: 0.11 count: 3433
+% Native Hawaiian and Other Pacific Islander: 0.001 count: 31
+% Two or More Races percent: 0.013 count: 406
+% White (inclusive) percent: 0.947 count: 29551
+% White (nonHispanic) percent: 0.851 count: 26555
+total Racial Demographic Count: 31205
+--Population Age info: 
+(% under 5): 0.064 and total: 1997
+(% under 18): 0.234 and total: 7302
+(% over 65): 0.189 and total: 5898
+--Population other demographics: 
+(% female): 0.502 and total: 15665
+(% foreign born): 0.062 and total: 1935
+(veterans): 1834
+--County housing/economy info: 
+(avg. persons per house): 2.35 and total: 29873
+(% home ownership): 0.665 and total: 20751
+(number housingholds): 12712
+(medium income in $): 53023
+--County education: 
+(% Bachelor or more): 0.243 and total: 7583
+(% high school or more): 0.9 and total: 28085
+
 SIZE: 51
-SIZE: 51
+r1 > r2
+numArr1: 47
+numArr2: 3
+mag1: 0.0469062
+mag2: 0.0189873
+r1: 0.0469062
+r2: 0.0189873
+r2 > r1
+numArr1: 126
+numArr2: 37
+mag1: 0.125749
+mag2: 0.234177
+r1: 0.125749
+r2: 0.234177
+r2 > r1
+numArr1: 97
+numArr2: 26
+mag1: 0.0968064
+mag2: 0.164557
+r1: 0.0968064
+r2: 0.164557
+r1 > r2
+numArr1: 310
+numArr2: 22
+mag1: 0.309381
+mag2: 0.139241
+r1: 0.309381
+r2: 0.139241
+r2 > r1
+numArr1: 1002
+numArr2: 158
+mag1: 1
+mag2: 1
+r1: 1
+r2: 1
+r1 > r2
+numArr1: 248
+numArr2: 20
+mag1: 0.247505
+mag2: 0.126582
+r1: 0.247505
+r2: 0.126582
+r2 > r1
+numArr1: 23
+numArr2: 5
+mag1: 0.0229541
+mag2: 0.0316456
+r1: 0.0229541
+r2: 0.0316456
+r2 > r1
+numArr1: 21
+numArr2: 16
+mag1: 0.0209581
+mag2: 0.101266
+r1: 0.0209581
+r2: 0.101266
+r2 > r1
+numArr1: 47
+numArr2: 3
+mag1: 0.0159681
+mag2: 0.0379747
+r1: 0.0159681
+r2: 0.0379747
+r2 > r1
+numArr1: 126
+numArr2: 37
+mag1: 0.443114
+mag2: 0.85443
+r1: 0.443114
+r2: 0.85443
+r2 > r1
+numArr1: 97
+numArr2: 26
+mag1: 0.251497
+mag2: 0.601266
+r1: 0.251497
+r2: 0.601266
+r1 > r2
+numArr1: 310
+numArr2: 22
+mag1: 0.0369261
+mag2: 0.0126582
+r1: 0.0369261
+r2: 0.0126582
+r2 > r1
+numArr1: 1002
+numArr2: 158
+mag1: 0.0429142
+mag2: 0.0506329
+r1: 0.0429142
+r2: 0.0506329
+r1 > r2
+numArr1: 248
+numArr2: 20
+mag1: 0.0578842
+mag2: 0.00632911
+r1: 0.0578842
+r2: 0.00632911
+r2 > r1
+numArr1: 23
+numArr2: 5
+mag1: 0.134731
+mag2: 0.436709
+r1: 0.134731
+r2: 0.436709
+r2 > r1
+numArr1: 21
+numArr2: 16
+mag1: 0.125749
+mag2: 0.208861
+r1: 0.125749
+r2: 0.208861
+r1 > r2
+numArr1: 47
+numArr2: 3
+mag1: 0.0648703
+mag2: 0.0506329
+r1: 0.0648703
+r2: 0.0506329
+r1 > r2
+numArr1: 126
+numArr2: 37
+mag1: 0.125749
+mag2: 0.101266
+r1: 0.125749
+r2: 0.101266
+r2 > r1
+numArr1: 97
+numArr2: 26
+mag1: 0.135729
+mag2: 0.436709
+r1: 0.135729
+r2: 0.436709
+r2 > r1
+numArr1: 310
+numArr2: 22
+mag1: 0.0459082
+mag2: 0.0506329
+r1: 0.0459082
+r2: 0.0506329
+r2 > r1
+numArr1: 1002
+numArr2: 158
+mag1: 0.0988024
+mag2: 0.367089
+r1: 0.0988024
+r2: 0.367089
+r1 > r2
+numArr1: 248
+numArr2: 20
+mag1: 0.0289421
+mag2: 0.00632911
+r1: 0.0289421
+r2: 0.00632911
+r2 > r1
+numArr1: 23
+numArr2: 5
+mag1: 0.108782
+mag2: 0.196203
+r1: 0.108782
+r2: 0.196203
+r2 > r1
+numArr1: 21
+numArr2: 16
+mag1: 0.0768463
+mag2: 0.0886076
+r1: 0.0768463
+r2: 0.0886076
+r2 > r1
+numArr1: 47
+numArr2: 3
+mag1: 0.173653
+mag2: 0.35443
+r1: 0.173653
+r2: 0.35443
+r2 > r1
+numArr1: 126
+numArr2: 37
+mag1: 0.0888224
+mag2: 0.183544
+r1: 0.0888224
+r2: 0.183544
+r1 > r2
+numArr1: 97
+numArr2: 26
+mag1: 0.0419162
+mag2: 0
+r1: 0.0419162
+r2: 0
+r2 > r1
+numArr1: 310
+numArr2: 22
+mag1: 0.194611
+mag2: 0.35443
+r1: 0.194611
+r2: 0.35443
+r1 > r2
+numArr1: 1002
+numArr2: 158
+mag1: 0.0149701
+mag2: 0
+r1: 0.0149701
+r2: 0
+r2 > r1
+numArr1: 248
+numArr2: 20
+mag1: 0.0359281
+mag2: 0.0379747
+r1: 0.0359281
+r2: 0.0379747
+r1 > r2
+numArr1: 23
+numArr2: 5
+mag1: 0.0179641
+mag2: 0
+r1: 0.0179641
+r2: 0
+r2 > r1
+numArr1: 21
+numArr2: 16
+mag1: 0.0818363
+mag2: 0.21519
+r1: 0.0818363
+r2: 0.21519
+r1 > r2
+numArr1: 47
+numArr2: 3
+mag1: 0.137725
+mag2: 0.0126582
+r1: 0.137725
+r2: 0.0126582
+r1 > r2
+numArr1: 126
+numArr2: 37
+mag1: 0.116766
+mag2: 0.107595
+r1: 0.116766
+r2: 0.107595
+r2 > r1
+numArr1: 97
+numArr2: 26
+mag1: 0.127745
+mag2: 0.329114
+r1: 0.127745
+r2: 0.329114
+r2 > r1
+numArr1: 310
+numArr2: 22
+mag1: 0.191617
+mag2: 0.449367
+r1: 0.191617
+r2: 0.449367
+r2 > r1
+numArr1: 1002
+numArr2: 158
+mag1: 0.193613
+mag2: 0.227848
+r1: 0.193613
+r2: 0.227848
+r1 > r2
+numArr1: 248
+numArr2: 20
+mag1: 0.108782
+mag2: 0.0506329
+r1: 0.108782
+r2: 0.0506329
+r2 > r1
+numArr1: 23
+numArr2: 5
+mag1: 0.141717
+mag2: 0.297468
+r1: 0.141717
+r2: 0.297468
+r2 > r1
+numArr1: 21
+numArr2: 16
+mag1: 0.00499002
+mag2: 0.0126582
+r1: 0.00499002
+r2: 0.0126582
+r2 > r1
+numArr1: 47
+numArr2: 3
+mag1: 0.105788
+mag2: 0.183544
+r1: 0.105788
+r2: 0.183544
+r1 > r2
+numArr1: 126
+numArr2: 37
+mag1: 0.0209581
+mag2: 0
+r1: 0.0209581
+r2: 0
+r2 > r1
+numArr1: 97
+numArr2: 26
+mag1: 0.184631
+mag2: 0.246835
+r1: 0.184631
+r2: 0.246835
+r2 > r1
+numArr1: 310
+numArr2: 22
+mag1: 0.602794
+mag2: 0.765823
+r1: 0.602794
+r2: 0.765823
+r1 > r2
+numArr1: 1002
+numArr2: 158
+mag1: 0.0828343
+mag2: 0.0443038
+r1: 0.0828343
+r2: 0.0443038
+r2 > r1
+numArr1: 248
+numArr2: 20
+mag1: 0.117764
+mag2: 0.297468
+r1: 0.117764
+r2: 0.297468
+r1 > r2
+numArr1: 23
+numArr2: 5
+mag1: 0.010978
+mag2: 0
+r1: 0.010978
+r2: 0
+r1 > r2
+numArr1: 21
+numArr2: 16
+mag1: 0.180639
+mag2: 0.158228
+r1: 0.180639
+r2: 0.158228
+r2 > r1
+numArr1: 47
+numArr2: 3
+mag1: 0.10978
+mag2: 0.151899
+r1: 0.10978
+r2: 0.151899
+r1 > r2
+numArr1: 126
+numArr2: 37
+mag1: 0.0638723
+mag2: 0.0506329
+r1: 0.0638723
+r2: 0.0506329
+r1 > r2
+numArr1: 97
+numArr2: 26
+mag1: 0.0149701
+mag2: 0
+r1: 0.0149701
+r2: 0
 writing an image of size: 400 400 to: out.ppm

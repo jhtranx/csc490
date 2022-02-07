@@ -288,18 +288,104 @@ string dataAQ::mostVeterans() {
    return maxState; 
 }
 
-vector<int> dataAQ::getAfricanAmericanCtList() {
-   vector<int> retList = {};
+vector<double> dataAQ::getAACasesList() {
+   vector<double> retList = {};
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
       cout << "STATE: " << currState->getRegion() << " AA CT: " << currState->getRaceEthnicity().getBlackAlone() << endl;
-      retList.push_back((currState->getRaceEthnicity().getBlackAlone()/currState->getNumberOfCases())*100);
+      retList.push_back((currState->getRaceEthnicity().getBlackAlone()/currState->getNumberOfCases()));
    }
    return retList;
 }
 
-vector<int> dataAQ::getCaseCtList() {
-   vector<int> retList = {};
+vector<double> dataAQ::getACasesList() {
+   vector<double> retList = {};
+   for (auto& policePair : allStatePoliceData) {
+      shared_ptr<psCombo> currState = policePair.second;
+      cout << "STATE: " << currState->getRegion() << " A CT: " << currState->getRaceEthnicity().getAsianAlone() << endl;
+      retList.push_back((currState->getRaceEthnicity().getAsianAlone()/currState->getNumberOfCases()));
+   }
+   return retList;
+}
+
+vector<double> dataAQ::getLCasesList() {
+   vector<double> retList = {};
+   for (auto& policePair : allStatePoliceData) {
+      shared_ptr<psCombo> currState = policePair.second;
+      cout << "STATE: " << currState->getRegion() << " AA CT: " << currState->getRaceEthnicity().getBlackAlone() << endl;
+      retList.push_back((currState->getRaceEthnicity().getHispLat()/currState->getNumberOfCases())*100);
+   }
+   return retList;
+}
+
+vector<double> dataAQ::getNACasesList() {
+   vector<double> retList = {};
+   for (auto& policePair : allStatePoliceData) {
+      shared_ptr<psCombo> currState = policePair.second;
+      cout << "STATE: " << currState->getRegion() << " AA CT: " << currState->getRaceEthnicity().getBlackAlone() << endl;
+      retList.push_back((currState->getRaceEthnicity().getAmIndianAlNative()/currState->getNumberOfCases())*100);
+   }
+   return retList;
+}
+
+vector<double> dataAQ::getWCasesList() {
+   vector<double> retList = {};
+   for (auto& policePair : allStatePoliceData) {
+      shared_ptr<psCombo> currState = policePair.second;
+      cout << "STATE: " << currState->getRegion() << " AA CT: " << currState->getRaceEthnicity().getWhiteAlone() << endl;
+      retList.push_back((currState->getRaceEthnicity().getWhiteAlone() / currState->getNumberOfCases())*100);
+   }
+   return retList;
+}
+
+vector<double> dataAQ::getWhiteAlonePercentList() {
+   vector<double> retList = {};
+   for (auto& pair : stateMap) {
+      shared_ptr<demogState> currState = pair.second;
+      retList.push_back((currState->getRaceAndEthnicity().getWhiteAlone() + 
+                        currState->getRaceAndEthnicity().getWhiteNotHispLat()));
+   }
+   return retList;
+}
+
+vector<double> dataAQ::getLatinPercentList() {
+   vector<double> retList = {};
+   for (auto& pair : stateMap) {
+      shared_ptr<demogState> currState = pair.second;
+      retList.push_back(currState->getRaceAndEthnicity().getHispLat());
+   }
+   return retList;
+}
+
+vector<double> dataAQ::getAfrAmerPercentList() {
+   vector<double> retList = {};
+   for (auto& pair : stateMap) {
+      shared_ptr<demogState> currState = pair.second;
+      retList.push_back(currState->getRaceAndEthnicity().getBlackAlone());
+   }
+   return retList;
+}
+
+vector<double> dataAQ::getAsianPercentList() {
+   vector<double> retList = {};
+   for (auto& pair : stateMap) {
+      shared_ptr<demogState> currState = pair.second;
+      retList.push_back(currState->getRaceAndEthnicity().getAsianAlone());
+   }
+   return retList;
+}
+
+vector<double> dataAQ::getNativePercentList() {
+   vector<double> retList = {};
+   for (auto& pair : stateMap) {
+      shared_ptr<demogState> currState = pair.second;
+      retList.push_back(currState->getRaceAndEthnicity().getAmIndianAlNative());
+   }
+   return retList;
+}
+
+vector<double> dataAQ::getCaseCtList() {
+   vector<double> retList = {};
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
       cout << "STATE: " << currState->getRegion() << " CASE CT: " << currState->getNumberOfCases() << endl;
