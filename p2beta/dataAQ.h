@@ -49,6 +49,7 @@ class dataAQ {
       string mostVeterans();
 
       //sort and report the top ten states in terms of number of police shootings 
+      void printPSReportInfo(string stateStr);
       void reportTopTenStatesPS();
       void reportBottomTenStatesHomeOwn();
 

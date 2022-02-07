@@ -16,11 +16,11 @@ class raceAndEthnicity {
          double inHyn, double woOrMore, double inHispLat, double inWhiteNotHispLat) :
             whiteAlone(inWhite), blackAlone(inBlack), amIndianAlNative(inIndAl), 
             asianAlone(inAsian), hawaiianPacIsland(inHyn), twoOrMore(woOrMore), 
-            hispLat(inHispLat), whiteNotHispLat(inWhiteNotHispLat), none(0), other(0) {}
+            hispLat(inHispLat), whiteNotHispLat(inWhiteNotHispLat), unspecified(0) {}
       raceAndEthnicity() :
             whiteAlone(0), blackAlone(0), amIndianAlNative(0), 
             asianAlone(0), hawaiianPacIsland(0), twoOrMore(0), 
-            hispLat(0), whiteNotHispLat(0), none(0), other(0) {}
+            hispLat(0), whiteNotHispLat(0), unspecified(0) {}
 
       // Getter
       double getWhiteAlone() {return whiteAlone;}
@@ -31,6 +31,7 @@ class raceAndEthnicity {
       double getTwoOrMore() {return twoOrMore;}
       double getHispLat() {return hispLat;}
       double getWhiteNotHispLat() {return whiteNotHispLat;}
+      double getUnspecified() {return unspecified;}
 
       void setWhiteAlone(double newVal) {whiteAlone = newVal;}
       void setBlackAlone(double newVal) {blackAlone = newVal;}
@@ -41,16 +42,15 @@ class raceAndEthnicity {
       void setHispLat(double newVal) {hispLat = newVal;}
       void setWhiteNotHispLat(double newVal) {whiteNotHispLat = newVal;}
 
-      void incWhiteAlone() {whiteAlone++;}
-      void incBlackAlone() {blackAlone++;}
-      void incAmIndianAlNative() {amIndianAlNative++;}
-      void incAsianAlone() {asianAlone++;}
-      void incHawaiianPacIsland() {hawaiianPacIsland++;}
-      void incTwoOrMore() {twoOrMore++;}
-      void incHispLat() {hispLat++;}
-      void incWhiteNotHispLat() {whiteNotHispLat++;}
-      void incUnknown() {none++;}
-      void incOther() {other++;}
+      void incWhiteAlone() {whiteAlone += 1;}
+      void incBlackAlone() {blackAlone += 1;}
+      void incAmIndianAlNative() {amIndianAlNative += 1;}
+      void incAsianAlone() {asianAlone += 1;}
+      void incHawaiianPacIsland() {hawaiianPacIsland += 1;}
+      void incTwoOrMore() {twoOrMore += 1;}
+      void incHispLat() {hispLat += 1;}
+      void incWhiteNotHispLat() {whiteNotHispLat += 1;}
+      void incUnspecified() {unspecified += 1;}
       
    friend std::ostream& operator<<(std::ostream &out,  raceAndEthnicity &DD);
    
@@ -63,9 +63,7 @@ class raceAndEthnicity {
       double twoOrMore;
       double hispLat;
       double whiteNotHispLat;
-
-      int none;
-      int other;
+      double unspecified;
       
 };
 #endif

@@ -216,8 +216,8 @@ int main(int argc, char *argv[]) {
 	// 	cout << "Did you read the lab instructions?" << endl;
 	// }
 
-	// theAnswers.reportTopTenStatesPS();
-	// theAnswers.reportBottomTenStatesHomeOwn();
+	theAnswers.reportTopTenStatesPS();
+	theAnswers.reportBottomTenStatesHomeOwn();
 	
 
 	if (argc < 4) {

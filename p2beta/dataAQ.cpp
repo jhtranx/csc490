@@ -44,14 +44,71 @@ void dataAQ::createStatePoliceData(std::vector<shared_ptr<psData>> theData){
          allStatePoliceData[stateStr]->incRaceEth("None");
    }
 }
+void dataAQ::printPSReportInfo(string stateStr) {
+   shared_ptr<demogState> SD = getStateData(stateStr);
+   shared_ptr<psCombo> PS = getStatePoliceData(stateStr);
 
-//sort and report the top ten states in terms of number of police shootings 
-void dataAQ::reportTopTenStatesPS(){
-//FILL in
+   double caseCt = (double)PS->getNumberOfCases();
+   double popCt = (double)SD->getPopulation();
+   cout << stateStr << endl;
+   cout << "Total population: " << SD->getPopulation();
+   cout << " Percentage home ownership: " << 
+      (double)SD->getHomeOwn()/SD->getPopulation() * 100 << "%" << endl;
+   cout << "Police shooting incidents: " << PS->getNumberOfCases();
+   cout << " Percent of population: " << 
+      (caseCt/popCt)*100 << "%" << endl;
 }
 
-void dataAQ::reportBottomTenStatesHomeOwn(){
-//FILL in
+//sort and report the top ten states in terms of number of police shootings 
+void dataAQ::reportTopTenStatesPS() {
+
+   vector<pair<string, shared_ptr<psCombo>>> mapVector;
+
+   for (const auto &obj : allStatePoliceData) {
+      mapVector.push_back(pair<string, shared_ptr<psCombo>>(obj.first, obj.second));
+   }
+
+   sort(mapVector.begin(), mapVector.end(), [](pair<string, shared_ptr<psCombo>> lhs, 
+      pair<string, shared_ptr<psCombo>> rhs) {
+         return lhs.second->getNumberOfCases() > rhs.second->getNumberOfCases(); 
+   });
+
+   for (int i = 0; i < 10; i++) {printPSReportInfo(mapVector.at(i).first);}
+
+   cout << "\n**Full listings for top 3 police shootings & the associated census data:" << endl;
+   for (int j = 0; j < 3; j++) {
+      if (getStatePoliceData(mapVector.at(j).first) != nullptr) {
+		   cout << *(getStatePoliceData(mapVector.at(j).first)) << endl;
+         cout << "**US census data: ";
+         cout << *(getStateData(mapVector.at(j).first)) << endl;
+      }
+   }
+}
+
+void dataAQ::reportBottomTenStatesHomeOwn() {
+
+   vector<pair<string, shared_ptr<demogState>>> mapVector;
+
+   for (const auto &obj : stateMap) {
+      mapVector.push_back(pair<string, shared_ptr<demogState>>(obj.first, obj.second));
+   }
+
+   sort(mapVector.begin(), mapVector.end(), [](pair<string, shared_ptr<demogState>> lhs, pair<string, shared_ptr<demogState>> rhs) {
+      return (lhs.second->getHomeOwn()/(double)lhs.second->getPopulation()) < (rhs.second->getHomeOwn()/(double)rhs.second->getPopulation()); 
+   });
+
+   for (int i = 0; i < 10; i++) {
+      printPSReportInfo(mapVector.at(i).first);
+   }
+
+   cout << "\n**Full listings for bottom 3 home own rates & the associated census data:" << endl;
+   for (int j = 0; j < 3; j++) {
+      if (getStatePoliceData(mapVector.at(j).first) != nullptr) {
+		   cout << *(getStatePoliceData(mapVector.at(j).first)) << endl;
+         cout << "**US census data: ";
+         cout << *(getStateData(mapVector.at(j).first)) << endl;
+      }
+   }
 }
 
 /* aggregate data */
@@ -121,7 +178,7 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
                                           pph, v, hsg, bd, fb, re);
          auto result = stateMap.insert(pair<string, shared_ptr<demogState>>(stateStr, newState));
       }
-      std::cout << *obj << std::endl;
+      // std::cout << *obj << std::endl;
    }
 }
 
@@ -292,7 +349,6 @@ vector<double> dataAQ::getAACasesList() {
    vector<double> retList = {};
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
-      cout << "STATE: " << currState->getRegion() << " AA CT: " << currState->getRaceEthnicity().getBlackAlone() << endl;
       retList.push_back((currState->getRaceEthnicity().getBlackAlone()/currState->getNumberOfCases()));
    }
    return retList;
@@ -302,7 +358,6 @@ vector<double> dataAQ::getACasesList() {
    vector<double> retList = {};
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
-      cout << "STATE: " << currState->getRegion() << " A CT: " << currState->getRaceEthnicity().getAsianAlone() << endl;
       retList.push_back((currState->getRaceEthnicity().getAsianAlone()/currState->getNumberOfCases()));
    }
    return retList;
@@ -312,7 +367,6 @@ vector<double> dataAQ::getLCasesList() {
    vector<double> retList = {};
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
-      cout << "STATE: " << currState->getRegion() << " AA CT: " << currState->getRaceEthnicity().getBlackAlone() << endl;
       retList.push_back((currState->getRaceEthnicity().getHispLat()/currState->getNumberOfCases())*100);
    }
    return retList;
@@ -322,7 +376,6 @@ vector<double> dataAQ::getNACasesList() {
    vector<double> retList = {};
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
-      cout << "STATE: " << currState->getRegion() << " AA CT: " << currState->getRaceEthnicity().getBlackAlone() << endl;
       retList.push_back((currState->getRaceEthnicity().getAmIndianAlNative()/currState->getNumberOfCases())*100);
    }
    return retList;
@@ -332,7 +385,6 @@ vector<double> dataAQ::getWCasesList() {
    vector<double> retList = {};
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
-      cout << "STATE: " << currState->getRegion() << " AA CT: " << currState->getRaceEthnicity().getWhiteAlone() << endl;
       retList.push_back((currState->getRaceEthnicity().getWhiteAlone() / currState->getNumberOfCases())*100);
    }
    return retList;
@@ -388,7 +440,6 @@ vector<double> dataAQ::getCaseCtList() {
    vector<double> retList = {};
    for (auto& policePair : allStatePoliceData) {
       shared_ptr<psCombo> currState = policePair.second;
-      cout << "STATE: " << currState->getRegion() << " CASE CT: " << currState->getNumberOfCases() << endl;
       retList.push_back(currState->getNumberOfCases());
       
    }

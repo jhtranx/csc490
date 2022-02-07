@@ -51,30 +51,13 @@ void writeOut(ostream& out, ppmR& theWriter,
 void createGrid(vector<double> numArr1, vector<double> numArr2, 
                 vector<ellipse> &theEllipses,
                 int sizeX, int sizeY) {
-    //cool to warm color map 
-    array<color, 10> colorMap; 
-    colorMap[0] = color(91, 80, 235); //cool 
-    colorMap[1] = color(95, 166, 245); 
-    colorMap[2] = color(99, 223, 220); 
-    colorMap[3] = color(95, 245, 155); 
-    colorMap[4] = color(128, 235, 96); //midway 
-    colorMap[5] = color(235, 235, 75); 
-    colorMap[6] = color(245, 213, 91); 
-    colorMap[7] = color(223, 170, 94); 
-    colorMap[8] = color(245, 134, 91); 
-    colorMap[9] = color(235, 91, 101); //warm  
 
-    cout << "SIZE: " << numArr1.size() << endl;
     int approxSize = sqrt(numArr1.size()) + 1;
     int offSetX = round(sizeX / (double)approxSize);
     int offSetY = round(sizeY / (double)approxSize);
 
     double topVal1 = (*max_element(numArr1.begin(), numArr1.end()));
     double topVal2 = (*max_element(numArr2.begin(), numArr2.end()));
-
-    cout << "topVAL1: " << topVal1 << endl;
-    cout << "topVAL2: " << topVal2 << endl;
-
 
     double mag1 = 0;
     double mag2 = 0;
@@ -88,9 +71,6 @@ void createGrid(vector<double> numArr1, vector<double> numArr2,
         color warm = color(235, 91, 101); // num2  
         color back = color(0, 0, 0); // num2  
 
-        // mag1 = ((double)numArr1[w] / topVal1);
-        // mag2 = ((double)numArr2[w] / topVal2);
-
         double rad1;
         double rad2;
 
@@ -99,8 +79,6 @@ void createGrid(vector<double> numArr1, vector<double> numArr2,
         
 
         if (rad1 > rad2) {
-            cout << "r1 > r2" <<endl;
-    
             theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
                                 rad1*20, 5, cool));
 
@@ -109,24 +87,17 @@ void createGrid(vector<double> numArr1, vector<double> numArr2,
 
         }
         else {
-            cout << "r2 > r1" <<endl;
-            
-
             theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
                                 rad2*20, 5, warm));
 
             theEllipses.push_back(ellipse(vec2(i * offSetX + 0.5*offSetX, j * offSetY + 0.5*offSetY), 
                                 rad1*20, 6, back));
         }
-        cout << "numArr1: " << numArr1[w] << endl;
-        cout << "numArr2: " << numArr2[w] << endl;
 
-        cout << "mag1: " << mag1 << endl;
-        cout << "mag2: " << mag2 << endl;
-
+        cout << "num1: " << numArr1[w] << endl;
+        cout << "num2: " << numArr2[w] << endl;
         cout << "r1: " << rad1 << endl;
         cout << "r2: " << rad2 << endl;
-
         
         i++;
         if (i > approxSize-1) {
@@ -151,25 +122,20 @@ int main(int argc, char *argv[]) {
     theAnswers.createStateData(theStateData);
     theAnswers.createStatePoliceData(thePoliceData);
     
-    cout << "XXX" << endl;
-    int i = 0;
-	for (const auto &obj : theStateData) {
-		std::cout << *obj << std::endl;
-		i++;
-		if (i > 15)
-			break;
-	}
+    // int i = 0;
+	// for (const auto &obj : theStateData) {
+	// 	std::cout << *obj << std::endl;
+	// 	i++;
+	// 	if (i > 15)
+	// 		break;
+	// }
 
     std::vector<double> numArr1 = {};
     std::vector<double> numArr2 = {};
     std::vector<int> totWALonePerc = {};
     
-    numArr1 = theAnswers.getLCasesList(); 
-    numArr2 = theAnswers.getLatinPercentList();   
-    
-
-    // totCaseCt = theAnswers.getCaseCtList();    
-    // totAfricanAmericanCt = theAnswers.getAACasesList();
+    numArr1 = theAnswers.getAACasesList(); 
+    numArr2 = theAnswers.getAfrAmerPercentList();   
 
     if (argc < 4) {
 		cerr << "Error format: a.out sizeX sizeY outfileName" << endl;
@@ -186,6 +152,10 @@ int main(int argc, char *argv[]) {
 			cout << "writing an image of size: " << sizeX << " " << sizeY << " to: " << argv[3] << endl;
 			theWriter.writeHeader(outFile);
 			writeOut(outFile, theWriter, theEllispes);
+
+            theAnswers.reportTopTenStatesPS();
+	        theAnswers.reportBottomTenStatesHomeOwn();
+
 		} else {
 			cout << "Error cannot open outfile" << endl;
 			exit(0);

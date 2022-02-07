@@ -97352,362 +97352,702 @@ total Racial Demographic Count: 31205
 (% Bachelor or more): 0.243 and total: 7583
 (% high school or more): 0.9 and total: 28085
 
+CA
+Total population: 39538223 Percentage home ownership: 54.9434%
+Police shooting incidents: 1002 Percent of population: 0.00253426%
+TX
+Total population: 29145505 Percentage home ownership: 62.1836%
+Police shooting incidents: 604 Percent of population: 0.00207236%
+FL
+Total population: 21538187 Percentage home ownership: 65.0147%
+Police shooting incidents: 444 Percent of population: 0.00206145%
+AZ
+Total population: 7151502 Percentage home ownership: 64.4126%
+Police shooting incidents: 310 Percent of population: 0.00433475%
+GA
+Total population: 10711908 Percentage home ownership: 63.5995%
+Police shooting incidents: 252 Percent of population: 0.00235252%
+CO
+Total population: 5773714 Percentage home ownership: 65.5546%
+Police shooting incidents: 248 Percent of population: 0.00429533%
+NC
+Total population: 10439388 Percentage home ownership: 65.153%
+Police shooting incidents: 195 Percent of population: 0.00186793%
+OK
+Total population: 3959353 Percentage home ownership: 65.6842%
+Police shooting incidents: 194 Percent of population: 0.00489979%
+OH
+Total population: 11799448 Percentage home ownership: 66.2818%
+Police shooting incidents: 192 Percent of population: 0.00162719%
+TN
+Total population: 6910840 Percentage home ownership: 66.4617%
+Police shooting incidents: 185 Percent of population: 0.00267695%
+
+**Full listings for top 3 police shootings & the associated census data:
+State Info: CA
+Number of incidents: 
+Incidents involving unarmed or armed with toy weapons: 166, 16.57%
+Incidents involving mental illness: 222, 22.16%
+Incidents with body camera on: 185, 18.46%
+Racial demographics of state incidents: Racial Demographics Info:
+% American Indian and Alaska Native percent: 0.40 count: 4
+% Asian American percent: 3.49 count: 35
+% Black/African American percent: 15.77 count: 158
+% Hispanic or Latinx percent: 37.92 count: 380
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 0
+% Two or More Races percent: 0.00 count: 0
+% White (inclusive) percent: 25.75 count: 258
+% White (nonHispanic) percent: 25.75 count: 258
+% Unspecified percent: 16.67 count: 167
+total Racial Demographic Count: 1002
+
+**US census data: State Info: CA
+Number of Counties: 58
+Population info:
+(% over 65): 14.78 and total: 5844397
+(% under 18): 22.53 and total: 8906927
+(% under 5): 6.04 and total: 2387630
+(% female): 50.28 and total: 19879766
+(% foreign born): 26.79 and total: 10592735
+(% veterans): 3.98 and total: 1574531
+Education info:
+(% Bachelor or more): 33.44 and total: 13220419
+(% high school or more): 83.11 and total: 32860891
+County housing/economy info:
+(avg. persons per house): 2.95 and total: 38474008.21
+(% home ownership): 54.94 and total: 21723652
+(number housing units): 13044266
+(medIncome): 67713
+Total population: 39538223
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.02 count: 672116.00
+% Asian American percent: 0.16 count: 6282518.00
+% Black/African American percent: 0.06 count: 2550326.00
+% Hispanic or Latinx percent: 0.38 count: 14907406.00
+% Native Hawaiian and Other Pacific Islander: 0.01 count: 212806.00
+% Two or More Races percent: 0.13 count: 5262545.00
+% White (inclusive) percent: 0.71 count: 28194460.00
+% White (nonHispanic) percent: 0.38 count: 14854997.00
+total Racial Demographic Count: 39538223
+
+State Info: TX
+Number of incidents: 
+Incidents involving unarmed or armed with toy weapons: 77, 12.75%
+Incidents involving mental illness: 120, 19.87%
+Incidents with body camera on: 75, 12.42%
+Racial demographics of state incidents: Racial Demographics Info:
+% American Indian and Alaska Native percent: 0.17 count: 1
+% Asian American percent: 0.99 count: 6
+% Black/African American percent: 20.03 count: 121
+% Hispanic or Latinx percent: 28.15 count: 170
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 0
+% Two or More Races percent: 0.00 count: 0
+% White (inclusive) percent: 33.77 count: 204
+% White (nonHispanic) percent: 33.77 count: 204
+% Unspecified percent: 16.89 count: 102
+total Racial Demographic Count: 604
+
+**US census data: State Info: TX
+Number of Counties: 254
+Population info:
+(% over 65): 12.86 and total: 3747363
+(% under 18): 25.51 and total: 7435076
+(% under 5): 6.86 and total: 2000673
+(% female): 50.34 and total: 14672927
+(% foreign born): 17.00 and total: 4954628
+(% veterans): 4.99 and total: 1453449
+Education info:
+(% Bachelor or more): 30.02 and total: 8748347
+(% high school or more): 83.64 and total: 24378014
+County housing/economy info:
+(avg. persons per house): 2.85 and total: 27664546.58
+(% home ownership): 62.18 and total: 18123738
+(number housing units): 9691647
+(medIncome): 52847
+Total population: 29145505
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.01 count: 298334.00
+% Asian American percent: 0.05 count: 1443215.00
+% Black/African American percent: 0.13 count: 3661986.00
+% Hispanic or Latinx percent: 0.39 count: 11285389.00
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 42609.00
+% Two or More Races percent: 0.05 count: 1445943.00
+% White (inclusive) percent: 0.79 count: 23091796.00
+% White (nonHispanic) percent: 0.43 count: 12468526.00
+total Racial Demographic Count: 29145505
+
+State Info: FL
+Number of incidents: 
+Incidents involving unarmed or armed with toy weapons: 56, 12.61%
+Incidents involving mental illness: 121, 27.25%
+Incidents with body camera on: 37, 8.33%
+Racial demographics of state incidents: Racial Demographics Info:
+% American Indian and Alaska Native percent: 0.00 count: 0
+% Asian American percent: 0.23 count: 1
+% Black/African American percent: 30.41 count: 135
+% Hispanic or Latinx percent: 13.51 count: 60
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 0
+% Two or More Races percent: 0.00 count: 0
+% White (inclusive) percent: 43.02 count: 191
+% White (nonHispanic) percent: 43.02 count: 191
+% Unspecified percent: 12.84 count: 57
+total Racial Demographic Count: 444
+
+**US census data: State Info: FL
+Number of Counties: 67
+Population info:
+(% over 65): 20.90 and total: 4502371
+(% under 18): 19.70 and total: 4243624
+(% under 5): 5.30 and total: 1141987
+(% female): 51.12 and total: 11010994
+(% foreign born): 20.49 and total: 4414063
+(% veterans): 6.69 and total: 1440338
+Education info:
+(% Bachelor or more): 29.94 and total: 6449213
+(% high school or more): 88.20 and total: 18997614
+County housing/economy info:
+(avg. persons per house): 2.65 and total: 20464588.50
+(% home ownership): 65.01 and total: 14002994
+(number housing units): 7736311
+(medIncome): 51290
+Total population: 21538187
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.01 count: 111783.00
+% Asian American percent: 0.03 count: 647254.00
+% Black/African American percent: 0.17 count: 3555282.00
+% Hispanic or Latinx percent: 0.24 count: 5246056.00
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 22531.00
+% Two or More Races percent: 0.03 count: 616566.00
+% White (inclusive) percent: 0.78 count: 16709746.00
+% White (nonHispanic) percent: 0.55 count: 11943976.00
+total Racial Demographic Count: 21538187
+
+DC
+Total population: 689545 Percentage home ownership: 41.60%
+Police shooting incidents: 21 Percent of population: 0.00%
+NY
+Total population: 20201249 Percentage home ownership: 54.29%
+Police shooting incidents: 128 Percent of population: 0.00%
+CA
+Total population: 39538223 Percentage home ownership: 54.94%
+Police shooting incidents: 1002 Percent of population: 0.00%
+NV
+Total population: 3104614 Percentage home ownership: 56.19%
+Police shooting incidents: 117 Percent of population: 0.00%
+HI
+Total population: 1455271 Percentage home ownership: 58.68%
+Police shooting incidents: 37 Percent of population: 0.00%
+RI
+Total population: 1097379 Percentage home ownership: 60.48%
+Police shooting incidents: 5 Percent of population: 0.00%
+ND
+Total population: 779094 Percentage home ownership: 61.97%
+Police shooting incidents: 15 Percent of population: 0.00%
+TX
+Total population: 29145505 Percentage home ownership: 62.18%
+Police shooting incidents: 604 Percent of population: 0.00%
+OR
+Total population: 4237256 Percentage home ownership: 62.47%
+Police shooting incidents: 109 Percent of population: 0.00%
+MA
+Total population: 7029917 Percentage home ownership: 62.52%
+Police shooting incidents: 46 Percent of population: 0.00%
+
+**Full listings for bottom 3 home own rates & the associated census data:
+State Info: DC
+Number of incidents: 
+Incidents involving unarmed or armed with toy weapons: 6, 28.57%
+Incidents involving mental illness: 3, 14.29%
+Incidents with body camera on: 9, 42.86%
+Racial demographics of state incidents: Racial Demographics Info:
+% American Indian and Alaska Native percent: 0.00 count: 0
+% Asian American percent: 0.00 count: 0
+% Black/African American percent: 76.19 count: 16
+% Hispanic or Latinx percent: 0.00 count: 0
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 0
+% Two or More Races percent: 0.00 count: 0
+% White (inclusive) percent: 9.52 count: 2
+% White (nonHispanic) percent: 9.52 count: 2
+% Unspecified percent: 14.29 count: 3
+total Racial Demographic Count: 21
+
+**US census data: State Info: DC
+Number of Counties: 1
+Population info:
+(% over 65): 12.40 and total: 85504
+(% under 18): 18.20 and total: 125497
+(% under 5): 6.40 and total: 44131
+(% female): 52.60 and total: 362701
+(% foreign born): 13.70 and total: 94468
+(% veterans): 3.79 and total: 26156
+Education info:
+(% Bachelor or more): 58.50 and total: 403384
+(% high school or more): 90.90 and total: 626796
+County housing/economy info:
+(avg. persons per house): 2.30 and total: 654087.79
+(% home ownership): 41.60 and total: 286851
+(number housing units): 284386
+(medIncome): 86420
+Total population: 689545
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.01 count: 4137.00
+% Asian American percent: 0.04 count: 31030.00
+% Black/African American percent: 0.46 count: 317191.00
+% Hispanic or Latinx percent: 0.11 count: 77919.00
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 690.00
+% Two or More Races percent: 0.03 count: 19997.00
+% White (inclusive) percent: 0.46 count: 317191.00
+% White (nonHispanic) percent: 0.38 count: 258579.00
+total Racial Demographic Count: 689545
+
+State Info: NY
+Number of incidents: 
+Incidents involving unarmed or armed with toy weapons: 10, 7.81%
+Incidents involving mental illness: 46, 35.94%
+Incidents with body camera on: 23, 17.97%
+Racial demographics of state incidents: Racial Demographics Info:
+% American Indian and Alaska Native percent: 0.00 count: 0
+% Asian American percent: 0.78 count: 1
+% Black/African American percent: 40.62 count: 52
+% Hispanic or Latinx percent: 8.59 count: 11
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 0
+% Two or More Races percent: 0.00 count: 0
+% White (inclusive) percent: 33.59 count: 43
+% White (nonHispanic) percent: 33.59 count: 43
+% Unspecified percent: 16.41 count: 21
+total Racial Demographic Count: 128
+
+**US census data: State Info: NY
+Number of Counties: 62
+Population info:
+(% over 65): 16.92 and total: 3417088
+(% under 18): 20.72 and total: 4185485
+(% under 5): 5.81 and total: 1173272
+(% female): 51.44 and total: 10391747
+(% foreign born): 22.78 and total: 4602269
+(% veterans): 3.49 and total: 705924
+Education info:
+(% Bachelor or more): 36.41 and total: 7354300
+(% high school or more): 86.74 and total: 17523103
+County housing/economy info:
+(avg. persons per house): 2.59 and total: 18998572.89
+(% home ownership): 54.29 and total: 10966596
+(number housing units): 7343234
+(medIncome): 62484
+Total population: 20201249
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.01 count: 182184.00
+% Asian American percent: 0.08 count: 1713333.00
+% Black/African American percent: 0.16 count: 3299400.00
+% Hispanic or Latinx percent: 0.18 count: 3545755.00
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 24697.00
+% Two or More Races percent: 0.08 count: 1663582.00
+% White (inclusive) percent: 0.72 count: 14449188.00
+% White (nonHispanic) percent: 0.58 count: 11799310.00
+total Racial Demographic Count: 20201249
+
+State Info: CA
+Number of incidents: 
+Incidents involving unarmed or armed with toy weapons: 166, 16.57%
+Incidents involving mental illness: 222, 22.16%
+Incidents with body camera on: 185, 18.46%
+Racial demographics of state incidents: Racial Demographics Info:
+% American Indian and Alaska Native percent: 0.40 count: 4
+% Asian American percent: 3.49 count: 35
+% Black/African American percent: 15.77 count: 158
+% Hispanic or Latinx percent: 37.92 count: 380
+% Native Hawaiian and Other Pacific Islander: 0.00 count: 0
+% Two or More Races percent: 0.00 count: 0
+% White (inclusive) percent: 25.75 count: 258
+% White (nonHispanic) percent: 25.75 count: 258
+% Unspecified percent: 16.67 count: 167
+total Racial Demographic Count: 1002
+
+**US census data: State Info: CA
+Number of Counties: 58
+Population info:
+(% over 65): 14.78 and total: 5844397
+(% under 18): 22.53 and total: 8906927
+(% under 5): 6.04 and total: 2387630
+(% female): 50.28 and total: 19879766
+(% foreign born): 26.79 and total: 10592735
+(% veterans): 3.98 and total: 1574531
+Education info:
+(% Bachelor or more): 33.44 and total: 13220419
+(% high school or more): 83.11 and total: 32860891
+County housing/economy info:
+(avg. persons per house): 2.95 and total: 38474008.21
+(% home ownership): 54.94 and total: 21723652
+(number housing units): 13044266
+(medIncome): 67713
+Total population: 39538223
+Racial Demographics Info: 
+% American Indian and Alaska Native percent: 0.02 count: 672116.00
+% Asian American percent: 0.16 count: 6282518.00
+% Black/African American percent: 0.06 count: 2550326.00
+% Hispanic or Latinx percent: 0.38 count: 14907406.00
+% Native Hawaiian and Other Pacific Islander: 0.01 count: 212806.00
+% Two or More Races percent: 0.13 count: 5262545.00
+% White (inclusive) percent: 0.71 count: 28194460.00
+% White (nonHispanic) percent: 0.38 count: 14854997.00
+total Racial Demographic Count: 39538223
+
 SIZE: 51
 r1 > r2
 numArr1: 47
 numArr2: 3
-mag1: 0.0469062
-mag2: 0.0189873
-r1: 0.0469062
-r2: 0.0189873
+mag1: 0.05
+mag2: 0.02
+r1: 0.05
+r2: 0.02
 r2 > r1
 numArr1: 126
 numArr2: 37
-mag1: 0.125749
-mag2: 0.234177
-r1: 0.125749
-r2: 0.234177
+mag1: 0.13
+mag2: 0.23
+r1: 0.13
+r2: 0.23
 r2 > r1
 numArr1: 97
 numArr2: 26
-mag1: 0.0968064
-mag2: 0.164557
-r1: 0.0968064
-r2: 0.164557
+mag1: 0.10
+mag2: 0.16
+r1: 0.10
+r2: 0.16
 r1 > r2
 numArr1: 310
 numArr2: 22
-mag1: 0.309381
-mag2: 0.139241
-r1: 0.309381
-r2: 0.139241
+mag1: 0.31
+mag2: 0.14
+r1: 0.31
+r2: 0.14
 r2 > r1
 numArr1: 1002
 numArr2: 158
-mag1: 1
-mag2: 1
-r1: 1
-r2: 1
+mag1: 1.00
+mag2: 1.00
+r1: 1.00
+r2: 1.00
 r1 > r2
 numArr1: 248
 numArr2: 20
-mag1: 0.247505
-mag2: 0.126582
-r1: 0.247505
-r2: 0.126582
+mag1: 0.25
+mag2: 0.13
+r1: 0.25
+r2: 0.13
 r2 > r1
 numArr1: 23
 numArr2: 5
-mag1: 0.0229541
-mag2: 0.0316456
-r1: 0.0229541
-r2: 0.0316456
+mag1: 0.02
+mag2: 0.03
+r1: 0.02
+r2: 0.03
 r2 > r1
 numArr1: 21
 numArr2: 16
-mag1: 0.0209581
-mag2: 0.101266
-r1: 0.0209581
-r2: 0.101266
+mag1: 0.02
+mag2: 0.10
+r1: 0.02
+r2: 0.10
 r2 > r1
 numArr1: 47
 numArr2: 3
-mag1: 0.0159681
-mag2: 0.0379747
-r1: 0.0159681
-r2: 0.0379747
+mag1: 0.02
+mag2: 0.04
+r1: 0.02
+r2: 0.04
 r2 > r1
 numArr1: 126
 numArr2: 37
-mag1: 0.443114
-mag2: 0.85443
-r1: 0.443114
-r2: 0.85443
+mag1: 0.44
+mag2: 0.85
+r1: 0.44
+r2: 0.85
 r2 > r1
 numArr1: 97
 numArr2: 26
-mag1: 0.251497
-mag2: 0.601266
-r1: 0.251497
-r2: 0.601266
+mag1: 0.25
+mag2: 0.60
+r1: 0.25
+r2: 0.60
 r1 > r2
 numArr1: 310
 numArr2: 22
-mag1: 0.0369261
-mag2: 0.0126582
-r1: 0.0369261
-r2: 0.0126582
+mag1: 0.04
+mag2: 0.01
+r1: 0.04
+r2: 0.01
 r2 > r1
 numArr1: 1002
 numArr2: 158
-mag1: 0.0429142
-mag2: 0.0506329
-r1: 0.0429142
-r2: 0.0506329
+mag1: 0.04
+mag2: 0.05
+r1: 0.04
+r2: 0.05
 r1 > r2
 numArr1: 248
 numArr2: 20
-mag1: 0.0578842
-mag2: 0.00632911
-r1: 0.0578842
-r2: 0.00632911
+mag1: 0.06
+mag2: 0.01
+r1: 0.06
+r2: 0.01
 r2 > r1
 numArr1: 23
 numArr2: 5
-mag1: 0.134731
-mag2: 0.436709
-r1: 0.134731
-r2: 0.436709
+mag1: 0.13
+mag2: 0.44
+r1: 0.13
+r2: 0.44
 r2 > r1
 numArr1: 21
 numArr2: 16
-mag1: 0.125749
-mag2: 0.208861
-r1: 0.125749
-r2: 0.208861
+mag1: 0.13
+mag2: 0.21
+r1: 0.13
+r2: 0.21
 r1 > r2
 numArr1: 47
 numArr2: 3
-mag1: 0.0648703
-mag2: 0.0506329
-r1: 0.0648703
-r2: 0.0506329
+mag1: 0.06
+mag2: 0.05
+r1: 0.06
+r2: 0.05
 r1 > r2
 numArr1: 126
 numArr2: 37
-mag1: 0.125749
-mag2: 0.101266
-r1: 0.125749
-r2: 0.101266
+mag1: 0.13
+mag2: 0.10
+r1: 0.13
+r2: 0.10
 r2 > r1
 numArr1: 97
 numArr2: 26
-mag1: 0.135729
-mag2: 0.436709
-r1: 0.135729
-r2: 0.436709
+mag1: 0.14
+mag2: 0.44
+r1: 0.14
+r2: 0.44
 r2 > r1
 numArr1: 310
 numArr2: 22
-mag1: 0.0459082
-mag2: 0.0506329
-r1: 0.0459082
-r2: 0.0506329
+mag1: 0.05
+mag2: 0.05
+r1: 0.05
+r2: 0.05
 r2 > r1
 numArr1: 1002
 numArr2: 158
-mag1: 0.0988024
-mag2: 0.367089
-r1: 0.0988024
-r2: 0.367089
+mag1: 0.10
+mag2: 0.37
+r1: 0.10
+r2: 0.37
 r1 > r2
 numArr1: 248
 numArr2: 20
-mag1: 0.0289421
-mag2: 0.00632911
-r1: 0.0289421
-r2: 0.00632911
+mag1: 0.03
+mag2: 0.01
+r1: 0.03
+r2: 0.01
 r2 > r1
 numArr1: 23
 numArr2: 5
-mag1: 0.108782
-mag2: 0.196203
-r1: 0.108782
-r2: 0.196203
+mag1: 0.11
+mag2: 0.20
+r1: 0.11
+r2: 0.20
 r2 > r1
 numArr1: 21
 numArr2: 16
-mag1: 0.0768463
-mag2: 0.0886076
-r1: 0.0768463
-r2: 0.0886076
+mag1: 0.08
+mag2: 0.09
+r1: 0.08
+r2: 0.09
 r2 > r1
 numArr1: 47
 numArr2: 3
-mag1: 0.173653
-mag2: 0.35443
-r1: 0.173653
-r2: 0.35443
+mag1: 0.17
+mag2: 0.35
+r1: 0.17
+r2: 0.35
 r2 > r1
 numArr1: 126
 numArr2: 37
-mag1: 0.0888224
-mag2: 0.183544
-r1: 0.0888224
-r2: 0.183544
+mag1: 0.09
+mag2: 0.18
+r1: 0.09
+r2: 0.18
 r1 > r2
 numArr1: 97
 numArr2: 26
-mag1: 0.0419162
-mag2: 0
-r1: 0.0419162
-r2: 0
+mag1: 0.04
+mag2: 0.00
+r1: 0.04
+r2: 0.00
 r2 > r1
 numArr1: 310
 numArr2: 22
-mag1: 0.194611
-mag2: 0.35443
-r1: 0.194611
-r2: 0.35443
+mag1: 0.19
+mag2: 0.35
+r1: 0.19
+r2: 0.35
 r1 > r2
 numArr1: 1002
 numArr2: 158
-mag1: 0.0149701
-mag2: 0
-r1: 0.0149701
-r2: 0
+mag1: 0.01
+mag2: 0.00
+r1: 0.01
+r2: 0.00
 r2 > r1
 numArr1: 248
 numArr2: 20
-mag1: 0.0359281
-mag2: 0.0379747
-r1: 0.0359281
-r2: 0.0379747
+mag1: 0.04
+mag2: 0.04
+r1: 0.04
+r2: 0.04
 r1 > r2
 numArr1: 23
 numArr2: 5
-mag1: 0.0179641
-mag2: 0
-r1: 0.0179641
-r2: 0
+mag1: 0.02
+mag2: 0.00
+r1: 0.02
+r2: 0.00
 r2 > r1
 numArr1: 21
 numArr2: 16
-mag1: 0.0818363
-mag2: 0.21519
-r1: 0.0818363
-r2: 0.21519
+mag1: 0.08
+mag2: 0.22
+r1: 0.08
+r2: 0.22
 r1 > r2
 numArr1: 47
 numArr2: 3
-mag1: 0.137725
-mag2: 0.0126582
-r1: 0.137725
-r2: 0.0126582
+mag1: 0.14
+mag2: 0.01
+r1: 0.14
+r2: 0.01
 r1 > r2
 numArr1: 126
 numArr2: 37
-mag1: 0.116766
-mag2: 0.107595
-r1: 0.116766
-r2: 0.107595
+mag1: 0.12
+mag2: 0.11
+r1: 0.12
+r2: 0.11
 r2 > r1
 numArr1: 97
 numArr2: 26
-mag1: 0.127745
-mag2: 0.329114
-r1: 0.127745
-r2: 0.329114
+mag1: 0.13
+mag2: 0.33
+r1: 0.13
+r2: 0.33
 r2 > r1
 numArr1: 310
 numArr2: 22
-mag1: 0.191617
-mag2: 0.449367
-r1: 0.191617
-r2: 0.449367
+mag1: 0.19
+mag2: 0.45
+r1: 0.19
+r2: 0.45
 r2 > r1
 numArr1: 1002
 numArr2: 158
-mag1: 0.193613
-mag2: 0.227848
-r1: 0.193613
-r2: 0.227848
+mag1: 0.19
+mag2: 0.23
+r1: 0.19
+r2: 0.23
 r1 > r2
 numArr1: 248
 numArr2: 20
-mag1: 0.108782
-mag2: 0.0506329
-r1: 0.108782
-r2: 0.0506329
+mag1: 0.11
+mag2: 0.05
+r1: 0.11
+r2: 0.05
 r2 > r1
 numArr1: 23
 numArr2: 5
-mag1: 0.141717
-mag2: 0.297468
-r1: 0.141717
-r2: 0.297468
+mag1: 0.14
+mag2: 0.30
+r1: 0.14
+r2: 0.30
 r2 > r1
 numArr1: 21
 numArr2: 16
-mag1: 0.00499002
-mag2: 0.0126582
-r1: 0.00499002
-r2: 0.0126582
+mag1: 0.00
+mag2: 0.01
+r1: 0.00
+r2: 0.01
 r2 > r1
 numArr1: 47
 numArr2: 3
-mag1: 0.105788
-mag2: 0.183544
-r1: 0.105788
-r2: 0.183544
+mag1: 0.11
+mag2: 0.18
+r1: 0.11
+r2: 0.18
 r1 > r2
 numArr1: 126
 numArr2: 37
-mag1: 0.0209581
-mag2: 0
-r1: 0.0209581
-r2: 0
+mag1: 0.02
+mag2: 0.00
+r1: 0.02
+r2: 0.00
 r2 > r1
 numArr1: 97
 numArr2: 26
-mag1: 0.184631
-mag2: 0.246835
-r1: 0.184631
-r2: 0.246835
+mag1: 0.18
+mag2: 0.25
+r1: 0.18
+r2: 0.25
 r2 > r1
 numArr1: 310
 numArr2: 22
-mag1: 0.602794
-mag2: 0.765823
-r1: 0.602794
-r2: 0.765823
+mag1: 0.60
+mag2: 0.77
+r1: 0.60
+r2: 0.77
 r1 > r2
 numArr1: 1002
 numArr2: 158
-mag1: 0.0828343
-mag2: 0.0443038
-r1: 0.0828343
-r2: 0.0443038
+mag1: 0.08
+mag2: 0.04
+r1: 0.08
+r2: 0.04
 r2 > r1
 numArr1: 248
 numArr2: 20
-mag1: 0.117764
-mag2: 0.297468
-r1: 0.117764
-r2: 0.297468
+mag1: 0.12
+mag2: 0.30
+r1: 0.12
+r2: 0.30
 r1 > r2
 numArr1: 23
 numArr2: 5
-mag1: 0.010978
-mag2: 0
-r1: 0.010978
-r2: 0
+mag1: 0.01
+mag2: 0.00
+r1: 0.01
+r2: 0.00
 r1 > r2
 numArr1: 21
 numArr2: 16
-mag1: 0.180639
-mag2: 0.158228
-r1: 0.180639
-r2: 0.158228
+mag1: 0.18
+mag2: 0.16
+r1: 0.18
+r2: 0.16
 r2 > r1
 numArr1: 47
 numArr2: 3
-mag1: 0.10978
-mag2: 0.151899
-r1: 0.10978
-r2: 0.151899
+mag1: 0.11
+mag2: 0.15
+r1: 0.11
+r2: 0.15
 r1 > r2
 numArr1: 126
 numArr2: 37
-mag1: 0.0638723
-mag2: 0.0506329
-r1: 0.0638723
-r2: 0.0506329
+mag1: 0.06
+mag2: 0.05
+r1: 0.06
+r2: 0.05
 r1 > r2
 numArr1: 97
 numArr2: 26
-mag1: 0.0149701
-mag2: 0
-r1: 0.0149701
-r2: 0
+mag1: 0.01
+mag2: 0.00
+r1: 0.01
+r2: 0.00
 writing an image of size: 400 400 to: out.ppm

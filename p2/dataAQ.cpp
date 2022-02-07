@@ -363,14 +363,3 @@ vector<int> dataAQ::getCaseCtList() {
    }
    return retList;
 }
-
-vector<int> dataAQ::getDemogWhiteList() {
-   vector<int> retList = {};
-   for (auto& statePair : stateMap) {
-      shared_ptr<demogState> currState = statePair.second;
-      retList.push_back(((currState->getRaceAndEthnicity().getWhiteAlone() + 
-                           currState->getRaceAndEthnicity().getWhiteNotHispLat())
-                           / currState->getPopulation())*100);
-   }
-   return retList;
-}
