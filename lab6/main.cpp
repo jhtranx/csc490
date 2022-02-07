@@ -74,7 +74,7 @@ void createGrid(vector<int> theNumbers, vector<ellipse> &theEllipses, int sizeX,
     int j = 0;
     for (auto entry : theNumbers) {
         // cout << "wow: " << entry / topVal << endl;
-        // mag = round((colorMap.size() - 1) * (entry / topVal));
+        mag = round((colorMap.size() - 1) * (entry / topVal));
         // cout << "color: " << mag << endl;
 
         // cout << "vec2X: " << 0 + i * offSetX << endl;
