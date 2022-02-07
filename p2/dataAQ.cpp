@@ -46,15 +46,19 @@ void dataAQ::createStatePoliceData(std::vector<shared_ptr<psData>> theData){
    }
 }
 
-void dataAQ::printPSReportInfo(pair<string, shared_ptr<psCombo>> currState) {
-   shared_ptr<demogState> SD = getStateData(currState.first);
-   cout << currState.first << endl;
+void dataAQ::printPSReportInfo(string stateStr) {
+   shared_ptr<demogState> SD = getStateData(stateStr);
+   shared_ptr<psCombo> PS = getStatePoliceData(stateStr);
+
+   double caseCt = (double)PS->getNumberOfCases();
+   double popCt = (double)SD->getPopulation();
+   cout << stateStr << endl;
    cout << "Total population: " << SD->getPopulation();
    cout << " Percentage home ownership: " << 
       (double)SD->getHomeOwn()/SD->getPopulation() * 100 << "%" << endl;
-   cout << "Police shooting incidents: " << currState.second->getNumberOfCases();
+   cout << "Police shooting incidents: " << PS->getNumberOfCases();
    cout << " Percent of population: " << 
-      currState.second->getNumberOfCases()/(double)SD->getPopulation() * 100 << "%" << endl;
+      (caseCt/popCt)*100 << "%" << endl;
 }
 //sort and report the top ten states in terms of number of police shootings 
 void dataAQ::reportTopTenStatesPS() {
@@ -70,7 +74,7 @@ void dataAQ::reportTopTenStatesPS() {
          return lhs.second->getNumberOfCases() > rhs.second->getNumberOfCases(); 
    });
 
-   for (int i = 0; i < 10; i++) {printPSReportInfo(mapVector.at(i));}
+   for (int i = 0; i < 10; i++) {printPSReportInfo(mapVector.at(i).first);}
 
    cout << "\n**Full listings for top 3 police shootings & the associated census data:" << endl;
    for (int j = 0; j < 3; j++) {
@@ -95,7 +99,7 @@ void dataAQ::reportBottomTenStatesHomeOwn() {
    });
 
    for (int i = 0; i < 10; i++) {
-      printPSReportInfo(pair<string, shared_ptr<demogState>>(mapVector.at(i), getStatePoliceData(mapVector.at(i).first)));
+      printPSReportInfo(mapVector.at(i).first);
    }
 
    cout << "\n**Full listings for bottom 3 home own rates & the associated census data:" << endl;
