@@ -11,8 +11,8 @@ std::ostream& operator<<(std::ostream &out, const psCombo& PD) {
         + currRace.getHispLat());
 
     out << "State Info: " << PD.state;
-    out << "\nNumber of incidents: ";
-    out << std::setprecision(2) << std::fixed;
+    out << "\nNumber of incidents: " << PD.caseCt;
+    // out << std::setprecision(2) << std::fixed;
     out << "\nIncidents involving unarmed or armed with toy weapons: " 
         << PD.unarmedCt + PD.armedToyCt << ", " << (PD.unarmedCt + PD.armedToyCt)/(double)PD.caseCt * 100 <<"%";
     out << "\nIncidents involving mental illness: " << PD.mentalIllnessCt << ", " 
