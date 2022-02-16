@@ -37,13 +37,20 @@
 std::vector<string> dataProjSetUp() {
 	dataAQ theAnswers;
 
+	cout<< "XXX enter dataProj"<< endl;
+
 	//read in a csv file and create a vector of objects representing each counties data
 	std::vector<shared_ptr<demogData>> theData = read_csv(
 			"./demo/490-MapLab7-STARTER/county_demographics.csv", DEMOG);
 
+	cout<< "XXX finish readcsv"<< endl;
+
+
 
 	std::vector<shared_ptr<psData>> thePoliceData = read_csvPolice(
 			"./demo/490-MapLab7-STARTER/fatal-police-shootings-data-Q.csv", POLICE);
+	
+	cout<< "XXX finish readpolicecsv"<< endl;
 
 	//debug print out
 	/*
@@ -59,18 +66,29 @@ std::vector<string> dataProjSetUp() {
 	//cout << "number police incidents: " << thePoliceData.size() << endl;
 	
 	/* UNCOMMENT with your version of P2 theAnswers.createStateData(theData); */
-
+	
+	theAnswers.createStateData(theData);
 	theAnswers.createStatePoliceData(thePoliceData);
+	
+
+	cout<< "XXX finish creating statedata"<< endl;
+
 
 	// std::vector<std::string> theStates = theAnswers.reportTopTenStatesPS();
 
 	std::vector<string> stateMagList = {};
 	std::vector<std::pair<string, double>> psToPopList = theAnswers.getPsToPopList();
 
+	cout<< "XXX finish poplist"<< endl;
+
+
 	// double topVal = psToPopList[0].second;
 	for (const std::pair<string, double> st : psToPopList) {
 		stateMagList.push_back(st.first);
 	}
+
+	cout<< "XXX finish magList"<< endl;
+
 
 	return stateMagList;
 	// std::vector<std::string> theStates = {"CA", "TX", "FL", "AZ", "GA", "CO", "OK", "OH", "TN", "NC", "AK", "HI", "ME", "MT", "NV"};
@@ -153,6 +171,11 @@ int main ( int argc , char** argv)
 		std::cout << "the expression 1: " << theStatesExp1 << std::endl;
 		std::cout << "the expression 2: " << theStatesExp2 << std::endl;
 		std::cout << "the expression 3: " << theStatesExp3 << std::endl;
+		std::cout << "the expression 4: " << theStatesExp4 << std::endl;
+		std::cout << "the expression 5: " << theStatesExp5 << std::endl;
+		std::cout << "the expression 6: " << theStatesExp6 << std::endl;
+		std::cout << "the expression 7: " << theStatesExp7 << std::endl;
+		std::cout << "the expression 8: " << theStatesExp8 << std::endl;
 
 		std::cout << " creating styles ... \n";
 
@@ -291,14 +314,14 @@ int main ( int argc , char** argv)
 
 			layer lyr("DataProjMap");
 			lyr.set_datasource(datasource_cache::instance().create(p));
-			lyr.add_style("section1_style");
-			lyr.add_style("section2_style");
-			lyr.add_style("section3_style");
-			lyr.add_style("section4_style");
-			lyr.add_style("section5_style");
-			lyr.add_style("section6_style");
-			lyr.add_style("section7_style");
-			lyr.add_style("section8_style");
+			lyr.add_style("section1");
+			lyr.add_style("section2");
+			lyr.add_style("section3");
+			lyr.add_style("section4");
+			lyr.add_style("section5");
+			lyr.add_style("section6");
+			lyr.add_style("section7");
+			lyr.add_style("section8");
 			lyr.set_srs(srs_lcc);
 	
 			m.add_layer(lyr);

@@ -62,17 +62,27 @@ void dataAQ::printPSReportInfo(string stateStr) {
 std::vector<std::pair<string, double>> dataAQ::getPsToPopList() {
 	vector<pair<string, double>> mapVector;
 
+   cout<< "XXX before for loop"<< endl;
    for (const auto &obj : allStatePoliceData) {
+      cout<< "XXX obj.first: " << obj.first << endl;
 		shared_ptr<demogState> currDS = getStateData(obj.first);
-		double currRatio = (double)obj.second->getNumberOfCases()/
-			(double)currDS->getPopulation();
+      cout<< "XXX was found"<< endl;
+      cout<< "XXX numcases:"<< (double)(obj.second->getNumberOfCases()) << endl;
+      cout<< "XXX pop:"<< (double)(currDS->getPopulation()) << endl;
+
+		double currRatio = (double)(obj.second->getNumberOfCases()) /
+			(double)(currDS->getPopulation());
+      cout<< "XXX ratio"<< endl;
       mapVector.push_back(pair<string, double>(obj.first, currRatio));
+      cout<< "XXX pushback success"<< endl;
    }
+   cout<< "XXX after for loop"<< endl;
 
    sort(mapVector.begin(), mapVector.end(), [](pair<string, double> lhs, 
       pair<string, double> rhs) {
          return lhs.second > rhs.second; 
    });
+   cout<< "XXX after sort"<< endl;
 	return mapVector;
 }
 
