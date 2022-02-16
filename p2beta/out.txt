@@ -6062,34 +6062,34 @@ r1: 0.75
 r2: 0.939482
 writing an image of size: 400 400 to: out.ppm
 CA
-Total population: 39538223 Percentage home ownership: 54.9434%
+Total population: 39538223 Percentage home ownership: 54.8435%
 Police shooting incidents: 1002 Percent of population: 0.00253426%
 TX
-Total population: 29145505 Percentage home ownership: 62.1836%
+Total population: 29145505 Percentage home ownership: 61.9552%
 Police shooting incidents: 604 Percent of population: 0.00207236%
 FL
-Total population: 21538187 Percentage home ownership: 65.0147%
+Total population: 21538187 Percentage home ownership: 65.3911%
 Police shooting incidents: 444 Percent of population: 0.00206145%
 AZ
-Total population: 7151502 Percentage home ownership: 64.4126%
+Total population: 7151502 Percentage home ownership: 64.4426%
 Police shooting incidents: 310 Percent of population: 0.00433475%
 GA
-Total population: 10711908 Percentage home ownership: 63.5995%
+Total population: 10711908 Percentage home ownership: 63.254%
 Police shooting incidents: 252 Percent of population: 0.00235252%
 CO
-Total population: 5773714 Percentage home ownership: 65.5546%
+Total population: 5773714 Percentage home ownership: 65.2339%
 Police shooting incidents: 248 Percent of population: 0.00429533%
 NC
-Total population: 10439388 Percentage home ownership: 65.153%
+Total population: 10439388 Percentage home ownership: 65.2196%
 Police shooting incidents: 195 Percent of population: 0.00186793%
 OK
-Total population: 3959353 Percentage home ownership: 65.6842%
+Total population: 3959353 Percentage home ownership: 65.6191%
 Police shooting incidents: 194 Percent of population: 0.00489979%
 OH
-Total population: 11799448 Percentage home ownership: 66.2818%
+Total population: 11799448 Percentage home ownership: 66.0538%
 Police shooting incidents: 192 Percent of population: 0.00162719%
 TN
-Total population: 6910840 Percentage home ownership: 66.4617%
+Total population: 6910840 Percentage home ownership: 66.3116%
 Police shooting incidents: 185 Percent of population: 0.00267695%
 
 **Full listings for top 3 police shootings & the associated census data:
@@ -6117,14 +6117,14 @@ Population info:
 (% under 18): 22.5274 and total: 8906927
 (% under 5): 6.03879 and total: 2387630
 (% female): 50.2799 and total: 19879766
-(% foreign born): -5091.94 and total: -2013261520
-(% veterans): 33.4371 and total: 13220419
+(% foreign born): 26.7911 and total: 10592735
+(% veterans): 3.9823 and total: 1574531
 Education info:
-(% Bachelor or more): 1027.19 and total: 406134222
-(% high school or more): 26.7911 and total: 10592735
+(% Bachelor or more): 33.4371 and total: 13220419
+(% high school or more): 83.1117 and total: 32860891
 County housing/economy info:
-(avg. persons per house): 3.19809e-299 and total: 4.17168e-292
-(% home ownership): 7.45986e-06 and total: 2.9495
+(avg. persons per house): 2.9495 and total: 3.8474e+07
+(% home ownership): 54.8435 and total: 0.548435
 (number housing units): 13044266
 (medIncome): 67713
 Total population: 39538223
@@ -6163,14 +6163,14 @@ Population info:
 (% under 18): 25.5102 and total: 7435076
 (% under 5): 6.86443 and total: 2000673
 (% female): 50.3437 and total: 14672927
-(% foreign born): -6907.63 and total: -2013263048
-(% veterans): 30.0161 and total: 8748347
+(% foreign born): 16.9996 and total: 4954628
+(% veterans): 4.98687 and total: 1453449
 Education info:
-(% Bachelor or more): 1406.06 and total: 409804150
-(% high school or more): 16.9996 and total: 4954628
+(% Bachelor or more): 30.0161 and total: 8748347
+(% high school or more): 83.6424 and total: 24378014
 County housing/economy info:
-(avg. persons per house): 1.16535e-301 and total: 1.12942e-294
-(% home ownership): 9.79387e-06 and total: 2.85447
+(avg. persons per house): 2.85447 and total: 2.76645e+07
+(% home ownership): 61.9552 and total: 0.619552
 (number housing units): 9691647
 (medIncome): 52847
 Total population: 29145505
@@ -6209,14 +6209,14 @@ Population info:
 (% under 18): 19.7028 and total: 4243624
 (% under 5): 5.30215 and total: 1141987
 (% female): 51.1231 and total: 11010994
-(% foreign born): -9347.42 and total: -2013264592
-(% veterans): 29.9432 and total: 6449213
+(% foreign born): 20.4941 and total: 4414063
+(% veterans): 6.68737 and total: 1440338
 Education info:
-(% Bachelor or more): 1919.73 and total: 413473982
-(% high school or more): 20.4941 and total: 4414063
+(% Bachelor or more): 29.9432 and total: 6449213
+(% high school or more): 88.2043 and total: 18997614
 County housing/economy info:
-(avg. persons per house): 3.25924e-303 and total: 2.52145e-296
-(% home ownership): 1.22817e-05 and total: 2.64526
+(avg. persons per house): 2.64526 and total: 2.04646e+07
+(% home ownership): 65.3911 and total: 0.653911
 (number housing units): 7736311
 (medIncome): 51290
 Total population: 21538187
@@ -6235,32 +6235,32 @@ DC
 Total population: 689545 Percentage home ownership: 41.6%
 Police shooting incidents: 21 Percent of population: 0.00304549%
 NY
-Total population: 20201249 Percentage home ownership: 54.2867%
+Total population: 20201249 Percentage home ownership: 53.9105%
 Police shooting incidents: 128 Percent of population: 0.000633624%
 CA
-Total population: 39538223 Percentage home ownership: 54.9434%
+Total population: 39538223 Percentage home ownership: 54.8435%
 Police shooting incidents: 1002 Percent of population: 0.00253426%
 NV
-Total population: 3104614 Percentage home ownership: 56.1858%
+Total population: 3104614 Percentage home ownership: 56.3294%
 Police shooting incidents: 117 Percent of population: 0.00376858%
 HI
-Total population: 1455271 Percentage home ownership: 58.6781%
+Total population: 1455271 Percentage home ownership: 58.8481%
 Police shooting incidents: 37 Percent of population: 0.00254248%
 RI
-Total population: 1097379 Percentage home ownership: 60.4772%
+Total population: 1097379 Percentage home ownership: 60.7924%
 Police shooting incidents: 5 Percent of population: 0.000455631%
-ND
-Total population: 779094 Percentage home ownership: 61.9721%
-Police shooting incidents: 15 Percent of population: 0.00192531%
 TX
-Total population: 29145505 Percentage home ownership: 62.1836%
+Total population: 29145505 Percentage home ownership: 61.9552%
 Police shooting incidents: 604 Percent of population: 0.00207236%
-OR
-Total population: 4237256 Percentage home ownership: 62.4697%
-Police shooting incidents: 109 Percent of population: 0.00257242%
+ND
+Total population: 779094 Percentage home ownership: 62.3552%
+Police shooting incidents: 15 Percent of population: 0.00192531%
 MA
-Total population: 7029917 Percentage home ownership: 62.5231%
+Total population: 7029917 Percentage home ownership: 62.385%
 Police shooting incidents: 46 Percent of population: 0.000654346%
+OR
+Total population: 4237256 Percentage home ownership: 62.3956%
+Police shooting incidents: 109 Percent of population: 0.00257242%
 
 **Full listings for bottom 3 home own rates & the associated census data:
 State Info: DC
@@ -6287,14 +6287,14 @@ Population info:
 (% under 18): 18.2 and total: 125497
 (% under 5): 6.40002 and total: 44131
 (% female): 52.6 and total: 362701
-(% foreign born): -291969 and total: -2013258240
-(% veterans): 58.5 and total: 403384
+(% foreign born): 13.7 and total: 94468
+(% veterans): 3.79323 and total: 26156
 Education info:
-(% Bachelor or more): 62151.1 and total: 428559742
-(% high school or more): 13.7 and total: 94468
+(% Bachelor or more): 58.5 and total: 403384
+(% high school or more): 90.8999 and total: 626796
 County housing/economy info:
-(avg. persons per house): 1.33006e-308 and total: 3.7825e-303
-(% home ownership): 0.000333553 and total: 2.3
+(avg. persons per house): 2.3 and total: 654088
+(% home ownership): 41.6 and total: 0.416
 (number housing units): 284386
 (medIncome): 86420
 Total population: 689545
@@ -6333,14 +6333,14 @@ Population info:
 (% under 18): 20.7189 and total: 4185485
 (% under 5): 5.80792 and total: 1173272
 (% female): 51.4411 and total: 10391747
-(% foreign born): -9966.04 and total: -2013264073
-(% veterans): 36.4052 and total: 7354300
+(% foreign born): 22.7821 and total: 4602269
+(% veterans): 3.49446 and total: 705924
 Education info:
-(% Bachelor or more): 2054.56 and total: 415046982
-(% high school or more): 22.7821 and total: 4602269
+(% Bachelor or more): 36.4052 and total: 7354300
+(% high school or more): 86.7427 and total: 17523103
 County housing/economy info:
-(avg. persons per house): 1.24775e-303 and total: 9.16255e-297
-(% home ownership): 1.28072e-05 and total: 2.58722
+(avg. persons per house): 2.58722 and total: 1.89986e+07
+(% home ownership): 53.9105 and total: 0.539105
 (number housing units): 7343234
 (medIncome): 62484
 Total population: 20201249
@@ -6379,14 +6379,14 @@ Population info:
 (% under 18): 22.5274 and total: 8906927
 (% under 5): 6.03879 and total: 2387630
 (% female): 50.2799 and total: 19879766
-(% foreign born): -5091.94 and total: -2013261520
-(% veterans): 33.4371 and total: 13220419
+(% foreign born): 26.7911 and total: 10592735
+(% veterans): 3.9823 and total: 1574531
 Education info:
-(% Bachelor or more): 1027.19 and total: 406134222
-(% high school or more): 26.7911 and total: 10592735
+(% Bachelor or more): 33.4371 and total: 13220419
+(% high school or more): 83.1117 and total: 32860891
 County housing/economy info:
-(avg. persons per house): 3.19809e-299 and total: 4.17168e-292
-(% home ownership): 7.45986e-06 and total: 2.9495
+(avg. persons per house): 2.9495 and total: 3.8474e+07
+(% home ownership): 54.8435 and total: 0.548435
 (number housing units): 13044266
 (medIncome): 67713
 Total population: 39538223

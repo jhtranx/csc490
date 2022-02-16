@@ -18,7 +18,7 @@ class demogState {
 
       demogState(string inS, int tc, int in65, int in18,
          int in5, int totPop20, int f,
-         int mi, int hu, int ho, 
+         int mi, int hu, double ho, 
          double pph, int vets, int hsg, int bd, 
          int fb, raceAndEthnicity re) :
                state(inS), totCounties(tc), popOver65(in65), popUnder18(in18),
@@ -37,7 +37,7 @@ class demogState {
       raceAndEthnicity getRaceAndEthnicity() const {return raceEth;}
       int getMedIncome() const {return medIncome;}
       int getNumHousehold() const {return numHousehold;}
-      int getHomeOwn() const {return homeOwn;}
+      double getHomeOwn() const {return homeOwn;}
       double getPersonPerHouse() const {return personPerHouse ;}
       int getVeterans() const {return veterans;}
       int getHighSchoolGrad() const {return highSchoolGrad;}
@@ -112,7 +112,16 @@ class demogState {
          medIncome = newMedIncome;
       } 
       void updateNumHousehold(int increase)  {numHousehold += increase;}
-      void updateHomeOwn(int increase)  {homeOwn += increase;}
+      //percent-sum(homeownership*households)/sum(households)
+      void updateHomeOwn(double incHomeOwn, int incNumHousehold) {
+         double oldTotHomeOwners = (double)numHousehold*homeOwn;
+         double newTotHomeOwners = (double)incNumHousehold*incHomeOwn;
+
+         double newHomeOwnPerc = (double)(oldTotHomeOwners + newTotHomeOwners) / 
+            (numHousehold + incNumHousehold);
+         
+         homeOwn = newHomeOwnPerc;
+      }
 
       void updatePersonPerHouse(double incPph, int incHu)  {
          double oldPphTot = (double) personPerHouse * numHousehold;
@@ -139,7 +148,7 @@ class demogState {
       raceAndEthnicity raceEth;
       double medIncome;
       int numHousehold;
-      int homeOwn;
+      double homeOwn;
       double personPerHouse;
       int veterans;
       int highSchoolGrad;

@@ -53,7 +53,7 @@ void dataAQ::printPSReportInfo(string stateStr) {
    cout << stateStr << endl;
    cout << "Total population: " << SD->getPopulation();
    cout << " Percentage home ownership: " << 
-      (double)SD->getHomeOwn()/SD->getPopulation() * 100 << "%" << endl;
+      (double)SD->getHomeOwn()*100 << "%" << endl;
    cout << "Police shooting incidents: " << PS->getNumberOfCases();
    cout << " Percent of population: " << 
       (caseCt/popCt)*100 << "%" << endl;
@@ -94,7 +94,7 @@ void dataAQ::reportBottomTenStatesHomeOwn() {
    }
 
    sort(mapVector.begin(), mapVector.end(), [](pair<string, shared_ptr<demogState>> lhs, pair<string, shared_ptr<demogState>> rhs) {
-      return (lhs.second->getHomeOwn()/(double)lhs.second->getPopulation()) < (rhs.second->getHomeOwn()/(double)rhs.second->getPopulation()); 
+      return (lhs.second->getHomeOwn()) < (rhs.second->getHomeOwn()); 
    });
 
    for (int i = 0; i < 10; i++) {
@@ -129,7 +129,7 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
       int f = round(obj->getFemale() * totPop20);
       int mi = obj->getMedIncome();
       int hu = obj->getNumHouseholds();
-      int ho = round(obj->getHomeOwn() * totPop20);
+      double ho = obj->getHomeOwn();
       double pph = obj->getPersonPerHouse();
       int v = obj->getVeterans();
       int hsg = round(obj->getHighSchoolGrad() * totPop20);
@@ -154,7 +154,7 @@ void dataAQ::createStateData(std::vector<shared_ptr<demogData>> theData) {
          stateMap[stateStr]->updatePopulation(totPop20);
          stateMap[stateStr]->updateFemale(f);
          stateMap[stateStr]->updateMedIncome(mi);
-         stateMap[stateStr]->updateHomeOwn(ho);
+         stateMap[stateStr]->updateHomeOwn(ho, hu);
          stateMap[stateStr]->updatePersonPerHouse(pph, hu);
          stateMap[stateStr]->updateNumHousehold(hu);
          stateMap[stateStr]->updateVeterans(v);

@@ -33,7 +33,7 @@ std::ostream& operator<<(std::ostream &out, const demogState&SD) {
    out << "County housing/economy info:" << endl;
    out << "(avg. persons per house): " << SD.getPersonPerHouse();
    out <<  " and total: " << SD.getPersonPerHouse()*SD.getNumHousehold() << endl;
-   out << "(% home ownership): " << (double)SD.getHomeOwn()/SD.getPopulation() * 100;
+   out << "(% home ownership): " << SD.getHomeOwn()*100;
    out <<  " and total: " << SD.getHomeOwn() << endl;
    out << "(number housing units): " << SD.getNumHousehold() << endl;
    out << "(medIncome): " << SD.getMedIncome() << endl;
