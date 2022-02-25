@@ -23,10 +23,10 @@ class psData : public regionData {
          // region_name_ : city, states_ : one state, tot_pop_ : 1 person
       {}
 
-	    string GetName() const { return name_; }
-	    string GetRaceAndEthnicityStr() const { return race_eth_str_; }
-	    string GetArmedWith() const { return armed_with_; }
-	    bool HasBodyCam() const { return body_cam_; }
+      string GetName() const { return name_; }
+      string GetRaceAndEthnicityStr() const { return race_eth_str_; }
+      string GetArmedWith() const { return armed_with_; }
+      bool HasBodyCam() const { return body_cam_; }
       bool HasSignsOfMentalIllness() const { return signs_of_mental_illness_; }
 
       friend std::ostream& operator<<(std::ostream &out, const psData &PD);

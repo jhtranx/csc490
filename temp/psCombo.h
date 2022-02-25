@@ -34,12 +34,12 @@ class psCombo : public regionData {
 
       void IncRaceEth (string race_) {
          cout << "RACE: " << race_ << endl;
-         if (race_ == "W") { race_eth_aggr_.incWhiteAlone(); race_eth_aggr_.incWhiteNotHispLat(); }
-         else if (race_ == "B") { race_eth_aggr_.incBlackAlone(); }
-         else if (race_ == "A") { race_eth_aggr_.incAsianAlone(); }
-         else if (race_ == "N") { race_eth_aggr_.incAmIndianAlNative(); }
-         else if (race_ == "H") { race_eth_aggr_.incHispLat(); }
-         else race_eth_aggr_.incUnspecified();
+         if (race_ == "W") { race_eth_aggr_.IncWhiteAloneCt(); race_eth_aggr_.IncWhiteNotHispLatCt(); }
+         else if (race_ == "B") { race_eth_aggr_.IncBlackAloneCt(); }
+         else if (race_ == "A") { race_eth_aggr_.IncAsianAloneCt(); }
+         else if (race_ == "N") { race_eth_aggr_.IncAmIndianAlNativeCt(); }
+         else if (race_ == "H") { race_eth_aggr_.IncHispLatCt(); }
+         else race_eth_aggr_.IncUnspecifiedCt();
       }
 
       friend std::ostream& operator<<(std::ostream &out, const psCombo& PD);

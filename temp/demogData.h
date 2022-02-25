@@ -60,71 +60,59 @@ class demogData : public regionData {
 
       // Setters - mainly used for demogCombo (remember this is a diff use of our priv variables)
       void UpdateWhiteCt (int white_ct_) {
-         int prev_white_ct_ = race_eth_.getWhiteAlone();
-         race_eth_.setWhiteAlone(white_ct_ + prev_white_ct_);
+         int prev_white_ct_ = race_eth_.GetWhiteAloneCt();
+         race_eth_.SetWhiteAloneCt(white_ct_ + prev_white_ct_);
       }
       void UpdateBlackCt (int black_ct_) {
-         int prev_black_ct_ = race_eth_.getBlackAlone();
-         race_eth_.setBlackAlone(black_ct_ + prev_black_ct_);
+         int prev_black_ct_ = race_eth_.GetBlackAloneCt();
+         race_eth_.SetBlackAloneCt(black_ct_ + prev_black_ct_);
       }
       void UpdateIndAlCt (int ind_al_ct_) {
-         int prev_ind_al_ct_ = race_eth_.getAmIndianAlNative();
-         race_eth_.setAmIndianAlNative(ind_al_ct_ + prev_ind_al_ct_);
+         int prev_ind_al_ct_ = race_eth_.GetAmIndianAlNativeCt();
+         race_eth_.SetAmIndianAlNativeCt(ind_al_ct_ + prev_ind_al_ct_);
       }
-      // DID NOT COMPLETE - START
-      void UpdateAsian (int asianCt, int incPop) {
-         int oldAsianTot = race_eth_.getAsianAlone();
-         double newAsianPerc = 
-            (double) (asianCt + oldAsianTot) / (double + incPop);
-         race_eth_.setAsianAlone(newAsianPerc);
+      void UpdateAsian (int asian_ct_) {
+         int prev_asian_ct_ = race_eth_.GetAsianAloneCt();
+         race_eth_.SetAsianAloneCt(asian_ct_ + prev_asian_ct_);
       }
-      void UpdateHyn (int hynCt, int incPop) {
-         int oldHynTot = race_eth_.getHawaiianPacIsland();
-         double newHynPerc = 
-            (double) (hynCt + oldHynTot) / (double + incPop);
-         race_eth_.setHawaiianPacIsland(newHynPerc);
+      void UpdateHyn (int hyn_ct_) {
+         int prev_hyn_ct_ = race_eth_.GetHawaiianPacIslandCt();
+         race_eth_.SetHawaiianPacIslandCt(hyn_ct_ + prev_hyn_ct_);
       }
-      void UpdateTwoOrMore (int twoOrMoreCt, int incPop) {
-         int oldTwoOrMoreTot = race_eth_.getTwoOrMore();
-         double newTwoOrMorePerc = 
-            (double) (twoOrMoreCt + oldTwoOrMoreTot) / (double + incPop);
-         race_eth_.setTwoOrMore(newTwoOrMorePerc);
+      void UpdateTwoOrMore (int two_or_more_ct_) {
+         int prev_two_or_more_ct_ = race_eth_.GetTwoOrMoreCt();
+         race_eth_.SetTwoOrMoreCt(prev_two_or_more_ct_ + two_or_more_ct_);
       }
-      void UpdateHispLat (int hispLatCt, int incPop) {
-         int oldHispLatTot = race_eth_.getHispLat();
-         double newHispLatPerc = 
-            (double) (hispLatCt + oldHispLatTot) / (double + incPop);
-         race_eth_.setHispLat(newHispLatPerc);
+      void UpdateHispLat (int hisp_lat_ct_) {
+         int prev_hisp_lat_ct_ = race_eth_.GetHispLatCt();
+         race_eth_.SetHispLatCt(hisp_lat_ct_ + prev_hisp_lat_ct_);
       }
-      void UpdateWhiteNotHisLat (int whiteNotHispLatCt, int incPop) {
-         int oldWhiteNotHispLatTot = race_eth_.getWhiteNotHispLat();
-         double newWhiteNotHispLatPerc = 
-            (double) (whiteNotHispLatCt + oldWhiteNotHispLatTot) / (double + incPop);
-         race_eth_.setWhiteNotHispLat(newWhiteNotHispLatPerc);
+      void UpdateWhiteNotHisLat (int white_nh_ct_, int incPop) {
+         int prev_white_nh_ct_ = race_eth_.GetWhiteNotHispLatCt();
+         race_eth_.SetWhiteNotHispLatCt(white_nh_ct_ + prev_white_nh_ct_);
       }
-      // DID NOT COMPLETE - END
       
       void UpdateNumHouseholdCt(int increase)  {num_households_count_ += increase;}
 
       void UpdateHomeOwnPc(double inc_home_own_percent_, int inc_num_household_count_) {
-         double old_tot_home_own_ct_ = (double)num_households_count_ * home_own_percent_;
-         double new_tot_home_own_ct_ = (double)inc_num_household_count_ * inc_home_own_percent_;
+         int old_tot_home_own_ct_ = (double)num_households_count_ * home_own_percent_;
+         int new_tot_home_own_ct_ = (double)inc_num_household_count_ * inc_home_own_percent_;
          double new_home_own_pc_ = (double)(old_tot_home_own_ct_ + new_tot_home_own_ct_) / 
-            (num_households_count_ + inc_num_household_count_);
+            (double)(num_households_count_ + inc_num_household_count_);
          home_own_percent_ = new_home_own_pc_;
       }
 
-      void UpdatePersonPerHousePc(double inc_pph_, int inc_housing_units_)  {
-         double old_pph_tot_ = (double) person_per_house_percent_ * num_households_count_;
-         double new_pph_tot_ = inc_pph_ * inc_housing_units_;
-         double new_housing_units_ = inc_housing_units_ + num_households_count_;
-         double new_pph_percent_ = (old_pph_tot_ + new_pph_tot_) / new_housing_units_;
+      void UpdatePersonPerHousePc(double inc_pph_pc_, int inc_housing_units_)  {
+         double old_pph_tot_ = person_per_house_percent_ * (double) num_households_count_;
+         double new_pph_tot_ =  inc_pph_pc_ * (double) inc_housing_units_;
+         int new_housing_units_ = inc_housing_units_ + num_households_count_;
+         double new_pph_percent_ = (old_pph_tot_ + new_pph_tot_) / (double) new_housing_units_;
          person_per_house_percent_ = new_pph_percent_;
       } 
 
       friend std::ostream& operator<<(std::ostream &out, const demogData &DD);
 
-   private:
+   protected:
       double pop_over_65_percent_;
       double pop_under_18_percent_;
       double pop_under_5_percent_;

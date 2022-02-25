@@ -17,16 +17,16 @@ class regionData {
       friend std::ostream& operator<<(std::ostream &out, const regionData& RD);
          
       // Getters
-      string GetRegionName() const {return region_name_;}
-      vector<string> GetStates() const {return states_;}
-      int GetTotPop() const {return tot_pop_;}
+      string GetRegionName() const { return region_name_; }
+      vector<string> GetStates() const { return states_; }
+      int GetTotPop() const { return tot_pop_; }
 
       // Setters
-      void SetRegionName(string new_region_name_) {region_name_ = new_region_name_;}
+      void SetRegionName(string new_region_name_) { region_name_ = new_region_name_; }
       void AddState(string new_state_) { states_.push_back(new_state_); }
       void IncTotPop() { tot_pop_ += 1; }
 
-   private:
+   protected:
       string region_name_;
       vector<string> states_;
       int tot_pop_;
