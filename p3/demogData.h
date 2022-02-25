@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <vector>
 #include "raceAndEthnicity.h"
 #include "regionData.h"
 
@@ -26,8 +27,8 @@ class demogData : public regionData {
          high_school_grad_percent_(in_hs_grad_pc_), bachelors_deg_percent_(in_bachelors_deg_pc_), 
          foreign_born_percent_(in_foreign_born_pc_), med_household_income_count_(in_med_household_income_ct_), 
          num_households_count_(in_num_households_ct_), veterans_count_(in_veterans_ct_), 
-         race_eth_(in_race_eth_)
-         regionData {in_county_, [in_state_], in_tot_pop_ct_} 
+         race_eth_(in_race_eth_),
+         regionData {in_county_, vector<string> {in_state_}, in_tot_pop_ct_} 
          // region_name_ : county, states_ : one state, tot_pop_ : total pop
       {}
 
@@ -38,7 +39,7 @@ class demogData : public regionData {
       double GetFemalePercent() const {return female_percent_;}
       double GetHomeOwnPercent() const {return home_own_percent_;}
       double GetPersonPerHousePercent() const {return person_per_house_percent_;}
-      double GetHighSchoolGradPercent() const {return high_school_grad_percent_;
+      double GetHighSchoolGradPercent() const {return high_school_grad_percent_;}
       double GetBachelorsDegPercent() const {return bachelors_deg_percent_;}
       double GetForeignBornPercent() const {return foreign_born_percent_;}
       int GetMedHouseholdIncomeCount() const {return med_household_income_count_;}

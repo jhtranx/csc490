@@ -22,6 +22,7 @@ class regionData {
       int GetTotPop() const {return tot_pop_;}
 
       // Setters
+      void SetRegionName(string new_region_name_) {region_name_ = new_region_name_;}
       void AddState(string new_state_) { states_.push_back(new_state_); }
       void IncTotPop() { tot_pop_ += 1; }
 
