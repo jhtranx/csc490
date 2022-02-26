@@ -92,7 +92,7 @@ class demogData : public regionData, public std::enable_shared_from_this<demogDa
          int prev_hisp_lat_ct_ = race_eth_.GetHispLatCt();
          race_eth_.SetHispLatCt(hisp_lat_ct_ + prev_hisp_lat_ct_);
       }
-      void UpdateWhiteNotHisLat (int white_nh_ct_, int incPop) {
+      void UpdateWhiteNotHisLat (int white_nh_ct_) {
          int prev_white_nh_ct_ = race_eth_.GetWhiteNotHispLatCt();
          race_eth_.SetWhiteNotHispLatCt(white_nh_ct_ + prev_white_nh_ct_);
       }
