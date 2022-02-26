@@ -179,7 +179,7 @@ shared_ptr<regionData> readCSVLinePolice(std::string theLine) {
 //read from a CSV file (for a given data type) return a vector of the data
 // DO modify 
 void read_csv(
-    std::vector<shared_ptr<regionData>> pileOfData,
+    std::vector<shared_ptr<regionData>>& pileOfData,
     std::string filename, typeFlag fileType) {
 
     std::ifstream myFile(filename);
@@ -205,5 +205,7 @@ void read_csv(
             }
         }
         myFile.close();
+        cout << "SIZE: " << pileOfData.size() << endl;
+
     }
 }

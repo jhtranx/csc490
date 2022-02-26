@@ -15,7 +15,7 @@
 using namespace std;
 
 int main() {
-	std::vector<shared_ptr<regionData>> pileOfData;
+	vector<shared_ptr<regionData>> pileOfData;
 	
 	//note, we may want to pass in the pileOfData instead of create it within
 	//read_csv because now we will have two different piles from each read_csv call
@@ -24,6 +24,7 @@ int main() {
 	read_csv(pileOfData, "fatal-police-shootings-data-Q.csv", POLICE);
 
 	visitorReport report;
+    cout << "SIZE: " << pileOfData.size() << endl;
 	for (const auto &obj : pileOfData) {
 		obj->Accept(report);
 	}

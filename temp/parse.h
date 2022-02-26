@@ -36,7 +36,7 @@ void consumeColumnNames(std::ifstream &myFile);
 shared_ptr<regionData> readCSVLineDemog(std::string theLine);
 
 //read from a CSV file (for a given data type) return a vector of the data
-void read_csv(std::vector<shared_ptr<regionData>> pileOfData, std::string filename, typeFlag fileType);
+void read_csv(std::vector<shared_ptr<regionData>>& pileOfData, std::string filename, typeFlag fileType);
 
 // Read one line from a CSV file for police shooting data specifically
 shared_ptr<regionData> readCSVLinePolice(std::string theLine);
