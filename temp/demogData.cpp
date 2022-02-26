@@ -5,52 +5,81 @@
 
 /* print county demographic data */
 /* fill in any other data to make printing easy  */
+
+double CalcPercent (int count_, int tot_pop_) {
+   return round((double)count_ / (double)tot_pop_);
+}
+int CalcTotal (double percent_, int tot_pop_) {
+   return round(percent_ * (double)tot_pop_);
+}
+
 std::ostream& operator<<(std::ostream &out, const demogData &DD) {
-   out << "County Demographics Info: " << DD.getCounty() << ", " << DD.state;
-   out << "\nTotal population: " << DD.totalPopulation2020;
 
-   out << "\nRacial Demographics Info: \n\% American Indian and Alaska Native percent: " << DD.getRaceAndEthnicity().getAmIndianAlNative();
-   out <<  " count: " << round((DD.getRaceAndEthnicity().getAmIndianAlNative()) * DD.totalPopulation2020);
-   out << "\n\% Asian American percent: " << DD.getRaceAndEthnicity().getAsianAlone();
-   out <<  " count: " << round((DD.getRaceAndEthnicity().getAsianAlone()) * DD.totalPopulation2020);
-   out << "\n\% Black/African American percent: " << DD.getRaceAndEthnicity().getBlackAlone();
-   out <<  " count: " << round((DD.getRaceAndEthnicity().getBlackAlone()) * DD.totalPopulation2020); 
-   out << "\n\% Hispanic or Latinx percent: " << DD.getRaceAndEthnicity().getHispLat();
-   out <<  " count: " << round((DD.getRaceAndEthnicity().getHispLat()) * DD.totalPopulation2020);
-   out << "\n\% Native Hawaiian and Other Pacific Islander: " << DD.getRaceAndEthnicity().getHawaiianPacIsland();
-   out <<  " count: " << round((DD.getRaceAndEthnicity().getHawaiianPacIsland()) * DD.totalPopulation2020);
-   out << "\n\% Two or More Races percent: " << DD.getRaceAndEthnicity().getTwoOrMore();
-   out <<  " count: " << round((DD.getRaceAndEthnicity().getTwoOrMore()) * DD.totalPopulation2020);
-   out << "\n\% White (inclusive) percent: " << DD.getRaceAndEthnicity().getWhiteAlone();
-   out <<  " count: " << round((DD.getRaceAndEthnicity().getWhiteAlone()) * DD.totalPopulation2020); 
-   out << "\n\% White (nonHispanic) percent: " << DD.getRaceAndEthnicity().getWhiteNotHispLat();
-   out <<  " count: " << round((DD.getRaceAndEthnicity().getWhiteNotHispLat()) * DD.totalPopulation2020);
-   out << "\ntotal Racial Demographic Count: " <<  DD.totalPopulation2020;
+   int tot_pop_ = DD.GetTotPop();
+   raceAndEthnicity race_eth_ = DD.GetRaceAndEthnicity();
 
-   out << "\n--Population Age info: \n(\% under 5): " << DD.popUnder5;
-   out <<  " and total: " << round((DD.popUnder5) * DD.totalPopulation2020);
-   out << "\n(\% under 18): " << DD.popUnder18;
-   out <<  " and total: " << round((DD.popUnder18) * DD.totalPopulation2020);
-   out << "\n(\% over 65): " << DD.popOver65;
-   out <<  " and total: " << round((DD.popOver65) * DD.totalPopulation2020);
+   out << "County Demographics Info: " << DD.GetRegionName() << ", " << DD.GetStateName();
+   out << "\nTotal population: " << tot_pop_;
 
-   out << "\n--Population other demographics: \n(\% female): " << DD.getFemale();
-   out <<  " and total: " << round((DD.getFemale()) * DD.totalPopulation2020);
-   out << "\n(\% foreign born): " << DD.getForeignBorn();
-   out <<  " and total: " << round((DD.getForeignBorn()) * DD.totalPopulation2020);
-   out << "\n(veterans): " << DD.getVeterans();
+   out << "\nRacial Demographics Info: \n";
+   
+   out << "\% American Indian and Alaska Native percent: " << 
+      CalcPercent(race_eth_.GetAmIndianAlNativeCt(), tot_pop_);
+   out <<  " count: " << race_eth_.GetAmIndianAlNativeCt();
 
-   out << "\n--County housing/economy info: \n(avg. persons per house): " << DD.getPersonPerHouse();
-   out <<  " and total: " << round(DD.getPersonPerHouse() * DD.getNumHouseholds());
-   out << "\n(\% home ownership): " << DD.getHomeOwn();
-   out <<  " and total: " << round((DD.getHomeOwn()) * DD.totalPopulation2020);
-   out << "\n(number housingholds): " << DD.getNumHouseholds();
-   out << "\n(medium income in $): " << DD.getMedIncome();
+   out << "\n\% Asian American percent: " << 
+      CalcPercent(race_eth_.GetAsianAloneCt(), tot_pop_);
+   out <<  " count: " << race_eth_.GetAsianAloneCt();
 
-   out << "\n--County education: \n(\% Bachelor or more): " << DD.getBachelorsDeg();
-   out <<  " and total: " << round((DD.getBachelorsDeg()) * DD.totalPopulation2020);
-   out << "\n(\% high school or more): " << DD.getHighSchoolGrad();
-   out <<  " and total: " << round((DD.getHighSchoolGrad()) * DD.totalPopulation2020);
+   out << "\n\% Black/African American percent: " << 
+      CalcPercent(race_eth_.GetBlackAloneCt(), tot_pop_);
+   out <<  " count: " << race_eth_.GetBlackAloneCt(); 
+
+   out << "\n\% Hispanic or Latinx percent: " << 
+      CalcPercent(race_eth_.GetHispLatCt(), tot_pop_);
+   out <<  " count: " << race_eth_.GetHispLatCt();
+
+   out << "\n\% Native Hawaiian and Other Pacific Islander percent: " << 
+      CalcPercent(race_eth_.GetHawaiianPacIslandCt(), tot_pop_);
+   out <<  " count: " << race_eth_.GetHawaiianPacIslandCt();
+
+   out << "\n\% Two or More Races percent: " << 
+      CalcPercent(race_eth_.GetTwoOrMoreCt(), tot_pop_);
+   out <<  " count: " << race_eth_.GetTwoOrMoreCt();
+
+   out << "\n\% White (inclusive) percent: " << 
+      CalcPercent(race_eth_.GetWhiteAloneCt(), tot_pop_);
+   out <<  " count: " << race_eth_.GetWhiteAloneCt();
+
+   out << "\n\% White (nonHispanic) percent: " << 
+      CalcPercent(race_eth_.GetWhiteNotHispLatCt(), tot_pop_);
+   out <<  " count: " << race_eth_.GetWhiteNotHispLatCt();
+   out << "\ntotal Racial Demographic Count: " <<  tot_pop_;
+
+   out << "\n--Population Age info: \n(\% under 5): " << DD.GetPopUnder5Percent();
+   out <<  " and total: " << CalcTotal(DD.GetPopUnder5Percent(), tot_pop_);
+   out << "\n(\% under 18): " << DD.GetPopUnder18Percent();
+   out <<  " and total: " << CalcTotal(DD.GetPopUnder18Percent(), tot_pop_);
+   out << "\n(\% over 65): " << DD.GetPopOver65Percent();
+   out <<  " and total: " << CalcTotal(DD.GetPopOver65Percent(), tot_pop_);
+
+   out << "\n--Population other demographics: \n(\% female): " << DD.GetFemalePercent();
+   out <<  " and total: " << CalcTotal(DD.GetFemalePercent(), tot_pop_);
+   out << "\n(\% foreign born): " << DD.GetForeignBornPercent();
+   out <<  " and total: " << CalcTotal(DD.GetForeignBornPercent(), tot_pop_);
+   out << "\n(veterans): " << DD.GetVeteransCount();
+
+   out << "\n--County housing/economy info: \n(avg. persons per house): " << DD.GetPersonPerHousePercent();
+   out <<  " and total: " << CalcTotal(DD.GetPersonPerHousePercent(), tot_pop_);
+   out << "\n(\% home ownership): " << DD.GetHomeOwnPercent();
+   out <<  " and total: " << CalcTotal(DD.GetHomeOwnPercent(), tot_pop_);
+   out << "\n(number housingholds): " << DD.GetNumHouseholdsCount();
+   out << "\n(medium income in $): " << DD.GetMedHouseholdIncomeCount();
+
+   out << "\n--County education: \n(\% Bachelor or more): " << DD.GetBachelorsDegPercent();
+   out <<  " and total: " << CalcTotal(DD.GetBachelorsDegPercent(), tot_pop_);
+   out << "\n(\% high school or more): " << DD.GetHighSchoolGradPercent();
+   out <<  " and total: " << CalcTotal(DD.GetHighSchoolGradPercent(), tot_pop_);
 
    out << "\n";
    return out;

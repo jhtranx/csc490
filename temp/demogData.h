@@ -58,6 +58,11 @@ class demogData : public regionData {
       int GetVeteransCount() const {return veterans_count_;}
       raceAndEthnicity GetRaceAndEthnicity() const {return race_eth_;}
 
+      string GetStateName() const {
+         vector<string> states_ = GetStates(); 
+         return states_.at(0);
+      }
+
       // Setters - mainly used for demogCombo (remember this is a diff use of our priv variables)
       void UpdateWhiteCt (int white_ct_) {
          int prev_white_ct_ = race_eth_.GetWhiteAloneCt();
