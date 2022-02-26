@@ -27,7 +27,7 @@ int main() {
 	for (const auto &obj : pileOfData) {
 		obj->Accept(report);
 	}
-	report.display();
+	// report.display();
 
 	return 0;
 }

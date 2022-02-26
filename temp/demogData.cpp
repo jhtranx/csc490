@@ -6,7 +6,7 @@
 /* print county demographic data */
 /* fill in any other data to make printing easy  */
 
-double CalcPercent (int count_, int tot_pop_) {
+double CalcPercentDD (int count_, int tot_pop_) {
    return round((double)count_ / (double)tot_pop_);
 }
 int CalcTotal (double percent_, int tot_pop_) {
@@ -26,35 +26,35 @@ std::ostream& operator<<(std::ostream &out, const demogData &DD) {
    out << "\nRacial Demographics Info: \n";
    
    out << "\% American Indian and Alaska Native percent: " << 
-      CalcPercent(race_eth_.GetAmIndianAlNativeCt(), tot_pop_);
+      CalcPercentDD(race_eth_.GetAmIndianAlNativeCt(), tot_pop_);
    out <<  " count: " << race_eth_.GetAmIndianAlNativeCt();
 
    out << "\n\% Asian American percent: " << 
-      CalcPercent(race_eth_.GetAsianAloneCt(), tot_pop_);
+      CalcPercentDD(race_eth_.GetAsianAloneCt(), tot_pop_);
    out <<  " count: " << race_eth_.GetAsianAloneCt();
 
    out << "\n\% Black/African American percent: " << 
-      CalcPercent(race_eth_.GetBlackAloneCt(), tot_pop_);
+      CalcPercentDD(race_eth_.GetBlackAloneCt(), tot_pop_);
    out <<  " count: " << race_eth_.GetBlackAloneCt(); 
 
    out << "\n\% Hispanic or Latinx percent: " << 
-      CalcPercent(race_eth_.GetHispLatCt(), tot_pop_);
+      CalcPercentDD(race_eth_.GetHispLatCt(), tot_pop_);
    out <<  " count: " << race_eth_.GetHispLatCt();
 
    out << "\n\% Native Hawaiian and Other Pacific Islander percent: " << 
-      CalcPercent(race_eth_.GetHawaiianPacIslandCt(), tot_pop_);
+      CalcPercentDD(race_eth_.GetHawaiianPacIslandCt(), tot_pop_);
    out <<  " count: " << race_eth_.GetHawaiianPacIslandCt();
 
    out << "\n\% Two or More Races percent: " << 
-      CalcPercent(race_eth_.GetTwoOrMoreCt(), tot_pop_);
+      CalcPercentDD(race_eth_.GetTwoOrMoreCt(), tot_pop_);
    out <<  " count: " << race_eth_.GetTwoOrMoreCt();
 
    out << "\n\% White (inclusive) percent: " << 
-      CalcPercent(race_eth_.GetWhiteAloneCt(), tot_pop_);
+      CalcPercentDD(race_eth_.GetWhiteAloneCt(), tot_pop_);
    out <<  " count: " << race_eth_.GetWhiteAloneCt();
 
    out << "\n\% White (nonHispanic) percent: " << 
-      CalcPercent(race_eth_.GetWhiteNotHispLatCt(), tot_pop_);
+      CalcPercentDD(race_eth_.GetWhiteNotHispLatCt(), tot_pop_);
    out <<  " count: " << race_eth_.GetWhiteNotHispLatCt();
    out << "\ntotal Racial Demographic Count: " <<  tot_pop_;
 
