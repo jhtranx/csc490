@@ -6,7 +6,9 @@
 #include <map>
 #include <cmath>
 #include "demogData.h"
-#include "demogState.h"
+#include "demogCombo.h"
+#include "psData.h"
+#include "psCombo.h"
 #include "parse.h"
 
 using namespace std;
