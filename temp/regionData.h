@@ -5,6 +5,8 @@
 #include <iostream>
 #include <vector>
 
+#include "visitor.h"
+
 using namespace std;
 
 class regionData {
@@ -13,6 +15,9 @@ class regionData {
          region_name_(in_region_name_), states_(in_states_), tot_pop_(in_tot_pop_) {}
       regionData (string in_region_name_) :
          region_name_(in_region_name_), states_({}), tot_pop_(0) {}
+
+      // Anything that is regionData must accept a visitor (aka must be visitable)
+		virtual void Accept(class Visitor &v) = 0;
          
       friend std::ostream& operator<<(std::ostream &out, const regionData& RD);
          

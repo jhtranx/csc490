@@ -1,6 +1,8 @@
 #include <sstream>
 #include "psData.h"
 
+void psData::Accept(class Visitor &v) { v.visit(shared_from_this()); }
+
 /* print police data - fill in*/
 std::ostream& operator<<(std::ostream &out, const psData &PD) {
    out << "Police Shotting Info: " << PD.GetStates().at(0);

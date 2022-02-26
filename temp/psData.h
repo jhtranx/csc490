@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class psData : public regionData {
+class psData : public regionData, public std::enable_shared_from_this<psData>  {
    public:
       psData (
          string in_name_, string in_race_eth_str_, string in_armed_, 
@@ -28,6 +28,8 @@ class psData : public regionData {
       string GetArmedWith() const { return armed_with_; }
       bool HasBodyCam() const { return body_cam_; }
       bool HasSignsOfMentalIllness() const { return signs_of_mental_illness_; }
+
+      void Accept(class Visitor &v) override;
 
       friend std::ostream& operator<<(std::ostream &out, const psData &PD);
 

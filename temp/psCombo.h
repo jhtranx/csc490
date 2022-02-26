@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class psCombo : public regionData {
+class psCombo : public regionData, public std::enable_shared_from_this<psCombo> {
    public:
       psCombo (string in_region_name_) : 
          mental_illness_count_(0), unarmed_count_(0), 
@@ -41,6 +41,8 @@ class psCombo : public regionData {
          else if (race_ == "H") { race_eth_aggr_.IncHispLatCt(); }
          else race_eth_aggr_.IncUnspecifiedCt();
       }
+
+      void Accept(class Visitor &v) override;
 
       friend std::ostream& operator<<(std::ostream &out, const psCombo& PD);
 

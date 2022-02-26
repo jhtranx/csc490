@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class demogData : public regionData {
+class demogData : public regionData, public std::enable_shared_from_this<demogData> {
    public:
       demogData () :
          pop_over_65_percent_(0), pop_under_18_percent_(0), 
@@ -114,6 +114,8 @@ class demogData : public regionData {
          double new_pph_percent_ = (old_pph_tot_ + new_pph_tot_) / (double) new_housing_units_;
          person_per_house_percent_ = new_pph_percent_;
       } 
+
+      void Accept(class Visitor &v) override;
 
       friend std::ostream& operator<<(std::ostream &out, const demogData &DD);
 

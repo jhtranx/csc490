@@ -13,6 +13,8 @@ int CalcTotal (double percent_, int tot_pop_) {
    return round(percent_ * (double)tot_pop_);
 }
 
+void demogData::Accept(class Visitor &v) { v.visit(shared_from_this()); }
+
 std::ostream& operator<<(std::ostream &out, const demogData &DD) {
 
    int tot_pop_ = DD.GetTotPop();
