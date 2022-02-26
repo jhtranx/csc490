@@ -30,6 +30,7 @@ class regionData {
       void SetRegionName(string new_region_name_) { region_name_ = new_region_name_; }
       void AddState(string new_state_) { states_.push_back(new_state_); }
       void IncTotPop() { tot_pop_ += 1; }
+      void UpdateTotPop(int increase) { tot_pop_ += increase; }
 
    protected:
       string region_name_;

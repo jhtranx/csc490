@@ -1,6 +1,3 @@
-SIZE: 3139
-SIZE: 9985
-SIZE: 9985
 -------------
 Region Name: Abbeville County
 Length of States: 1  First State: SC

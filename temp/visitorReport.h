@@ -26,12 +26,20 @@ public:
       string region_name_ = e->GetRegionName();
       vector<string> states_ = e->GetStates();
       string armed_with_ = e->GetArmedWith();
-      
+
       cout << "-------------" << endl;
       cout << "Region Name: " << region_name_ << endl;
       cout << "Length of States: " << states_.size() << "  First State: " << states_.at(0)  << endl;
       cout << "Armed With: " << armed_with_ << endl;
-}
+   }
+
+   //Need to finish display()
+   // void display() {
+   //    cout << "-------------" << endl;
+   //    cout << "Region Name: " << region_name_ << endl;
+   //    cout << "Length of States: " << states_.size() << "  First State: " << states_.at(0)  << endl;
+   //    cout << "Armed With: " << armed_with_ << endl;
+   // }
 
    private:
       int numVisited;

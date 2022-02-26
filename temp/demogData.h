@@ -115,6 +115,8 @@ class demogData : public regionData, public std::enable_shared_from_this<demogDa
          person_per_house_percent_ = new_pph_percent_;
       } 
 
+      void UpdateVeteransCt(int increase)  {veterans_count_ += increase;}
+
       void Accept(class Visitor &v) override;
 
       friend std::ostream& operator<<(std::ostream &out, const demogData &DD);

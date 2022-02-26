@@ -205,7 +205,5 @@ void read_csv(
             }
         }
         myFile.close();
-        cout << "SIZE: " << pileOfData.size() << endl;
-
     }
 }
