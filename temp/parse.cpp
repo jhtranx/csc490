@@ -55,16 +55,8 @@ void consumeColumnNames(std::ifstream &myFile) {
 
 //NEW CODE HERE!!
 
-//note, in Zoe's video, she had 3 params in read_csv but the spec only has two
-std::vector<shared_ptr<regionData>> 
-   read_csv (std::string filename, typeFlag fileType) {
-	//if we have as a parameter "filename" does this mean we call this function twice?
-	// for each individual function? 
-	
-}
-
 /* Read one line from a CSV file for county demographic data specifically */
-shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
+shared_ptr<regionData> readCSVLineDemog(std::string theLine) {
    std::stringstream ss (theLine);
 
    string county_ = getField(ss);
@@ -128,63 +120,67 @@ shared_ptr<demogData> readCSVLineDemog(std::string theLine) {
    );
 
    return make_shared<demogData> (
-      county_, pop_over_65_pc_, 
-      pop_under_18_pc_, pop_under_5_pc_, 
-      female_pc_, home_own_pc_, 
-      person_per_house_pc_, hs_grad_pc_, 
-      bachelors_deg_pc_, foreign_born_pc_, 
-      tot_population_ct_, med_household_income_ct_, 
+      pop_over_65_pc_, pop_under_18_pc_, 
+      pop_under_5_pc_, female_pc_, 
+      home_own_pc_, person_per_house_pc_, 
+      hs_grad_pc_, bachelors_deg_pc_, 
+      foreign_born_pc_, med_household_income_ct_, 
       num_households_ct_, veterans_ct_, 
-      race_eth_, state_
+      race_eth_, 
+      county_, state_, tot_population_ct_
    );
 }
 
 
 //read one line of police data
-shared_ptr<psData> readCSVLinePolice(std::string theLine) {
+shared_ptr<regionData> readCSVLinePolice(std::string theLine) {
     std::stringstream ss(theLine);
     
     //TO DO read in the fields - use getFieldNQ as no quotes!!
     getField(ss); //ignore id
-    string name = getField(ss);
+    string name_ = getField(ss);
     //skip 2
     getField(ss);
     getField(ss);
     //fill in
-    string armed = getField(ss);
+    string armed_with_ = getField(ss);
     getField(ss);
     getField(ss);
-    string raceEth = getField(ss);
-    string city = getField(ss);
-    string state = getField(ss);
+    string race_eth_ = getField(ss);
+    string city_ = getField(ss);
+    string state_ = getField(ss);
 
-    bool signsOfMentalIllness;
-    string somiSomiStr = getField(ss);
-    transform(somiSomiStr.begin(), somiSomiStr.end(), somiSomiStr.begin(), :: tolower);
-    istringstream(somiSomiStr) >> boolalpha >> signsOfMentalIllness;
+    bool signs_of_mental_illness_;
+    string somi_str_ = getField(ss);
+    transform(somi_str_.begin(), somi_str_.end(), somi_str_.begin(), :: tolower);
+    istringstream(somi_str_) >> boolalpha >> signs_of_mental_illness_;
 
     getField(ss);
     getField(ss);
 
-    bool bodyCam;
-    string bodyCamStr = getField(ss);
-    transform(bodyCamStr.begin(), bodyCamStr.end(), bodyCamStr.begin(), :: tolower);
-    istringstream(bodyCamStr) >> boolalpha >> bodyCam;
+    bool body_cam_;
+    string body_cam_str_ = getField(ss);
+    transform(body_cam_str_.begin(), body_cam_str_.end(), body_cam_str_.begin(), :: tolower);
+    istringstream(body_cam_str_) >> boolalpha >> body_cam_;
 
     getField(ss);
     getField(ss);
     getField(ss);
 
     /* TO DO fix */
-    return make_shared<psData>(state, name, city, raceEth, 
-        signsOfMentalIllness, armed, bodyCam);
+    return make_shared<psData>(
+        name_, race_eth_, 
+        armed_with_, body_cam_,
+        signs_of_mental_illness_,
+        city_, state_
+    );
 }
 
 //read from a CSV file (for a given data type) return a vector of the data
 // DO modify 
-void read_csv(std::vector<shared_ptr<regionData>> pileOfData,
+void read_csv(
+    std::vector<shared_ptr<regionData>> pileOfData,
     std::string filename, typeFlag fileType) {
-    // std::vector<shared_ptr<regionData>> pileOfData;
 
     std::ifstream myFile(filename);
 
@@ -199,7 +195,8 @@ void read_csv(std::vector<shared_ptr<regionData>> pileOfData,
         while(std::getline(myFile, line)) {
             if (fileType == DEMOG) {
                 pileOfData.push_back(readCSVLineDemog(line));
-						else if (fileType == POLICE) {
+            }
+			else if (fileType == POLICE) {
                 pileOfData.push_back(readCSVLinePolice(line));
             }
             else {

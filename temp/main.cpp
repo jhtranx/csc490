@@ -10,6 +10,7 @@
 #include "psData.h"
 #include "psCombo.h"
 #include "parse.h"
+#include "visitorReport.h"
 
 using namespace std;
 

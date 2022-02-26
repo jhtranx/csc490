@@ -1,46 +1,77 @@
 #include <iomanip>
 #include <cmath>
 #include "psCombo.h"
-#include "dataAQ.h"
 
 void psCombo::Accept(class Visitor &v) { }
 
+double CalcPercent (int count_, int tot_case_ct_) {
+   return ((double)count_ / (double)tot_case_ct_) * 100.0;
+}
+
 /* print state data - as aggregate of all incidents in this state */
 std::ostream& operator<<(std::ostream &out, const psCombo& PD) {
-    raceAndEthnicity currRace = PD.getRaceEthnicity();
-    int totKnownRaceCases = int(currRace.getWhiteAlone() + currRace.getBlackAlone() + currRace.getAmIndianAlNative()
-        + currRace.getAsianAlone() + currRace.getHawaiianPacIsland() + currRace.getTwoOrMore()
-        + currRace.getHispLat());
+    raceAndEthnicity curr_race_eth_ = PD.GetRaceEthnicityAggr();
 
-    out << "State Info: " << PD.state;
-    out << "\nNumber of incidents: " << PD.caseCt;
-    // out << std::setprecision(2) << std::fixed;
+    int tot_race_eth_count_ = 
+        int(curr_race_eth_.GetWhiteAloneCt() + curr_race_eth_.GetBlackAloneCt() + curr_race_eth_.GetAmIndianAlNativeCt()
+        + curr_race_eth_.GetAsianAloneCt() + curr_race_eth_.GetHawaiianPacIslandCt() + curr_race_eth_.GetTwoOrMoreCt()
+        + curr_race_eth_.GetHispLatCt());
+
+    out << "State Info: " << PD.GetStates().at(0);
+    out << "\nNumber of incidents: " << PD.GetCasesCount();
+
     out << "\nIncidents involving unarmed or armed with toy weapons: " 
-        << PD.unarmedCt + PD.armedToyCt << ", " << (PD.unarmedCt + PD.armedToyCt)/(double)PD.caseCt * 100 <<"%";
-    out << "\nIncidents involving mental illness: " << PD.mentalIllnessCt << ", " 
-        << PD.mentalIllnessCt/(double)PD.caseCt * 100 <<"%";
-    out << "\nIncidents with body camera on: " << PD.bodyCamCt << ", " << PD.bodyCamCt/(double)PD.caseCt *100 <<"%";
+        << PD.GetUnArmedCount() + PD.GetArmedToyCount() << ", " 
+        << CalcPercent(PD.GetUnArmedCount() + PD.GetArmedToyCount(), PD.GetCasesCount()) << "%";
+
+    out << "\nIncidents involving mental illness: " << PD.GetNumMentalIllness() << ", " 
+        << CalcPercent(PD.GetNumMentalIllness(), PD.GetCasesCount()) << "%";
+
+    out << "\nIncidents with body camera on: " << PD.GetBodyCamCount() << ", " 
+        << CalcPercent(PD.GetBodyCamCount(), PD.GetCasesCount()) << "%";
+
+
     out << "\nRacial demographics of state incidents: " << "Racial Demographics Info:";
+
     out << "\n\% American Indian and Alaska Native percent: " 
-        << PD.getRaceEthnicity().getAmIndianAlNative()/(double)PD.caseCt * 100;
-    out <<  " count: " << (int)PD.getRaceEthnicity().getAmIndianAlNative();
-    out << "\n\% Asian American percent: " << PD.getRaceEthnicity().getAsianAlone()/(double)PD.caseCt * 100;
-    out <<  " count: " << (int)PD.getRaceEthnicity().getAsianAlone();
-    out << "\n\% Black/African American percent: " << PD.getRaceEthnicity().getBlackAlone()/(double)PD.caseCt * 100;
-    out <<  " count: " << (int)PD.getRaceEthnicity().getBlackAlone(); 
-    out << "\n\% Hispanic or Latinx percent: " << PD.getRaceEthnicity().getHispLat()/(double)PD.caseCt * 100;
-    out <<  " count: " << (int)PD.getRaceEthnicity().getHispLat();
+        << CalcPercent(curr_race_eth_.GetAmIndianAlNativeCt(), PD.GetCasesCount()) << "%";
+    out <<  " count: " << curr_race_eth_.GetAmIndianAlNativeCt();
+
+    out << "\n\% Asian American percent: " 
+        << CalcPercent(curr_race_eth_.GetAsianAloneCt(), PD.GetCasesCount()) << "%";
+    out <<  " count: " << curr_race_eth_.GetAsianAloneCt();
+
+    out << "\n\% Black/African American percent: " 
+        << CalcPercent(curr_race_eth_.GetBlackAloneCt(), PD.GetCasesCount()) << "%";
+    out <<  " count: " << curr_race_eth_.GetBlackAloneCt(); 
+
+    out << "\n\% Hispanic or Latinx percent: " 
+        << CalcPercent(curr_race_eth_.GetHispLatCt(), PD.GetCasesCount()) << "%";
+    out <<  " count: " << curr_race_eth_.GetHispLatCt();
+
     out << "\n\% Native Hawaiian and Other Pacific Islander: " 
-        << PD.getRaceEthnicity().getHawaiianPacIsland()/(double)PD.caseCt * 100;
-    out <<  " count: " << (int)PD.getRaceEthnicity().getHawaiianPacIsland();
-    out << "\n\% Two or More Races percent: " << PD.getRaceEthnicity().getTwoOrMore()/(double)PD.caseCt * 100;
-    out <<  " count: " << (int)PD.getRaceEthnicity().getTwoOrMore();
-    out << "\n\% White (inclusive) percent: " << PD.getRaceEthnicity().getWhiteAlone()/(double)PD.caseCt * 100;
-    out <<  " count: " << (int)PD.getRaceEthnicity().getWhiteAlone(); 
-    out << "\n\% White (nonHispanic) percent: " << PD.getRaceEthnicity().getWhiteNotHispLat()/(double)PD.caseCt * 100;
-    out <<  " count: " << (int)PD.getRaceEthnicity().getWhiteNotHispLat();
-    out << "\n\% Unspecified percent: " << (PD.caseCt - totKnownRaceCases)/(double)PD.caseCt * 100;
-    out <<  " count: " <<PD.caseCt - totKnownRaceCases;
-    out << "\ntotal Racial Demographic Count: " << PD.caseCt  << endl;
+        << CalcPercent(curr_race_eth_.GetHawaiianPacIslandCt(), PD.GetCasesCount()) << "%";
+    out <<  " count: " << curr_race_eth_.GetHawaiianPacIslandCt();
+
+    out << "\n\% Two or More Races percent: " 
+        << CalcPercent(curr_race_eth_.GetTwoOrMoreCt(), PD.GetCasesCount()) << "%";
+    out <<  " count: " << curr_race_eth_.GetTwoOrMoreCt();
+
+    out << "\n\% White (inclusive) percent: " 
+        << CalcPercent(curr_race_eth_.GetWhiteAloneCt(), PD.GetCasesCount()) << "%";
+    out <<  " count: " << curr_race_eth_.GetWhiteAloneCt(); 
+
+    out << "\n\% White (nonHispanic) percent: " 
+        << CalcPercent(curr_race_eth_.GetWhiteNotHispLatCt(), PD.GetCasesCount()) << "%";
+    out <<  " count: " << curr_race_eth_.GetWhiteNotHispLatCt();
+
+    out << "\n\% Unspecified percent: " 
+        << CalcPercent(curr_race_eth_.GetUnspecifiedCt(), PD.GetCasesCount()) << "%";
+    out <<  " count: " << curr_race_eth_.GetUnspecifiedCt();
+    
+    // is this how u calc this?
+    // out <<  " count: " << PD.caseCt - tot_race_eth_count_;
+
+    out << "\ntotal Racial Demographic Count: " << PD.GetCasesCount()  << endl;
     return out;
 }

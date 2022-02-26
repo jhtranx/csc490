@@ -18,7 +18,7 @@ class demogCombo : public demogData {
    public:
       demogCombo() : 
          aggr_count_(0), pop_over_65_count_ (0)
-         {}
+      {}
       
       // Getters
       int GetAggrCount() { return aggr_count_; }

@@ -10,7 +10,7 @@ all: ${BINARIES}
 
 # dataProj: statTool.o stats.o statTool.o demogCombo.o demogData.o raceDemogData.o psData.o psCombo.o parse.o main.o
 # 	${CXX} $^ -o $@
-dataProj: demogCombo.o demogData.o raceDemogData.o psData.o psCombo.o parse.o main.o
+dataProj: demogCombo.o demogData.o psData.o psCombo.o parse.o main.o
 	${CXX} $^ -o $@
 
 
