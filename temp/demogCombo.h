@@ -12,6 +12,8 @@
 
 using namespace std;
 
+//Should not have enable_shared_from_this
+//inherits visit abilities from demogData
 class demogCombo : public demogData {
    public:
       demogCombo() : 
