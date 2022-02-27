@@ -17,7 +17,11 @@ using namespace std;
 class demogCombo : public demogData {
    public:
       demogCombo() : 
-         aggr_count_(0), pop_over_65_count_ (0)
+         aggr_count_(0), pop_over_65_count_ (0),
+         pop_under_18_count_(0), pop_under_5_count_(0),
+         female_count_(0), high_school_grad_count_(0),
+         bachelors_deg_count_(0), foreign_born_count_(0),
+         med_household_income_percent_(0.0)
       {}
       
       // Getters

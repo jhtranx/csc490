@@ -33,7 +33,7 @@ class psCombo : public regionData, public std::enable_shared_from_this<psCombo> 
       void IncNumberOfCases() { case_count_ += 1; }                        
 
       void IncRaceEth (string race_) {
-         cout << "RACE: " << race_ << endl;
+         // cout << "RACE: " << race_ << endl;
          if (race_ == "W") { race_eth_aggr_.IncWhiteAloneCt(); race_eth_aggr_.IncWhiteNotHispLatCt(); }
          else if (race_ == "B") { race_eth_aggr_.IncBlackAloneCt(); }
          else if (race_ == "A") { race_eth_aggr_.IncAsianAloneCt(); }

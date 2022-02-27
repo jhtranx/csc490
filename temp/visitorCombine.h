@@ -32,11 +32,12 @@ class visitorCombine : public Visitor {
          }
       }
 
+   // region_name_ could either be a county or state based on aggr
    shared_ptr<demogCombo> GetDemogComboData(string region_name_) { return all_demog_combo_data_[region_name_]; }
    shared_ptr<psCombo> GetPoliceComboData(string region_name_) { return all_ps_combo_data_[region_name_]; }
 
-   std::map<string, shared_ptr<demogCombo> >& GetDemogComboMap()  { return all_demog_combo_data_; }
-   std::map<string, shared_ptr<psCombo> > & GetPoliceComboMap() { return all_ps_combo_data_; }
+   std::map<string, shared_ptr<demogCombo>>& GetDemogComboMap()  { return all_demog_combo_data_; }
+   std::map<string, shared_ptr<psCombo>>& GetPoliceComboMap() { return all_ps_combo_data_; }
 
    protected:
    //combo maps
