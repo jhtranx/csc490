@@ -108,6 +108,7 @@ class visitorCombineCounty : public visitorCombine {
          int foreign_born_count_ = round(foreign_born_percent_ * tot_pop_);
 
          // adding current state to empty vector
+         all_demog_combo_data_[county_key_]->SetRegionName(county_key_);
          all_demog_combo_data_[county_key_]->AddState(obj->GetStateName());
          all_demog_combo_data_[county_key_]->UpdateTotPop(tot_pop_);
          //demogCombo update
@@ -175,7 +176,7 @@ class visitorCombineCounty : public visitorCombine {
             all_ps_combo_data_.insert(pair<string, shared_ptr<psCombo>>(county_key_, new_ps_combo_data_));
          }
          //regionData fields
-
+         all_ps_combo_data_[county_key_]->SetRegionName(county_key_);
          all_ps_combo_data_[county_key_]->AddState(state_);
          all_ps_combo_data_[county_key_]->IncTotPop();
 
