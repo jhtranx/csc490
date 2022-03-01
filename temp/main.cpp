@@ -33,6 +33,12 @@ int main() {
 	for (const auto &obj : pileOfData) {
 		obj->Accept(county_report_);
 	}
+	cout << "size of map: " << county_report_.GetDemogComboMap().size() << endl;
+	for (const auto &state : county_report_.GetDemogComboMap()) {
+		cout << "before print report" << endl;
+		std::cout << *state.second << std::endl;
+	}
+	
 	// report.display();
 
 	return 0;

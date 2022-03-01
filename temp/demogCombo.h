@@ -25,7 +25,15 @@ class demogCombo : public demogData {
       {}
       
       // Getters
-      int GetAggrCount() { return aggr_count_; }
+      int GetAggrCount() const { return aggr_count_; }
+      int GetPopOver65Count() const {return pop_over_65_count_;}
+      int GetPopUnder18Count() const {return pop_under_18_count_;}
+      int GetPopUnder5Count() const {return pop_under_5_count_;}
+      int GetFemaleCount() const {return female_count_;}
+      int GetHighSchoolGradCount() const { return high_school_grad_count_; }
+      int GetBachelorsDegCount() const {return bachelors_deg_count_;}
+      int GetForeignBornCount() const { return foreign_born_count_; }
+      double GetMedHouseholdIncomePercent() const {return med_household_income_percent_;}
 
       // Setters
       void IncAggrCount() { aggr_count_ += 1; }
