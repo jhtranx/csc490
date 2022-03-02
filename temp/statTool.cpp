@@ -42,7 +42,7 @@ void statTool::createStateData(std::vector<shared_ptr<regionData>>& theData, Vis
 
    //use visitor pattern to be able to aggregate
     for (const auto &obj : theData) {
-        obj->accept((visitorCombineState&)theStates);
+        obj->Accept((visitorCombineState&)theStates);
     }
 }
 
@@ -51,7 +51,7 @@ void statTool::createCountyData(std::vector<shared_ptr<regionData>>& theData, Vi
 
    //use visitor pattern to be able to aggregate
     for (const auto &obj : theData) {
-        obj->accept((visitorCombineCounty&)theCounties);
+        obj->Accept((visitorCombineCounty&)theCounties);
     }
 }
 
@@ -60,7 +60,7 @@ void statTool::createKeyData(std::vector<shared_ptr<regionData>>& theData, Visit
 
    //use visitor pattern to be able to aggregate
     for (const auto &obj : theData) {
-        obj->accept((visitorCombineCounty&)theKeyed);
+        obj->Accept((visitorCombineCounty&)theKeyed);
     }
 }
 
@@ -68,9 +68,9 @@ void statTool::createKeyData(std::vector<shared_ptr<regionData>>& theData, Visit
 void statTool::gatherCountStats(visitorCombine* theAggregate, vector<double> &XPer, vector<double> &YPer, 
                 int (demogCombo::*f1)() const, int (psCombo::*f2)() const) {
     //for all demographic data
-    for (auto entry : theAggregate->getComboDemog()) {
+    for (auto entry : theAggregate->GetDemogComboMap()) {
         //make sure there is valid police shooting data!
-        shared_ptr<psCombo> temp = theAggregate->getComboPoliceData(entry.first);
+        shared_ptr<psCombo> temp = theAggregate->GetPoliceComboData(entry.first);
         psCombo *thePSData = temp.get();
         if ( thePSData != NULL ) {
             double xP = (double) ((entry.second).get()->*f1)();
@@ -87,7 +87,7 @@ void statTool::gatherCountStats(visitorCombine* theAggregate, vector<double> &XP
 void statTool::gatherCountStats(visitorCombine* theAggregate, vector<double> &XPer, vector<double> &YPer, 
                 int (psCombo::*f1)() const, int (psCombo::*f2)() const) {
     //for all demographic data
-    for (auto entry : theAggregate->getComboPolice()) {
+    for (auto entry : theAggregate->GetPoliceComboMap()) {
         psCombo *thePSData = entry.second.get();
         if ( thePSData != NULL ) {
           double xP = (thePSData->*f1)();
@@ -104,7 +104,7 @@ void statTool::gatherCountStats(visitorCombine* theAggregate, vector<double> &XP
 void statTool::gatherPerStats(visitorCombine*  theAggregate, vector<double> &XPer, vector<double> &YPer, 
                         double (demogCombo::*f1)() const, double (demogCombo::*f2)() const) {
     //for all demographic data
-    for (auto entry : theAggregate->getComboDemog()) {
+    for (auto entry : theAggregate->GetDemogComboMap()) {
         double xP = ((entry.second).get()->*f1)();
         double yP = ((entry.second).get()->*f2)();
         if (!isnan(xP) && !isnan(yP)) {
@@ -125,14 +125,14 @@ int statTool::gatherBothStats(visitorCombine*  theAggregate, vector<double> &XPe
 
     //now fill in the counts
     int totPop = 0;
-    for (auto entry : theAggregate->getComboDemog()) {
+    for (auto entry : theAggregate->GetDemogComboMap()) {
         shared_ptr<demogCombo> demogForC = entry.second;
         double xC = ((entry.second).get()->*f3)();
         double yC = ((entry.second).get()->*f4)();
         if (!isnan(xC) && !isnan(yC)) {
             XCount.push_back(xC);
             Ycount.push_back(yC);
-            totPop += (entry.second)->getPop();
+            totPop += (entry.second)->GetTotPop();
         }
     }
     return totPop;
