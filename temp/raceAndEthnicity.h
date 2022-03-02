@@ -29,8 +29,8 @@ class raceAndEthnicity {
       {}
 
       // Getters
-      int GetWhiteAloneCt() { return white_alone_ct_; }
-      int GetBlackAloneCt() { return black_alone_ct_; }
+      int GetWhiteAloneCt() const { return white_alone_ct_; }
+      int GetBlackAloneCt() const { return black_alone_ct_; }
       int GetAmIndianAlNativeCt() { return am_ind_al_native_ct_; }
       int GetAsianAloneCt() { return asian_alone_ct_; }
       int GetHawaiianPacIslandCt() { return hyn_alone_ct_; }

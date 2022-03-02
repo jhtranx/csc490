@@ -20,8 +20,7 @@ class demogCombo : public demogData {
          aggr_count_(0), pop_over_65_count_ (0),
          pop_under_18_count_(0), pop_under_5_count_(0),
          female_count_(0), high_school_grad_count_(0),
-         bachelors_deg_count_(0), foreign_born_count_(0),
-         med_household_income_percent_(0.0)
+         bachelors_deg_count_(0), foreign_born_count_(0)
       {}
       
       // Getters
@@ -33,7 +32,6 @@ class demogCombo : public demogData {
       int GetHighSchoolGradCount() const { return high_school_grad_count_; }
       int GetBachelorsDegCount() const {return bachelors_deg_count_;}
       int GetForeignBornCount() const { return foreign_born_count_; }
-      double GetMedHouseholdIncomePercent() const {return med_household_income_percent_;}
 
       // Setters
       void IncAggrCount() { aggr_count_ += 1; }
@@ -46,14 +44,6 @@ class demogCombo : public demogData {
       void UpdateBachelorsDegCt(int increase) {bachelors_deg_count_ += increase;}
       void UpdateForeignBornCt(int increase) {foreign_born_count_ += increase;}
 
-      void UpdateMedIncomePc(int increase) {
-         int curr_tot_aggr_ct_ = aggr_count_;
-         double prev_med_household_income_ct_ = demogData::med_household_income_count_;
-         double new_med_household_income_pc_ = 
-            (double)(increase + prev_med_household_income_ct_) / (double)curr_tot_aggr_ct_;
-         med_household_income_percent_ = new_med_household_income_pc_;
-      } 
-
       friend std::ostream& operator<<(std::ostream &out, const demogCombo& DC);
 
    private:
@@ -65,7 +55,6 @@ class demogCombo : public demogData {
       int high_school_grad_count_;
       int bachelors_deg_count_;
       int foreign_born_count_;
-      double med_household_income_percent_;
 };
 
 #endif

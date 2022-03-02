@@ -72,7 +72,7 @@ public:
       all_demog_combo_data_[state_]->UpdateHighSchoolGradCt(high_school_grad_count_);
       all_demog_combo_data_[state_]->UpdateBachelorsDegCt(bachelors_deg_count_);
       all_demog_combo_data_[state_]->UpdateForeignBornCt(foreign_born_count_);
-      all_demog_combo_data_[state_]->UpdateMedIncomePc(med_household_income_count_);
+      all_demog_combo_data_[state_]->UpdateMedIncomeCt(med_household_income_count_, tot_pop_);
       all_demog_combo_data_[state_]->UpdateNumHouseholdCt(num_households_count_);
       all_demog_combo_data_[state_]->UpdateVeteransCt(veterans_count_);
       all_demog_combo_data_[state_]->UpdateWhiteCt(white_alone_ct_);

@@ -25,6 +25,9 @@ class psCombo : public regionData, public std::enable_shared_from_this<psCombo> 
       int GetCasesCount() const { return case_count_; }                    // total number for a region
       raceAndEthnicity GetRaceEthnicityAggr() const { return race_eth_aggr_; }
 
+      int GetBlackCt() const {return race_eth_aggr_.GetBlackAloneCt();}
+      int GetWhiteCt() const {return race_eth_aggr_.GetWhiteAloneCt();}
+
       // Setters
       void IncNumMentalIllness() { mental_illness_count_ += 1; }
       void IncUnArmedCount() { unarmed_count_ += 1; }                    

@@ -104,14 +104,14 @@ shared_ptr<regionData> readCSVLineDemog(std::string theLine) {
 
    // create counts for raceAndEth
 
-   int white_ct_ = white_pc_ * tot_population_ct_;
-   int black_ct_ = black_pc_ * tot_population_ct_;
-   int am_indian_al_native_ct_ = am_indian_al_native_pc_ * tot_population_ct_;
-   int asian_ct_ = asian_pc_ * tot_population_ct_;
-   int hi_pacific_isle_ct_ = hi_pacific_isle_pc_ * tot_population_ct_;
-   int multi_race_ct_ = multi_race_pc_ * tot_population_ct_;
-   int latinx_ct_ = latinx_pc_ * tot_population_ct_;
-   int white_nh_ct_ = white_nh_pc_ * tot_population_ct_;
+   int white_ct_ = round(white_pc_ * tot_population_ct_);
+   int black_ct_ = round(black_pc_ * tot_population_ct_);
+   int am_indian_al_native_ct_ = round(am_indian_al_native_pc_ * tot_population_ct_);
+   int asian_ct_ = round(asian_pc_ * tot_population_ct_);
+   int hi_pacific_isle_ct_ = round(hi_pacific_isle_pc_ * tot_population_ct_);
+   int multi_race_ct_ = round(multi_race_pc_ * tot_population_ct_);
+   int latinx_ct_ = round(latinx_pc_ * tot_population_ct_);
+   int white_nh_ct_ = round(white_nh_pc_ * tot_population_ct_);
 
 
    raceAndEthnicity race_eth_ = raceAndEthnicity (

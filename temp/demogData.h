@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <cmath>
 #include "raceAndEthnicity.h"
 #include "regionData.h"
 
@@ -63,6 +64,11 @@ class demogData : public regionData, public std::enable_shared_from_this<demogDa
          return states_.at(0);
       }
 
+      int GetHomeOwnCount() const {return round(home_own_percent_ * tot_pop_);}
+      int GetBachelorsDegCount() const {return round(bachelors_deg_percent_ * tot_pop_);}
+      int GetHighSchoolGradCount() const {return round(high_school_grad_percent_ * tot_pop_);}
+      double GetVeteransPercent() const {return veterans_count_ / tot_pop_;}
+
       // Setters - mainly used for demogCombo (remember this is a diff use of our priv variables)
       void UpdateWhiteCt (int white_ct_) {
          int prev_white_ct_ = race_eth_.GetWhiteAloneCt();
@@ -96,6 +102,16 @@ class demogData : public regionData, public std::enable_shared_from_this<demogDa
          int prev_white_nh_ct_ = race_eth_.GetWhiteNotHispLatCt();
          race_eth_.SetWhiteNotHispLatCt(white_nh_ct_ + prev_white_nh_ct_);
       }
+
+      void UpdateMedIncomeCt (int new_med_inc_, int new_pop_) {
+         int prev_tot_pop_ = regionData::tot_pop_ - new_pop_;
+         int prev_tot_household_income_ct_ = 
+            demogData::med_household_income_count_ * prev_tot_pop_;
+         int new_tot_household_income_ct_ = new_pop_ * new_med_inc_;
+         int new_med_household_income_ct_ = 
+            (prev_tot_household_income_ct_ + new_tot_household_income_ct_) / regionData::tot_pop_;
+         med_household_income_count_ = new_med_household_income_ct_;
+      } 
       
       void UpdateNumHouseholdCt(int increase)  {num_households_count_ += increase;}
 

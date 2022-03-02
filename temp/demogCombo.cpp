@@ -15,7 +15,9 @@ std::ostream& operator<<(std::ostream &out, const demogCombo &DC) {
    int tot_pop_ = DC.GetTotPop();
    raceAndEthnicity race_eth_ = DC.GetRaceAndEthnicity();
 
-   out << "County Demographics Info: " << DC.GetRegionName() << ", " << DC.GetStateName();
+   out << "Name: " << DC.GetRegionName() << ", " << DC.GetStateName();
+   out << "Combo Info: " << DC.GetRegionName() << " Total States: " << DC.GetStates().size();
+   
    out << "\nTotal population: " << tot_pop_;
 
    out << "\nRacial Demographics Info: \n";
@@ -74,9 +76,9 @@ std::ostream& operator<<(std::ostream &out, const demogCombo &DC) {
    out << "\n(number housingholds): " << DC.GetNumHouseholdsCount();
    out << "\n(medium income in $): " << DC.GetMedHouseholdIncomeCount();
 
-   out << "\n--County education: \n(\% Bachelor or more): " << CalcTotalDC(DC.GetBachelorsDegCount(), tot_pop_);
+   out << "\n--County education: \n(\% Bachelor or more): " << CalcPercentDC(DC.GetBachelorsDegCount(), tot_pop_);
    out <<  " and total: " << DC.GetBachelorsDegCount();
-   out << "\n(\% high school or more): " << CalcTotalDC(DC.GetHighSchoolGradCount(), tot_pop_);
+   out << "\n(\% high school or more): " << CalcPercentDC(DC.GetHighSchoolGradCount(), tot_pop_);
    out <<  " and total: " << DC.GetHighSchoolGradCount();
 
    out << "\n";

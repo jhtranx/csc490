@@ -20,6 +20,10 @@ class visitorCombineCounty : public visitorCombine {
          read_csvCityCounty(filename);
       }
 
+      int GetNoMatch() const {
+         return noMatch;
+      }
+
       string stripCounty(string inWord) {
          string compareS = "County";
          /* some names include the word 'county' - strip */
@@ -123,7 +127,7 @@ class visitorCombineCounty : public visitorCombine {
          all_demog_combo_data_[county_key_]->UpdateHighSchoolGradCt(high_school_grad_count_);
          all_demog_combo_data_[county_key_]->UpdateBachelorsDegCt(bachelors_deg_count_);
          all_demog_combo_data_[county_key_]->UpdateForeignBornCt(foreign_born_count_);
-         all_demog_combo_data_[county_key_]->UpdateMedIncomePc(med_household_income_count_);
+         all_demog_combo_data_[county_key_]->UpdateMedIncomeCt(med_household_income_count_, tot_pop_);
          all_demog_combo_data_[county_key_]->UpdateNumHouseholdCt(num_households_count_);
          all_demog_combo_data_[county_key_]->UpdateVeteransCt(veterans_count_);
          all_demog_combo_data_[county_key_]->UpdateWhiteCt(white_alone_ct_);
