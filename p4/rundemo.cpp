@@ -46,7 +46,7 @@
 #include "states.h"
 #include "CountyMap.h"
 
-std::vector<vector<string>> MakeBorderBinList() {
+visitorCombineCounty DataProjSetUp() {
 	
 	vector<shared_ptr<regionData>> pileOfData;
 	read_csv(pileOfData, "./demo/490-MapLab7-STARTER/county_demographics.csv", DEMOG);
@@ -57,6 +57,11 @@ std::vector<vector<string>> MakeBorderBinList() {
 	for (const auto &obj : pileOfData) {
 		obj->Accept(county_report_);
 	}
+	return county_report_;
+}
+
+std::vector<vector<string>> MakeBorderBinList(visitorCombineCounty county_report_) {
+	
 	std::map<string, shared_ptr<demogCombo>> demog_combo_map_ = county_report_.GetDemogComboMap();
 	std::map<string, shared_ptr<psCombo>> ps_combo_map_ = county_report_.GetPoliceComboMap();
 	std::vector<std::pair<string, shared_ptr<demogCombo>>> demog_combo_list_;
@@ -70,45 +75,48 @@ std::vector<vector<string>> MakeBorderBinList() {
 	border_bins_list_.push_back(vector<string> {});
 	border_bins_list_.push_back(vector<string> {});
 
+	// FOR HIGH SCHOOL MENTAL ILLNESS
 	for (auto &obj : demog_combo_list_) {
-		double fatal_race_percent_ = 0.0;
-		double demog_race_percent_ = obj.second->GetWhiteAlonePercent();
-		shared_ptr<psCombo> ps_combo_ = ps_combo_map_[obj.first];
-		cout << "check 1" << endl;
-		if (ps_combo_ != 0)
-			fatal_race_percent_ = ps_combo_->GetWhiteAlonePercent();	
+		double fatal_high_school_percent_ = 0.0;
 
-		if (fatal_race_percent_ > demog_race_percent_)
+		shared_ptr<psCombo> ps_combo_ = ps_combo_map_[obj.first];
+		if (ps_combo_ != 0)
+			fatal_high_school_percent_ = ps_combo_->GetNumMentalIllnessPercent();	
+
+		if (fatal_high_school_percent_ > 0.50)
 			border_bins_list_.at(0).push_back(obj.first);
 		else
 			border_bins_list_.at(1).push_back(obj.first);
 	}
-	cout << "check 2" << endl;
+
+	// FOR ALL QUERIES BESIDES HIGH SCHOOL MENTAL ILLNESS
+	// for (auto &obj : demog_combo_list_) {
+	// 	double fatal_race_percent_ = 0.0;
+	// 	double demog_race_percent_ = obj.second->GetNumMentalIllnessPercent();
+	// 	shared_ptr<psCombo> ps_combo_ = ps_combo_map_[obj.first];
+	// 	if (ps_combo_ != 0)
+	// 		fatal_race_percent_ = ps_combo_->GetNumMentalIllnessPercent();	
+
+	// 	if (fatal_race_percent_ > demog_race_percent_)
+	// 		border_bins_list_.at(0).push_back(obj.first);
+	// 	else
+	// 		border_bins_list_.at(1).push_back(obj.first);
+	// }
 	return border_bins_list_;
 }
 
-std::vector<vector<string>> MakeFillBinList() {
+std::vector<vector<string>> MakeFillBinList(visitorCombineCounty county_report_) {
 
-	vector<shared_ptr<regionData>> pileOfData;
-	read_csv(pileOfData, "./demo/490-MapLab7-STARTER/county_demographics.csv", DEMOG);
-	read_csv(pileOfData, "./demo/490-MapLab7-STARTER/fatal-police-shootings-data-Q.csv", POLICE);
-
-	visitorReport report;
-	visitorCombineState state_report_;
-	visitorCombineCounty county_report_ = visitorCombineCounty("./demo/490-MapLab7-STARTER/uscities.csv");
-
-	for (const auto &obj : pileOfData) {
-		obj->Accept(county_report_);
-	}
 	std::map<string, shared_ptr<demogCombo>> demog_combo_map_ = county_report_.GetDemogComboMap();
 	std::map<string, shared_ptr<psCombo>> ps_combo_map_ = county_report_.GetPoliceComboMap();
 	std::vector<std::pair<string, shared_ptr<demogCombo>>> demog_combo_list_;
 	std::vector<string> county_key_list_;
+
 	for (auto itr = demog_combo_map_.begin(); itr != demog_combo_map_.end(); ++itr)
     	demog_combo_list_.push_back(*itr);
 	sort(demog_combo_list_.begin(), demog_combo_list_.end(), [=] 
 		(std::pair<string, shared_ptr<demogCombo>>& lhs, std::pair<string, shared_ptr<demogCombo>>& rhs) {
-    	return lhs.second->GetWhiteAlonePercent() < rhs.second->GetWhiteAlonePercent();
+    	return lhs.second->GetBachelorsDegPercentCombo() < rhs.second->GetBachelorsDegPercentCombo();
 	});
 	for (auto &obj : demog_combo_list_) {
 		county_key_list_.push_back(obj.first);
@@ -118,40 +126,81 @@ std::vector<vector<string>> MakeFillBinList() {
 	for (int j = 0; j < 8; j++) {
 		fill_bins_list_.push_back(vector<string> {});
 	}
-	cout << "check 3" << endl;
 
 	int bins_num_ = 8;
 	int curr_bin_idx_ = 0;
 
-	double max_data_percent_ = demog_combo_map_[county_key_list_[county_key_list_.size() - 1]]->GetWhiteAlonePercent();
-	double min_data_percent_ = demog_combo_map_[county_key_list_[0]]->GetWhiteAlonePercent();
-	cout << "check 4" << endl;
+	double max_data_percent_ = demog_combo_map_[county_key_list_[county_key_list_.size() - 1]]->GetBachelorsDegPercentCombo();
+	double min_data_percent_ = demog_combo_map_[county_key_list_[0]]->GetBachelorsDegPercentCombo();
 	double increment_ = (max_data_percent_ - min_data_percent_) / bins_num_;
-	double curr_bin_max_value_ = increment_;
-	cout << "check 5" << endl;
+
+	double curr_bin_max_value_ = increment_ + min_data_percent_;
+
 	for (int i = 0; i < (county_key_list_.size() - 1); i++) {
-		cout << "check 6" << endl;
 		string curr_county_name_ =  county_key_list_.at(i);
 		shared_ptr<demogCombo> curr_county_demog_combo_ = demog_combo_map_[curr_county_name_];
-		double curr_county_percent_ = curr_county_demog_combo_->GetWhiteAlonePercent();
-		cout << "check 7" << endl;
+		double curr_county_percent_ = curr_county_demog_combo_->GetBachelorsDegPercentCombo();
+
 		if (curr_county_percent_ > curr_bin_max_value_) {
 			curr_bin_max_value_ += increment_;
 			curr_bin_idx_ += 1;
 		}
 		fill_bins_list_[curr_bin_idx_].push_back(curr_county_name_);
 	}
-	cout << "check 8" << endl;
 		
 	return fill_bins_list_;
 }
+
+using namespace mapnik;
+std::vector<string> CreateExpressions(vector<vector<string>> bins_list_, vector<color> color_map_) {
+	CountyMap theCountyMap("demo/data/uscities.csv");
+
+	std::vector<string> expr_list_;
+	int state_code_;
+	int county_code_;
+	int bin_idx_ = 0;
+
+	for (int j=0; j < color_map_.size(); j++) {
+		expr_list_.push_back("([STATEFP] = \'");
+	}
+
+	for (auto bin_ : bins_list_) {
+		for (int i = 0; i < bin_.size(); i++) {
+			string county_name_ = bin_[i];
+			assert(theCountyMap.keyToCounty[county_name_].count() > 0);
+			countyID county_id_object_ = theCountyMap.keyToCounty[county_name_];
+			state_code_ = county_id_object_.countyfips / 1000;
+			
+			if (state_code_ < 10)
+				expr_list_[bin_idx_] += "0" + to_string(state_code_)+"\'";
+			else
+				expr_list_[bin_idx_] += to_string(state_code_)+"\'";
+			// this sets countyCode to the expr
+			county_code_ = county_id_object_.countyfips % 1000;
+			if (county_code_ < 10)
+				expr_list_[bin_idx_] += " and [COUNTYFP] = \'00" + to_string(county_code_)+"\')";
+			else if (county_code_ < 100)
+				expr_list_[bin_idx_] += " and [COUNTYFP] = \'0" + to_string(county_code_)+"\')";
+			else
+				expr_list_[bin_idx_] += " and [COUNTYFP] = \'" + to_string(county_code_)+"\')";
+			if (i != (bin_.size() - 1))
+				expr_list_[bin_idx_] += " or ([STATEFP] = \'";
+		}
+
+		bin_idx_ += 1;
+	}
+	return expr_list_;
+
+}
+
 
 int main ( int argc , char** argv)
 {
 
 	using namespace mapnik;
-	std::vector<vector<string>> fill_bins_list_ = MakeFillBinList();
-	std::vector<vector<string>> border_bins_list_ = MakeBorderBinList();
+	visitorCombineCounty county_report_ = DataProjSetUp();
+	std::vector<vector<string>> fill_bins_list_ = MakeFillBinList(county_report_);
+	std::vector<vector<string>> border_bins_list_ = MakeBorderBinList(county_report_);
 
 	std::vector<color> fill_color_map_ = {color(235, 91, 101),
 	color(245, 134, 91),
@@ -181,43 +230,7 @@ int main ( int argc , char** argv)
 		// create styles
 		std::cout << "creating expression rules" << std::endl;
 
-		std::vector<string> fill_expr_list_;
-
-		int state_code_;
-		int county_code_;
-		int bin_idx_ = 0;
-
-		CountyMap theCountyMap("demo/data/uscities.csv");
-
-		for (int j=0; j < fill_color_map_.size(); j++) {
-			fill_expr_list_.push_back("([STATEFP] = \'");
-		}
-
-		for (auto bin_ : fill_bins_list_) {
-			for (int i = 0; i < bin_.size(); i++) {
-				string county_name_ = bin_[i];
-				assert(theCountyMap.keyToCounty[county_name_].count() > 0);
-				countyID county_id_object_ = theCountyMap.keyToCounty[county_name_];
-				state_code_ = county_id_object_.countyfips / 1000;
-				
-				if (state_code_ < 10)
-					fill_expr_list_[bin_idx_] += "0" + to_string(state_code_)+"\'";
-				else
-					fill_expr_list_[bin_idx_] += to_string(state_code_)+"\'";
-				// this sets countyCode to the expr
-				county_code_ = county_id_object_.countyfips % 1000;
-				if (county_code_ < 10)
-					fill_expr_list_[bin_idx_] += " and [COUNTYFP] = \'00" + to_string(county_code_)+"\')";
-				else if (county_code_ < 100)
-					fill_expr_list_[bin_idx_] += " and [COUNTYFP] = \'0" + to_string(county_code_)+"\')";
-				else
-					fill_expr_list_[bin_idx_] += " and [COUNTYFP] = \'" + to_string(county_code_)+"\')";
-				if (i != (bin_.size() - 1))
-					fill_expr_list_[bin_idx_] += " or ([STATEFP] = \'";
-			}
-
-			bin_idx_ += 1;
-		}
+		std::vector<string> fill_expr_list_ = CreateExpressions(fill_bins_list_, fill_color_map_);
 
 		for (int k = 0; k < fill_color_map_.size(); k++) {
 			feature_type_style section_style;
@@ -235,43 +248,9 @@ int main ( int argc , char** argv)
 			cout << "INSERTED LAYERS: " << "section"+to_string(k) << endl;
 		}
 		
-//START OF STATELINE CODE
+		//START OF BORDERLINE CODE
 
-		std::vector<string> border_expr_list_;
-
-		state_code_ = 0;
-		county_code_ = 0;
-		bin_idx_ = 0;
-
-		for (int j=0; j < border_color_map_.size(); j++) {
-			border_expr_list_.push_back("([STATEFP] = \'");
-		}
-
-		for (auto bin_ : border_bins_list_) {
-			for (int i = 0; i < bin_.size(); i++) {
-				string county_name_ = bin_[i];
-				assert(theCountyMap.keyToCounty[county_name_].count() > 0);
-				countyID county_id_object_ = theCountyMap.keyToCounty[county_name_];
-				state_code_ = county_id_object_.countyfips / 1000;
-				
-				if (state_code_ < 10)
-					border_expr_list_[bin_idx_] += "0" + to_string(state_code_)+"\'";
-				else
-					border_expr_list_[bin_idx_] += to_string(state_code_)+"\'";
-				// this sets countyCode to the expr
-				county_code_ = county_id_object_.countyfips % 1000;
-				if (county_code_ < 10)
-					border_expr_list_[bin_idx_] += " and [COUNTYFP] = \'00" + to_string(county_code_)+"\')";
-				else if (county_code_ < 100)
-					border_expr_list_[bin_idx_] += " and [COUNTYFP] = \'0" + to_string(county_code_)+"\')";
-				else
-					border_expr_list_[bin_idx_] += " and [COUNTYFP] = \'" + to_string(county_code_)+"\')";
-				if (i != (bin_.size() - 1))
-					border_expr_list_[bin_idx_] += " or ([STATEFP] = \'";
-			}
-
-			bin_idx_ += 1;
-		}
+		std::vector<string> border_expr_list_ = CreateExpressions(border_bins_list_, border_color_map_);;
 
 		for (int p = 0; p < border_color_map_.size(); p++) {
 			feature_type_style section_style;
@@ -310,7 +289,7 @@ int main ( int argc , char** argv)
 			m.add_layer(lyr);
 		}
 
-		//state boundaries
+		//county boundaries
 		{
 			parameters p;
 			p["type"]="shape";

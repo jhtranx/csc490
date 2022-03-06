@@ -24,6 +24,8 @@ class demogCombo : public demogData {
       {}
       
       // Getters
+      double GetHighSchoolGradPercentCombo() const {return high_school_grad_count_ / (double) regionData::tot_pop_;}
+      double GetBachelorsDegPercentCombo() const {return bachelors_deg_count_ / (double) regionData::tot_pop_;}
       int GetAggrCount() const { return aggr_count_; }
       int GetPopOver65Count() const {return pop_over_65_count_;}
       int GetPopUnder18Count() const {return pop_under_18_count_;}
@@ -35,7 +37,6 @@ class demogCombo : public demogData {
 
       // Setters
       void IncAggrCount() { aggr_count_ += 1; }
-
       void UpdatePopOver65Ct(int increase) {pop_over_65_count_ += increase;}
       void UpdatePopUnder18Ct(int increase) {pop_under_18_count_ += increase;}
       void UpdatePopUnder5Ct(int increase) {pop_under_5_count_ += increase;}
