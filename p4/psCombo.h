@@ -18,6 +18,12 @@ class psCombo : public regionData, public std::enable_shared_from_this<psCombo> 
       {}
 
       // Getters
+      double GetBlackAlonePercent() const {return race_eth_aggr_.GetBlackAloneCt() / (double) regionData::tot_pop_;}
+      double GetWhiteAlonePercent() const {return race_eth_aggr_.GetWhiteAloneCt() / (double) regionData::tot_pop_;}
+      double GetHispLatAlonePercent() const {return race_eth_aggr_.GetHispLatCt() / (double) regionData::tot_pop_;}
+      double GetAsianAlonePercent() const {return race_eth_aggr_.GetAsianAloneCt() / (double) regionData::tot_pop_;}
+      double GetAmIndianAlNativePercent() const {return race_eth_aggr_.GetAmIndianAlNativeCt() / (double) regionData::tot_pop_;}
+      
       int GetNumMentalIllness() const { return mental_illness_count_; }    // total count “TRUE”
       int GetUnArmedCount() const { return unarmed_count_; }               // total count blank, ‘unarmed’
       int GetArmedToyCount() const { return armed_toy_count_; }            // total count ’toy weapon’

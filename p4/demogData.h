@@ -54,6 +54,12 @@ class demogData : public regionData, public std::enable_shared_from_this<demogDa
       double GetHighSchoolGradPercent() const {return high_school_grad_percent_;}
       double GetBachelorsDegPercent() const {return bachelors_deg_percent_;}
       double GetForeignBornPercent() const {return foreign_born_percent_;}
+      double GetBlackAlonePercent() const {return race_eth_.GetBlackAloneCt() / (double) regionData::tot_pop_;}
+      double GetWhiteAlonePercent() const {return race_eth_.GetWhiteAloneCt() / (double) regionData::tot_pop_;}
+      double GetHispLatAlonePercent() const {return race_eth_.GetHispLatCt() / (double) regionData::tot_pop_;}
+      double GetAsianAlonePercent() const {return race_eth_.GetAsianAloneCt() / (double) regionData::tot_pop_;}
+      double GetAmIndianAlNativePercent() const {return race_eth_.GetAmIndianAlNativeCt() / (double) regionData::tot_pop_;}
+
       int GetMedHouseholdIncomeCount() const {return med_household_income_count_;}
       int GetNumHouseholdsCount() const {return num_households_count_;}
       int GetVeteransCount() const {return veterans_count_;}
@@ -64,10 +70,10 @@ class demogData : public regionData, public std::enable_shared_from_this<demogDa
          return states_.at(0);
       }
 
-      int GetHomeOwnCount() const {return round(home_own_percent_ * tot_pop_);}
-      int GetBachelorsDegCount() const {return round(bachelors_deg_percent_ * tot_pop_);}
-      int GetHighSchoolGradCount() const {return round(high_school_grad_percent_ * tot_pop_);}
-      double GetVeteransPercent() const {return veterans_count_ / tot_pop_;}
+      int GetHomeOwnCount() const {return round(home_own_percent_ * regionData::tot_pop_);}
+      int GetBachelorsDegCount() const {return round(bachelors_deg_percent_ * regionData::tot_pop_);}
+      int GetHighSchoolGradCount() const {return round(high_school_grad_percent_ * regionData::tot_pop_);}
+      double GetVeteransPercent() const {return veterans_count_ / regionData::tot_pop_;}
 
       // Setters - mainly used for demogCombo (remember this is a diff use of our priv variables)
       void UpdateWhiteCt (int white_ct_) {

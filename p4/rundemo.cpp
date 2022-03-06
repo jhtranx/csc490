@@ -46,18 +46,49 @@
 #include "states.h"
 #include "CountyMap.h"
 
-std::vector<string> dataProjSetUp() {
-	// dataAQ theAnswers;
-	// //read in a csv file and create a vector of objects representing each counties data
-	// std::vector<shared_ptr<demogData>> theData = read_csv(
-	// 		"./demo/490-MapLab7-STARTER/county_demographics.csv", DEMOG);
+std::vector<vector<string>> MakeBorderBinList() {
+	
+	vector<shared_ptr<regionData>> pileOfData;
+	read_csv(pileOfData, "./demo/490-MapLab7-STARTER/county_demographics.csv", DEMOG);
+	read_csv(pileOfData, "./demo/490-MapLab7-STARTER/fatal-police-shootings-data-Q.csv", POLICE);
 
-	// std::vector<shared_ptr<psData>> thePoliceData = read_csvPolice(
-	// 		"./demo/490-MapLab7-STARTER/fatal-police-shootings-data-Q.csv", POLICE);
+	visitorCombineCounty county_report_ = visitorCombineCounty("./demo/490-MapLab7-STARTER/uscities.csv");
 
-	// read in csv and make pileOfData (demog and ps data)
+	for (const auto &obj : pileOfData) {
+		obj->Accept(county_report_);
+	}
+	std::map<string, shared_ptr<demogCombo>> demog_combo_map_ = county_report_.GetDemogComboMap();
+	std::map<string, shared_ptr<psCombo>> ps_combo_map_ = county_report_.GetPoliceComboMap();
+	std::vector<std::pair<string, shared_ptr<demogCombo>>> demog_combo_list_;
 
-	//START OF NEW CODE
+	for (auto itr = demog_combo_map_.begin(); itr != demog_combo_map_.end(); ++itr)
+    	demog_combo_list_.push_back(*itr);
+
+	vector<vector<string>> border_bins_list_;
+	// red is at idx 0, black is at idx 1
+
+	border_bins_list_.push_back(vector<string> {});
+	border_bins_list_.push_back(vector<string> {});
+
+	for (auto &obj : demog_combo_list_) {
+		double fatal_race_percent_ = 0.0;
+		double demog_race_percent_ = obj.second->GetWhiteAlonePercent();
+		shared_ptr<psCombo> ps_combo_ = ps_combo_map_[obj.first];
+		cout << "check 1" << endl;
+		if (ps_combo_ != 0)
+			fatal_race_percent_ = ps_combo_->GetWhiteAlonePercent();	
+
+		if (fatal_race_percent_ > demog_race_percent_)
+			border_bins_list_.at(0).push_back(obj.first);
+		else
+			border_bins_list_.at(1).push_back(obj.first);
+	}
+	cout << "check 2" << endl;
+	return border_bins_list_;
+}
+
+std::vector<vector<string>> MakeFillBinList() {
+
 	vector<shared_ptr<regionData>> pileOfData;
 	read_csv(pileOfData, "./demo/490-MapLab7-STARTER/county_demographics.csv", DEMOG);
 	read_csv(pileOfData, "./demo/490-MapLab7-STARTER/fatal-police-shootings-data-Q.csv", POLICE);
@@ -69,83 +100,70 @@ std::vector<string> dataProjSetUp() {
 	for (const auto &obj : pileOfData) {
 		obj->Accept(county_report_);
 	}
-	//END OF NEW CODE
-	
-	//debug print out
-	/*
-	int i = 0;
-	for (const auto &obj : theData) {
-		//std::cout << *obj << std::endl;
-		std::cout << " stateMap: " << obj->getState() << " " << theStatesAb[obj->getState()] << std::endl;
-		i++;
-		if (i > 2)
-			break;
-	}*/
-	
-	//cout << "number police incidents: " << thePoliceData.size() << endl;
-	
-	/* UNCOMMENT with your version of P2 theAnswers.createStateData(theData); */
-	
-	// theAnswers.createStateData(theData);
-	// theAnswers.createStatePoliceData(thePoliceData);
-
-	// std::vector<std::string> theStates = theAnswers.reportTopTenStatesPS();
-
-	// std::vector<string> stateMagList = {};
-	// std::vector<std::pair<string, double>> psToPopList = theAnswers.getPsToPopList();
-
-	//START OF NEW CODE
 	std::map<string, shared_ptr<demogCombo>> demog_combo_map_ = county_report_.GetDemogComboMap();
+	std::map<string, shared_ptr<psCombo>> ps_combo_map_ = county_report_.GetPoliceComboMap();
 	std::vector<std::pair<string, shared_ptr<demogCombo>>> demog_combo_list_;
 	std::vector<string> county_key_list_;
-	//END OF NEW CODE
-
-	// std::vector<string> countyToMedIncome;
-
-	// sort(demog_combo_map_.begin(), demog_combo_map_.end(), [](shared_ptr<demogCombo> lhs, 
-	// 	shared_ptr<demogCombo> rhs) {
-	// 		return lhs->GetRaceAndEthnicity().GetBlackAloneCt() > rhs->GetRaceAndEthnicity().GetBlackAloneCt();
-	// }); 
-
-	//START OF NEW CODE
 	for (auto itr = demog_combo_map_.begin(); itr != demog_combo_map_.end(); ++itr)
     	demog_combo_list_.push_back(*itr);
-
 	sort(demog_combo_list_.begin(), demog_combo_list_.end(), [=] 
 		(std::pair<string, shared_ptr<demogCombo>>& lhs, std::pair<string, shared_ptr<demogCombo>>& rhs) {
-    	return lhs.second->GetRaceAndEthnicity().GetBlackAloneCt() > rhs.second->GetRaceAndEthnicity().GetBlackAloneCt();
+    	return lhs.second->GetWhiteAlonePercent() < rhs.second->GetWhiteAlonePercent();
 	});
-
-	for (auto &obj : demog_combo_list_) {	
+	for (auto &obj : demog_combo_list_) {
 		county_key_list_.push_back(obj.first);
 	}
-	//END OF NEW CODE
+	vector<vector<string>> fill_bins_list_;
+	// creating 8 vectors (bins) in binslist
+	for (int j = 0; j < 8; j++) {
+		fill_bins_list_.push_back(vector<string> {});
+	}
+	cout << "check 3" << endl;
 
-	// // double topVal = psToPopList[0].second;
-	// for (const std::pair<string, double> st : psToPopList) {
-	// 	stateMagList.push_back(st.first);
-	// }
+	int bins_num_ = 8;
+	int curr_bin_idx_ = 0;
 
-	// return stateMagList;
-	// std::vector<std::string> theStates = {"CA", "TX", "FL", "AZ", "GA", "CO", "OK", "OH", "TN", "NC", "AK", "HI", "ME", "MT", "NV"};
-	// return theStates;
-
-	return county_key_list_;
+	double max_data_percent_ = demog_combo_map_[county_key_list_[county_key_list_.size() - 1]]->GetWhiteAlonePercent();
+	double min_data_percent_ = demog_combo_map_[county_key_list_[0]]->GetWhiteAlonePercent();
+	cout << "check 4" << endl;
+	double increment_ = (max_data_percent_ - min_data_percent_) / bins_num_;
+	double curr_bin_max_value_ = increment_;
+	cout << "check 5" << endl;
+	for (int i = 0; i < (county_key_list_.size() - 1); i++) {
+		cout << "check 6" << endl;
+		string curr_county_name_ =  county_key_list_.at(i);
+		shared_ptr<demogCombo> curr_county_demog_combo_ = demog_combo_map_[curr_county_name_];
+		double curr_county_percent_ = curr_county_demog_combo_->GetWhiteAlonePercent();
+		cout << "check 7" << endl;
+		if (curr_county_percent_ > curr_bin_max_value_) {
+			curr_bin_max_value_ += increment_;
+			curr_bin_idx_ += 1;
+		}
+		fill_bins_list_[curr_bin_idx_].push_back(curr_county_name_);
+	}
+	cout << "check 8" << endl;
+		
+	return fill_bins_list_;
 }
 
 int main ( int argc , char** argv)
 {
 
 	using namespace mapnik;
-	std::vector<string> theFiltData = dataProjSetUp();
-	std::vector<color> colorMap = {color(91, 80, 235),
-	color(95, 245, 155),
-	color(128, 235, 96),
-	color(235, 235, 75),
-	color(245, 213, 91),
-	color(223, 170, 94),
+	std::vector<vector<string>> fill_bins_list_ = MakeFillBinList();
+	std::vector<vector<string>> border_bins_list_ = MakeBorderBinList();
+
+	std::vector<color> fill_color_map_ = {color(235, 91, 101),
 	color(245, 134, 91),
-	color(235, 91, 101) };
+	color(223, 170, 94),
+	color(245, 213, 91),
+	color(235, 235, 75),
+	color(128, 235, 96),
+	color(95, 245, 155),
+	color(91, 80, 235) };
+
+	std::vector<color> border_color_map_ = {color(255, 0, 0),
+	color(0, 0, 0) };
 
 	const std::string srs_lcc="+proj=lcc +ellps=GRS80 +lat_0=49 +lon_0=-95 +lat+1=49 +lat_2=77 +datum=NAD83 +units=m +no_defs";
 	const std::string srs_merc="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over";
@@ -162,46 +180,53 @@ int main ( int argc , char** argv)
 
 		// create styles
 		std::cout << "creating expression rules" << std::endl;
-		std::vector<string> theExps;
-		int count = round(theFiltData.size()/7.0);
+
+		std::vector<string> fill_expr_list_;
+
+		int state_code_;
+		int county_code_;
+		int bin_idx_ = 0;
 
 		CountyMap theCountyMap("demo/data/uscities.csv");
-		
-		for (int j=0; j < colorMap.size(); j++) {
-			theExps.push_back("([STATEFP] = \'");
-		}
-		int i = 0;
-		int stateCode;
-		int countyCode;
-		for (auto entry : theFiltData) {
-			// cout << "NAME: squished " << entry[0] + entry[1]
-			assert(theCountyMap.keyToCounty[entry].count() > 0);
-			countyID myC = theCountyMap.keyToCounty[entry];
-			stateCode = myC.countyfips/1000;
-			if (stateCode < 10)
-				theExps[round(i/count)] += "0"+to_string(stateCode)+"\'";
-			else
-				theExps[round(i/count)] += to_string(stateCode)+"\'";
-			countyCode = myC.countyfips%1000;
-			if (countyCode < 10)
-				theExps[round(i/count)] += " and [COUNTYFP] = \'00" + to_string(countyCode)+"\')";
-			else if (countyCode < 100)
-				theExps[round(i/count)] += " and [COUNTYFP] = \'0" + to_string(countyCode)+"\')";
-			else
-				theExps[round(i/count)] += " and [COUNTYFP] = \'" + to_string(countyCode)+"\')";
-			if ((i%count != count-1) && i != theFiltData.size() -1)
-				theExps[round(i/count)] += " or ([STATEFP] = \'";
-			i++;
+
+		for (int j=0; j < fill_color_map_.size(); j++) {
+			fill_expr_list_.push_back("([STATEFP] = \'");
 		}
 
-		for (int k = 0; k < colorMap.size(); k++) {
+		for (auto bin_ : fill_bins_list_) {
+			for (int i = 0; i < bin_.size(); i++) {
+				string county_name_ = bin_[i];
+				assert(theCountyMap.keyToCounty[county_name_].count() > 0);
+				countyID county_id_object_ = theCountyMap.keyToCounty[county_name_];
+				state_code_ = county_id_object_.countyfips / 1000;
+				
+				if (state_code_ < 10)
+					fill_expr_list_[bin_idx_] += "0" + to_string(state_code_)+"\'";
+				else
+					fill_expr_list_[bin_idx_] += to_string(state_code_)+"\'";
+				// this sets countyCode to the expr
+				county_code_ = county_id_object_.countyfips % 1000;
+				if (county_code_ < 10)
+					fill_expr_list_[bin_idx_] += " and [COUNTYFP] = \'00" + to_string(county_code_)+"\')";
+				else if (county_code_ < 100)
+					fill_expr_list_[bin_idx_] += " and [COUNTYFP] = \'0" + to_string(county_code_)+"\')";
+				else
+					fill_expr_list_[bin_idx_] += " and [COUNTYFP] = \'" + to_string(county_code_)+"\')";
+				if (i != (bin_.size() - 1))
+					fill_expr_list_[bin_idx_] += " or ([STATEFP] = \'";
+			}
+
+			bin_idx_ += 1;
+		}
+
+		for (int k = 0; k < fill_color_map_.size(); k++) {
 			feature_type_style section_style;
 			{
 			rule section_rule;
-			section_rule.set_filter(parse_expression(theExps[k])); 
+			section_rule.set_filter(parse_expression(fill_expr_list_[k])); 
 			{
 					polygon_symbolizer poly_sym;
-					put(poly_sym, keys::fill, colorMap.at((colorMap.size()-1)-k));
+					put(poly_sym, keys::fill, fill_color_map_.at((fill_color_map_.size()-1)-k));
 					section_rule.append(std::move(poly_sym));
 			}
 			section_style.add_rule(std::move(section_rule));
@@ -209,178 +234,63 @@ int main ( int argc , char** argv)
 			m.insert_style("section"+to_string(k), std::move(section_style));
 			cout << "INSERTED LAYERS: " << "section"+to_string(k) << endl;
 		}
-		// for (auto state : theStates) {
-		// 	if (i < count ) {
-		// 			theStatesExp1 += "[STUSPS] = " + state;
-		// 			if (i != count-1)
-		// 				theStatesExp1 += " or ";
-		// 	} else if (i < count*2) {
-		// 			theStatesExp2 += "[STUSPS] = " + state;
-		// 			if (i != 2*count-1)
-		// 				theStatesExp2 += " or ";
-		// 	} else if (i < count*3) {
-		// 			theStatesExp3 += "[STUSPS] = " + state;
-		// 			if (i != 3*count-1)
-		// 				theStatesExp3 += " or ";
-		// 	} else if (i < count*4) {
-		// 			theStatesExp4 += "[STUSPS] = " + state;
-		// 			if (i != 4*count-1)
-		// 				theStatesExp4 += " or ";
-		// 	} else if (i < count*5) {
-		// 			theStatesExp5 += "[STUSPS] = " + state;
-		// 			if (i != 5*count-1)
-		// 				theStatesExp5 += " or ";
-		// 	} else if (i < count*6) {
-		// 			theStatesExp6 += "[STUSPS] = " + state;
-		// 			if (i != 6*count-1)
-		// 				theStatesExp6 += " or ";
-		// 	} else if (i < count*7) {
-		// 			theStatesExp7 += "[STUSPS] = " + state;
-		// 			if (i != 7*count-1)
-		// 				theStatesExp7 += " or ";
-		// 	} else {
-		// 			theStatesExp8 += "[STUSPS] = " + state;
-		// 			if (i != 8*count-1 && i !=theStates.size()-1)
-		// 				theStatesExp8 += " or ";
-		// 	}
-		// 	i++;
-		// }
-		//DEBUG can remove
-		// std::cout << "the expression 1: " << theStatesExp1 << std::endl;
-		// std::cout << "the expression 2: " << theStatesExp2 << std::endl;
-		// std::cout << "the expression 3: " << theStatesExp3 << std::endl;
-		// std::cout << "the expression 4: " << theStatesExp4 << std::endl;
-		// std::cout << "the expression 5: " << theStatesExp5 << std::endl;
-		// std::cout << "the expression 6: " << theStatesExp6 << std::endl;
-		// std::cout << "the expression 7: " << theStatesExp7 << std::endl;
-		// std::cout << "the expression 8: " << theStatesExp8 << std::endl;
+		
+//START OF STATELINE CODE
 
-		// std::cout << " creating styles ... \n";
+		std::vector<string> border_expr_list_;
 
-		// // States (polygon)
-		// feature_type_style section1_style;
-		// {
-		// 	rule section1_rule;
-		// 	section1_rule.set_filter(parse_expression(theStatesExp1)); 
-		// 	{
-		// 			polygon_symbolizer poly_sym;
-		// 			put(poly_sym, keys::fill, colorMap.at(7));
-		// 			section1_rule.append(std::move(poly_sym));
-		// 	}
-		// 	section1_style.add_rule(std::move(section1_rule));
-		// }
-		// m.insert_style("section1", std::move(section1_style));
+		state_code_ = 0;
+		county_code_ = 0;
+		bin_idx_ = 0;
 
-		// feature_type_style section2_style;
-		// {
-		// 	rule section2_rule;
-		// 	section2_rule.set_filter(parse_expression(theStatesExp2)); 
-		// 	{
-		// 			polygon_symbolizer poly_sym;
-		// 			put(poly_sym, keys::fill, colorMap.at(6));
-		// 			section2_rule.append(std::move(poly_sym));
-		// 	}
-		// 	section2_style.add_rule(std::move(section2_rule));
-		// }
-		// m.insert_style("section2", std::move(section2_style));
-
-		// feature_type_style section3_style;
-		// {
-		// 	rule section3_rule;
-		// 	section3_rule.set_filter(parse_expression(theStatesExp3)); 
-		// 	{
-		// 			polygon_symbolizer poly_sym;
-		// 			put(poly_sym, keys::fill, colorMap.at(5));
-		// 			section3_rule.append(std::move(poly_sym));
-		// 	}
-		// 	section3_style.add_rule(std::move(section3_rule));
-		// }
-		// m.insert_style("section3", std::move(section3_style));
-
-		// feature_type_style section4_style;
-		// {
-		// 	rule section4_rule;
-		// 	section4_rule.set_filter(parse_expression(theStatesExp4)); 
-		// 	{
-		// 			polygon_symbolizer poly_sym;
-		// 			put(poly_sym, keys::fill, colorMap.at(4));
-		// 			section4_rule.append(std::move(poly_sym));
-		// 	}
-		// 	section4_style.add_rule(std::move(section4_rule));
-		// }
-		// m.insert_style("section4", std::move(section4_style));
-
-		// feature_type_style section5_style;
-		// {
-		// 	rule section5_rule;
-		// 	section5_rule.set_filter(parse_expression(theStatesExp5)); 
-		// 	{
-		// 			polygon_symbolizer poly_sym;
-		// 			put(poly_sym, keys::fill, colorMap.at(3));
-		// 			section5_rule.append(std::move(poly_sym));
-		// 	}
-		// 	section5_style.add_rule(std::move(section5_rule));
-		// }
-		// m.insert_style("section5", std::move(section5_style));
-
-		// feature_type_style section6_style;
-		// {
-		// 	rule section6_rule;
-		// 	section6_rule.set_filter(parse_expression(theStatesExp6)); 
-		// 	{
-		// 			polygon_symbolizer poly_sym;
-		// 			put(poly_sym, keys::fill, colorMap.at(2));
-		// 			section6_rule.append(std::move(poly_sym));
-		// 	}
-		// 	section6_style.add_rule(std::move(section6_rule));
-		// }
-		// m.insert_style("section6", std::move(section6_style));
-
-		// feature_type_style section7_style;
-		// {
-		// 	rule section7_rule;
-		// 	section7_rule.set_filter(parse_expression(theStatesExp7)); 
-		// 	{
-		// 			polygon_symbolizer poly_sym;
-		// 			put(poly_sym, keys::fill, colorMap.at(1));
-		// 			section7_rule.append(std::move(poly_sym));
-		// 	}
-		// 	section7_style.add_rule(std::move(section7_rule));
-		// }
-		// m.insert_style("section7", std::move(section7_style));
-
-		// feature_type_style section8_style;
-		// {
-		// 	rule section8_rule;
-		// 	section8_rule.set_filter(parse_expression(theStatesExp8)); 
-		// 	{
-		// 			polygon_symbolizer poly_sym;
-		// 			put(poly_sym, keys::fill, colorMap.at(0));
-		// 			section8_rule.append(std::move(poly_sym));
-		// 	}
-		// 	section8_style.add_rule(std::move(section8_rule));
-		// }
-		// m.insert_style("section8", std::move(section8_style));
-
-		// std::cout << " added styles... \n";
-
-		// State (polyline)
-		feature_type_style statelines_style;
-		{
-			rule r;
-			{
-					line_symbolizer line_sym;
-					put(line_sym,keys::stroke,color(0,0,0));
-					put(line_sym,keys::stroke_width,1.0);
-					put(line_sym,keys::stroke_linecap,ROUND_CAP);
-					put(line_sym,keys::stroke_linejoin,ROUND_JOIN);
-					r.append(std::move(line_sym));
-			}
-			statelines_style.add_rule(std::move(r));
+		for (int j=0; j < border_color_map_.size(); j++) {
+			border_expr_list_.push_back("([STATEFP] = \'");
 		}
-		m.insert_style("statelines", std::move(statelines_style));
 
-// 		std::cout << " added 2nd style ... \n";
+		for (auto bin_ : border_bins_list_) {
+			for (int i = 0; i < bin_.size(); i++) {
+				string county_name_ = bin_[i];
+				assert(theCountyMap.keyToCounty[county_name_].count() > 0);
+				countyID county_id_object_ = theCountyMap.keyToCounty[county_name_];
+				state_code_ = county_id_object_.countyfips / 1000;
+				
+				if (state_code_ < 10)
+					border_expr_list_[bin_idx_] += "0" + to_string(state_code_)+"\'";
+				else
+					border_expr_list_[bin_idx_] += to_string(state_code_)+"\'";
+				// this sets countyCode to the expr
+				county_code_ = county_id_object_.countyfips % 1000;
+				if (county_code_ < 10)
+					border_expr_list_[bin_idx_] += " and [COUNTYFP] = \'00" + to_string(county_code_)+"\')";
+				else if (county_code_ < 100)
+					border_expr_list_[bin_idx_] += " and [COUNTYFP] = \'0" + to_string(county_code_)+"\')";
+				else
+					border_expr_list_[bin_idx_] += " and [COUNTYFP] = \'" + to_string(county_code_)+"\')";
+				if (i != (bin_.size() - 1))
+					border_expr_list_[bin_idx_] += " or ([STATEFP] = \'";
+			}
+
+			bin_idx_ += 1;
+		}
+
+		for (int p = 0; p < border_color_map_.size(); p++) {
+			feature_type_style section_style;
+			{
+			rule section_rule;
+			section_rule.set_filter(parse_expression(border_expr_list_[p])); 
+			{
+				line_symbolizer line_sym;
+				put(line_sym,keys::stroke, border_color_map_.at(p));
+				put(line_sym,keys::stroke_width,0.5);
+				put(line_sym,keys::stroke_linecap,ROUND_CAP);
+				put(line_sym,keys::stroke_linejoin,ROUND_JOIN);
+				section_rule.append(std::move(line_sym));
+			}
+			section_style.add_rule(std::move(section_rule));
+			}
+			m.insert_style("border_section"+to_string(p), std::move(section_style));
+			cout << "INSERTED BORDER: " << "border_section"+to_string(p) << endl;
+		}
 
 		// Layers
 		// state data
@@ -392,7 +302,7 @@ int main ( int argc , char** argv)
 
 			layer lyr("DataProjMap");
 			lyr.set_datasource(datasource_cache::instance().create(p));
-			for (int l = 0; l < colorMap.size(); l++) {
+			for (int l = 0; l < fill_color_map_.size(); l++) {
 				lyr.add_style("section"+to_string(l));
 			}
 			lyr.set_srs(srs_lcc);
@@ -409,7 +319,8 @@ int main ( int argc , char** argv)
 
 			layer lyr("StateLines");
 			lyr.set_datasource(datasource_cache::instance().create(p));
-			lyr.add_style("statelines");
+			lyr.add_style("border_section0");
+			lyr.add_style("border_section1");
 			lyr.set_srs(srs_lcc);
 	
 			m.add_layer(lyr);

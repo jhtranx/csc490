@@ -15,6 +15,11 @@
 
 class visitorCombineCounty : public visitorCombine {
    public:
+      // default constructor used to strip counties in parse
+      visitorCombineCounty() {
+         noMatch = 50101;
+      }
+
       visitorCombineCounty(std::string filename) {
          noMatch = 0;
          read_csvCityCounty(filename);
@@ -48,11 +53,11 @@ class visitorCombineCounty : public visitorCombine {
          if (i != std::string::npos) {
             inWord.erase(i-1, borough1.length()+1);
          }
-         // string parish = "Parish";
-         // i = inWord.find(parish);
-         // if (i != std::string::npos) {
-         //    inWord.erase(i-1, parish.length()+1);
-         // }
+         string parish = "Parish";
+         i = inWord.find(parish);
+         if (i != std::string::npos) {
+            inWord.erase(i-1, parish.length()+1);
+         }
          string ca = "Census Area";
          i = inWord.find(ca);
          if (i != std::string::npos) {
@@ -68,8 +73,7 @@ class visitorCombineCounty : public visitorCombine {
          map<string, shared_ptr<demogCombo>>& all_demog_combo_data_ = GetDemogComboMap();
 
          // demogData region_name_ is a county
-         string county_key_ = stripCounty(obj->GetRegionName()) + obj->GetStateName();
-      
+         string county_key_ = obj->GetRegionName() + obj->GetStateName();
          if (all_demog_combo_data_.find(county_key_) == all_demog_combo_data_.end()) {
             shared_ptr<demogCombo> new_demog_combo_data_ = make_shared<demogCombo>();
             all_demog_combo_data_.insert(
@@ -173,7 +177,6 @@ class visitorCombineCounty : public visitorCombine {
             return;
          }
          string county_key_ = county_ + state_;
-      
          if (all_ps_combo_data_.find(county_key_) == all_ps_combo_data_.end()) {
             //add to map new psCombo
             shared_ptr<psCombo> new_ps_combo_data_ = make_shared<psCombo>(county_key_);

@@ -31,11 +31,11 @@ class raceAndEthnicity {
       // Getters
       int GetWhiteAloneCt() const { return white_alone_ct_; }
       int GetBlackAloneCt() const { return black_alone_ct_; }
-      int GetAmIndianAlNativeCt() { return am_ind_al_native_ct_; }
-      int GetAsianAloneCt() { return asian_alone_ct_; }
+      int GetAmIndianAlNativeCt() const { return am_ind_al_native_ct_; }
+      int GetAsianAloneCt() const { return asian_alone_ct_; }
       int GetHawaiianPacIslandCt() { return hyn_alone_ct_; }
       int GetTwoOrMoreCt() { return two_or_more_ct_; }
-      int GetHispLatCt() { return hisp_lat_ct_; }
+      int GetHispLatCt() const { return hisp_lat_ct_; }
       int GetWhiteNotHispLatCt() { return white_nh_ct_; }
       int GetUnspecifiedCt() { return unspecified_ct_; }
 
