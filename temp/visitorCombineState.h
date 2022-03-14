@@ -84,8 +84,8 @@ public:
       all_demog_combo_data_[state_]->UpdateHispLat(hisp_lat_ct_);
       all_demog_combo_data_[state_]->UpdateWhiteNotHisLat(white_nh_ct_);
 
-      cout << "State: " << state_ << endl;
-      cout << "County Count: " << all_demog_combo_data_[state_]->GetAggrCount() << endl;
+      // cout << "State: " << state_ << endl;
+      // cout << "County Count: " << all_demog_combo_data_[state_]->GetAggrCount() << endl;
    }
     
    void visit(shared_ptr<psData> obj) {

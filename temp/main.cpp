@@ -31,9 +31,9 @@ int main() {
 	for (const auto &obj : pileOfData) {
 		obj->Accept(county_report_);
 	}
-	for (const auto &state : county_report_.GetDemogComboMap()) {
-		std::cout << *state.second << std::endl;
-	}
+	// for (const auto &state : county_report_.GetDemogComboMap()) {
+	// 	std::cout << *state.second << std::endl;
+	// }
 
 	//create a visitor to combine the state data
 	visitorCombineState theStates;

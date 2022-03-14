@@ -139,8 +139,8 @@ class visitorCombineCounty : public visitorCombine {
          all_demog_combo_data_[county_key_]->UpdateHispLat(hisp_lat_ct_);
          all_demog_combo_data_[county_key_]->UpdateWhiteNotHisLat(white_nh_ct_);
 
-         cout << "County Key: " << county_key_ << endl;
-         cout << "County Count: " << all_demog_combo_data_[county_key_]->GetAggrCount() << endl;
+         // cout << "County Key: " << county_key_ << endl;
+         // cout << "County Count: " << all_demog_combo_data_[county_key_]->GetAggrCount() << endl;
    
       }
       
@@ -169,7 +169,7 @@ class visitorCombineCounty : public visitorCombine {
 
          if (county_ == "") {
             noMatch += 1;
-            cout << "NOMATCH : " << noMatch << endl;
+            // cout << "NOMATCH : " << noMatch << endl;
             return;
          }
          string county_key_ = county_ + state_;
@@ -211,9 +211,9 @@ class visitorCombineCounty : public visitorCombine {
             all_ps_combo_data_[county_key_]->IncRaceEth("None");
 
          // PsCombo's Aggr count can be derived from its totPop (incremented everytime)
-         cout << "County Key: " << county_key_ << endl;
-         cout << "City: " << city_ << endl;
-         cout << "Cities Count: " << all_ps_combo_data_[county_key_]->GetTotPop() << endl;
+         // cout << "County Key: " << county_key_ << endl;
+         // cout << "City: " << city_ << endl;
+         // cout << "Cities Count: " << all_ps_combo_data_[county_key_]->GetTotPop() << endl;
       }
 
       //helper to create map from city to county

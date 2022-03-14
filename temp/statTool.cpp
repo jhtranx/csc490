@@ -83,8 +83,8 @@ void statTool::gatherCountStats(visitorCombine* theAggregate, vector<double> &XP
     }
 }
 
-/* helper functions to fill in arrays based on funciton pointers  - on police hsooting only*/
-void statTool::gatherCountStats(visitorCombine* theAggregate, vector<double> &XPer, vector<double> &YPer, 
+/* helper functions to fill in arrays based on function pointers - on police shooting only*/
+void statTool::gatherCountStats(visitorCombine* theAggregate, vector<double> &XPer, vector<double> &YPer,
                 int (psCombo::*f1)() const, int (psCombo::*f2)() const) {
     //for all demographic data
     for (auto entry : theAggregate->GetPoliceComboMap()) {
@@ -92,7 +92,7 @@ void statTool::gatherCountStats(visitorCombine* theAggregate, vector<double> &XP
         if ( thePSData != NULL ) {
           double xP = (thePSData->*f1)();
           double yP = (thePSData->*f2)();
-          if (!isnan(xP) && !isnan(yP)) {
+          if (!isnan(xP) && !isnan(yP) && !(xP == 0 && yP ==0)) {
             YPer.push_back(yP);
             XPer.push_back(xP);
           }
